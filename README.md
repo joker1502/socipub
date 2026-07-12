@@ -123,3 +123,4 @@ pnpm lint       # ESLint
 ```
 
 The sitemap at `/sitemap.xml` auto-generates from all static pages, blog posts, and tag filter pages. Static pages are prerendered at build time (SSG); dashboard routes are dynamic.
+
