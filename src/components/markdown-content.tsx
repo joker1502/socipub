@@ -35,6 +35,11 @@ const components: Components = {
   thead: ({ children }) => <thead className="border-b bg-muted/50">{children}</thead>,
   th: ({ children }) => <th className="p-3 text-left font-medium">{children}</th>,
   td: ({ children }) => <td className="p-3 text-muted-foreground">{children}</td>,
+  pre: ({ children }) => (
+    <pre className="my-6 overflow-x-auto rounded-xl border bg-muted/30 p-4 text-sm leading-relaxed [&>code]:bg-transparent [&>code]:p-0">
+      {children}
+    </pre>
+  ),
   code: ({ children }) => (
     <code className="rounded bg-muted px-1.5 py-0.5 text-sm font-mono text-foreground">{children}</code>
   ),

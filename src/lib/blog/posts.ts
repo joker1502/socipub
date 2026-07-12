@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
     slug: "postiz-alternative-open-source",
     title: "Postiz Alternative: Free Open Source Social Media Scheduler (2026)",
     description: "Looking for a Postiz alternative? Socipub is a free, open source social media scheduler that gives you unlimited posts, full API access, self-hosting, and zero per-seat pricing. Compare features, pricing, and migration steps.",
-    date: "2026-03-15",
+    date: "2026-07-01",
     readTime: "6 min read",
     tags: ["alternatives", "open-source", "comparison", "postiz"],
     content: `
@@ -108,7 +108,7 @@ Ready to leave Postiz behind? [Try Socipub free](/sign-up) — no credit card, n
     slug: "buffer-alternative-open-source",
     title: "Buffer Alternative: Free & Open Source Social Media Scheduler (2026 Review)",
     description: "Buffer's free plan limits you to 3 channels and 30 posts. Socipub is the open source Buffer alternative offering self-hosting, AI scheduling, cross-platform posting, and no per-seat pricing. Full comparison included.",
-    date: "2026-03-20",
+    date: "2026-07-03",
     readTime: "7 min read",
     tags: ["alternatives", "open-source", "comparison", "buffer"],
     content: `
@@ -210,7 +210,7 @@ Socipub is the best open source Buffer alternative for creators and teams who wa
     slug: "schedule-twitter-linkedin-one-click",
     title: "How to Schedule Posts to Twitter/X and LinkedIn Simultaneously (2026 Guide)",
     description: "Step-by-step guide to scheduling cross-platform posts on Twitter/X and LinkedIn at the same time. Learn how to save hours each week with Socipub's multi-platform scheduler, including character optimization and AI-powered rewriting.",
-    date: "2026-03-25",
+    date: "2026-07-06",
     readTime: "5 min read",
     tags: ["tutorial", "scheduling", "twitter", "linkedin", "guide"],
     content: `
@@ -346,7 +346,7 @@ Socipub's **[Publishing Queue](/scheduling)** takes batch scheduling further:
     slug: "hootsuite-free-alternative",
     title: "Hootsuite Free Alternative: Open Source Social Media Scheduler (2026 Comparison)",
     description: "Hootsuite's free plan limits you to 2 users and 5 social accounts. Socipub offers a free open source alternative with self-hosting, unlimited scheduling, and no hidden limits. Compare features, pricing, and make the switch.",
-    date: "2026-04-01",
+    date: "2026-07-08",
     readTime: "6 min read",
     tags: ["alternatives", "comparison", "hootsuite", "open-source"],
     content: `
@@ -455,7 +455,7 @@ The math is simple: Hootsuite Pro costs **$1,188/year**. Socipub Pro costs **$22
     slug: "later-com-competitor",
     title: "Later.com Alternative: Open Source Social Media Scheduler with Twitter & LinkedIn Support",
     description: "Later.com focuses on Instagram and misses Twitter/LinkedIn. Socipub is the open source alternative that covers all platforms, offers AI scheduling, self-hosting, and costs less. Detailed feature comparison and migration guide.",
-    date: "2026-04-08",
+    date: "2026-07-10",
     readTime: "6 min read",
     tags: ["alternatives", "comparison", "later", "open-source"],
     content: `
@@ -568,7 +568,7 @@ Ready to add Twitter and LinkedIn scheduling to your workflow? [Create your free
     slug: "gdpr-compliant-social-media-tool",
     title: "GDPR Compliant Social Media Scheduler: Open Source with EU Data Hosting (2026)",
     description: "Need a GDPR compliant social media scheduler? Socipub offers EU data hosting, open source transparency, self-hosting for complete data control, and enterprise-grade encryption. Built for privacy-conscious creators and teams.",
-    date: "2026-04-15",
+    date: "2026-07-12",
     readTime: "5 min read",
     tags: ["security", "gdpr", "compliance", "privacy", "open-source"],
     content: `
