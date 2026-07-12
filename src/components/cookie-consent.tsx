@@ -8,8 +8,8 @@ export function CookieConsent() {
 
   useEffect(() => {
     const consent = localStorage.getItem("cookie-consent")
-    if (!consent) setVisible(true)
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+    if (!consent) setVisible(true) // eslint-disable-line react-hooks/set-state-in-effect
+  }, [])
 
   const accept = () => {
     localStorage.setItem("cookie-consent", "accepted")

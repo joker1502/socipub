@@ -117,9 +117,29 @@ Each page targets specific keywords per the mapping table in the spec. Key pages
 ## Build & Deploy
 
 ```bash
-pnpm build      # production build
+pnpm build      # production build (48 routes, SSG + dynamic)
 pnpm dev        # development server
 pnpm lint       # ESLint
 ```
 
-The sitemap at `/sitemap.xml` auto-generates from all static pages, blog posts, and tag filter pages. Static pages are prerendered at build time (SSG); dashboard routes are dynamic.
+The sitemap at `/sitemap.xml` auto-generates from all static pages, blog posts, and tag filter pages. RSS feed at `/feed.xml`.
+
+### Deployment (Vercel)
+
+```bash
+vercel deploy --prod
+```
+
+Auto-deploys on push to `main` via GitHub webhook.
+
+## Project Status
+
+Current version: **v1.7** — see `git tag` for release history.
+
+| Step | Area | Status |
+|------|------|--------|
+| 1 | Performance (next/image, lint) | ✅ |
+| 2 | UX (skeleton, toast, error boundaries) | ✅ |
+| 3 | SEO (breadcrumb, schema, RSS) | ✅ |
+| 4 | Features (password reset, email verify, posts) | ✅ |
+| 5 | Code quality (cleanup, types, README) | ✅ |

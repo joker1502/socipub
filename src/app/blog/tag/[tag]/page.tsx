@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { blogPosts } from "@/lib/blog/posts"
-import { Calendar, Clock, Hash, X, ArrowLeft } from "lucide-react"
+import { Calendar, Clock, Hash, X } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { Button } from "@/components/ui/button"

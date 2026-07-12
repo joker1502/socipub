@@ -1,6 +1,6 @@
 import { createClient } from "@/lib/supabase/server"
 import { redirect } from "next/navigation"
-import { Calendar, Clock, CheckCircle2, Clock4, FileEdit, XCircle } from "lucide-react"
+import { Calendar, CheckCircle2, Clock4, FileEdit, XCircle } from "lucide-react"
 
 const statusIcon = {
   draft: FileEdit,

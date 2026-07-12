@@ -3,7 +3,6 @@
 import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-import Image from "next/image"
 import { ImagePlus, Check, X, Clock } from "lucide-react"
 
 const platforms = [
