@@ -6,6 +6,12 @@ import { useEffect } from "react";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
+function gtag(...args: unknown[]) {
+  if (typeof window === "undefined") return;
+  (window as any).dataLayer = (window as any).dataLayer || [];
+  (window as any).dataLayer.push(args);
+}
+
 export function GoogleAnalytics() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -13,9 +19,7 @@ export function GoogleAnalytics() {
   useEffect(() => {
     if (!GA_ID || typeof window === "undefined") return;
     const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : "");
-    window.gtag?.("config", GA_ID, {
-      page_path: url,
-    });
+    gtag("config", GA_ID, { page_path: url });
   }, [pathname, searchParams]);
 
   if (!GA_ID) return null;
