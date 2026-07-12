@@ -94,15 +94,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             )}
 
             <div className="min-w-0 flex-1">
-              <div className="flex flex-wrap gap-2 mb-4">
-                {post.tags.map((tag) => (
-                  <Link key={tag} href={`/blog/tag/${tag}`} className="inline-flex items-center gap-1 rounded-full bg-muted px-2.5 py-0.5 text-xs text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors">
-                    <Hash className="size-3" />
-                    {tag}
-                  </Link>
-                ))}
-              </div>
-
               <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">{post.title}</h1>
 
               <div className="mt-4 flex items-center gap-4 text-sm text-muted-foreground">
@@ -112,6 +103,15 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
               <div className="mt-10">
                 <MarkdownContent content={post.content} />
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-2">
+                {post.tags.map((tag) => (
+                  <Link key={tag} href={`/blog/tag/${tag}`} className="inline-flex items-center gap-1 rounded-full bg-muted px-2.5 py-0.5 text-xs text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors">
+                    <Hash className="size-3" />
+                    {tag}
+                  </Link>
+                ))}
               </div>
 
               {/* Related posts */}

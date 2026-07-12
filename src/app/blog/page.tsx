@@ -38,14 +38,6 @@ export default function BlogPage() {
           <div className="mt-10 grid gap-8">
             {blogPosts.map((post) => (
               <article key={post.slug} className="group border-b pb-8">
-                <div className="flex flex-wrap gap-1.5 mb-2">
-                  {post.tags.map((tag) => (
-                    <Link key={tag} href={`/blog/tag/${tag}`} className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-xs text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors">
-                      <Hash className="size-2.5" />
-                      {tag}
-                    </Link>
-                  ))}
-                </div>
                 <Link href={`/blog/${post.slug}`} className="block space-y-2">
                   <h2 className="text-xl font-semibold transition-colors group-hover:text-brand">
                     {post.title}
@@ -62,6 +54,14 @@ export default function BlogPage() {
                     </span>
                   </div>
                 </Link>
+                <div className="flex flex-wrap gap-1.5 mt-3">
+                  {post.tags.map((tag) => (
+                    <Link key={tag} href={`/blog/tag/${tag}`} className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-xs text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors">
+                      <Hash className="size-2.5" />
+                      {tag}
+                    </Link>
+                  ))}
+                </div>
               </article>
             ))}
           </div>
