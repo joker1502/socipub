@@ -59,7 +59,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </Link>
 
           <div className="flex gap-10">
-            {/* TOC — sidebar */}
+            {/* TOC - sidebar */}
             {headings.length > 0 && (
               <aside className="hidden w-56 shrink-0 lg:block">
                 <div className="sticky top-24 space-y-2">

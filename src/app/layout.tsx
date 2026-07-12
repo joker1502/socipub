@@ -11,16 +11,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Socipub - Open Source Social Media Scheduler",
+  title: "Socipub - Social Media Scheduler",
   description:
-    "Socipub is a free, open source social media scheduler and the ultimate social media tool for indie hackers. Self-hosted or cloud — schedule posts to Twitter, LinkedIn & more.",
+    "Schedule posts to Twitter, LinkedIn and more with Socipub, the open source social media scheduler.",
   icons: {
     icon: "/logo.svg",
   },
   openGraph: {
-    title: "Socipub - Open Source Social Media Scheduler",
+    title: "Socipub - Social Media Scheduler",
     description:
-      "The ultimate social media tool for indie hackers. Self-hosted social media scheduler — deploy in minutes. Schedule posts to Twitter, LinkedIn & more.",
+      "Schedule posts to Twitter, LinkedIn and more with Socipub, the open source social media scheduler.",
   },
 };
 

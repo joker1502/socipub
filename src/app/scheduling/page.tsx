@@ -19,7 +19,7 @@ export default function SchedulingPage() {
             <CalendarClock className="mx-auto size-12 text-brand" />
             <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">Lightweight Social Media Scheduler</h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              Schedule posts at the perfect time with AI-powered suggestions. A visual calendar, bulk import, and automatic queue — all in a lightweight package with no bloatware.
+              Schedule posts at the perfect time with AI-powered suggestions. A visual calendar, bulk import, and automatic queue - all in a lightweight package with no bloatware.
             </p>
           </div>
         </section>
@@ -32,7 +32,7 @@ export default function SchedulingPage() {
                 { icon: Calendar, title: "Drag & Drop Calendar", desc: "A visual month view that shows all your scheduled posts at a glance. Drag posts between days to reschedule. The current day is highlighted for easy orientation." },
                 { icon: Zap, title: "Bulk Scheduling", desc: "Import posts from a CSV file and schedule them in bulk. Plan an entire month of content in a single session. Perfect for content batching workflows." },
                 { icon: Clock, title: "Automatic Publish Queue", desc: "The background queue processes scheduled posts automatically, even when you are offline. Reliable delivery with built-in retry logic for failed publishes." },
-                { icon: Edit3, title: "Platform-Aware Limits", desc: "Each platform has different character limits — Twitter at 280, LinkedIn at 3,000. The editor warns you when approaching limits and prevents over-limit publishes." },
+                { icon: Edit3, title: "Platform-Aware Limits", desc: "Each platform has different character limits - Twitter at 280, LinkedIn at 3,000. The editor warns you when approaching limits and prevents over-limit publishes." },
                 { icon: FileText, title: "Draft Management", desc: "Save unfinished posts as drafts and come back later. Drafts are preserved with their platform selections and images intact." },
               ].map((item) => (
                 <div key={item.title} className="rounded-xl border bg-card p-6 transition-all hover:shadow-soft">
@@ -73,10 +73,10 @@ export default function SchedulingPage() {
                 <h3 className="text-lg font-semibold">Why Choose a Lightweight Scheduler?</h3>
                 <ul className="mt-4 space-y-3">
                   {[
-                    "Faster to learn — no enterprise bloatware",
-                    "Lower cost — free to start, affordable to scale",
-                    "Open source — full control over your data",
-                    "Self-host option — deploy on your own infrastructure",
+                    "Faster to learn - no enterprise bloatware",
+                    "Lower cost - free to start, affordable to scale",
+                    "Open source - full control over your data",
+                    "Self-host option - deploy on your own infrastructure",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
                       <span className="mt-0.5 size-1.5 shrink-0 rounded-full bg-brand" />

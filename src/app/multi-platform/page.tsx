@@ -47,7 +47,7 @@ export default function MultiPlatformPage() {
               <div className="rounded-xl border bg-card p-8">
                 <h3 className="text-lg font-semibold">Single User? No Problem</h3>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                  Socipub is designed for solo creators first. The Free plan gives you 5 posts per month on 2 platforms — enough to maintain an active presence. When you need more, the Pro plan unlocks unlimited posts and all platforms.
+                  Socipub is designed for solo creators first. The Free plan gives you 5 posts per month on 2 platforms - enough to maintain an active presence. When you need more, the Pro plan unlocks unlimited posts and all platforms.
                 </p>
                 <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
                   Need to bring in teammates? The Team plan adds 5 seats, bulk CSV import, priority support, and API access. Your data and scheduled posts transfer seamlessly when you upgrade.

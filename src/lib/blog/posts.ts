@@ -17,7 +17,7 @@ const posts: BlogPost[] = [
     readTime: "6 min read",
     tags: ["alternatives", "open-source", "comparison", "postiz"],
     content: `
-Postiz has positioned itself as an all-in-one social media management platform, but its pricing model — charging per seat and per platform — quickly becomes expensive for solo creators and growing teams. Socipub offers a radically different approach: open source, self-hostable, and free to start.
+Postiz has positioned itself as an all-in-one social media management platform, but its pricing model - charging per seat and per platform - quickly becomes expensive for solo creators and growing teams. Socipub offers a radically different approach: open source, self-hostable, and free to start.
 
 This guide compares Postiz vs Socipub across pricing, features, data privacy, and flexibility, so you can decide which platform fits your workflow.
 
@@ -43,9 +43,9 @@ This guide compares Postiz vs Socipub across pricing, features, data privacy, an
 
 Postiz charges per social profile on most plans:
 
-- **Starter ($24/mo)** — 1 user, 3 profiles, 10 posts/profile
-- **Agency ($99/mo)** — 2 users, 25 profiles
-- **Agency+ ($199/mo)** — 3 users, 50 profiles
+- **Starter ($24/mo)** - 1 user, 3 profiles, 10 posts/profile
+- **Agency ($99/mo)** - 2 users, 25 profiles
+- **Agency+ ($199/mo)** - 3 users, 50 profiles
 
 For a solo creator managing Twitter + LinkedIn + a brand account, you're looking at $24-49/mo. A two-person team easily hits $99/mo.
 
@@ -59,7 +59,7 @@ Socipub is fully open source (MIT). You can [deploy it on your own server](/feat
 
 ### 3. Limited Free Tier
 
-Postiz's free tier allows 10 posts per month across 3 profiles. That's barely enough for a week of active posting. Socipub's free tier is smaller (5 posts/mo) but has **no time limit** and no forced upgrade prompts — use it as long as you need.
+Postiz's free tier allows 10 posts per month across 3 profiles. That's barely enough for a week of active posting. Socipub's free tier is smaller (5 posts/mo) but has **no time limit** and no forced upgrade prompts - use it as long as you need.
 
 ## Migration Guide: Moving from Postiz to Socipub
 
@@ -69,7 +69,7 @@ Switching is straightforward and takes under 30 minutes:
 Go to Postiz Dashboard → Settings → Export Data. Download your scheduled posts and analytics.
 
 **Step 2: Create your Socipub account**
-[Sign up for free](/sign-up) — no credit card required.
+[Sign up for free](/sign-up) - no credit card required.
 
 **Step 3: Connect your social accounts**
 Link Twitter/X and LinkedIn in the Accounts page. Each OAuth connection is secure and revocable.
@@ -82,11 +82,11 @@ Once your Socipub setup is verified, cancel your Postiz subscription.
 
 ## What You Gain by Switching
 
-- **Full data ownership** — Self-host or choose EU hosting
-- **Unlimited posting** — No per-platform caps on Pro
-- **AI-powered scheduling** — Optimal time suggestions based on your audience
-- **Transparent development** — Open source means you can request features, contribute code, or audit security
-- **Lower cost** — Save 50-80% compared to Postiz
+- **Full data ownership** - Self-host or choose EU hosting
+- **Unlimited posting** - No per-platform caps on Pro
+- **AI-powered scheduling** - Optimal time suggestions based on your audience
+- **Transparent development** - Open source means you can request features, contribute code, or audit security
+- **Lower cost** - Save 50-80% compared to Postiz
 
 ## Who Should Switch?
 
@@ -97,7 +97,7 @@ Once your Socipub setup is verified, cancel your Postiz subscription.
 
 ## Get Started
 
-Ready to leave Postiz behind? [Try Socipub free](/sign-up) — no credit card, no time limit. Or [explore the full feature set](/features) to see how it compares.
+Ready to leave Postiz behind? [Try Socipub free](/sign-up) - no credit card, no time limit. Or [explore the full feature set](/features) to see how it compares.
 
 <div class="prose-notice">
 <strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and contribute to the roadmap.
@@ -112,7 +112,7 @@ Ready to leave Postiz behind? [Try Socipub free](/sign-up) — no credit card, n
     readTime: "7 min read",
     tags: ["alternatives", "open-source", "comparison", "buffer"],
     content: `
-Buffer has been a staple in social media scheduling for over a decade. It's reliable, well-designed, and widely used — but its pricing has crept up, and the free plan has become increasingly restrictive. For creators and small teams looking for more control, Socipub offers a compelling open source alternative.
+Buffer has been a staple in social media scheduling for over a decade. It's reliable, well-designed, and widely used - but its pricing has crept up, and the free plan has become increasingly restrictive. For creators and small teams looking for more control, Socipub offers a compelling open source alternative.
 
 This in-depth comparison covers every aspect: pricing, features, platform support, data privacy, and exactly how to migrate.
 
@@ -149,10 +149,10 @@ For a 3-person team managing 6 platforms: Buffer costs $60+/mo vs Socipub at $49
 ### Hidden Costs
 
 Buffer also charges extra for:
-- **AI Assistant** — Only on paid plans
-- **Canva integration** — Requires Team plan
-- **Analytics** — Basic analytics only on paid plans
-- **Custom URL** — Not available on free plan
+- **AI Assistant** - Only on paid plans
+- **Canva integration** - Requires Team plan
+- **Analytics** - Basic analytics only on paid plans
+- **Custom URL** - Not available on free plan
 
 Socipub includes all core features across all paid tiers.
 
@@ -167,10 +167,10 @@ Buffer still makes sense if:
 
 ## When to Switch to Socipub
 
-✅ **You manage multiple platforms** — Unlimited channels on Pro
-✅ **You want self-hosting** — Full data control, no third-party access
-✅ **You're cost-conscious** — Lower pricing, no per-channel fees
-✅ **You want open source transparency** — Audit the code, contribute features
+✅ **You manage multiple platforms** - Unlimited channels on Pro
+✅ **You want self-hosting** - Full data control, no third-party access
+✅ **You're cost-conscious** - Lower pricing, no per-channel fees
+✅ **You want open source transparency** - Audit the code, contribute features
 
 ## How to Migrate from Buffer to Socipub
 
@@ -191,15 +191,15 @@ Run both tools in parallel for a week. Once you're confident in Socipub's workfl
 
 ## Beyond Scheduling: Additional Socipub Features
 
-- **AI Rewrite** — Repurpose content for different platforms
-- **Multi-platform posting** — One post to Twitter + LinkedIn simultaneously
-- **Publishing queue** — Set and forget your content calendar
-- **Self-hosting** — Deploy via Docker for complete data sovereignty
-- **GDPR compliance** — EU hosting available
+- **AI Rewrite** - Repurpose content for different platforms
+- **Multi-platform posting** - One post to Twitter + LinkedIn simultaneously
+- **Publishing queue** - Set and forget your content calendar
+- **Self-hosting** - Deploy via Docker for complete data sovereignty
+- **GDPR compliance** - EU hosting available
 
 ## The Verdict
 
-Socipub is the best open source Buffer alternative for creators and teams who want more control, lower costs, and transparent development. If Buffer's per-channel pricing frustrates you, or you've been wanting to explore self-hosting, [start with Socipub's free plan](/sign-up) — no credit card needed.
+Socipub is the best open source Buffer alternative for creators and teams who want more control, lower costs, and transparent development. If Buffer's per-channel pricing frustrates you, or you've been wanting to explore self-hosting, [start with Socipub's free plan](/sign-up) - no credit card needed.
 
 <div class="prose-notice">
 <strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and contribute to the roadmap.
@@ -216,7 +216,7 @@ Socipub is the best open source Buffer alternative for creators and teams who wa
     content: `
 Posting the same update to Twitter and LinkedIn separately is one of the biggest time-wasters in social media management. You write the content twice, adjust formatting twice, and schedule twice. Multiplied across a week of content, that's hours of redundant work.
 
-Socipub solves this with **multi-platform scheduling** — write once, publish to Twitter/X and LinkedIn simultaneously.
+Socipub solves this with **multi-platform scheduling** - write once, publish to Twitter/X and LinkedIn simultaneously.
 
 ## Why Cross-Platform Scheduling Matters
 
@@ -225,7 +225,7 @@ Socipub solves this with **multi-platform scheduling** — write once, publish t
 | Manual (separate) | 8-10 min | 80-100 min | ~6 hours |
 | Socipub (simultaneous) | 3-4 min | 30-40 min | ~2 hours |
 
-**Time saved: ~4 hours/month** — time you can spend creating better content.
+**Time saved: ~4 hours/month** - time you can spend creating better content.
 
 ## Step-by-Step: Schedule to Twitter and LinkedIn at Once
 
@@ -241,7 +241,7 @@ Socipub solves this with **multi-platform scheduling** — write once, publish t
 3. Click **Connect Twitter/X** → Authorize via OAuth
 4. Click **Connect LinkedIn** → Authorize via OAuth
 
-Each connection uses secure OAuth 2.0 — Socipub never sees your social media passwords.
+Each connection uses secure OAuth 2.0 - Socipub never sees your social media passwords.
 
 ![Socipub accounts dashboard showing connected Twitter and LinkedIn accounts]
 
@@ -249,11 +249,11 @@ Each connection uses secure OAuth 2.0 — Socipub never sees your social media p
 
 Go to **Create Post** in the sidebar. You'll see a clean editor with:
 
-- **Content field** — Write your post
-- **Platform selector** — Choose which accounts to publish to
-- **Character counter** — Real-time limits per platform
-- **Media upload** — Images and links
-- **AI tools** — Rewrite, translate, or optimize
+- **Content field** - Write your post
+- **Platform selector** - Choose which accounts to publish to
+- **Character counter** - Real-time limits per platform
+- **Media upload** - Images and links
+- **AI tools** - Rewrite, translate, or optimize
 
 ### Step 3: Select Multiple Platforms
 
@@ -282,8 +282,8 @@ The character counter updates dynamically, warning you if content exceeds any pl
 
 Two options:
 
-- **Publish Now** — Posts go live immediately on both platforms
-- **Schedule** — Choose a date and time. Socipub will deliver the post automatically, even if you're offline
+- **Publish Now** - Posts go live immediately on both platforms
+- **Schedule** - Choose a date and time. Socipub will deliver the post automatically, even if you're offline
 
 For batch scheduling, use the **[Calendar View](/scheduling)** to drag and drop posts across your month.
 
@@ -312,17 +312,17 @@ Socipub's AI analyzes your past engagement to suggest personalized optimal times
 
 The most efficient workflow:
 
-1. **Block 1 hour on Monday** — Plan all posts for the week
-2. **Write in the editor** — Use Socipub's Create Post page
-3. **Schedule everything** — Posts auto-publish throughout the week
-4. **Monitor and engage** — Respond to comments during active hours
+1. **Block 1 hour on Monday** - Plan all posts for the week
+2. **Write in the editor** - Use Socipub's Create Post page
+3. **Schedule everything** - Posts auto-publish throughout the week
+4. **Monitor and engage** - Respond to comments during active hours
 
 ## Common Pitfalls to Avoid
 
-❌ **Posting identical text** — Each platform has different audience expectations
-❌ **Ignoring character limits** — Always check Twitter's 280-char limit before posting
-❌ **Posting at the wrong time** — LinkedIn engagement drops sharply after 5 PM
-❌ **Not including visuals** — Tweets with images get 2x more engagement
+❌ **Posting identical text** - Each platform has different audience expectations
+❌ **Ignoring character limits** - Always check Twitter's 280-char limit before posting
+❌ **Posting at the wrong time** - LinkedIn engagement drops sharply after 5 PM
+❌ **Not including visuals** - Tweets with images get 2x more engagement
 
 ## Automate Your Entire Workflow
 
@@ -335,7 +335,7 @@ Socipub's **[Publishing Queue](/scheduling)** takes batch scheduling further:
 
 ## Ready to Save Hours Each Week?
 
-[Start scheduling with Socipub free](/sign-up) — connect Twitter and LinkedIn, write your first cross-platform post in under 2 minutes. No credit card needed.
+[Start scheduling with Socipub free](/sign-up) - connect Twitter and LinkedIn, write your first cross-platform post in under 2 minutes. No credit card needed.
 
 <div class="prose-notice">
 <strong>Pro tip:</strong> Use the AI Rewrite feature to adapt one piece of content for both platforms in seconds. It's included in the Free plan.
@@ -350,7 +350,7 @@ Socipub's **[Publishing Queue](/scheduling)** takes batch scheduling further:
     readTime: "6 min read",
     tags: ["alternatives", "comparison", "hootsuite", "open-source"],
     content: `
-Hootsuite is one of the most recognizable names in social media management. But as the platform has matured, its pricing has grown increasingly complex — and expensive. The free plan is barely usable for active creators, and paid plans start at $99/month for features that many indie developers and small teams don't need.
+Hootsuite is one of the most recognizable names in social media management. But as the platform has matured, its pricing has grown increasingly complex - and expensive. The free plan is barely usable for active creators, and paid plans start at $99/month for features that many indie developers and small teams don't need.
 
 Socipub offers a fundamentally different approach: open source, self-hostable, and with transparent pricing. Here's a detailed comparison.
 
@@ -373,27 +373,27 @@ Socipub offers a fundamentally different approach: open source, self-hostable, a
 
 Hootsuite's free tier looks generous on paper (5 accounts, 30 posts) but has critical limitations:
 
-- **No analytics** — No way to measure what's working
-- **No scheduling calendar** — No drag-and-drop, no visual overview
-- **Hootsuite branding** — "Published with Hootsuite" on all posts
-- **No team collaboration** — Single user only
-- **No bulk scheduling** — Must schedule posts one at a time
+- **No analytics** - No way to measure what's working
+- **No scheduling calendar** - No drag-and-drop, no visual overview
+- **Hootsuite branding** - "Published with Hootsuite" on all posts
+- **No team collaboration** - Single user only
+- **No bulk scheduling** - Must schedule posts one at a time
 
-For anyone serious about social media growth, the free plan is a trial — not a sustainable tool. The jump to $99/mo for basic professional features is steep.
+For anyone serious about social media growth, the free plan is a trial - not a sustainable tool. The jump to $99/mo for basic professional features is steep.
 
 ## Socipub Free vs Hootsuite Free: Honest Comparison
 
 **Where Hootsuite wins:**
-- **5 accounts vs 2** — If you need 3-5 social accounts immediately, Hootsuite's free tier covers more
-- **30 posts vs 5** — Higher post volume on free tier
+- **5 accounts vs 2** - If you need 3-5 social accounts immediately, Hootsuite's free tier covers more
+- **30 posts vs 5** - Higher post volume on free tier
 
 **Where Socipub wins:**
-- **Calendar view included** — Visual drag-and-drop scheduling
-- **No branding** — No "Published with Socipub" labels
-- **No time limit** — Use free tier indefinitely with no pressure
-- **Open source** — Full code transparency
-- **Self-hosting** — Run your own instance for free
-- **EU hosting available** — GDPR-friendly
+- **Calendar view included** - Visual drag-and-drop scheduling
+- **No branding** - No "Published with Socipub" labels
+- **No time limit** - Use free tier indefinitely with no pressure
+- **Open source** - Full code transparency
+- **Self-hosting** - Run your own instance for free
+- **EU hosting available** - GDPR-friendly
 
 ## The Hidden Cost of Hootsuite
 
@@ -407,13 +407,13 @@ Hootsuite's Professional plan at $99/mo is just the beginning:
 | Canva Integration | Add-on pricing |
 | Custom Analytics Reports | Add-on pricing |
 
-Socipub's Team plan ($49/mo) includes 3 users, unlimited posts, and all features — no add-ons, no surprise fees.
+Socipub's Team plan ($49/mo) includes 3 users, unlimited posts, and all features - no add-ons, no surprise fees.
 
 ## Migration Strategy
 
 ### If You're on Hootsuite Free
 
-1. [Sign up for Socipub Free](/sign-up) — keep both running in parallel
+1. [Sign up for Socipub Free](/sign-up) - keep both running in parallel
 2. Connect your primary 2 platforms (Twitter + LinkedIn)
 3. Start scheduling your most important content on Socipub
 4. Let the Hootsuite free plan expire or repurpose it for additional channels
@@ -425,26 +425,26 @@ Socipub's Team plan ($49/mo) includes 3 users, unlimited posts, and all features
 3. Connect all your platforms
 4. Rebuild your queue using the [Calendar View](/scheduling)
 5. Run both tools for 1-2 weeks
-6. Cancel Hootsuite — save $80-100/mo
+6. Cancel Hootsuite - save $80-100/mo
 
 ## Who Should Switch?
 
-✅ **Indie hackers and solo founders** — $99/mo Hootsuite vs $19/mo Socipub Pro
-✅ **Small teams (1-3 people)** — Hootsuite Team at $249/mo vs Socipub Team at $49/mo
-✅ **Self-hosters** — Docker deployment for complete data control
-✅ **Budget-conscious creators** — Free tier with no time limit
+✅ **Indie hackers and solo founders** - $99/mo Hootsuite vs $19/mo Socipub Pro
+✅ **Small teams (1-3 people)** - Hootsuite Team at $249/mo vs Socipub Team at $49/mo
+✅ **Self-hosters** - Docker deployment for complete data control
+✅ **Budget-conscious creators** - Free tier with no time limit
 
 ## Who Should Stay on Hootsuite?
 
-❌ **Agencies with 10+ team members** — Hootsuite's enterprise tier offers robust workflow management
-❌ **Teams needing Instagram/TikTok/YouTube scheduling** — Socipub currently focuses on Twitter + LinkedIn
-❌ **Organizations with strict SOC2 compliance needs** — Hootsuite has enterprise certifications
+❌ **Agencies with 10+ team members** - Hootsuite's enterprise tier offers robust workflow management
+❌ **Teams needing Instagram/TikTok/YouTube scheduling** - Socipub currently focuses on Twitter + LinkedIn
+❌ **Organizations with strict SOC2 compliance needs** - Hootsuite has enterprise certifications
 
 ## Start Saving Today
 
 The math is simple: Hootsuite Pro costs **$1,188/year**. Socipub Pro costs **$228/year**. Same features, more flexibility, open source transparency.
 
-[Try Socipub free](/sign-up) — or [schedule a feature tour](/features) to see if it fits your workflow.
+[Try Socipub free](/sign-up) - or [schedule a feature tour](/features) to see if it fits your workflow.
 
 <div class="prose-notice">
 <strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and contribute to the roadmap.
@@ -513,17 +513,17 @@ Socipub supports **both Twitter/X and LinkedIn** out of the box, with the same s
 
 ## When Later.com Is the Right Choice
 
-✅ **Instagram-first strategy** — If 80%+ of your content is Instagram, Later's visual calendar and previews are best-in-class
-✅ **Visual content teams** — Later's collaboration features for image-heavy workflows are polished
-✅ **You don't need LinkedIn** — If LinkedIn isn't part of your strategy, Later works fine
+✅ **Instagram-first strategy** - If 80%+ of your content is Instagram, Later's visual calendar and previews are best-in-class
+✅ **Visual content teams** - Later's collaboration features for image-heavy workflows are polished
+✅ **You don't need LinkedIn** - If LinkedIn isn't part of your strategy, Later works fine
 
 ## When You Should Switch to Socipub
 
-✅ **You post to Twitter + LinkedIn regularly** — Socipub was built for this workflow
-✅ **You want self-hosting** — Full data ownership and privacy
-✅ **You're overpaying** — Later's $25/mo Starter is more expensive than Socipub Pro with fewer features
-✅ **You want open source** — Transparency, community contributions, no vendor lock-in
-✅ **You need EU data hosting** — GDPR compliance built in
+✅ **You post to Twitter + LinkedIn regularly** - Socipub was built for this workflow
+✅ **You want self-hosting** - Full data ownership and privacy
+✅ **You're overpaying** - Later's $25/mo Starter is more expensive than Socipub Pro with fewer features
+✅ **You want open source** - Transparency, community contributions, no vendor lock-in
+✅ **You need EU data hosting** - GDPR compliance built in
 
 ## Migration Guide
 
@@ -533,7 +533,7 @@ Socipub supports **both Twitter/X and LinkedIn** out of the box, with the same s
 Navigate to Later → Settings → Export. Download posts and analytics as CSV.
 
 **2. Register for Socipub**
-[Sign up for free](/sign-up) — Pro plan available when you need unlimited posts.
+[Sign up for free](/sign-up) - Pro plan available when you need unlimited posts.
 
 **3. Connect Your Non-Instagram Accounts**
 Link Twitter/X and LinkedIn. If you also manage Instagram, Later remains the better tool for that platform.
@@ -553,7 +553,7 @@ Many creators use **Later for Instagram + Socipub for Twitter/LinkedIn**:
 
 This hybrid approach gives you the best tool for each platform, with Socipub's free tier covering your Twitter and LinkedIn scheduling with no additional cost.
 
-As your Twitter/LinkedIn presence grows, upgrade to Socipub Pro ($19/mo) for unlimited posts and AI features. Total: $44/mo — still less than Later's Growth plan alone.
+As your Twitter/LinkedIn presence grows, upgrade to Socipub Pro ($19/mo) for unlimited posts and AI features. Total: $44/mo - still less than Later's Growth plan alone.
 
 ## Try Socipub Free
 
@@ -572,7 +572,7 @@ Ready to add Twitter and LinkedIn scheduling to your workflow? [Create your free
     readTime: "5 min read",
     tags: ["security", "gdpr", "compliance", "privacy", "open-source"],
     content: `
-Data privacy regulations like GDPR (General Data Protection Regulation) and the upcoming ePrivacy Regulation set strict requirements for how social media tools handle user data. Choosing a compliant scheduler isn't just about avoiding fines — it's about respecting your audience's privacy and building trust.
+Data privacy regulations like GDPR (General Data Protection Regulation) and the upcoming ePrivacy Regulation set strict requirements for how social media tools handle user data. Choosing a compliant scheduler isn't just about avoiding fines - it's about respecting your audience's privacy and building trust.
 
 Socipub was designed with privacy and compliance as core principles, not afterthoughts. Here's how it meets GDPR requirements and what sets it apart from proprietary alternatives.
 
@@ -598,7 +598,7 @@ Socipub was designed with privacy and compliance as core principles, not afterth
 
 **Socipub solution:** We offer **EU-based hosting** (Frankfurt, Germany) for all cloud customers. Your scheduling data, social media tokens, and analytics never leave the European Economic Area.
 
-For maximum control, [self-host Socipub](/features) on your own infrastructure — your data never touches third-party servers.
+For maximum control, [self-host Socipub](/features) on your own infrastructure - your data never touches third-party servers.
 
 ### 2. Encryption Standards
 
@@ -613,17 +613,17 @@ For maximum control, [self-host Socipub](/features) on your own infrastructure �
 
 GDPR Article 20 gives users the right to data portability. Socipub provides:
 
-- **Full data export** — Download all your posts, schedules, and analytics as JSON or CSV
-- **Account deletion** — Remove your account and all associated data permanently
-- **No proprietary formats** — Your content is stored in standard JSON, easily migratable to any other tool
+- **Full data export** - Download all your posts, schedules, and analytics as JSON or CSV
+- **Account deletion** - Remove your account and all associated data permanently
+- **No proprietary formats** - Your content is stored in standard JSON, easily migratable to any other tool
 
 ### 4. Open Source Transparency (Article 5 Compliance)
 
-GDPR Article 5 requires "transparency" in data processing. Proprietary tools provide a privacy policy — Socipub goes further:
+GDPR Article 5 requires "transparency" in data processing. Proprietary tools provide a privacy policy - Socipub goes further:
 
-- **Full source code auditability** — Every data handling path is visible in the [MIT-licensed source](https://github.com/joker1502/socipub)
-- **No hidden telemetry** — Self-hosted instances send zero data to Socipub servers
-- **Community oversight** — Security researchers and users can verify compliance claims
+- **Full source code auditability** - Every data handling path is visible in the [MIT-licensed source](https://github.com/joker1502/socipub)
+- **No hidden telemetry** - Self-hosted instances send zero data to Socipub servers
+- **Community oversight** - Security researchers and users can verify compliance claims
 
 ### 5. Cookie Consent
 
@@ -672,7 +672,7 @@ Socipub collects **only** the data necessary to function:
 
 - Social media OAuth tokens (never your passwords)
 - Scheduling preferences
-- Post content (obviously — it's a scheduler)
+- Post content (obviously - it's a scheduler)
 
 We do **not**:
 - Sell your data
@@ -682,16 +682,16 @@ We do **not**:
 
 ## Who Needs GDPR Compliance?
 
-✅ **EU-based creators and businesses** — Legal requirement
-✅ **B2B companies** — Many clients require GDPR-compliant vendors
-✅ **Privacy advocates** — Align your tools with your values
-✅ **Freelancers and agencies** — Avoid liability with non-compliant tools
+✅ **EU-based creators and businesses** - Legal requirement
+✅ **B2B companies** - Many clients require GDPR-compliant vendors
+✅ **Privacy advocates** - Align your tools with your values
+✅ **Freelancers and agencies** - Avoid liability with non-compliant tools
 
 ## Choose Compliant Scheduling
 
-Whether you use [Socipub Cloud with EU hosting](/pricing) or [deploy your own instance](/features), you get GDPR compliance built in — not as an expensive enterprise add-on.
+Whether you use [Socipub Cloud with EU hosting](/pricing) or [deploy your own instance](/features), you get GDPR compliance built in - not as an expensive enterprise add-on.
 
-[Start for free](/sign-up) — no credit card, no data stored outside your chosen region.
+[Start for free](/sign-up) - no credit card, no data stored outside your chosen region.
 
 <div class="prose-notice">
 <strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Audit the code on GitHub</a> and see for yourself.

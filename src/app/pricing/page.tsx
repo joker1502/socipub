@@ -32,7 +32,7 @@ export default function PricingPage() {
                 { q: "Is there a free trial for Pro?", a: "The Pro plan includes a 14-day free trial. No credit card required to start." },
                 { q: "What payment methods do you accept?", a: "All major credit cards, PayPal, Apple Pay, and Google Pay via Creem, our Merchant of Record." },
                 { q: "Can I self-host for free?", a: "Yes. Socipub is MIT licensed. You can self-host on your own infrastructure at no cost." },
-                { q: "What's the difference between monthly and yearly?", a: "Yearly billing gives you a 17% discount — 2 months free compared to monthly. Same features, same access." },
+                { q: "What's the difference between monthly and yearly?", a: "Yearly billing gives you a 17% discount - 2 months free compared to monthly. Same features, same access." },
               ].map((item) => (
                 <div key={item.q}>
                   <h3 className="font-medium">{item.q}</h3>

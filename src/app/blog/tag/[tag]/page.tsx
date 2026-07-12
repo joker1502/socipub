@@ -14,8 +14,8 @@ export function generateStaticParams() {
 
 export function generateMetadata({ params }: { params: Promise<{ tag: string }> }): Promise<Metadata> {
   return params.then(({ tag }) => ({
-    title: `Posts tagged "${tag}" — Socipub Blog`,
-    description: `Browse articles about ${tag} on Socipub — open source social media scheduling.`,
+    title: `Posts tagged "${tag}" - Socipub Blog`,
+    description: `Browse articles about ${tag} on Socipub - open source social media scheduling.`,
   }))
 }
 

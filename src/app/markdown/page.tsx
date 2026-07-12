@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, FileText, Code } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Markdown Social Media Tool — Write in Markdown, Publish Everywhere | Socipub",
+  title: "Markdown Social Media Tool - Write in Markdown, Publish Everywhere | Socipub",
   description: "Socipub is the Markdown social media tool for creators who want to write once and publish everywhere. Format with bold, italic, links, and lists, then post to Twitter, LinkedIn, and more.",
 }
 
@@ -19,7 +19,7 @@ export default function MarkdownPage() {
             <FileText className="mx-auto size-12 text-brand" />
             <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">Write in Markdown, Publish Everywhere</h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              Format your content with Markdown in the Socipub editor. Bold, italic, links, lists, and headings — write once, publish to every platform at once.
+              Format your content with Markdown in the Socipub editor. Bold, italic, links, lists, and headings - write once, publish to every platform at once.
             </p>
           </div>
         </section>
