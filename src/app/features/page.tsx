@@ -64,10 +64,20 @@ const faqSchema = {
   })),
 }
 
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Socipub",
+  url: "https://socipub.com",
+  logo: "https://socipub.com/logo.svg",
+  description: "Open source social media scheduler for indie hackers and solo creators.",
+}
+
 export default function FeaturesPage() {
   return (
     <div className="flex flex-col min-h-full">
       <SiteHeader />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <main className="flex-1">

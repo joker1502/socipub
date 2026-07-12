@@ -5,6 +5,7 @@ import { ArrowLeft, Calendar, Clock, Hash } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { MarkdownContent } from "@/components/markdown-content"
+import { Breadcrumb } from "@/components/breadcrumb"
 import type { Metadata } from "next"
 
 export function generateStaticParams() {
@@ -48,15 +49,26 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     .filter((p) => p.slug !== slug && p.tags.some((t) => post.tags.includes(t)))
     .slice(0, 3)
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://socipub.com" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://socipub.com/blog" },
+      { "@type": "ListItem", position: 3, name: post.title },
+    ],
+  }
+
   return (
     <div className="flex flex-col min-h-full">
       <SiteHeader />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <main className="flex-1">
         <article className="mx-auto max-w-5xl px-4 py-16">
-          <Link href="/blog" className="mb-8 inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground">
-            <ArrowLeft className="size-4" />
-            Back to blog
-          </Link>
+          <Breadcrumb items={[
+            { label: "Blog", href: "/blog" },
+            { label: post.title },
+          ]} />
 
           <div className="flex gap-10">
             {/* TOC - sidebar */}

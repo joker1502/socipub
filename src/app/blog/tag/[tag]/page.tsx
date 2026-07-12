@@ -5,6 +5,7 @@ import { Calendar, Clock, Hash, X, ArrowLeft } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { Button } from "@/components/ui/button"
+import { Breadcrumb } from "@/components/breadcrumb"
 import type { Metadata } from "next"
 
 export function generateStaticParams() {
@@ -30,10 +31,10 @@ export default async function TagPage({ params }: { params: Promise<{ tag: strin
       <SiteHeader />
       <main className="flex-1">
         <div className="mx-auto max-w-4xl px-4 py-16">
-          <Link href="/blog" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-8">
-            <ArrowLeft className="size-4" />
-            All posts
-          </Link>
+          <Breadcrumb items={[
+            { label: "Blog", href: "/blog" },
+            { label: tag },
+          ]} />
 
           <div className="flex items-center gap-3 mb-2">
             <h1 className="text-3xl font-bold tracking-tight capitalize">{tag}</h1>
