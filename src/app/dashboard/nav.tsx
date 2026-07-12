@@ -33,7 +33,7 @@ export function DashboardNav({
   return (
     <aside className="flex w-56 flex-col border-r bg-background">
       <div className="flex h-14 items-center gap-2 border-b px-4">
-        <Globe className="size-5 text-brand" />
+        <img src="/logo.svg" alt="" className="size-6" />
         <span className="font-bold">Socipub</span>
       </div>
       <nav className="flex-1 space-y-1 p-3">

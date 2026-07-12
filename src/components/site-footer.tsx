@@ -6,7 +6,10 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-4">
         <div className="grid gap-8 sm:grid-cols-3">
           <div>
-            <span className="text-lg font-bold">Socipub</span>
+            <div className="flex items-center gap-2">
+              <img src="/logo.svg" alt="" className="size-7" />
+              <span className="text-lg font-bold">Socipub</span>
+            </div>
             <p className="mt-2 text-sm text-muted-foreground">
               Open source social media scheduler. Schedule posts to Twitter, LinkedIn & more.
             </p>

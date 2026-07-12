@@ -8,8 +8,9 @@ import {
 } from "@/components/ui/accordion"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
+import { PricingContent } from "@/components/pricing-content"
 import {
-  CalendarClock, Globe, Users, ArrowRight, Check, BarChart3, Sparkles, Zap,
+  CalendarClock, Globe, Users, ArrowRight, BarChart3, Sparkles, Zap,
 } from "lucide-react"
 
 const features = [
@@ -19,12 +20,6 @@ const features = [
   { icon: Users, title: "Team Collaboration", description: "Invite team members, assign roles, and collaborate on content with shared workspaces." },
   { icon: Sparkles, title: "AI Content Assistant", description: "Rewrite, translate, and optimize your posts with AI. Keep your brand voice consistent everywhere." },
   { icon: Zap, title: "Bulk Import & API", description: "Import posts from CSV, schedule in bulk, and integrate via our REST API. Built for power users." },
-]
-
-const pricing = [
-  { name: "Free", price: "$0", period: "/mo", yearly: "", description: "For hobbyists trying out social media scheduling.", features: ["5 posts per month", "2 platforms", "Basic scheduling"], cta: "Get Started" },
-  { name: "Pro", price: "$19", period: "/mo", yearly: "$190/yr", description: "For solo creators who need unlimited scheduling.", features: ["Unlimited posts", "All platforms", "Scheduling + analytics", "AI credits included"], cta: "Start Free Trial", popular: true },
-  { name: "Team", price: "$49", period: "/mo", yearly: "$490/yr", description: "For agencies and small teams.", features: ["5 seats included", "Bulk import", "Priority support", "API access"], cta: "Contact Sales" },
 ]
 
 const faqs = [
@@ -185,53 +180,8 @@ export default function Home() {
                 Start free. Upgrade when you grow.
               </p>
             </div>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mx-auto max-w-5xl">
-              {pricing.map((plan) => (
-                <Card
-                  key={plan.name}
-                  className={`relative flex flex-col transition-all duration-200 hover:shadow-soft ${
-                    plan.popular ? "ring-2 ring-brand overflow-visible" : ""
-                  }`}
-                >
-                  {plan.popular && (
-                    <Badge className="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-brand text-primary-foreground">
-                      Most Popular
-                    </Badge>
-                  )}
-                  <CardContent className="flex flex-1 flex-col gap-6 pt-8">
-                    <div>
-                      <h3 className="text-lg font-semibold">{plan.name}</h3>
-                      <p className="mt-1 text-sm text-muted-foreground">{plan.description}</p>
-                    </div>
-                    <div className="flex items-baseline gap-1">
-                      <span className="text-4xl font-bold">{plan.price}</span>
-                      <span className="text-sm text-muted-foreground">{plan.period}</span>
-                    </div>
-                    {plan.yearly && <p className="text-xs text-muted-foreground">Or {plan.yearly} (save 17%)</p>}
-                    <ul className="flex flex-col gap-2">
-                      {plan.features.map((f) => (
-                        <li key={f} className="flex items-center gap-2 text-sm">
-                          <Check className="size-4 shrink-0 text-success" />
-                          {f}
-                        </li>
-                      ))}
-                    </ul>
-                    <a
-                      href={plan.name === "Free" ? "/sign-up" : `/api/creem/checkout?plan=${plan.name.toUpperCase()}_MONTHLY`}
-                      className="mt-auto w-full"
-                    >
-                      <Button
-                        variant={plan.popular ? "default" : "outline"}
-                        className="w-full"
-                      >
-                        {plan.cta}
-                      </Button>
-                    </a>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
           </div>
+          <PricingContent />
         </section>
 
         {/* FAQ */}
