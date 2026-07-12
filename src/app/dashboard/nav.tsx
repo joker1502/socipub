@@ -4,7 +4,8 @@ import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
 import { cn } from "@/lib/utils"
 import type { LucideIcon } from "lucide-react"
-import { Globe, LogOut } from "lucide-react"
+import Image from "next/image"
+import { LogOut } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
 import { Button } from "@/components/ui/button"
 
@@ -33,7 +34,7 @@ export function DashboardNav({
   return (
     <aside className="flex w-56 flex-col border-r bg-background">
       <div className="flex h-14 items-center gap-2 border-b px-4">
-        <img src="/logo.svg" alt="" className="size-6" />
+        <Image src="/logo.svg" alt="" width={24} height={24} className="size-6" unoptimized />
         <span className="font-bold">Socipub</span>
       </div>
       <nav className="flex-1 space-y-1 p-3">

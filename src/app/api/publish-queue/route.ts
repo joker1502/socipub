@@ -52,7 +52,7 @@ export async function GET() {
   return NextResponse.json({ processed })
 }
 
-async function publishToPlatform(account: any, content: string): Promise<{ ok: boolean }> {
+async function publishToPlatform(account: { platform: string; access_token: string; platform_account_id: string }, content: string): Promise<{ ok: boolean }> {
   if (account.platform === "twitter") {
     return publishToTwitter(account.access_token, content)
   }

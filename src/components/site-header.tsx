@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
@@ -23,7 +24,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
-          <img src="/logo.svg" alt="Socipub" className="size-7" />
+          <Image src="/logo.svg" alt="Socipub" width={28} height={28} className="size-7" unoptimized />
           <span className="text-lg font-bold">Socipub</span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium sm:flex">

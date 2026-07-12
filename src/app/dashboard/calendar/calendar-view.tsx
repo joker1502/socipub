@@ -29,7 +29,7 @@ export function CalendarView({ posts }: { posts: Post[] }) {
 
   const daysInMonth = new Date(year, month + 1, 0).getDate()
   const firstDayOfWeek = new Date(year, month, 1).getDay()
-  const lastDayOfWeek = new Date(year, month, daysInMonth).getDay()
+
 
   const prevMonth = () => setViewDate(new Date(year, month - 1, 1))
   const nextMonth = () => setViewDate(new Date(year, month + 1, 1))

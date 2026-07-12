@@ -184,6 +184,7 @@ export function PostEditor({ accounts, userId }: { accounts: Account[]; userId: 
           <div className="flex flex-wrap gap-3">
             {images.map((src, i) => (
               <div key={i} className="relative size-20 overflow-hidden rounded-lg border">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={src} alt="" className="size-full object-cover" />
                 <button
                   onClick={() => removeImage(i)}

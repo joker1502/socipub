@@ -9,7 +9,7 @@ export function CookieConsent() {
   useEffect(() => {
     const consent = localStorage.getItem("cookie-consent")
     if (!consent) setVisible(true)
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const accept = () => {
     localStorage.setItem("cookie-consent", "accepted")

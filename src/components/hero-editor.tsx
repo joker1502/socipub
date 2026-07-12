@@ -68,6 +68,7 @@ export function HeroEditor() {
           <div className="flex flex-wrap gap-2 border-t px-4 py-3">
             {images.map((src, i) => (
               <div key={i} className="relative size-16 overflow-hidden rounded-lg border">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={src} alt="" className="size-full object-cover" />
                 <button
                   onClick={() => removeImage(i)}

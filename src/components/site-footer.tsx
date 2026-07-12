@@ -1,3 +1,4 @@
+import Image from "next/image"
 import Link from "next/link"
 
 export function SiteFooter() {
@@ -7,7 +8,7 @@ export function SiteFooter() {
         <div className="grid gap-8 sm:grid-cols-3">
           <div>
             <div className="flex items-center gap-2">
-              <img src="/logo.svg" alt="" className="size-7" />
+              <Image src="/logo.svg" alt="" width={28} height={28} className="size-7" unoptimized />
               <span className="text-lg font-bold">Socipub</span>
             </div>
             <p className="mt-2 text-sm text-muted-foreground">

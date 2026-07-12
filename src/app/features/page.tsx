@@ -10,7 +10,7 @@ import {
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import {
-  CalendarClock, Globe, Users, ArrowRight, BarChart3, Sparkles, Zap, Check,
+  CalendarClock, Globe, Users, ArrowRight, BarChart3, Sparkles, Zap,
 } from "lucide-react"
 
 export const metadata: Metadata = {
