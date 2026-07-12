@@ -638,7 +638,7 @@ Socipub includes a built-in **[Cookie Consent](/privacy)** banner that:
 
 For organizations in regulated industries (healthcare, finance, legal), Socipub's self-hosting option is the most compliant path:
 
-```
+\`\`\`
 Your Server → Your Database → Your Backup
      ↓
 No third-party access to:
@@ -646,7 +646,7 @@ No third-party access to:
   - Scheduling data
   - Analytics
   - User accounts
-```
+\`\`\`
 
 Deploy with Docker in under 10 minutes:
 \`\`\`bash
