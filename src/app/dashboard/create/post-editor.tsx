@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils"
 import { createClient } from "@/lib/supabase/client"
 import { ImagePlus, Check, X, Loader2, Clock, Sparkles, Languages } from "lucide-react"
 import { useRouter } from "next/navigation"
+import { toast } from "sonner"
 
 type Account = {
   id: string
@@ -82,7 +83,11 @@ export function PostEditor({ accounts, userId }: { accounts: Account[]; userId: 
     setPublishing(true)
     const { error } = await insertPost("published", new Date().toISOString())
     setPublishing(false)
-    if (error) return
+    if (error) {
+      toast.error("Failed to publish post")
+      return
+    }
+    toast.success("Post published!")
     reset()
     router.refresh()
   }
@@ -92,20 +97,29 @@ export function PostEditor({ accounts, userId }: { accounts: Account[]; userId: 
     setPublishing(true)
     const { error } = await insertPost("scheduled")
     setPublishing(false)
-    if (error) return
+    if (error) {
+      toast.error("Failed to schedule post")
+      return
+    }
+    toast.success("Post scheduled!")
     reset()
     router.refresh()
   }
 
   const handleSaveDraft = async () => {
     const supabase = createClient()
-    await supabase.from("posts").insert({
+    const { error } = await supabase.from("posts").insert({
       user_id: userId,
       content,
       image_urls: images,
       platforms: Array.from(selectedPlatforms),
       status: "draft",
     })
+    if (error) {
+      toast.error("Failed to save draft")
+      return
+    }
+    toast.success("Draft saved")
     reset()
     router.refresh()
   }

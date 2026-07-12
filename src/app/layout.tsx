@@ -4,6 +4,7 @@ import "./globals.css";
 import { CookieConsent } from "@/components/cookie-consent";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { Suspense } from "react";
+import { Toaster } from "sonner";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -43,6 +44,7 @@ export default function RootLayout({
         <Suspense fallback={null}><GoogleAnalytics /></Suspense>
         {children}
         <CookieConsent />
+        <Toaster position="top-right" richColors closeButton />
       </body>
     </html>
   );
