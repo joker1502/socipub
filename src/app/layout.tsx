@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { CookieConsent } from "@/components/cookie-consent";
 import { GoogleAnalytics } from "@/components/google-analytics";
+import { Suspense } from "react";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -32,7 +33,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
-        <GoogleAnalytics />
+        <Suspense fallback={null}><GoogleAnalytics /></Suspense>
         {children}
         <CookieConsent />
       </body>
