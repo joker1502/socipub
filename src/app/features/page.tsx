@@ -203,7 +203,7 @@ export default function FeaturesPage() {
           <div className="mx-auto max-w-4xl px-4">
             <h2 className="text-2xl font-bold">Ready to start scheduling?</h2>
             <div className="mt-6 flex justify-center gap-3">
-              <a href="/sign-up" class="inline-flex items-center justify-center rounded-lg bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80">Get Started Free <ArrowRight className="ml-1 size-4" /></a>
+              <a href="/sign-up" className="inline-flex h-10 items-center justify-center rounded-lg bg-primary px-5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80">Get Started Free <ArrowRight className="ml-1 size-4" /></a>
               <a href="/pricing"><Button variant="outline" size="lg">View Pricing</Button></a>
             </div>
           </div>
