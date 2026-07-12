@@ -3,9 +3,10 @@ import { redirect } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
+import { MailCheck } from "lucide-react"
 
-
-export default async function SignIn() {
+export default async function SignIn(props: { searchParams?: Promise<{ verified?: string; error?: string }> }) {
+  const searchParams = await props.searchParams
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (user) redirect("/dashboard")
@@ -47,6 +48,22 @@ export default async function SignIn() {
       <SiteHeader />
       <main className="flex-1 flex items-center justify-center px-4 py-12">
         <div className="w-full max-w-sm space-y-6">
+          {searchParams?.verified === "check_email" && (
+            <div className="rounded-lg border border-success/20 bg-success/5 p-4 text-sm text-success flex items-start gap-3">
+              <MailCheck className="mt-0.5 size-5 shrink-0" />
+              <div>
+                <p className="font-medium">Check your email</p>
+                <p className="mt-1 text-muted-foreground">We sent a verification link. Please confirm your email before signing in.</p>
+              </div>
+            </div>
+          )}
+
+          {searchParams?.error && (
+            <div className="rounded-lg border border-danger/20 bg-danger/5 p-3 text-sm text-danger">
+              {searchParams.error}
+            </div>
+          )}
+
           <div className="text-center">
             <h1 className="text-2xl font-bold">Welcome back</h1>
             <p className="mt-1 text-sm text-muted-foreground">Sign in to your Socipub account</p>
@@ -68,9 +85,7 @@ export default async function SignIn() {
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 flex items-center">
-              <span className="w-full border-t" />
-            </div>
+            <div className="absolute inset-0 flex items-center"><span className="w-full border-t" /></div>
             <div className="relative flex justify-center text-xs uppercase">
               <span className="bg-background px-2 text-muted-foreground">Or continue with email</span>
             </div>
@@ -79,28 +94,18 @@ export default async function SignIn() {
           <form action={signInWithEmail} className="space-y-4">
             <div>
               <label htmlFor="email" className="block text-sm font-medium mb-1">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                placeholder="you@example.com"
-                className="w-full rounded-lg border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-brand/50"
-              />
+              <input id="email" name="email" type="email" required placeholder="you@example.com"
+                className="w-full rounded-lg border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-brand/50" />
             </div>
             <div>
               <label htmlFor="password" className="block text-sm font-medium mb-1">Password</label>
-              <input
-                id="password"
-                name="password"
-                type="password"
-                autoComplete="current-password"
-                required
-                placeholder="••••••••"
-                className="w-full rounded-lg border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-brand/50"
-              />
+              <input id="password" name="password" type="password" autoComplete="current-password" required placeholder="••••••••"
+                className="w-full rounded-lg border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-brand/50" />
             </div>
             <Button type="submit" className="w-full">Sign In</Button>
+            <p className="text-right text-xs">
+              <a href="/forgot-password" className="text-muted-foreground hover:text-foreground underline">Forgot password?</a>
+            </p>
           </form>
 
           <p className="text-center text-xs text-muted-foreground">

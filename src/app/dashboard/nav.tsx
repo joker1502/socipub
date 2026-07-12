@@ -2,10 +2,10 @@
 
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 import type { LucideIcon } from "lucide-react"
-import Image from "next/image"
-import { LogOut } from "lucide-react"
+import { LogOut, FileText } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
 import { Button } from "@/components/ui/button"
 

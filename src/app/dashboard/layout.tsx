@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { createClient } from "@/lib/supabase/server"
 import { redirect } from "next/navigation"
 import { DashboardNav } from "./nav"
-import { LayoutDashboard, Calendar, FileEdit, Settings, Users } from "lucide-react"
+import { LayoutDashboard, Calendar, FileEdit, Settings, Users, FileText } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Dashboard - Socipub",
@@ -12,6 +12,7 @@ const navItems = [
   { href: "/dashboard", label: "Overview", icon: LayoutDashboard },
   { href: "/dashboard/accounts", label: "Accounts", icon: Users },
   { href: "/dashboard/create", label: "Create Post", icon: FileEdit },
+  { href: "/dashboard/posts", label: "Posts", icon: FileText },
   { href: "/dashboard/calendar", label: "Calendar", icon: Calendar },
   { href: "/dashboard/settings", label: "Settings", icon: Settings },
 ]
