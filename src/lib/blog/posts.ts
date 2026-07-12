@@ -8,7 +8,7 @@ export type BlogPost = {
   content: string
 }
 
-export const blogPosts: BlogPost[] = [
+const posts: BlogPost[] = [
   {
     slug: "postiz-alternative-open-source",
     title: "Postiz Alternative: Free Open Source Social Media Scheduler (2026)",
@@ -699,3 +699,7 @@ Whether you use [Socipub Cloud with EU hosting](/pricing) or [deploy your own in
     `.trim(),
   },
 ]
+
+export const blogPosts: BlogPost[] = [...posts].sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+)

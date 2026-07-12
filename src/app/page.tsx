@@ -1,3 +1,5 @@
+import { createClient } from "@/lib/supabase/server"
+import { redirect } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import {
@@ -8,7 +10,6 @@ import {
 } from "@/components/ui/accordion"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
-import { PricingContent } from "@/components/pricing-content"
 import {
   CalendarClock, Globe, Users, ArrowRight, BarChart3, Sparkles, Zap,
 } from "lucide-react"
@@ -55,7 +56,10 @@ const faqSchema = {
   })),
 }
 
-export default function Home() {
+export default async function Home() {
+  const supabase = await createClient()
+  const { data: { user } } = await supabase.auth.getUser()
+  if (user) redirect("/dashboard")
   return (
     <div className="flex flex-col min-h-full">
       <SiteHeader />
@@ -169,23 +173,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Pricing */}
-        <section id="pricing" className="border-b py-20">
-          <div className="mx-auto max-w-6xl px-4">
-            <div className="mx-auto mb-12 max-w-2xl text-center">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                Simple, transparent pricing
-              </h2>
-              <p className="mt-4 text-muted-foreground">
-                Start free. Upgrade when you grow.
-              </p>
-            </div>
-          </div>
-          <PricingContent />
-        </section>
+
 
         {/* FAQ */}
-        <section id="faq" className="py-20">
+        <section id="faq" className="border-b py-20">
           <div className="mx-auto max-w-3xl px-4">
             <div className="mb-12 text-center">
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
