@@ -1,8 +1,14 @@
+import type { Metadata } from "next"
 import Link from "next/link"
 import { blogPosts } from "@/lib/blog/posts"
 import { Calendar, Clock, Hash } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
+
+export const metadata: Metadata = {
+  title: "Blog - Socipub",
+  description: "Tips, guides, and comparisons for social media scheduling. Open source alternatives to Buffer, Hootsuite, Postiz, and Later.",
+}
 
 export default function BlogPage() {
   const allTags = [...new Set(blogPosts.flatMap((p) => p.tags))].sort()

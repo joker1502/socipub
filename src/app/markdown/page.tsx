@@ -5,8 +5,12 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, FileText, Code } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Markdown Social Media Tool - Write in Markdown, Publish Everywhere | Socipub",
-  description: "Socipub is the Markdown social media tool for creators who want to write once and publish everywhere. Format with bold, italic, links, and lists, then post to Twitter, LinkedIn, and more.",
+  title: "Markdown Social Media Tool - Socipub",
+  description: "Write social media posts in Markdown. Format with bold, italic, links, and lists, then publish to Twitter, LinkedIn, and more.",
+  openGraph: {
+    title: "Markdown Social Media Tool - Socipub",
+    description: "Write once in Markdown, publish to Twitter, LinkedIn, and more.",
+  },
 }
 
 export default function MarkdownPage() {

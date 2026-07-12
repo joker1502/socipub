@@ -3,6 +3,7 @@
 import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 import { ImagePlus, Check, X, Clock } from "lucide-react"
 
 const platforms = [
@@ -16,7 +17,6 @@ export function HeroEditor() {
   const [images, setImages] = useState<string[]>([])
   const fileInputRef = useRef<HTMLInputElement>(null)
   const [mode, setMode] = useState<"now" | "schedule">("now")
-  const [scheduledAt] = useState("")
 
   const toggle = (id: string) => {
     setSelected((prev) => {
@@ -58,7 +58,7 @@ export function HeroEditor() {
             onChange={(e) => setContent(e.target.value)}
             placeholder="What would you like to share?"
             aria-label="Post content"
-            className="min-h-[180px] w-full resize-none bg-transparent p-4 text-sm outline-none"
+            className="min-h-[360px] w-full resize-none bg-transparent p-4 text-sm outline-none"
             onInput={(e) => {
               const el = e.currentTarget
               el.style.height = "auto"

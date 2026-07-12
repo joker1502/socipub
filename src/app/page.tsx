@@ -15,7 +15,7 @@ export default async function Home() {
       <main className="flex-1">
         <section className="mx-auto max-w-6xl px-4 py-8 sm:py-12 lg:py-16">
           <div className="mb-6 text-center">
-            <h1 className="text-2xl font-bold sm:text-3xl">Schedule Posts to Twitter, LinkedIn & More</h1>
+            <h1 className="text-2xl font-bold sm:text-3xl">Try Socipub - Social Media Scheduler</h1>
           </div>
           <HeroEditor />
         </section>

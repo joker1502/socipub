@@ -14,11 +14,11 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Open Source Social Media Scheduler - Cross-Platform Content Publisher | Socipub",
-  description: "Socipub is a free, open source social media scheduler and self-hosted social media scheduler. The ultimate social media tool for indie hackers. Schedule posts to Twitter, LinkedIn & more.",
+  title: "Open Source Social Media Scheduler - Socipub",
+  description: "Free, open source social media scheduler and cross-platform content publisher. For indie hackers and solo creators. Schedule posts to Twitter, LinkedIn & more.",
   openGraph: {
-    title: "Open Source Social Media Scheduler - Self-Hosted | Socipub",
-    description: "The ultimate social media tool for indie hackers. Self-hosted social media scheduler - deploy in minutes. Schedule posts to Twitter, LinkedIn & more.",
+    title: "Open Source Social Media Scheduler - Socipub",
+    description: "Free, open source social media scheduler. Self-host or cloud. Schedule posts to Twitter, LinkedIn & more.",
   },
 }
 

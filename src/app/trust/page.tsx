@@ -4,7 +4,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { Shield, Server, Lock, FileText, Download, Eye } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "GDPR Compliant Social Media Tool - Trust & Security | Socipub",
+  title: "GDPR Compliant Social Media Tool - Trust & Security - Socipub",
   description: "A GDPR compliant social media tool with EU data hosting, open source transparency, and enterprise-grade encryption. Socipub keeps your data safe.",
 }
 

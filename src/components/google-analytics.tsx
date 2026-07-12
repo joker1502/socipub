@@ -6,10 +6,16 @@ import { useEffect } from "react";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
+declare global {
+  interface Window {
+    dataLayer: unknown[][];
+  }
+}
+
 function gtag(...args: unknown[]) {
   if (typeof window === "undefined") return;
-  (window as any).dataLayer = (window as any).dataLayer || [];
-  (window as any).dataLayer.push(args);
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push(args);
 }
 
 export function GoogleAnalytics() {

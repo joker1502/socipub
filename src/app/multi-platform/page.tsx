@@ -5,8 +5,12 @@ import { Button } from "@/components/ui/button"
 import { Globe, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Multi-Platform Posting Tool: One Click to All Networks | Socipub",
-  description: "Socipub is a single-user social media scheduler with a team upgrade path. Publish to Twitter/X, LinkedIn, and more from one dashboard. Save hours every week.",
+  title: "Multi-Platform Posting Tool - Socipub",
+  description: "Single-user social media scheduler with team upgrade. Publish to Twitter/X, LinkedIn, and more from one dashboard.",
+  openGraph: {
+    title: "Multi-Platform Posting Tool - Socipub",
+    description: "Publish to Twitter/X, LinkedIn, and more from one dashboard.",
+  },
 }
 
 export default function MultiPlatformPage() {
@@ -54,7 +58,7 @@ export default function MultiPlatformPage() {
                 </p>
                 <div className="mt-6 flex gap-3">
                   <a href="/sign-up"><Button>Get Started <ArrowRight className="ml-1 size-4" /></Button></a>
-                  <a href="/#pricing"><Button variant="outline">See Plans</Button></a>
+                  <a href="/pricing"><Button variant="outline">See Plans</Button></a>
                 </div>
               </div>
             </div>

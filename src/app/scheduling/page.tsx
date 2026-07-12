@@ -5,8 +5,12 @@ import { Button } from "@/components/ui/button"
 import { CalendarClock, ArrowRight, Clock, Calendar, Zap, Brain, Edit3, FileText } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Lightweight Social Media Scheduler - No Bloatware | Socipub",
-  description: "Socipub is a lightweight social media scheduler with AI-powered timing suggestions, drag & drop calendar view, and bulk scheduling. No bloatware, just the tools you need.",
+  title: "Lightweight Social Media Scheduler - Socipub",
+  description: "Lightweight social media scheduler with AI-powered timing, drag & drop calendar, and bulk scheduling. No bloatware.",
+  openGraph: {
+    title: "Lightweight Social Media Scheduler - Socipub",
+    description: "AI-powered scheduling with drag & drop calendar. No bloatware.",
+  },
 }
 
 export default function SchedulingPage() {
@@ -94,7 +98,7 @@ export default function SchedulingPage() {
             <h2 className="text-2xl font-bold">Start scheduling smarter today</h2>
             <div className="mt-6 flex justify-center gap-3">
               <a href="/sign-up"><Button size="lg">Get Started Free <ArrowRight className="ml-1 size-4" /></Button></a>
-              <a href="/#pricing"><Button variant="outline" size="lg">View Pricing</Button></a>
+              <a href="/pricing"><Button variant="outline" size="lg">View Pricing</Button></a>
             </div>
           </div>
         </section>

@@ -92,8 +92,8 @@ Each page targets specific keywords per the mapping table in the spec. Key pages
 
 | URL | Target Keywords |
 |-----|----------------|
-| `/` | open source social media scheduler, self-hosted social media scheduler, indie hacker social media tool |
-| `/features` | social media scheduler for individuals, cross-platform content publisher |
+| `/` | social media scheduler, Socipub (brand anchor) |
+| `/features` | open source social media scheduler, self-hosted social media scheduler, indie hacker social media tool, cross-platform content publisher |
 | `/multi-platform` | multi-platform posting tool, single user social media scheduler |
 | `/scheduling` | lightweight social media scheduler |
 | `/markdown` | markdown social media tool |

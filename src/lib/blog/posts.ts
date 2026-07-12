@@ -23,7 +23,7 @@ This guide compares Postiz vs Socipub across pricing, features, data privacy, an
 
 ## Postiz vs Socipub: At a Glance
 
-| Feature | Postiz | Socipub |
+| Feature | Postiz - Socipub |
 |---------|--------|---------|
 | Starting Price | $24/mo (Starter) | $0 (Free, no time limit) |
 | Pro Price | $49/mo | $19/mo |
@@ -118,7 +118,7 @@ This in-depth comparison covers every aspect: pricing, features, platform suppor
 
 ## Buffer vs Socipub: Feature Comparison
 
-| Feature | Buffer Free | Buffer Essentials ($6/mo/channel) | Socipub Free | Socipub Pro ($19/mo) |
+| Feature | Buffer Free | Buffer Essentials ($6/mo/channel) - Socipub Free - Socipub Pro ($19/mo) |
 |---------|:----------:|:---------------------------------:|:------------:|:-------------------:|
 | Channels | 3 | 5 | 2 | Unlimited |
 | Scheduled Posts | 30 | 100 | 5 | Unlimited |
@@ -223,7 +223,7 @@ Socipub solves this with **multi-platform scheduling** - write once, publish to 
 | Approach | Time per Post | Weekly (10 posts) | Monthly |
 |----------|:------------:|:-----------------:|:-------:|
 | Manual (separate) | 8-10 min | 80-100 min | ~6 hours |
-| Socipub (simultaneous) | 3-4 min | 30-40 min | ~2 hours |
+- Socipub (simultaneous) | 3-4 min | 30-40 min | ~2 hours |
 
 **Time saved: ~4 hours/month** - time you can spend creating better content.
 
@@ -356,7 +356,7 @@ Socipub offers a fundamentally different approach: open source, self-hostable, a
 
 ## Hootsuite vs Socipub: Full Comparison
 
-| Feature | Hootsuite Free | Hootsuite Professional ($99/mo) | Socipub Free | Socipub Pro ($19/mo) |
+| Feature | Hootsuite Free | Hootsuite Professional ($99/mo) - Socipub Free - Socipub Pro ($19/mo) |
 |---------|:-------------:|:------------------------------:|:------------:|:-------------------:|
 | Users | 1 | 1 (not scalable) | 1 | 1 |
 | Social Accounts | 5 | 10 | 2 | Unlimited |
@@ -465,7 +465,7 @@ Socipub is the open source alternative purpose-built for creators who need Twitt
 
 ## Later.com vs Socipub: Side-by-Side
 
-| Feature | Later.com (Starter) | Later.com (Growth) | Socipub Free | Socipub Pro |
+| Feature | Later.com (Starter) | Later.com (Growth) - Socipub Free - Socipub Pro |
 |---------|:-----------------:|:-----------------:|:------------:|:-----------:|
 | Price | $25/mo | $45/mo | $0 | $19/mo |
 | Twitter/X Support | ✅ | ✅ | ✅ | ✅ |
@@ -548,7 +548,7 @@ Many creators use **Later for Instagram + Socipub for Twitter/LinkedIn**:
 | Tool | Platform | Monthly Cost |
 |------|----------|:-----------:|
 | Later (Starter) | Instagram | $25/mo |
-| Socipub (Free) | Twitter + LinkedIn | $0/mo |
+- Socipub (Free) | Twitter + LinkedIn | $0/mo |
 | **Total** | | **$25/mo** |
 
 This hybrid approach gives you the best tool for each platform, with Socipub's free tier covering your Twitter and LinkedIn scheduling with no additional cost.
@@ -578,7 +578,7 @@ Socipub was designed with privacy and compliance as core principles, not afterth
 
 ## GDPR Compliance Checklist for Social Media Tools
 
-| Requirement | Proprietary Tools | Socipub Cloud | Socipub Self-Hosted |
+| Requirement | Proprietary Tools - Socipub Cloud - Socipub Self-Hosted |
 |------------|:----------------:|:-------------:|:------------------:|
 | EU Data Hosting | Often US-only | ✅ EU region | ✅ Your choice |
 | Data Encryption (AES-256) | ✅ | ✅ | ✅ |
@@ -658,7 +658,7 @@ docker run -d -p 3000:3000 \
 
 ## Comparison: Socipub vs Proprietary Tools
 
-| Factor | Hootsuite / Buffer / Later | Socipub |
+| Factor | Hootsuite / Buffer / Later - Socipub |
 |--------|--------------------------|---------|
 | Code Transparency | ❌ Black box | ✅ Open source audit |
 | EU Hosting | ❌ Usually US | ✅ EU region option |

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { PricingContent } from "@/components/pricing-content"
 
 export const metadata: Metadata = {
-  title: "Pricing - Free & Affordable Plans for Every Creator | Socipub",
+  title: "Pricing - Free & Affordable Plans for Every Creator - Socipub",
   description: "Socipub pricing: Free plan with 5 posts/mo, Pro at $19/mo or $190/yr, Team at $49/mo or $490/yr. No credit card required to start.",
 }
 
