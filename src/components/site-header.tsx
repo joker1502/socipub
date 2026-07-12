@@ -42,8 +42,8 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="flex items-center gap-3">
-          <Link href="/sign-in"><Button variant="ghost" size="sm">Sign In</Button></Link>
-          <Link href="/sign-up"><Button size="sm">Get Started</Button></Link>
+          <a href="/sign-in" className="inline-flex items-center justify-center rounded-lg px-2.5 py-1.5 text-sm font-medium transition-colors hover:bg-muted">Sign In</a>
+          <a href="/sign-up" className="inline-flex items-center justify-center rounded-lg bg-primary px-2.5 py-1.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80">Get Started</a>
         </div>
       </div>
     </header>

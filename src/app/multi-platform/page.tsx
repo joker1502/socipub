@@ -88,7 +88,7 @@ export default function MultiPlatformPage() {
           <div className="mx-auto max-w-6xl px-4 text-center">
             <h2 className="text-2xl font-bold">Ready to publish everywhere from one place?</h2>
             <div className="mt-6 flex justify-center gap-3">
-              <a href="/sign-up"><Button size="lg">Get Started Free <ArrowRight className="ml-1 size-4" /></Button></a>
+              <a href="/sign-up" class="inline-flex items-center justify-center rounded-lg bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80">Get Started Free <ArrowRight className="ml-1 size-4" /></a>
             </div>
           </div>
         </section>
