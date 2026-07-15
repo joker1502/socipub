@@ -838,4 +838,155 @@ Socipub gives you the scheduling features that matter: cross-platform posting, c
 </div>
     `.trim(),
   },
+  {
+    slug: "typefully-alternative-open-source",
+    title: "Typefully Alternative: Free Open Source Social Media Scheduler for Twitter & LinkedIn (2026)",
+    description: "Typefully is great for Twitter threads but lacks LinkedIn support, self-hosting, and multi-platform scheduling. Socipub is the open source alternative covering both Twitter and LinkedIn with transparent pricing. Full comparison and migration guide.",
+    date: "2026-07-15",
+    readTime: "6 min read",
+    tags: ["alternatives", "comparison", "typefully", "open-source"],
+    content: `
+Typefully has become a popular tool for Twitter/X power users who need thread composition, scheduling, and analytics. Its clean writing experience and thread previews make it a favorite among creators who live on Twitter.
+
+But if your content strategy includes LinkedIn — or you want self-hosting, open source transparency, and lower costs — Typefully's limitations become apparent quickly. Socipub offers a complementary and in many ways superior approach: multi-platform scheduling (Twitter + LinkedIn), open source code, self-hosting, and pricing that doesn't punish growth.
+
+## Typefully vs Socipub: Feature Comparison
+
+| Feature | Typefully (Free) | Typefully (Pro) | Socipub Free | Socipub Pro |
+|---------|:--------------:|:--------------:|:----------:|:----------:|
+| Monthly Price | $0 | $20/mo | $0 | $19/mo |
+| Twitter/X Scheduling | ✅ | ✅ | ✅ | ✅ |
+| LinkedIn Scheduling | ❌ | ❌ | ✅ | ✅ |
+| Thread Composer | ✅ Premium | ✅ | ❌ | ❌ |
+| Tweet Analytics | ✅ Basic | ✅ Advanced | ❌ | ✅ Basic |
+| Scheduled Posts | 10/mo | Unlimited | 5/mo | Unlimited |
+| Open Source | ❌ | ❌ | ✅ MIT | ✅ MIT |
+| Self-Hosting | ❌ | ❌ | ✅ Docker | ✅ Docker |
+| AI Scheduling | ❌ | ❌ | ❌ | ✅ |
+| AI Rewrite | ❌ | ❌ | ❌ | ✅ |
+| EU Data Hosting | ❌ | ❌ | ✅ | ✅ |
+| API Access | ❌ | ✅ Limited | ✅ Full | ✅ Full |
+
+> **Bottom line:** Typefully wins for Twitter thread drafting. Socipub wins for multi-platform scheduling, open source flexibility, and value.
+
+## What Typefully Does Well
+
+Typefully's core strength is the **Twitter thread writing experience**:
+
+- **Distraction-free editor** — Write long threads with a clean, focused interface
+- **Real-time thread preview** — See exactly how your thread will look before publishing
+- **Smart scheduling** — Schedule tweets and threads for optimal times
+- **Analytics** — Track impressions, engagement, and follower growth per tweet
+- **Collaboration** — Team workspaces for managing multiple accounts
+
+These features are genuinely useful for anyone who writes Twitter threads regularly. The thread composer is best-in-class — no other tool makes composing 10-tweet threads as smooth.
+
+## Where Typefully Falls Short
+
+### 1. No LinkedIn Support
+
+Typefully is **Twitter-only**. If you also post to LinkedIn — which the vast majority of B2B creators and indie hackers do — you need a second tool. This means:
+
+- Managing two separate scheduling dashboards
+- Writing content twice (or copying between tools)
+- No unified analytics across platforms
+- Double the cost if both tools are paid
+
+Socipub handles **Twitter/X and LinkedIn in one place** — write once, schedule to both platforms simultaneously.
+
+### 2. No Self-Hosting or Open Source
+
+Typefully is proprietary SaaS. Your tweets, drafts, and analytics data live on Typefully's servers. There's no way to:
+
+- Host your own instance for data control
+- Audit the source code for security or compliance
+- Customize features to your workflow
+- Export and migrate easily (data portability is limited)
+
+Socipub is fully open source (MIT) and [self-hostable via Docker](/features). Your data stays on your infrastructure.
+
+### 3. Pricing Adds Up
+
+| Plan | Typefully | Socipub |
+|------|:---------:|:-------:|
+| Free | 10 tweets/mo, basic scheduling | 5 posts/mo, unlimited duration |
+| Pro | $20/mo — advanced analytics, unlimited scheduling | $19/mo — unlimited posts, AI scheduling |
+| Team | $40/mo — 3 seats, collaboration | $49/mo — 3 seats, all Pro features |
+
+The pricing is similar at the Pro level, but Typefully only covers Twitter. Add a LinkedIn tool (like Buffer at $6/mo/channel) and you're paying $26+/mo for the same coverage Socipub gives you at $19/mo.
+
+## When Typefully Is Still the Right Choice
+
+Typefully remains the better option if:
+
+✅ **Twitter is your only platform** — If you don't post to LinkedIn, Typefully's thread tools are unmatched
+✅ **You write long threads regularly** — The thread composer is genuinely best-in-class
+✅ **You need deep Twitter analytics** — Typefully's analytics are more granular than Socipub's
+✅ **You're a Twitter-first creator** — Your brand lives on Twitter and Twitter only
+
+## When to Switch to Socipub
+
+✅ **You post to both Twitter and LinkedIn** — Unified scheduling in one tool
+✅ **You want open source transparency** — Audit, contribute, customize
+✅ **You need self-hosting** — Full data control and compliance
+✅ **You want AI-powered scheduling** — Optimal posting times based on your audience
+✅ **You're cost-conscious** — One tool for two platforms at $19/mo
+
+## Migration Guide: Moving from Typefully to Socipub
+
+### Step 1: Export Your Typefully Data
+Typefully → Settings → Export Data. Download your drafts, scheduled tweets, and analytics as CSV.
+
+### Step 2: Create Your Socipub Account
+[Sign up for free](/sign-up) — no credit card needed. Upgrade to Pro later if you need unlimited posts.
+
+### Step 3: Connect Your Social Accounts
+Link Twitter/X and LinkedIn via OAuth. Each connection is secure, revocable, and takes under a minute.
+
+### Step 4: Rebuild Your Content Queue
+Use the [Calendar View](/scheduling) to schedule your posts. Socipub's drag-and-drop calendar makes it easy to plan a month of content in under an hour.
+
+### Step 5: Add LinkedIn to Your Workflow
+Socipub's **AI Rewrite** feature adapts your Twitter content for LinkedIn's professional tone automatically. This alone saves hours per week.
+
+### Step 6: Run Both in Parallel (Optional)
+Keep Typefully for thread creation and Socipub for scheduling. Many creators use this hybrid approach:
+- **Typefully** → Write and preview threads
+- **Socipub** → Schedule tweets + LinkedIn posts from the same content
+
+### Step 7: Cancel Typefully
+Once you're settled, cancel your Typefully subscription. At $19/mo for Socipub Pro, you'll save while getting broader platform coverage.
+
+## Hybrid Strategy: Best of Both Worlds
+
+| Tool | Purpose | Monthly Cost |
+|------|---------|:-----------:|
+| Typefully (Free) | Write Twitter threads | $0 |
+| Socipub (Free/Pro) | Schedule tweets + LinkedIn posts | $0-$19/mo |
+| **Total** | | **$0-$19/mo** |
+
+This combo gives you Typefully's excellent thread composer with Socipub's multi-platform scheduling — for less than Typefully Pro alone.
+
+## Beyond Scheduling: What Else Socipub Offers
+
+- **AI Scheduling** — Optimal posting times based on your historical engagement
+- **AI Rewrite** — One piece of content adapted for Twitter vs LinkedIn automatically
+- **Publishing Queue** — Set-and-forget content calendar
+- **Self-Hosting** — Deploy via Docker for complete data sovereignty
+- **GDPR Compliance** — EU hosting available
+- **Full API** — Integrate with your existing tools and workflows
+
+## The Verdict
+
+Typefully is an excellent Twitter thread tool — arguably the best available. But if your content strategy spans beyond Twitter, or if you value open source transparency and data control, Socipub is the more versatile choice.
+
+For indie hackers, creators, and small teams who post to both Twitter and LinkedIn, Socipub eliminates the need for two separate tools, reduces monthly costs, and gives you full control over your data — all while delivering the scheduling features you actually use.
+
+[Try Socipub free](/sign-up) — connect Twitter and LinkedIn, schedule your first post in under 2 minutes. No credit card, no time limit, no feature gates.
+
+<div class="prose-notice">
+<strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and contribute to the roadmap.
+</div>
+    `.trim(),
+  },
 ]
