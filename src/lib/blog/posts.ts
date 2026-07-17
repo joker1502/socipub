@@ -989,4 +989,140 @@ For indie hackers, creators, and small teams who post to both Twitter and Linked
 </div>
     `.trim(),
   },
+  {
+    slug: "tweetdeck-alternative-open-source",
+    title: "TweetDeck Alternative: Free Open Source Social Media Scheduler for Twitter & LinkedIn (2026)",
+    description: "TweetDeck (now X Pro) requires X Premium at $8/mo and only supports Twitter. Socipub is the free open source alternative that handles both Twitter and LinkedIn scheduling with AI features, self-hosting, and no monthly fees. Full comparison and migration guide.",
+    date: "2026-07-20",
+    readTime: "5 min read",
+    tags: ["alternatives", "comparison", "tweetdeck", "open-source"],
+    content: `
+TweetDeck was once the power user's secret weapon for Twitter — multi-column monitoring, real-time streams, and bulk scheduling, all for free. Then X rebranded it as X Pro and put it behind the X Premium paywall ($8/mo for Basic, $16/mo for Premium).
+
+If you're looking for a TweetDeck alternative that doesn't cost a monthly subscription and actually supports more than just Twitter, Socipub is the open source answer. It handles Twitter/X and LinkedIn scheduling, offers AI-powered features, and can be self-hosted for complete data control.
+
+## TweetDeck / X Pro vs Socipub: Feature Comparison
+
+| Feature | TweetDeck / X Pro | Socipub Free | Socipub Pro |
+|---------|:-----------------:|:-----------:|:----------:|
+| Monthly Price | $8/mo (X Premium) | **$0** | **$19/mo** |
+| Twitter/X Scheduling | ✅ | ✅ | ✅ |
+| LinkedIn Scheduling | ❌ Twitter only | ✅ | ✅ |
+| Multi-Column Dashboard | ✅ | ❌ | ❌ |
+| Scheduled Posts | Unlimited | 5/mo | Unlimited |
+| AI Scheduling | ❌ | ❌ | ✅ |
+| AI Rewrite | ❌ | ❌ | ✅ |
+| Open Source | ❌ Proprietary | ✅ MIT | ✅ MIT |
+| Self-Hosting | ❌ Not possible | ✅ Docker | ✅ Docker |
+| EU Data Hosting | ❌ | ✅ | ✅ |
+| API Access | ❌ Limited | ✅ Full | ✅ Full |
+| Bulk Posting | ✅ | ✅ | ✅ |
+| Calendar View | ❌ | ✅ Drag & drop | ✅ Drag & drop |
+
+> **The short version:** TweetDeck still wins for real-time Twitter monitoring across multiple columns. But for scheduling — the feature most creators actually use daily — Socipub delivers more for less, with the added benefit of LinkedIn support.
+
+## What TweetDeck Does Well
+
+Let's give credit where it's due. TweetDeck (X Pro) excels at:
+
+- **Real-time monitoring** — Multiple columns for timeline, mentions, lists, searches, and trends, all updating in real time
+- **Account management** — Switch between multiple Twitter/X accounts effortlessly
+- **List management** — Create and monitor curated Twitter lists
+- **Bulk scheduling** — Schedule tweets in batches using CSV import
+
+These features made TweetDeck indispensable for social media managers, journalists, and power users who needed to monitor Twitter conversations live.
+
+## Where TweetDeck Falls Short in 2026
+
+### 1. The X Premium Paywall
+
+TweetDeck is no longer free. You need **X Premium (Basic)** at **$8/mo** or **X Premium (Premium)** at **$16/mo** just to access it. For many creators, that's an expensive way to access basic scheduling features.
+
+Socipub's Free plan costs **$0/mo** — no time limit, no forced upgrades. The Pro plan ($19/mo) covers Twitter + LinkedIn with unlimited posts and AI features.
+
+### 2. Twitter Only — No Cross-Platform Support
+
+TweetDeck only works with Twitter/X. If your content strategy includes LinkedIn — which it should, given LinkedIn's 1 billion+ user base and unmatched B2B reach — you need a second tool.
+
+Socipub handles **both Twitter and LinkedIn in one place**. Schedule a single post to both platforms simultaneously, or use AI Rewrite to adapt your content for each platform's audience.
+
+### 3. No AI Features
+
+TweetDeck is a bare-bones scheduling and monitoring tool. It offers no:
+- AI-powered optimal posting time suggestions
+- Content rewriting for different platforms
+- Engagement analytics
+- Smart queue management
+
+Socipub Pro includes **AI Scheduling** (optimal times based on your engagement patterns) and **AI Rewrite** (adapt content for Twitter vs LinkedIn automatically).
+
+### 4. No Data Control
+
+TweetDeck is proprietary, cloud-only software. Your drafts, scheduled tweets, and analytics live on X's servers with no self-hosting option and limited export capabilities.
+
+Socipub is fully open source (MIT). You can:
+- [Self-host on your own server](/features) — complete data sovereignty
+- Audit the source code on [GitHub](https://github.com/joker1502/socipub)
+- Export all your data in standard formats at any time
+- Choose EU hosting for GDPR compliance
+
+## Migration Guide: Moving from TweetDeck to Socipub
+
+### Step 1: Export Your TweetDeck Data
+
+From TweetDeck, use the CSV export feature to download your scheduled tweets. Go to **Scheduling → Export** to download your content queue.
+
+### Step 2: Create Your Socipub Account
+
+[Sign up for free](/sign-up) — no credit card required. The Free plan gives you 5 scheduled posts/month with no time limit.
+
+### Step 3: Connect Your Accounts
+
+Link Twitter/X and LinkedIn via OAuth. Each connection is secure, revocable, and takes under a minute.
+
+### Step 4: Set Up Your Queue
+
+Use Socipub's [Calendar View](/scheduling) to recreate your posting schedule. The drag-and-drop calendar makes it easy to plan a month of content.
+
+### Step 5: Add LinkedIn to Your Workflow
+
+If you've only been posting to Twitter, this is your opportunity to expand to LinkedIn with minimal extra effort. Socipub's **AI Rewrite** adapts your Twitter content for LinkedIn's professional tone automatically.
+
+### Step 6: Keep TweetDeck for Monitoring (Optional)
+
+Many creators keep TweetDeck open for real-time monitoring while using Socipub for scheduling. This hybrid approach gives you the best of both:
+- **TweetDeck** → Monitor mentions, trends, and conversations in real time
+- **Socipub** → Schedule posts, manage content calendar, cross-post to LinkedIn
+
+### Step 7: Cancel X Premium (Optional)
+
+If you only subscribed to X Premium for TweetDeck access, you may be able to downgrade after moving your scheduling workflow to Socipub. At $8-16/mo saved, that's $96-192/year back in your pocket.
+
+## Who Should Switch to Socipub?
+
+✅ **Creators who schedule to Twitter and LinkedIn** — Unified workflow, one tool
+✅ **Anyone tired of the X Premium paywall** — Free scheduling without subscriptions
+✅ **Privacy-conscious users** — Self-hosting and open source transparency
+✅ **Small teams** — Team plan ($49/mo for 3 users) vs individual X Premium subscriptions
+✅ **Budget-minded indie hackers** — Free tier with no time limit
+
+## Who Should Keep TweetDeck?
+
+❌ **Real-time monitoring power users** — Socipub doesn't offer multi-column live monitoring
+❌ **Journalists and news organizations** — TweetDeck's real-time search and list monitoring is unmatched
+❌ **Teams managing 10+ Twitter accounts** — TweetDeck's multi-account column view is purpose-built for this
+
+## The Verdict
+
+TweetDeck (X Pro) remains the best tool for real-time Twitter monitoring. But if your primary need is **scheduling** — which is what most creators spend their time on — Socipub offers a compelling alternative that's free, open source, and supports both Twitter and LinkedIn.
+
+For indie hackers and creators who post to Twitter and LinkedIn, the choice is clear: use TweetDeck for monitoring, Socipub for scheduling. Or simplify your stack entirely and let Socipub handle both platforms in one place.
+
+[Try Socipub free](/sign-up) — connect Twitter and LinkedIn, schedule your first post in under 2 minutes. No credit card, no X Premium subscription required.
+
+<div class="prose-notice">
+<strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and contribute to the roadmap.
+</div>
+    `.trim(),
+  },
 ]
