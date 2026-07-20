@@ -1125,4 +1125,144 @@ For indie hackers and creators who post to Twitter and LinkedIn, the choice is c
 </div>
     `.trim(),
   },
+  {
+    slug: "hypefury-alternative-open-source",
+    title: "Hypefury Alternative: Free Open Source Social Media Scheduler for Twitter & LinkedIn (2026)",
+    description: "Hypefury helps grow your Twitter audience but costs $29/mo and lacks cross-platform flexibility. Socipub is the free open source alternative with Twitter + LinkedIn scheduling, AI features, self-hosting, and transparent pricing. Full comparison and migration guide.",
+    date: "2026-07-20",
+    readTime: "6 min read",
+    tags: ["alternatives", "comparison", "hypefury", "open-source"],
+    content: `
+Hypefury has built a loyal following among Twitter power users who want auto-engagement, thread scheduling, and analytics in one platform. But its focus on growth automation — and the recurring monthly cost — leaves some users wanting a simpler, more affordable solution for everyday scheduling.
+
+Socipub offers a fundamentally different approach: open source, self-hostable, and free to start. Here's a detailed comparison to help you decide which tool fits your actual workflow.
+
+## What Hypefury Does Well
+
+Hypefury's core strengths revolve around Twitter growth automation:
+
+- **Auto-engagement** — Automatically like, retweet, and reply to tweets based on keywords and hashtags. This "set and forget" growth mechanic is Hypefury's signature feature.
+- **Thread scheduling** — Compose and schedule multi-tweet threads with previews and optimal timing suggestions.
+- **Evergreen queue** — Set up a rotating queue of tweets that repost automatically on a schedule, keeping your content alive indefinitely.
+- **Analytics dashboard** — Track engagement, follower growth, and tweet performance with detailed breakdowns.
+- **LinkedIn support** — Recently added basic LinkedIn scheduling as an expansion feature.
+
+These tools are genuinely useful for anyone focused on organic Twitter growth and automation. The evergreen queue alone can save hours of manual resharing per week.
+
+## Where Hypefury Falls Short
+
+### 1. Pricing Scales Quickly
+
+| Plan | Price | Key Limitations |
+|------|:----:|:--------------|
+| Basic | $29/mo | 1 account, basic analytics |
+| Pro | $49/mo | Advanced analytics, unlimited scheduling |
+| Business | $99/mo | Team features, priority support |
+
+For a solo creator who just wants to schedule Twitter and LinkedIn posts without growth automation features, Hypefury's $29/mo basic plan is steep. Socipub's Pro plan covers both platforms at **$19/mo** with no per-account limits.
+
+### 2. LinkedIn Support Is an Afterthought
+
+Hypefury added LinkedIn support as a secondary feature, but the experience lacks:
+
+- **Dedicated LinkedIn content optimization** — No character count adaptation or tone adjustment
+- **Platform-specific analytics** — LinkedIn engagement data is basic at best
+- **Cross-platform multi-posting** — You can't write once and publish to both Twitter and LinkedIn simultaneously
+- **AI adaptation** — No feature to rewrite content for LinkedIn's professional tone vs Twitter's casual style
+
+Socipub was **built with LinkedIn as a first-class citizen**, alongside Twitter. Cross-platform posting, AI Rewrite, and unified analytics are core features.
+
+### 3. No Self-Hosting or Open Source
+
+Hypefury is proprietary SaaS. Your tweets, drafts, and growth data live on Hypefury's servers. There is no option to:
+
+- Self-host for complete data control
+- Audit the codebase for security or compliance
+- Customize features to your exact workflow
+- Export and migrate data freely
+
+Socipub is fully **open source (MIT)** and [self-hostable via Docker](/features). Your data stays on your infrastructure, not a third party's servers.
+
+## Hypefury vs Socipub: Feature Comparison
+
+| Feature | Hypefury Basic ($29/mo) | Hypefury Pro ($49/mo) | Socipub Free | Socipub Pro ($19/mo) |
+|---------|:---------------------:|:--------------------:|:----------:|:------------------:|
+| Twitter/X Scheduling | ✅ | ✅ | ✅ | ✅ |
+| LinkedIn Scheduling | ✅ Basic | ✅ Basic | ✅ | ✅ |
+| Thread Composer | ✅ | ✅ | ❌ | ❌ |
+| Auto-Engagement | ✅ | ✅ | ❌ | ❌ |
+| Evergreen Queue | ✅ | ✅ | ❌ | ❌ |
+| Cross-Platform Posting | ❌ | ❌ | ✅ | ✅ |
+| AI Scheduling | ❌ | ❌ | ❌ | ✅ |
+| AI Rewrite | ❌ | ❌ | ❌ | ✅ |
+| Open Source | ❌ | ❌ | ✅ MIT | ✅ MIT |
+| Self-Hosting | ❌ | ❌ | ✅ Docker | ✅ Docker |
+| EU Data Hosting | ❌ | ❌ | ✅ | ✅ |
+| API Access | ❌ | ❌ | ✅ Full | ✅ Full |
+| Calendar View | ❌ | ❌ | ✅ Drag & drop | ✅ Drag & drop |
+| Monthly Cost | **$29/mo** | **$49/mo** | **$0** | **$19/mo** |
+
+> **Bottom line:** Hypefury wins for Twitter growth automation (auto-engage, evergreen queues). Socipub wins for multi-platform scheduling, open source flexibility, and cost.
+
+## When to Keep Hypefury
+
+✅ **Twitter growth automation** — If auto-engage, evergreen queues, and thread automation are essential to your strategy, Hypefury's growth tools are purpose-built
+✅ **Twitter-first strategy** — If LinkedIn isn't part of your workflow, Hypefury's Twitter tools are comprehensive
+✅ **Advanced Twitter analytics** — Hypefury's follower growth and engagement analytics are deeper than Socipub's
+
+## When to Switch to Socipub
+
+✅ **You post to both Twitter and LinkedIn** — Unified scheduling in one tool
+✅ **You want open source transparency** — Audit, contribute, customize the code
+✅ **You need self-hosting** — Full data control and GDPR compliance
+✅ **You want lower costs** — Socipub Pro at $19/mo vs Hypefury Basic at $29/mo
+✅ **You want AI scheduling** — Optimal posting times based on your engagement patterns
+
+## Migration Guide: Moving from Hypefury to Socipub
+
+### Step 1: Export Your Hypefury Data
+Hypefury → Settings → Export Data. Download your scheduled posts and analytics as CSV.
+
+### Step 2: Create Your Socipub Account
+[Sign up for free](/sign-up) — no credit card needed. Upgrade to Pro later if you need unlimited posts.
+
+### Step 3: Connect Your Social Accounts
+Link Twitter/X and LinkedIn via OAuth. Each connection is secure, revocable, and takes under a minute.
+
+### Step 4: Rebuild Your Content Queue
+Use the [Calendar View](/scheduling) to schedule your posts. Socipub's drag-and-drop calendar makes it easy to plan a month of content in under an hour.
+
+### Step 5: Add LinkedIn to Your Workflow
+If you've only been scheduling on Twitter, this is your opportunity to expand to LinkedIn with minimal extra effort. Socipub's **AI Rewrite** adapts your Twitter content for LinkedIn's professional tone automatically.
+
+### Step 6: Run Both in Parallel (Optional)
+Keep Hypefury for growth automation while using Socipub for scheduling:
+
+| Tool | Purpose | Monthly Cost |
+|------|---------|:-----------:|
+| Hypefury (Basic) | Auto-engage, evergreen queue | $29/mo |
+| Socipub (Free) | Schedule tweets + LinkedIn | $0/mo |
+| **Total** | | **$29/mo** |
+
+This hybrid approach gives you the best of both worlds. Drop Hypefury once you're confident in Socipub's workflow.
+
+### Step 7: Cancel Hypefury
+Once you're settled, cancel your Hypefury subscription. At $19/mo for Socipub Pro, you'll save **$120/year** compared to Hypefury Basic.
+
+## The Verdict
+
+Hypefury is a powerful Twitter growth tool — if you need auto-engagement, evergreen threads, and deep engagement analytics, it's a solid choice, especially for a Twitter-first strategy.
+
+But if your primary need is **scheduling content to Twitter and LinkedIn** — which is what most creators spend their time on — Socipub delivers everything you need at a lower price, plus the freedom of open source and self-hosting.
+
+For indie hackers, creators, and small teams who post to both platforms, Socipub eliminates the need for multiple tools, reduces monthly costs to **$19/mo** (vs Hypefury's $29/mo starting price), and gives you full control over your data — all while delivering the scheduling features you actually use daily.
+
+[Try Socipub free](/sign-up) — connect Twitter and LinkedIn, schedule your first post in under 2 minutes. No credit card, no time limit, no growth automation complexity.
+
+<div class="prose-notice">
+<strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and contribute to the roadmap.
+</div>
+    `.trim(),
+  },
+
 ]
