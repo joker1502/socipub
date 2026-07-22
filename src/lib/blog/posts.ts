@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
     slug: "postiz-alternative-open-source",
     title: "Postiz Alternative: Free Open Source Social Media Scheduler (2026)",
     description: "Looking for a Postiz alternative? Socipub is a free, open source social media scheduler that gives you unlimited posts, full API access, self-hosting, and zero per-seat pricing. Compare features, pricing, and migration steps.",
-    date: "2026-03-15",
+    date: "2026-07-01",
     readTime: "6 min read",
     tags: ["alternatives", "open-source", "comparison", "postiz"],
     content: `
@@ -108,7 +108,7 @@ Ready to leave Postiz behind? [Try Socipub free](/sign-up) — no credit card, n
     slug: "buffer-alternative-open-source",
     title: "Buffer Alternative: Free & Open Source Social Media Scheduler (2026 Review)",
     description: "Buffer's free plan limits you to 3 channels and 30 posts. Socipub is the open source Buffer alternative offering self-hosting, AI scheduling, cross-platform posting, and no per-seat pricing. Full comparison included.",
-    date: "2026-03-20",
+    date: "2026-07-03",
     readTime: "7 min read",
     tags: ["alternatives", "open-source", "comparison", "buffer"],
     content: `
@@ -210,7 +210,7 @@ Socipub is the best open source Buffer alternative for creators and teams who wa
     slug: "schedule-twitter-linkedin-one-click",
     title: "How to Schedule Posts to Twitter/X and LinkedIn Simultaneously (2026 Guide)",
     description: "Step-by-step guide to scheduling cross-platform posts on Twitter/X and LinkedIn at the same time. Learn how to save hours each week with Socipub's multi-platform scheduler, including character optimization and AI-powered rewriting.",
-    date: "2026-03-25",
+    date: "2026-07-06",
     readTime: "5 min read",
     tags: ["tutorial", "scheduling", "twitter", "linkedin", "guide"],
     content: `
@@ -346,7 +346,7 @@ Socipub's **[Publishing Queue](/scheduling)** takes batch scheduling further:
     slug: "hootsuite-free-alternative",
     title: "Hootsuite Free Alternative: Open Source Social Media Scheduler (2026 Comparison)",
     description: "Hootsuite's free plan limits you to 2 users and 5 social accounts. Socipub offers a free open source alternative with self-hosting, unlimited scheduling, and no hidden limits. Compare features, pricing, and make the switch.",
-    date: "2026-04-01",
+    date: "2026-07-08",
     readTime: "6 min read",
     tags: ["alternatives", "comparison", "hootsuite", "open-source"],
     content: `
@@ -455,7 +455,7 @@ The math is simple: Hootsuite Pro costs **$1,188/year**. Socipub Pro costs **$22
     slug: "later-com-competitor",
     title: "Later.com Alternative: Open Source Social Media Scheduler with Twitter & LinkedIn Support",
     description: "Later.com focuses on Instagram and misses Twitter/LinkedIn. Socipub is the open source alternative that covers all platforms, offers AI scheduling, self-hosting, and costs less. Detailed feature comparison and migration guide.",
-    date: "2026-04-08",
+    date: "2026-07-10",
     readTime: "6 min read",
     tags: ["alternatives", "comparison", "later", "open-source"],
     content: `
@@ -568,7 +568,7 @@ Ready to add Twitter and LinkedIn scheduling to your workflow? [Create your free
     slug: "gdpr-compliant-social-media-tool",
     title: "GDPR Compliant Social Media Scheduler: Open Source with EU Data Hosting (2026)",
     description: "Need a GDPR compliant social media scheduler? Socipub offers EU data hosting, open source transparency, self-hosting for complete data control, and enterprise-grade encryption. Built for privacy-conscious creators and teams.",
-    date: "2026-04-15",
+    date: "2026-07-12",
     readTime: "5 min read",
     tags: ["security", "gdpr", "compliance", "privacy", "open-source"],
     content: `
@@ -1264,5 +1264,118 @@ For indie hackers, creators, and small teams who post to both platforms, Socipub
 </div>
     `.trim(),
   },
+  {
+    slug: "batch-schedule-weekly-content-twitter-linkedin",
+    title: "Batch Schedule Twitter & LinkedIn Content in 30 Minutes",
+    description: "Schedule a week of Twitter and LinkedIn content in 30 minutes using this 4-step system. Save 4+ hours with Socipub's queue and AI rewrite.",
+    date: "2026-07-22",
+    readTime: "5 min read",
+    tags: ["tutorial", "scheduling", "productivity", "twitter", "linkedin"],
+    content: `
+The most common mistake creators make is treating social media as a daily task. You wake up, scramble for something to post, write it, publish it, and repeat the next day. It's exhausting, unsustainable, and leaves no room for strategy.
 
+The fix is batch scheduling: 30 minutes once a week to plan, write, and queue all your content. Here's exactly how to do it with Socipub.
+
+## The One-by-One Trap
+
+Posting daily feels productive — but it's the least efficient way to manage social media:
+
+| Approach | Time per Post | Weekly (7 posts) | Monthly | Yearly |
+|----------|:------------:|:----------------:|:-------:|:------:|
+| One-at-a-time, daily | 15-20 min | 105-140 min | ~8 hours | ~96 hours |
+| Batch, weekly | 30 min total | 30 min | 2 hours | 24 hours |
+
+**That's 72 hours saved per year** — almost two full work weeks returned to you.
+
+Beyond time, daily posting fragments your concentration. Every interruption to "post something" pulls you out of deep work. Batch scheduling protects your focus while building a consistent publishing habit.
+
+## The 4-Step Batch Scheduling System
+
+### Step 1: Plan Your Content Themes (5 minutes)
+
+Instead of thinking about individual posts, plan **content themes** for the week:
+
+| Day | Theme | Example Topic |
+|-----|-------|--------------|
+| Monday | Industry insight | Latest trend in your field |
+| Tuesday | Personal story | Lesson from a recent project |
+| Wednesday | Tip or tutorial | Quick how-to or best practice |
+| Thursday | Social proof | Client win, milestone, testimonial |
+| Friday | Curated content | Share and comment on someone else's post |
+| Saturday | Engagement | Poll, question, or discussion starter |
+| Sunday | Behind the scenes | Your workspace, tools, or process |
+
+Fill in one row per day. If you're stuck, rotate three themes — insights, stories, and tips cover most of what performs well on Twitter and LinkedIn.
+
+### Step 2: Write in Batches (15 minutes)
+
+Open Socipub's **Create Post** page and write all 7 posts at once:
+
+1. Start with Twitter versions — 280 characters forces clarity
+2. Expand each into a LinkedIn version — add context, data, and a hook
+3. Use **AI Rewrite** to adapt the tone — punchy for Twitter, professional for LinkedIn
+
+Save your best-performing post formats as templates. Each week, swap in new topics. This cuts writing time by half after the first week.
+
+### Step 3: Schedule in Calendar View (5 minutes)
+
+Switch to Socipub's **Calendar View**:
+
+- Drag each post to its target day and time
+- Socipub's AI Scheduling highlights optimal windows based on your engagement data
+- For Twitter: morning (8-10 AM) works best
+- For LinkedIn: mid-day (12-1 PM) drives the most engagement
+
+Once scheduled, your week is done. Socipub publishes automatically — you just show up to engage with comments.
+
+### Step 4: Engage, Don't Post (5 minutes daily)
+
+Redirect the time you saved to **engagement**:
+
+- Reply to comments on your scheduled posts
+- Share and comment on others' content
+- DM people who engaged meaningfully
+
+Engagement drives algorithmic reach far more than publishing frequency alone.
+
+## Weekly Content Template
+
+Use this framework to plan your week:
+
+\`\`\`
+Monday — [Industry insight]: [One-sentence takeaway + link]
+Tuesday — [Personal story]: [What happened + what I learned]
+Wednesday — [Tip]: [Step-by-step quick tip]
+Thursday — [Win/Proof]: [Result + how we got there]
+Friday — [Curated]: "Great take from @someone" + my take
+Saturday — [Question]: Open-ended question for followers
+Sunday — [Behind the scenes]: Process or tool photo
+\`\`\`
+
+Copy this into your notes app. Fill in the brackets each week. After 3-4 weeks, it becomes a 30-minute habit.
+
+## Daily vs Batch: Reality Check
+
+| Factor | Daily Ad-Hoc | Batch Scheduling |
+|--------|:-----------:|:----------------:|
+| Time per week | ~2 hours | 30 minutes |
+| Consistency | Often missed days | Always on schedule |
+| Content quality | Rushed and reactive | Planned and intentional |
+| Deep work focus | Fragmented | Protected |
+| Scalability | Breaks at 2+ accounts | Scales without extra time |
+| Stress | Daily deadline pressure | Set and forget |
+
+## Start Scheduling Smarter
+
+You don't need more time — you need a better system.
+
+Batch scheduling with Socipub turns a daily chore into a 30-minute weekly ritual. You get consistency, quality content, and your focus back.
+
+<a href="/sign-up" class="inline-block mt-4 rounded bg-blue-600 px-6 py-3 text-white font-semibold hover:bg-blue-700">Create Your Free Account</a>
+
+<div class="prose-notice">
+<strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and follow the roadmap.
+</div>
+    `.trim(),
+  },
 ]
