@@ -1378,4 +1378,134 @@ Batch scheduling with Socipub turns a daily chore into a 30-minute weekly ritual
 </div>
     `.trim(),
   },
+  {
+    slug: "socialbee-alternative-open-source",
+    title: "SocialBee Alternative: Free Open Source Social Scheduler for Twitter & LinkedIn (2026)",
+    description: "SocialBee caps you at 5 profiles. Socipub is the open source alternative with unlimited accounts, AI scheduling, and self-hosting. Compare and migrate.",
+    date: "2026-07-24",
+    readTime: "6 min read",
+    tags: ["alternatives", "comparison", "socialbee", "open-source"],
+    content: `
+SocialBee has carved out a strong niche in social media management with its content categories and evergreen recycling. But its pricing model — charging per plan tier and limiting social profiles even on paid plans — can frustrate creators who manage multiple platforms without needing category-based automation.
+
+Socipub offers a fundamentally different approach: open source, self-hostable, and no limits on social profiles. Here's a detailed comparison to help you decide which tool fits your workflow.
+
+## SocialBee vs Socipub: Feature Comparison
+
+| Feature | SocialBee Starter ($19/mo) | SocialBee Creator ($29/mo) | Socipub Free | Socipub Pro ($19/mo) |
+|---------|:-------------------------:|:-------------------------:|:-----------:|:-------------------:|
+| Social Profiles | 5 | 10 | 2 | Unlimited |
+| Users | 1 | 1 | 1 | 1 |
+| Scheduled Posts | 50 /mo | Unlimited | 5 /mo | Unlimited |
+| Content Categories | ✅ | ✅ | ❌ | ❌ |
+| Evergreen Recycling | ✅ | ✅ | ❌ | ❌ |
+| AI Assistant | ❌ | ✅ | ❌ | ✅ |
+| AI Scheduling | ❌ | ❌ | ❌ | ✅ |
+| AI Rewrite | ❌ | ❌ | ❌ | ✅ |
+| Open Source | ❌ Proprietary | ❌ Proprietary | ✅ MIT | ✅ MIT |
+| Self-Hosting | ❌ Not available | ❌ Not available | ✅ Docker | ✅ Docker |
+| EU Data Hosting | ❌ | ❌ | ✅ | ✅ |
+| API Access | ❌ | ❌ | ✅ Full | ✅ Full |
+| Twitter/X Scheduling | ✅ | ✅ | ✅ | ✅ |
+| LinkedIn Scheduling | ✅ | ✅ | ✅ | ✅ |
+
+> **Bottom line:** SocialBee wins for content categorization and evergreen recycling. Socipub wins for open source flexibility, unlimited profiles, and lower cost at the plan level that matters most.
+
+## What SocialBee Does Well
+
+SocialBee's standout feature is **content categorization**. Instead of a flat queue, SocialBee lets you organize posts into categories — promotions, curated content, personal stories, tips — and set posting percentages for each. This ensures a balanced content mix without manual effort.
+
+Its **evergreen recycling** is another strength. Posts in the "evergreen" category rotate automatically, so your best content keeps getting shared. This is genuinely useful for creators who want to repurpose top-performing content without manual resharing.
+
+SocialBee also supports a broad range of platforms: Twitter/X, LinkedIn, Facebook, Instagram, TikTok, Pinterest, Google Business Profile, and YouTube. If you need multi-platform coverage beyond Twitter and LinkedIn, SocialBee is a solid choice.
+
+## Where SocialBee Falls Short
+
+### 1. Profile Limits Bite Quickly
+
+| Plan | Profiles | Twitter + LinkedIn Only | Verdict |
+|------|:--------:|:----------------------:|:-------:|
+| Starter ($19/mo) | 5 | 2 used, 3 wasted | Overkill for simple needs |
+| Creator ($29/mo) | 10 | 2 used, 8 wasted | Paying for unused capacity |
+| Pro ($47/mo) | Unlimited | Unlimited | $47/mo for 2 platforms |
+
+If you only need Twitter and LinkedIn — which is the most common combo for indie hackers and B2B creators — you're paying for profile capacity you don't use. Socipub Pro ($19/mo) gives you unlimited profiles for those two platforms at half the price of SocialBee Starter.
+
+### 2. No Self-Hosting or Open Source
+
+SocialBee is fully proprietary. Your content, social tokens, and analytics live on SocialBee's servers with no option to:
+
+- Self-host on your own infrastructure
+- Audit the backend data handling or security
+- Customize the codebase to your workflow
+- Guarantee data sovereignty for compliance
+
+Socipub is fully **open source (MIT)** and [self-hostable via Docker](/features). Your data stays on your infrastructure, not a third-party's servers.
+
+### 3. AI Features Locked Behind Higher Tiers
+
+SocialBee's AI assistant is only available on the Creator plan ($29/mo) and above. The Starter plan ($19/mo) includes no AI features at all.
+
+Socipub Pro ($19/mo) includes both **AI Scheduling** (optimal posting times based on your engagement data) and **AI Rewrite** (automatically adapt content for Twitter vs LinkedIn tone).
+
+## When SocialBee Makes Sense
+
+✅ **You manage 5+ social platforms** — SocialBee's broad platform support (Instagram, TikTok, Facebook, Pinterest, YouTube) is more extensive than Socipub's current Twitter + LinkedIn focus
+
+✅ **Content categorization is essential** — SocialBee's category-based queue management is best-in-class
+
+✅ **You need evergreen content recycling** — Rotating top-performing posts automatically saves manual resharing time
+
+✅ **You prefer a fully managed SaaS** — No setup, no maintenance, just schedule and go
+
+## When to Switch to Socipub
+
+✅ **You primarily post to Twitter and LinkedIn** — Socipub was built for this exact workflow
+
+✅ **You want unlimited profiles** — No per-platform caps at the same $19/mo price point
+
+✅ **You want open source transparency** — Audit the code, contribute features, no vendor lock-in
+
+✅ **You need self-hosting or EU data hosting** — Full data sovereignty and GDPR compliance
+
+✅ **You're paying for profile capacity you don't use** — Why pay for 10 profiles when you only need 2?
+
+## Migration Guide: Moving from SocialBee to Socipub
+
+### Step 1: Export Your SocialBee Data
+SocialBee → Settings → Export. Download your scheduled posts and content categories as CSV.
+
+### Step 2: Create Your Socipub Account
+[Sign up for free](/sign-up) — no credit card needed. Upgrade to Pro later if you need unlimited posts.
+
+### Step 3: Connect Your Social Accounts
+Link Twitter/X and LinkedIn via OAuth. Each connection is secure, revocable, and takes under a minute.
+
+### Step 4: Rebuild Your Content Queue
+Use the [Calendar View](/scheduling) to schedule your posts. While you lose category-based recycling, Socipub's batch scheduling workflow (30 minutes per week) achieves similar consistency without the overhead of managing category percentages.
+
+### Step 5: Add AI Scheduling
+Enable AI Scheduling to optimize posting times based on your audience's engagement patterns — a feature SocialBee doesn't include on its Starter plan.
+
+### Step 6: Run Both in Parallel
+Keep SocialBee for 1-2 weeks while you get comfortable with Socipub. Cancel once confident.
+
+### Step 7: Cancel SocialBee
+Cancel through your account dashboard. At $19/mo for Socipub Pro, you get unlimited profiles and AI features compared to SocialBee Starter's 5 profiles with no AI.
+
+## The Verdict
+
+SocialBee is an excellent tool for creators who need content categorization, evergreen recycling, and multi-platform support beyond Twitter and LinkedIn. Its category-based queue and platform breadth are genuinely differentiated.
+
+But if your primary need is scheduling to Twitter and LinkedIn — which covers the vast majority of indie hackers and B2B creators — Socipub delivers everything you need at the same $19/mo price, with no per-profile limits, AI features included, and the freedom of open source and self-hosting.
+
+For creators who value data control, transparent pricing, and a tool that grows with them without surprise increases, Socipub is the more sustainable choice.
+
+[Try Socipub free](/sign-up) — connect Twitter and LinkedIn, schedule your first post in under 2 minutes. No credit card, no time limit, no content categories required.
+
+<div class="prose-notice">
+<strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and contribute to the roadmap.
+</div>
+    `.trim(),
+  },
 ]
