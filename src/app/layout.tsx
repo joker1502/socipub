@@ -26,6 +26,16 @@ export const metadata: Metadata = {
     title: "Socipub - Social Media Scheduler",
     description:
       "Schedule posts to Twitter, LinkedIn and more with Socipub, the open source social media scheduler.",
+    type: "website",
+    siteName: "Socipub",
+    images: [{ url: "/logo.svg", width: 512, height: 512 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Socipub - Social Media Scheduler",
+    description:
+      "Schedule posts to Twitter, LinkedIn and more with Socipub, the open source social media scheduler.",
+    images: [{ url: "/logo.svg", width: 512, height: 512 }],
   },
 };
 
