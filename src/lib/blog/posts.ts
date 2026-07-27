@@ -199,7 +199,7 @@ Run both tools in parallel for a week. Once you're confident in Socipub's workfl
 
 ## The Verdict
 
-Socipub is the best open source Buffer alternative for creators and teams who want more control, lower costs, and transparent development. If Buffer's per-channel pricing frustrates you, or you've been wanting to explore self-hosting, [start with Socipub's free plan](/sign-up) - no credit card needed.
+Socipub is the best open source Buffer alternative for creators and teams who want more control, lower costs, and transparent development. If Buffer's per-channel pricing frustrates you, or you've been wanting to explore self-hosting, [start with Socipub's free plan](/sign-up) - no credit card needed. Also check out our [Postiz alternative](/blog/postiz-alternative-open-source) for another comparison.
 
 <div class="prose-notice">
 <strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and contribute to the roadmap.
@@ -1370,6 +1370,8 @@ Copy this into your notes app. Fill in the brackets each week. After 3-4 weeks, 
 You don't need more time — you need a better system.
 
 Batch scheduling with Socipub turns a daily chore into a 30-minute weekly ritual. You get consistency, quality content, and your focus back.
+
+For a step-by-step walkthrough of the setup process, see our detailed guide on how to [schedule Twitter and LinkedIn posts simultaneously](/blog/schedule-twitter-linkedin-one-click).
 
 <a href="/sign-up" class="inline-block mt-4 rounded bg-blue-600 px-6 py-3 text-white font-semibold hover:bg-blue-700">Create Your Free Account</a>
 
