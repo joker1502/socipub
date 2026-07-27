@@ -11,8 +11,6 @@ export const metadata: Metadata = {
 }
 
 export default function BlogPage() {
-  const allTags = [...new Set(blogPosts.flatMap((p) => p.tags))].sort()
-
   return (
     <div className="flex flex-col min-h-full">
       <SiteHeader />
@@ -20,20 +18,6 @@ export default function BlogPage() {
         <div className="mx-auto max-w-4xl px-4 py-16">
           <h1 className="text-4xl font-bold tracking-tight">Blog</h1>
           <p className="mt-2 text-muted-foreground">Tips, guides, and updates for social media scheduling.</p>
-
-          <div className="mt-8 flex flex-wrap items-center gap-2">
-            <span className="text-xs text-muted-foreground">Browse by topic:</span>
-            {allTags.map((tag) => (
-              <Link
-                key={tag}
-                href={`/blog/tag/${tag}`}
-                className="inline-flex items-center gap-1 rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors"
-              >
-                <Hash className="size-3" />
-                {tag}
-              </Link>
-            ))}
-          </div>
 
           <div className="mt-10 grid gap-8">
             {blogPosts.map((post) => (
