@@ -1510,8 +1510,685 @@ For creators who value data control, transparent pricing, and a tool that grows 
 </div>
     `.trim(),
   },
-]
+  {
+    slug: "loomly-alternative-open-source",
+    title: "Loomly Alternative: Free & Open Source Social Media Scheduler for Twitter & LinkedIn (2026)",
+    description: "Loomly starts at $32/mo. Socipub is the free open source alternative with unlimited posts, AI scheduling, self-hosting, and no per-user fees. Compare and save.",
+    date: "2026-07-27",
+    readTime: "6 min read",
+    tags: ["alternatives", "comparison", "loomly", "open-source"],
+    content: `
+Loomly has built a reputation as a user-friendly social media calendar tool, popular among brands and agencies for its visual planning and team collaboration. But with plans starting at $32/month and per-user pricing that scales fast, it can feel expensive for indie hackers and solo creators — especially if you only need Twitter and LinkedIn scheduling.
 
+Socipub offers a radically different approach: open source, self-hostable, and free to start. Here's a detailed comparison to help you decide which tool fits your workflow and budget.
+
+## Loomly vs Socipub: Feature Comparison
+
+| Feature | Loomly Base ($32/mo) | Loomly Standard ($59/mo) | Loomly Premium ($129/mo) | Socipub Free | Socipub Pro ($19/mo) |
+|---------|:-------------------:|:-----------------------:|:------------------------:|:-----------:|:-------------------:|
+| Social Accounts | 5 | 10 | 25 | 2 | Unlimited |
+| Users | 1 | 6 | 14 | 1 | 1 |
+| Scheduled Posts | Unlimited | Unlimited | Unlimited | 5/mo | Unlimited |
+| Calendar View | ✅ | ✅ | ✅ | ✅ | ✅ |
+| AI Post Ideas | ❌ | ❌ | ✅ | ❌ | ❌ |
+| AI Scheduling | ❌ | ❌ | ❌ | ❌ | ✅ |
+| AI Rewrite | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Open Source | ❌ Proprietary | ❌ Proprietary | ❌ Proprietary | ✅ MIT | ✅ MIT |
+| Self-Hosting | ❌ | ❌ | ❌ | ✅ Docker | ✅ Docker |
+| EU Data Hosting | ❌ | ❌ | ❌ | ✅ | ✅ |
+| API Access | ❌ | ✅ | ✅ | ✅ Full | ✅ Full |
+| LinkedIn Support | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Twitter/X Support | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+> **Bottom line:** Loomly is a polished team collaboration tool with a beautiful calendar. But Socipub delivers the core scheduling features creators actually use — cross-platform posting, calendar management, AI optimization — at a fraction of the cost, with the added freedom of open source and self-hosting.
+
+## What Loomly Does Well
+
+Loomly's core strengths revolve around its visual calendar and team workflows:
+
+- **Visual calendar** — Loomly's calendar is genuinely polished. Drag-and-drop, color-coded posts, and social media previews make planning a visual pleasure.
+- **Team collaboration** — Loomly is built for teams. Roles, approval workflows, and shared calendars are thoughtfully designed for multi-person publishing.
+- **Content library** — Store and reuse post templates, images, and links across your team.
+- **Post ideas** — Automated suggestions based on social media holidays and trending topics (premium tier).
+- **Broad platform support** — Twitter/X, LinkedIn, Facebook, Instagram, TikTok, Pinterest, YouTube, Google Business Profile.
+
+These features shine for marketing teams and agencies managing multiple brand accounts with several team members. The approval workflow alone saves hours for teams that need content review cycles.
+
+## Where Loomly Falls Short
+
+### 1. Per-User Pricing Escalates Quickly
+
+Loomly charges **per user**, not per account. This means every team member adds to the monthly bill:
+
+| Plan | Price | Users | Cost per User |
+|------|:----:|:-----:|:------------:|
+| Base | $32/mo | 1 | $32/mo |
+| Standard | $59/mo | 6 | ~$10/mo |
+| Premium | $129/mo | 14 | ~$9/mo |
+| Advanced | $269/mo | 30 | ~$9/mo |
+
+For a solo creator, $32/mo is steep for basic scheduling features. For a two-person team on the Standard plan, that's $59/mo — and you're still limited to 10 social accounts.
+
+Socipub Pro costs **$19/mo** for one user with unlimited accounts. The Team plan ($49/mo) covers 3 users with all features — compared to Loomly's Standard at $59/mo for 6 users (but only 10 accounts).
+
+### 2. AI Features Locked Behind Premium Tiers
+
+Loomly's AI features are concentrated on the most expensive plans:
+
+- **AI Post Ideas** — Premium plan ($129/mo) and above
+- **AI Content Suggestions** — Enterprise-grade, Advanced plan ($269/mo)
+- **No AI Rewrite or AI Scheduling** — Loomly's AI is focused on generating ideas, not optimizing your posting workflow
+
+Socipub Pro ($19/mo) includes **AI Scheduling** (optimal posting times based on your engagement patterns) and **AI Rewrite** (adapt content for Twitter vs LinkedIn automatically).
+
+### 3. No Self-Hosting or Open Source
+
+Loomly is fully proprietary SaaS. Your content calendar, scheduled posts, and analytics live on Loomly's US-based servers with no option to:
+
+- Self-host for complete data sovereignty
+- Audit the source code for security or compliance
+- Customize features to your exact workflow
+- Guarantee GDPR compliance with EU hosting
+
+Socipub is fully **open source (MIT)** and [self-hostable via Docker](/features). Your data stays on your infrastructure — not a third-party's servers.
+
+### 4. Overkill for Simple Needs
+
+Loomly's feature set is designed for teams managing multiple brand accounts. If you're a solo creator who primarily posts to Twitter and LinkedIn, you're paying for:
+
+- Approval workflows (no one to approve but yourself)
+- Multi-user roles (you're the only user)
+- Content library with team folders (you work alone)
+- 5+ unused social account slots
+
+Socipub strips away the enterprise complexity and delivers focused scheduling for the platforms creators actually use.
+
+## When to Keep Loomly
+
+✅ **Marketing teams with 3+ users** — Loomly's approval workflows and role management shine in team environments
+✅ **Multi-brand management** — If you manage 5+ different brands or clients, Loomly's account separation is robust
+✅ **Platform coverage beyond Twitter/LinkedIn** — Loomly supports TikTok, Instagram, Pinterest, YouTube, and more
+✅ **You need post idea generation** — Loomly's Premium tier AI post suggestions are genuinely useful for content planning
+
+## When to Switch to Socipub
+
+✅ **Solo creators and indie hackers** — Paying $32/mo for a single user is hard to justify when Socipub Pro covers your needs at $19/mo
+✅ **Small teams (1-3 people)** — Socipub Team plan ($49/mo) vs Loomly Standard ($59/mo) — less cost, unlimited accounts
+✅ **Self-hosters and privacy-conscious users** — Full data control and open source transparency
+✅ **Twitter + LinkedIn focused creators** — Socipub was purpose-built for this workflow
+✅ **Budget-minded founders** — Save $156/year even on Pro, and the Free plan has no time limit
+
+## Migration Guide: Moving from Loomly to Socipub
+
+### Step 1: Export Your Loomly Data
+
+Loomly → Account → Export. Download your scheduled posts, drafts, and publishing history as CSV. Loomly exports include post content, scheduled dates, and attached media.
+
+### Step 2: Create Your Socipub Account
+
+[Sign up for free](/sign-up) — no credit card needed. The Free plan gives you 5 posts/month with no time limit, enough to evaluate the workflow.
+
+### Step 3: Connect Your Social Accounts
+
+Link Twitter/X and LinkedIn via OAuth. Each connection is secure, revocable, and takes under a minute.
+
+### Step 4: Rebuild Your Content Queue
+
+Use the [Calendar View](/scheduling) to schedule your posts. The drag-and-drop calendar is similar to Loomly's, making the transition intuitive. Socipub's AI Scheduling highlights optimal posting times — a feature Loomly doesn't offer at any tier.
+
+### Step 5: Add LinkedIn to Your Workflow
+
+If you've been using Loomly primarily for one platform, Socipub makes cross-platform posting seamless. Use **AI Rewrite** to adapt a single piece of content for both Twitter and LinkedIn in seconds.
+
+### Step 6: Run Both in Parallel (Optional)
+
+Keep Loomly active for 1-2 weeks while you get comfortable with Socipub. This is especially useful if you manage platforms beyond Twitter and LinkedIn — you can gradually transition your scheduling workflow.
+
+### Step 7: Cancel Loomly
+
+Cancel through your Loomly dashboard. At Socipub Pro's $19/mo, you'll save **$156/year** compared to Loomly Base. For a two-person team switching from Loomly Standard ($59/mo) to Socipub Team ($49/mo), that's **$120/year saved**.
+
+## Cost Comparison: Loomly vs Socipub
+
+| Scenario | Loomly | Socipub | Annual Savings |
+|----------|:------:|:-------:|:--------------:|
+| Solo creator, 2 platforms | $32/mo | $19/mo (Pro) | **$156/year** |
+| Solo creator, starting out | $32/mo | $0/mo (Free) | **$384/year** |
+| 2-person team, 5 accounts | $59/mo | $49/mo (Team) | **$120/year** |
+| 2-person team, unlimited accounts | $59/mo (10 max) | $49/mo (unlimited) | **$120/year + flexibility** |
+
+## The Verdict
+
+Loomly is a polished, team-friendly social media calendar with excellent visual planning and collaboration features. For agencies and marketing teams managing multiple brands, it's a solid choice.
+
+But for indie hackers, solo creators, and small teams focused on Twitter and LinkedIn, Loomly's per-user pricing and enterprise feature set are overkill. Socipub delivers the scheduling features you actually need — cross-platform posting, calendar management, AI optimization, and full data control — at a price that makes sense for a growing business.
+
+[Try Socipub free](/sign-up) — connect Twitter and LinkedIn, schedule your first cross-platform post in under 2 minutes. No credit card, no team approval workflow required.
+
+<div class="prose-notice">
+<strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and contribute to the roadmap.
+</div>
+    `.trim(),
+  },
+  {
+    slug: "coschedule-alternative-open-source",
+    title: "CoSchedule Alternative: Free Open Source Social Scheduler for Twitter & LinkedIn (2026)",
+    description: "CoSchedule starts at $39/mo for teams. Socipub is the free open source alternative with AI scheduling and self-hosting. Migration guide included.",
+    date: "2026-07-29",
+    readTime: "6 min read",
+    tags: ["alternatives", "comparison", "coschedule", "open-source"],
+    content: `
+CoSchedule has become the go-to marketing calendar for content teams who want a unified view of their blog posts, social media, and email campaigns. Its drag-and-drop calendar and workflow management are genuinely powerful — if you're running a multi-person marketing department.
+
+But if you're an indie hacker, solo creator, or small team focused primarily on social media scheduling — especially Twitter/X and LinkedIn — CoSchedule's enterprise feature set and per-user pricing are overkill. Socipub offers a simpler, more affordable approach: open source, self-hostable, and free to start.
+
+## CoSchedule vs Socipub: Feature Comparison
+
+| Feature | CoSchedule Free | CoSchedule Calendar ($39/mo) | CoSchedule Suite ($149/mo) | Socipub Free | Socipub Pro ($19/mo) |
+|---------|:--------------:|:--------------------------:|:------------------------:|:----------:|:------------------:|
+| Social Accounts | 5 | 5 | Unlimited | 2 | Unlimited |
+| Users | 1 | 1 | 5 | 1 | 1 |
+| Scheduled Posts | 10/mo | Unlimited | Unlimited | 5/mo | Unlimited |
+| Calendar View | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Content Planning (Blog+Social) | ❌ | ✅ | ✅ | ❌ | ❌ |
+| AI Scheduling | ❌ | ❌ | ❌ | ❌ | ✅ |
+| AI Rewrite | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Open Source | ❌ Proprietary | ❌ Proprietary | ❌ Proprietary | ✅ MIT | ✅ MIT |
+| Self-Hosting | ❌ Not available | ❌ Not available | ❌ Not available | ✅ Docker | ✅ Docker |
+| EU Data Hosting | ❌ | ❌ | ❌ | ✅ | ✅ |
+| API Access | ❌ | ❌ | ✅ | ✅ Full | ✅ Full |
+| LinkedIn Support | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Twitter/X Support | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+> **Bottom line:** CoSchedule is a powerful integrated marketing calendar for teams managing blog + social + email. Socipub is the focused alternative for creators who need Twitter and LinkedIn scheduling with AI features, open source transparency, and transparent pricing.
+
+## What CoSchedule Does Well
+
+CoSchedule's core strength is integrating **content marketing and social media** in one view:
+
+- **Unified marketing calendar** — See blog posts, social media content, and email campaigns on the same drag-and-drop calendar. This is genuinely valuable for teams planning integrated campaigns.
+- **Workflow management** — Assign tasks, set approval flows, and track progress across your content pipeline. CoSchedule's workflow engine is purpose-built for marketing teams.
+- **Content planning** — The calendar view shows your entire content mix — blog posts, social updates, email newsletters — in one place, making it easy to spot gaps and overlaps.
+- **Social scheduling** — Schedule posts across Twitter/X, LinkedIn, Facebook, Instagram, Pinterest, and TikTok from the same calendar.
+- **Best time scheduling** — AI-powered optimal posting time suggestions (on higher-tier plans).
+
+These features shine for marketing teams running integrated campaigns across blog, social, and email. The unified calendar is CoSchedule's killer feature — no other tool combines content and social planning as seamlessly.
+
+## Where CoSchedule Falls Short
+
+### 1. Per-User Pricing Gets Expensive Fast
+
+CoSchedule charges **per user**, and the price jumps significantly across tiers:
+
+| Plan | Price | Users | Social Accounts | Best For |
+|------|:----:|:-----:|:--------------:|:--------:|
+| Free | $0 | 1 | 5 | Evaluation only (10 posts/mo) |
+| Calendar | $39/mo | 1 | 5 | Solo content marketers |
+| Suite | $149/mo | 5 | Unlimited | Small marketing teams |
+| Pro | $399/mo | 10 | Unlimited | Growing marketing departments |
+
+For a solo creator who just needs Twitter and LinkedIn scheduling, CoSchedule's Calendar plan at $39/mo is expensive. Socipub Pro covers the same social scheduling needs at **$19/mo** with unlimited accounts.
+
+For a 2-person team, CoSchedule Suite at $149/mo is nearly **3x** Socipub's Team plan at $49/mo.
+
+### 2. Feature Overload for Simple Needs
+
+CoSchedule was designed for marketing teams managing multiple content channels. If you primarily schedule Twitter and LinkedIn posts, you're paying for features you don't use:
+
+- Blog post planning and calendar
+- Email campaign integration
+- Multi-step content approval workflows
+- Cross-channel campaign tagging
+- Team workload management
+
+These are valuable for their intended audience — content marketing managers — but unnecessary overhead for a creator focused on social media scheduling.
+
+### 3. No Self-Hosting or Open Source
+
+CoSchedule is fully proprietary SaaS. Your content calendar, scheduled posts, and social tokens live on CoSchedule's US-based servers with no option to:
+
+- Self-host on your own infrastructure for complete data control
+- Audit the source code for security or compliance
+- Customize features to your exact workflow
+- Guarantee data sovereignty for GDPR compliance
+
+Socipub is fully **open source (MIT)** and [self-hostable via Docker](/features). Your data stays on your infrastructure — not a third-party's servers.
+
+### 4. AI Features Locked Behind Expensive Tiers
+
+CoSchedule's Best Time Scheduling (AI-powered optimal posting times) is only available on the Suite plan ($149/mo) and above. The Calendar plan ($39/mo) has no AI features at all.
+
+Socipub Pro ($19/mo) includes both **AI Scheduling** (optimal posting times based on your engagement data) and **AI Rewrite** (automatically adapt content for Twitter vs LinkedIn tone).
+
+## When to Keep CoSchedule
+
+✅ **Content marketing teams** — If you manage blog posts, social media, and email campaigns in an integrated calendar, CoSchedule's unified view is best-in-class
+
+✅ **Multi-person marketing departments** — CoSchedule's workflow management and approval processes are purpose-built for team collaboration
+
+✅ **Broad platform coverage** — CoSchedule supports Facebook, Instagram, TikTok, Pinterest, and YouTube alongside Twitter and LinkedIn
+
+✅ **Integrated campaign planning** — If your social media is tightly coupled with blog launches and email sequences, CoSchedule's cross-channel calendar is invaluable
+
+## When to Switch to Socipub
+
+✅ **Solo creators and indie hackers** — Paying $39/mo for social scheduling features when Socipub Pro covers your needs at $19/mo
+
+✅ **Small teams (1-3 people)** — Socipub Team at $49/mo vs CoSchedule Suite at $149/mo — save $100/mo
+
+✅ **Twitter + LinkedIn focused creators** — Socipub was purpose-built for cross-platform Twitter and LinkedIn scheduling
+
+✅ **Self-hosters and privacy-conscious users** — Full data control, open source transparency, and EU hosting options
+
+✅ **Budget-minded founders** — The Free plan has no time limit, and Pro saves you $20/mo vs CoSchedule Calendar
+
+## Migration Guide: Moving from CoSchedule to Socipub
+
+### Step 1: Export Your CoSchedule Data
+
+CoSchedule → Account Settings → Export Data. Download your scheduled social posts, calendar entries, and analytics as CSV. Note that CoSchedule exports include your full content calendar, so you can selectively import social posts.
+
+### Step 2: Create Your Socipub Account
+
+[Sign up for free](/sign-up) — no credit card needed. The Free plan gives you 5 posts/month with no time limit, enough to evaluate the workflow. Upgrade to Pro ($19/mo) when you need unlimited posting.
+
+### Step 3: Connect Your Social Accounts
+
+Link Twitter/X and LinkedIn via OAuth. Each connection is secure, revocable, and takes under a minute. CoSchedule uses the same OAuth flow, so this will feel familiar.
+
+### Step 4: Rebuild Your Social Queue
+
+Use the [Calendar View](/scheduling) to schedule your posts. The drag-and-drop calendar is similar to CoSchedule's, making the transition intuitive. Socipub's AI Scheduling highlights optimal posting times — a feature CoSchedule locks behind its $149/mo Suite plan.
+
+### Step 5: Set Up a Batch Scheduling Routine
+
+One advantage of switching to a focused tool: adopt the 30-minute weekly batch scheduling workflow. Plan themes for the week, write posts in one sitting, and schedule everything in the [Calendar View](/scheduling).
+
+### Step 6: Run Both in Parallel (Optional)
+
+Keep CoSchedule active for 1-2 weeks while you get comfortable with Socipub. If you still need CoSchedule for blog and email planning, you can use both tools:
+- **CoSchedule** → Blog content calendar and email planning
+- **Socipub** → Twitter and LinkedIn social scheduling
+
+### Step 7: Cancel CoSchedule
+
+Cancel through your CoSchedule dashboard. At Socipub Pro's $19/mo, you'll save **$240/year** compared to CoSchedule Calendar. For a 2-person team switching from CoSchedule Suite ($149/mo) to Socipub Team ($49/mo), that's **$1,200/year saved**.
+
+## Cost Comparison: CoSchedule vs Socipub
+
+| Scenario | CoSchedule | Socipub | Annual Savings |
+|----------|:---------:|:------:|:-------------:|
+| Solo creator, 2 platforms | $39/mo (Calendar) | $19/mo (Pro) | **$240/year** |
+| Solo creator, starting out | $39/mo (Calendar) | $0/mo (Free) | **$468/year** |
+| 2-person team, social only | $149/mo (Suite) | $49/mo (Team) | **$1,200/year** |
+| 2-person team, unlimited posts | $149/mo (5 users) | $49/mo (3 users) | **$1,200/year + flexibility** |
+
+## The Verdict
+
+CoSchedule is an excellent integrated marketing calendar for teams that manage blog posts, social media, and email campaigns together. Its unified calendar view and workflow management are genuinely best-in-class — for content marketing teams.
+
+But if your primary need is **social media scheduling to Twitter and LinkedIn** — which is the daily reality for most indie hackers, solo creators, and small teams — CoSchedule's enterprise feature set and per-user pricing are hard to justify. You're paying for blog and email planning features you don't use.
+
+Socipub delivers the social scheduling features that matter: cross-platform posting, calendar management, AI-powered optimization, and full data control — at a fraction of the cost, with the freedom of open source and self-hosting.
+
+[Try Socipub free](/sign-up) — connect Twitter and LinkedIn, schedule your first cross-platform post in under 2 minutes. No credit card, no content marketing calendar required.
+
+<div class="prose-notice">
+<strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and contribute to the roadmap.
+</div>
+    `.trim(),
+  },
+  {
+    slug: "agorapulse-alternative-open-source",
+    title: "Agorapulse Alternative: Free Open Source Social Scheduler for Twitter & LinkedIn (2026)",
+    description: "Agorapulse starts at $49/mo with per-profile limits. Socipub is the open source alternative with AI scheduling, self-hosting, and unlimited accounts.",
+    date: "2026-07-31",
+    readTime: "6 min read",
+    tags: ["alternatives", "comparison", "agorapulse", "open-source"],
+    content: `
+Agorapulse has earned a strong reputation as a social media management platform built for agencies and teams. Its unified inbox, robust reporting, and team collaboration features are genuinely useful — if you're managing multiple brands with a team of people.
+
+But if you're an indie hacker, solo creator, or small team focused primarily on Twitter and LinkedIn scheduling, Agorapulse's per-profile pricing and $49/mo starting cost are hard to justify. Socipub offers a radically different approach: open source, self-hostable, and free to start.
+
+## Agorapulse vs Socipub: Feature Comparison
+
+| Feature | Agorapulse Standard ($49/mo) | Agorapulse Professional ($79/mo) | Socipub Free | Socipub Pro ($19/mo) |
+|---------|:---------------------------:|:-------------------------------:|:----------:|:------------------:|
+| Social Profiles | 5 | 10 | 2 | Unlimited |
+| Users | 1 | 1 | 1 | 1 |
+| Scheduled Posts | Unlimited | Unlimited | 5/mo | Unlimited |
+| Unified Inbox | ✅ | ✅ | ❌ | ❌ |
+| Calendar View | ✅ | ✅ | ✅ | ✅ |
+| AI Scheduling | ❌ | ❌ | ❌ | ✅ |
+| AI Rewrite | ❌ | ❌ | ❌ | ✅ |
+| Publishing Queue | ✅ | ✅ | ✅ | ✅ |
+| Open Source | ❌ Proprietary | ❌ Proprietary | ✅ MIT | ✅ MIT |
+| Self-Hosting | ❌ Not available | ❌ Not available | ✅ Docker | ✅ Docker |
+| EU Data Hosting | ❌ | ❌ | ✅ | ✅ |
+| API Access | ❌ | ✅ Read-only | ✅ Full | ✅ Full |
+| LinkedIn Support | ✅ | ✅ | ✅ | ✅ |
+| Twitter/X Support | ✅ | ✅ | ✅ | ✅ |
+| Instagram Support | ✅ | ✅ | ❌ | ❌ |
+| Facebook Support | ✅ | ✅ | ❌ | ❌ |
+
+> **Bottom line:** Agorapulse is a polished agency-grade platform with an excellent unified inbox. But for creators who primarily need Twitter and LinkedIn scheduling, Socipub delivers the core features at a fraction of the cost, with open source freedom and self-hosting.
+
+## What Agorapulse Does Well
+
+Agorapulse's core strengths revolve around team collaboration and multi-platform management:
+
+- **Unified Social Inbox** — Agorapulse's inbox aggregates comments, messages, and mentions from all connected platforms into one dashboard. This is genuinely valuable for teams managing high-volume engagement across multiple brands.
+
+- **Team Collaboration** — Assign messages to team members, set approval workflows, and track response times. Agorapulse's team features are designed for agencies managing client accounts.
+
+- **Reporting and Analytics** — Customizable reports with engagement metrics, audience growth, and competitor benchmarking. The PDF export feature is popular for client reporting.
+
+- **Competitor Reports** — Track competitor performance metrics alongside your own. This is a standout feature for agencies that need to demonstrate ROI to clients.
+
+- **Multi-Platform Support** — Twitter/X, LinkedIn, Facebook, Instagram, YouTube, and Google Business Profile all in one platform.
+
+These features shine for agencies managing 5+ client accounts with dedicated community management. The unified inbox alone can save hours per day for teams that need to respond to messages across platforms.
+
+## Where Agorapulse Falls Short
+
+### 1. Per-Profile Pricing Gets Expensive
+
+Agorapulse charges by social profile, not by user. This means every platform you add increases your monthly bill:
+
+| Plan | Price | Social Profiles | Cost Per Profile |
+|------|:----:|:--------------:|:---------------:|
+| Standard | $49/mo | 5 | ~$9.80/profile |
+| Professional | $79/mo | 10 | ~$7.90/profile |
+| Advanced | $119/mo | 20 | ~$5.95/profile |
+| Premium | $149/mo | 35 | ~$4.25/profile |
+
+If you only need Twitter and LinkedIn — which is the most common combination for indie hackers and B2B creators — you're paying for three unused profile slots on the Standard plan. Socipub Pro ($19/mo) gives you unlimited profiles for the platforms you actually use.
+
+### 2. No Self-Hosting or Open Source
+
+Agorapulse is fully proprietary SaaS. Your social tokens, scheduled posts, and analytics live on Agorapulse's US-based servers with no option to:
+
+- Self-host on your own infrastructure for complete data control
+- Audit the source code for security or compliance
+- Customize features to your exact workflow
+- Guarantee data sovereignty for GDPR compliance
+
+Socipub is fully **open source (MIT)** and self-hostable via Docker. Your data stays on your infrastructure — not a third-party's servers.
+
+### 3. AI Features Locked Behind Pro Tier
+
+Agorapulse's AI features (publishing suggestions, optimal timing) are only available on the Professional plan ($79/mo) and above. The Standard plan ($49/mo) includes no AI capabilities.
+
+Socipub Pro ($19/mo) includes both **AI Scheduling** (optimal posting times based on your engagement data) and **AI Rewrite** (automatically adapt content for Twitter vs LinkedIn tone).
+
+### 4. Overkill for Simple Scheduling
+
+Agorapulse is designed for teams managing multiple brands with active community engagement. If your workflow is primarily scheduling posts to Twitter and LinkedIn, you're paying for:
+
+- Unified inbox features (you manage comments natively on each platform)
+- Multi-step approval workflows (you're the only decision maker)
+- Competitor reports (useful for agencies, irrelevant for solo creators)
+- 3+ unused social profile slots
+
+Socipub strips away the enterprise complexity and delivers focused scheduling for the platforms creators actually use.
+
+## When to Keep Agorapulse
+
+✅ **Agencies managing 5+ client accounts** — Agorapulse's unified inbox and client reporting are purpose-built for agency workflows
+
+✅ **Teams with community managers** — If you have dedicated staff responding to messages and comments across platforms, the unified inbox saves hours daily
+
+✅ **Multi-platform presence beyond Twitter/LinkedIn** — Agorapulse supports Instagram, Facebook, YouTube, and Google Business Profile
+
+✅ **You need competitor benchmarking** — Agorapulse's competitor reports are genuinely useful for agencies demonstrating ROI
+
+## When to Switch to Socipub
+
+✅ **Solo creators and indie hackers** — Paying $49/mo for social scheduling when Socipub Pro covers your needs at $19/mo
+
+✅ **Small teams (1-3 people)** — Socipub Team at $49/mo vs Agorapulse Standard at $49/mo with unlimited profiles vs 5 profiles
+
+✅ **Twitter + LinkedIn focused creators** — Socipub was purpose-built for cross-platform Twitter and LinkedIn scheduling
+
+✅ **Self-hosters and privacy-conscious users** — Full data control, open source transparency, and EU hosting options
+
+✅ **Budget-minded founders** — The Free plan has no time limit, and Pro saves you $360/year vs Agorapulse Standard
+
+## Migration Guide: Moving from Agorapulse to Socipub
+
+### Step 1: Export Your Agorapulse Data
+
+Agorapulse → Settings → Export Data. Download your scheduled posts, content calendar, and publishing history. Agorapulse exports include post content and scheduled dates in CSV format.
+
+### Step 2: Create Your Socipub Account
+
+Sign up for free — no credit card needed. The Free plan gives you 5 posts/month with no time limit, enough to evaluate the workflow. Upgrade to Pro ($19/mo) when you need unlimited posting.
+
+### Step 3: Connect Your Social Accounts
+
+Link Twitter/X and LinkedIn via OAuth. Each connection is secure, revocable, and takes under a minute. Agorapulse uses the same OAuth flow, so this will feel familiar.
+
+### Step 4: Rebuild Your Content Queue
+
+Use the Calendar View to schedule your posts. The drag-and-drop calendar makes it easy to plan a month of content. Socipub's AI Scheduling highlights optimal posting times — a feature Agorapulse locks behind its $79/mo Professional plan.
+
+### Step 5: Set Up a Batch Scheduling Routine
+
+One advantage of switching to a focused tool: adopt the 30-minute weekly batch scheduling workflow. Plan themes for the week, write posts in one sitting, and schedule everything in the Calendar View.
+
+### Step 6: Run Both in Parallel (Optional)
+
+Keep Agorapulse active for 1-2 weeks while you get comfortable with Socipub. If you still need Agorapulse for Instagram or Facebook scheduling, use both tools:
+- **Agorapulse** → Instagram/Facebook scheduling and unified inbox
+- **Socipub** → Twitter and LinkedIn social scheduling
+
+### Step 7: Cancel Agorapulse
+
+Cancel through your account dashboard. At Socipub Pro's $19/mo, you'll save **$360/year** compared to Agorapulse Standard. For a 2-person team, that's even more significant.
+
+## Cost Comparison: Agorapulse vs Socipub
+
+| Scenario | Agorapulse | Socipub | Annual Savings |
+|----------|:---------:|:------:|:-------------:|
+| Solo creator, 2 platforms | $49/mo (Standard) | $19/mo (Pro) | **$360/year** |
+| Solo creator, starting out | $49/mo (Standard) | $0/mo (Free) | **$588/year** |
+| 2-person team, social only | $49/mo (5 profiles) | $49/mo (Team, 3 seats) | Same cost, unlimited profiles |
+| 2-person team, basic AI | $79/mo (Professional) | $49/mo (Team) | **$360/year** |
+
+## The Verdict
+
+Agorapulse is an excellent agency-grade social media management platform. Its unified inbox, team collaboration, and competitor reporting are genuinely valuable for agencies managing multiple client brands.
+
+But if your primary need is **social media scheduling to Twitter and LinkedIn** — which is the daily reality for most indie hackers, solo creators, and small teams — Agorapulse's per-profile pricing and enterprise feature set are hard to justify. You're paying for a unified inbox and team workflows you don't use.
+
+Socipub delivers the social scheduling features that matter: cross-platform posting, calendar management, AI-powered optimization, and full data control — at a fraction of the cost, with the freedom of open source and self-hosting.
+
+[Try Socipub free](/sign-up) — connect Twitter and LinkedIn, schedule your first cross-platform post in under 2 minutes. No credit card, no unified inbox required.
+
+<div class="prose-notice">
+<strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and contribute to the roadmap.
+</div>
+    `.trim(),
+  },
+  {
+    slug: "meetedgar-alternative-open-source",
+    title: "MeetEdgar Alternative: Free Open Source Social Scheduler for Twitter & LinkedIn (2026)",
+    description: "MeetEdgar costs $29.99/mo for 5 social profiles and rigid content categories. Socipub is the free open source alternative with AI scheduling, self-hosting, and unlimited posting. Detailed comparison and migration guide included.",
+    date: "2026-08-02",
+    readTime: "6 min read",
+    tags: ["alternatives", "comparison", "meetedgar", "open-source"],
+    content: `
+MeetEdgar made a name for itself as the social media scheduler that treats content like inventory — categorize posts, set percentages, and let the evergreen queue keep your best content cycling indefinitely. It is a clever system that appeals to creators who want a "set it and forget it" publishing workflow.
+
+But MeetEdgar's rigid category structure, limited platform support, and $29.99/mo price tag leave many creators wondering if there is a simpler, more affordable way. Socipub offers a radically different approach: open source, self-hostable, free to start, and built for Twitter and LinkedIn scheduling.
+
+## MeetEdgar vs Socipub: Feature Comparison
+
+| Feature | MeetEdgar ($29.99/mo) | Socipub Free | Socipub Pro ($19/mo) |
+|---------|:--------------------:|:----------:|:------------------:|
+| Social Profiles | 5 | 2 | Unlimited |
+| Users | 1 | 1 | 1 |
+| Scheduled Posts | Unlimited | 5/mo | Unlimited |
+| Content Categories | ✅ Core feature | ❌ | ❌ |
+| Evergreen Recycling | ✅ Built-in | ❌ | ❌ |
+| AI Scheduling | ❌ | ❌ | ✅ |
+| AI Rewrite | ❌ | ❌ | ✅ |
+| Calendar View | ❌ | ✅ | ✅ |
+| Twitter/X Support | ✅ | ✅ | ✅ |
+| LinkedIn Support | ✅ | ✅ | ✅ |
+| Thread Composer | ❌ | ❌ | ❌ |
+| Open Source | ❌ Proprietary | ✅ MIT | ✅ MIT |
+| Self-Hosting | ❌ Not available | ✅ Docker | ✅ Docker |
+| EU Data Hosting | ❌ | ✅ | ✅ |
+| API Access | ❌ | ✅ Full | ✅ Full |
+
+> **Bottom line:** MeetEdgar wins for content categorization and evergreen recycling. Socipub wins for flexibility, AI features, open source freedom, and lower cost.
+
+## What MeetEdgar Does Well
+
+MeetEdgar's core innovation is treating social media content like a library with categories:
+
+- **Content categories** — Sort posts into categories like "Promotions," "Tips," "Personal Stories," and set the percentage split for each. MeetEdgar automatically pulls from categories to maintain your desired content mix.
+- **Evergreen recycling** — Once a post is added to a category, it recycles automatically on a schedule you define. Your best content keeps getting shared without manual resharing.
+- **Library-based queue** — Instead of scheduling individual posts, you fill your library and MeetEdgar drafts your queue automatically based on your category percentages.
+- **Browser extension** — Save content from anywhere on the web directly to your MeetEdgar library.
+
+These features are genuinely useful for creators who want a hands-off approach to content distribution. The library model reduces daily decision fatigue — add content when inspiration strikes, and MeetEdgar handles the rest.
+
+## Where MeetEdgar Falls Short
+
+### 1. Rigid Category System Creates Overhead
+
+MeetEdgar's category system is powerful but comes with maintenance costs:
+
+- **Category management** — You need to maintain 4-6 categories with balanced content, which adds planning overhead
+- **Content tagging** — Every post must be categorized, even quick updates that don't fit neatly into a category
+- **Percentage balancing** — If one category runs dry, your content mix gets skewed until you refill it
+- **No ad-hoc posting** — MeetEdgar's library-first approach makes one-off, timely posts feel awkward
+
+For creators who prefer batch scheduling (write everything in one sitting, schedule for the week), MeetEdgar's category system adds unnecessary complexity. Socipub's straightforward queue — write, schedule, publish — is more intuitive for most workflows.
+
+### 2. Pricing vs Features
+
+**MeetEdgar's single plan: $29.99/mo (billed monthly)**
+
+| What you get | Limitation |
+|-------------|-----------|
+| 5 social profiles | If you only need Twitter + LinkedIn, you're paying for 3 unused slots |
+| Unlimited posts | Good, but this is standard |
+| Content categories | Core differentiator — useful only if you need category management |
+| No AI features | No scheduling optimization, no content rewriting |
+| No calendar view | No visual drag-and-drop scheduling |
+
+**Compare to Socipub Pro at $19/mo:**
+
+| What you get | Advantage |
+|-------------|-----------|
+| Unlimited social profiles | Pay for the 2 platforms you actually use |
+| Unlimited posts | Same as MeetEdgar |
+| AI Scheduling | Optimal posting times based on your engagement data |
+| AI Rewrite | Adapt content for Twitter vs LinkedIn automatically |
+| Calendar View | Visual drag-and-drop scheduling |
+| Open source + self-hosting | Full data control |
+
+At $29.99/mo vs $19/mo, you're paying $131.88/year more for MeetEdgar's category system while missing out on AI features, calendar view, and data control.
+
+### 3. No Self-Hosting or Open Source
+
+MeetEdgar is fully proprietary SaaS. Your content library, scheduled posts, and social tokens live on their US-based servers with no option to:
+
+- Self-host for complete data sovereignty
+- Audit the source code for security or compliance
+- Customize features to your exact workflow
+- Guarantee GDPR compliance with EU hosting
+
+Socipub is fully **open source (MIT)** and [self-hostable via Docker](/features). Your data stays on your infrastructure — not a third-party's servers.
+
+### 4. No Calendar View
+
+Despite being a scheduling tool, MeetEdgar doesn't offer a visual calendar view. You interact with your queue through a list-based interface. For creators who think visually — seeing a month of content at a glance — this is a significant limitation.
+
+Socipub's [Calendar View](/scheduling) provides drag-and-drop scheduling with color-coded posts across days and weeks, making it easy to spot gaps and balance your content mix.
+
+## When to Keep MeetEdgar
+
+✅ **You love content categories** — If the library/category/recycle model clicks with your brain, MeetEdgar's system is purpose-built
+
+✅ **You want truly hands-off scheduling** — Fill your library once and let MeetEdgar auto-populate your queue daily
+
+✅ **You need Facebook and Instagram** — MeetEdgar supports Facebook pages and Instagram alongside Twitter and LinkedIn
+
+✅ **You prefer list-based workflow** — If calendar views don't add value for you, MeetEdgar's library interface works fine
+
+## When to Switch to Socipub
+
+✅ **Solo creators and indie hackers** — $19/mo (Pro) vs $29.99/mo, save $131.88/year
+
+✅ **Batch schedulers** — If you prefer writing everything in one weekly session, Socipub's queue is more intuitive
+
+✅ **Twitter + LinkedIn focused creators** — Socipub was built for cross-platform Twitter and LinkedIn scheduling
+
+✅ **You want AI features** — AI Scheduling and AI Rewrite at $19/mo vs none at $29.99/mo
+
+✅ **Self-hosters and privacy-conscious users** — Full data control, open source transparency, and EU hosting
+
+## Migration Guide: Moving from MeetEdgar to Socipub
+
+### Step 1: Export Your MeetEdgar Content
+
+MeetEdgar → Library → Export. Download your content library and scheduled queue. MeetEdgar's export includes all your categorized posts in CSV format.
+
+### Step 2: Create Your Socipub Account
+
+[Sign up for free](/sign-up) — no credit card needed. The Free plan gives you 5 posts/month with no time limit, enough to evaluate the workflow. Upgrade to Pro ($19/mo) when you need unlimited posting.
+
+### Step 3: Connect Your Social Accounts
+
+Link Twitter/X and LinkedIn via OAuth. Each connection is secure, revocable, and takes under a minute.
+
+### Step 4: Adopt a Batch Scheduling Workflow
+
+Instead of maintaining category percentages, adopt the 30-minute weekly batch system:
+1. **Plan themes** — Monday through Sunday content themes (5 min)
+2. **Write in batches** — Create all weekly posts (15 min)
+3. **Schedule in Calendar View** — Drag and drop to optimal times (5 min)
+4. **Engage daily** — Redirect saved time to comments and conversations (5 min/day)
+
+### Step 5: Run Both in Parallel (Optional)
+
+Keep MeetEdgar active for 1-2 weeks while you get comfortable with Socipub. If you still rely on MeetEdgar for Facebook and Instagram, use both tools:
+- **MeetEdgar** → Facebook and Instagram scheduling
+- **Socipub** → Twitter and LinkedIn scheduling
+
+### Step 6: Cancel MeetEdgar
+
+Cancel through your MeetEdgar dashboard. At Socipub Pro's $19/mo, you'll save **$131.88/year** compared to MeetEdgar at $29.99/mo — plus you get AI features, a calendar view, and self-hosting.
+
+## Cost Comparison: MeetEdgar vs Socipub
+
+| Scenario | MeetEdgar | Socipub | Annual Savings |
+|----------|:--------:|:------:|:-------------:|
+| Solo creator, 2 platforms | $29.99/mo | $19/mo (Pro) | **$131.88/year** |
+| Solo creator, starting out | $29.99/mo | $0/mo (Free) | **$359.88/year** |
+| 2-person team, 2 platforms | $29.99/mo × 2 | $49/mo (Team) | **$169.88/year** |
+| Solo with AI features | $29.99/mo (no AI) | $19/mo (AI included) | **$131.88/year + AI** |
+
+## The Verdict
+
+MeetEdgar is a solid tool for creators who love the library-category-recycle model and want a hands-off scheduling experience. Its evergreen recycling and content categorization are genuinely differentiated.
+
+But for most indie hackers, solo creators, and small teams who primarily post to Twitter and LinkedIn, MeetEdgar's rigid category system adds unnecessary complexity to a simple workflow. You're paying more for fewer features, with no AI optimization, no calendar view, and no data control.
+
+Socipub delivers the social scheduling features that matter: cross-platform posting, calendar management, AI-powered optimization, and full data control — at a lower price, with the freedom of open source and self-hosting.
+
+[Try Socipub free](/sign-up) — connect Twitter and LinkedIn, schedule your first cross-platform post in under 2 minutes. No credit card, no content categories required.
+
+<div class="prose-notice">
+<strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and contribute to the roadmap.
+</div>
+    `.trim(),
+  },
+]
 export const blogPosts: BlogPost[] = [...posts].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
 )
