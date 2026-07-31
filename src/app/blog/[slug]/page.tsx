@@ -8,6 +8,8 @@ import { MarkdownContent } from "@/components/markdown-content"
 import { Breadcrumb } from "@/components/breadcrumb"
 import type { Metadata } from "next"
 
+export const dynamicParams = false
+
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }))
 }

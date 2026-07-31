@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button"
 import { Breadcrumb } from "@/components/breadcrumb"
 import type { Metadata } from "next"
 
+export const dynamicParams = false
+
 export function generateStaticParams() {
   const tags = [...new Set(blogPosts.flatMap((p) => p.tags))]
   return tags.map((tag) => ({ tag }))
