@@ -2011,6 +2011,157 @@ Socipub delivers the social scheduling features that matter: cross-platform post
     `.trim(),
   },
   {
+    slug: "metricool-alternative-open-source",
+    title: "Metricool Alternative: Free Open Source Social Scheduler (2026)",
+    description: "Metricool's free plan caps you at 20 posts a month with no Twitter or LinkedIn. Socipub is the open source alternative with AI scheduling and unlimited posting.",
+    date: "2026-08-01",
+    readTime: "6 min read",
+    tags: ["alternatives", "comparison", "metricool"],
+    content: `
+Metricool has built a loyal following among social media managers thanks to its powerful analytics dashboard and competitor tracking. But when you look closely at the free plan, the picture changes: 20 scheduled posts per month, no Twitter or LinkedIn support, and pricing that climbs quickly as your audience grows.
+
+If your workflow is built around Twitter/X and LinkedIn — the two networks where B2B and indie audiences actually live — Metricool's limitations quickly become dealbreakers. Socipub offers a different path: open source, self-hostable, free to start, and built specifically for cross-platform Twitter and LinkedIn scheduling.
+
+## Metricool vs Socipub: Feature Comparison
+
+| Feature | Metricool Free | Metricool Starter ($20/mo) | Socipub Free | Socipub Pro ($19/mo) |
+|---------|:-------------:|:--------------------------:|:------------:|:--------------------:|
+| Price | $0 | $20/mo | $0 | $19/mo |
+| Scheduled Posts | 20/mo | Unlimited | 5/mo | Unlimited |
+| Twitter/X Support | ❌ | Add-on (+$12/mo) | ✅ | ✅ |
+| LinkedIn Support | ❌ | ✅ | ✅ | ✅ |
+| Instagram Support | ✅ | ✅ | ❌ | ❌ |
+| Facebook Support | ✅ | ✅ | ❌ | ❌ |
+| TikTok Support | ✅ | ✅ | ❌ | ❌ |
+| Analytics | 30 days history | Unlimited history | Basic dashboard | ✅ Dashboard + insights |
+| Competitor Tracking | 5 profiles | 100 profiles | ❌ | ❌ |
+| AI Scheduling | ❌ | ❌ | ❌ | ✅ |
+| AI Content Rewrite | ❌ | ❌ | ❌ | ✅ |
+| Calendar View | ✅ | ✅ | ✅ | ✅ |
+| Open Source | ❌ | ❌ | ✅ MIT | ✅ MIT |
+| Self-Hosting | ❌ | ❌ | ✅ Docker | ✅ Docker |
+| EU Data Hosting | ❌ | ❌ | ✅ | ✅ |
+| API Access | ❌ | ❌ | ✅ Full | ✅ Full |
+
+> **Bottom line:** Metricool is an analytics-first platform — its competitive intelligence is genuinely strong. But if you schedule primarily to Twitter and LinkedIn, Socipub covers both at a fraction of the cost, with open source freedom and AI features that Metricool charges extra for.
+
+## What Metricool Does Well
+
+Metricool's strengths are real and worth acknowledging before comparing further:
+
+- **Deep analytics** — Impressions, engagement, follower growth, and audience insights across Instagram, Facebook, TikTok, and more, with competitor benchmarking baked in
+- **Competitor tracking** — Monitor up to 5 competitor profiles on the free plan and 100 on Starter, with side-by-side performance comparison
+- **Hashtag research** — Hashtag analytics and suggestions help you tune your discovery strategy
+- **Link-in-bio tool** — A built-in SmartLinks page for driving traffic from Instagram and TikTok bios
+- **Team features** — Role management, client management, and post approval workflows on Advanced
+
+If your job is managing multiple brands across Instagram, Facebook, and TikTok for clients, Metricool's analytics suite is legitimately hard to beat. That's exactly why it's a popular agency tool — and why its pricing and limitations sting for solo creators focused on Twitter and LinkedIn.
+
+## Where Metricool Falls Short for Twitter/LinkedIn Creators
+
+### 1. Twitter and LinkedIn Are Paywalled or Missing
+
+Here's the detail most Metricool reviews gloss over: **the free plan doesn't support Twitter or LinkedIn scheduling at all.** Twitter/X requires the paid X add-on, and LinkedIn is only available from Starter upward.
+
+| Plan | Twitter/X | LinkedIn |
+|------|:---------:|:--------:|
+| Free ($0) | ❌ | ❌ |
+| Starter ($20/mo) | +$12/mo add-on | ✅ |
+| Advanced ($53/mo) | ✅ | ✅ |
+
+For anyone whose personal brand lives on X and LinkedIn — the default channels for indie hackers, B2B founders, and professional creators — the entry cost is effectively $20-32/month, before you even get to the features you actually wanted.
+
+Socipub treats Twitter and LinkedIn as first-class citizens: both are included on the free plan, with unlimited posting on Pro.
+
+### 2. The Free Plan Is a Teaser, Not a Tool
+
+Metricool's free tier allows just **20 scheduled posts per month** — roughly one post every workday, on a single brand. The moment you want to batch-schedule a week of content, you've hit the ceiling.
+
+Socipub's free tier is smaller (5 posts/month) but has **no time limit and no forced upgrade prompts**. And when you do upgrade, Socipub Pro at $19/mo unlocks unlimited posting across unlimited profiles — a plan designed for actual creators, not agency demos.
+
+### 3. Pricing Scales Faster Than Your Audience
+
+Metricool's published pricing (2026): Free $0, Starter from $20/month, Advanced from $53/month. For a solo creator who just wants to schedule Twitter and LinkedIn, that's $20-32/month minimum — and the features you're paying for (multi-brand management, client workflows) are agency features you'll never touch.
+
+Compare that to Socipub Pro at $19/mo: unlimited posts, unlimited profiles, AI scheduling, AI content rewrite, calendar view, API access, and self-hosting — all included.
+
+## When to Keep Metricool
+
+✅ **Agency owners** managing multiple client brands across Instagram, Facebook, and TikTok
+
+✅ **Analytics-heavy teams** that live in competitor benchmarking and reporting
+
+✅ **Instagram/TikTok-first brands** where hashtag research and link-in-bio matter
+
+✅ **You need multi-brand reporting** — Metricool's dashboards are excellent for client-facing reports
+
+## When to Switch to Socipub
+
+✅ **Solo creators and indie hackers** posting to Twitter and LinkedIn daily
+
+✅ **Batch schedulers** who write a week of content in one sitting and want it queued automatically
+
+✅ **Privacy-conscious users** who want self-hosting and EU data hosting
+
+✅ **You want AI features** — AI Scheduling picks optimal posting times, AI Rewrite adapts your copy between X and LinkedIn
+
+✅ **You're tired of paywalled basics** — Socipub includes Twitter and LinkedIn on every plan, free included
+
+## Migration Guide: Moving from Metricool to Socipub
+
+### Step 1: Export Your Data
+
+Metricool doesn't offer a direct content export for scheduled posts. If you have recurring posts, copy them from your Metricool planner into a spreadsheet or your notes app — most creators just recreate their queue manually, which takes about 15 minutes for a weekly batch.
+
+### Step 2: Create Your Socipub Account
+
+[Sign up for free](/sign-up) — no credit card needed. The Free plan gives you 5 posts/month with no time limit, enough to evaluate the full workflow.
+
+### Step 3: Connect Twitter/X and LinkedIn
+
+Link both accounts via OAuth in the [Accounts](/features) page. Each connection is secure, revocable, and takes under a minute.
+
+### Step 4: Build Your Weekly Batch
+
+Adopt the 30-minute weekly batch system:
+1. **Plan themes** — Outline Monday through Sunday content themes (5 min)
+2. **Write in batches** — Create all weekly posts (15 min)
+3. **Schedule in the Calendar View** — Drag and drop to optimal times, or let AI Scheduling pick them (5 min)
+4. **Engage daily** — Redirect saved time to comments and conversations (5 min/day)
+
+For a deeper walkthrough, see our guide to [batch scheduling a week of content](/blog/batch-schedule-weekly-content-twitter-linkedin).
+
+### Step 5: Run Both in Parallel (Optional)
+
+Keep Metricool for Instagram/TikTok analytics while you use Socipub for Twitter and LinkedIn scheduling. The two tools complement each other well during a transition period.
+
+### Step 6: Cancel Metricool
+
+Cancel through your Metricool dashboard. At Socipub Pro's $19/mo, you'll save **$156/year** versus Metricool Starter at $20/mo plus the $12/mo X add-on — and you get AI scheduling, AI rewrite, and self-hosting included.
+
+## Cost Comparison: Metricool vs Socipub
+
+| Scenario | Metricool | Socipub | Annual Savings |
+|----------|:--------:|:------:|:-------------:|
+| Solo creator, Twitter + LinkedIn | $32/mo (Starter + X add-on) | $19/mo (Pro) | **$156/year** |
+| Solo creator, starting out | $0 (Free, no X/LinkedIn) | $0 (Free) | $0 + both networks |
+| Solo, analytics-first | $53/mo (Advanced) | $19/mo (Pro) | **$408/year** |
+| 2-person team | $53/mo + seat costs | $49/mo (Team) | **$48+/year** |
+
+## The Verdict
+
+Metricool is an outstanding analytics and agency platform — for Instagram, Facebook, and TikTok managers who need competitor intelligence and client reporting. If that's your workflow, keep it.
+
+But if you're a solo creator, indie hacker, or small team whose content lives on Twitter and LinkedIn, Metricool's free plan excludes both networks, its paid plans price in features you'll never use, and none of it is open source or self-hostable. Socipub covers the platforms you actually post to, includes AI scheduling and rewrite, and gives you full data control — for less money, with zero lock-in.
+
+[Try Socipub free](/sign-up) — connect Twitter and LinkedIn, schedule your first cross-platform post in under 2 minutes. No credit card, no 20-post ceiling.
+
+<div class="prose-notice">
+<strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and contribute to the roadmap.
+</div>
+    `.trim(),
+  },
+  {
     slug: "meetedgar-alternative-open-source",
     title: "MeetEdgar Alternative: Free Open Source Social Scheduler for Twitter & LinkedIn (2026)",
     description: "MeetEdgar costs $29.99/mo for 5 social profiles and rigid content categories. Socipub is the free open source alternative with AI scheduling, self-hosting, and unlimited posting. Detailed comparison and migration guide included.",
