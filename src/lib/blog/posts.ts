@@ -2559,6 +2559,88 @@ Socipub is built for exactly that audience: Twitter/X and LinkedIn on a real fre
 
 Ready to compare for yourself? [Try Socipub free](/sign-up) - no credit card, no time limit. Or [explore the full feature set](/features) and [review the pricing](/pricing). Also weighing other tools? See our [Buffer alternative comparison](/blog/buffer-alternative-open-source) or the [Hootsuite free alternative guide](/blog/hootsuite-free-alternative) for more side-by-side breakdowns.`.trim(),
   },
+  {
+    slug: "zoho-social-alternative-open-source",
+    title: "Zoho Social Alternative: Free Open Source Social Media Scheduler (2026)",
+    description: "Zoho Social's free plan limits you to 6 channels and 5 AI credits. Socipub is the open source alternative: unlimited posts, self-hosting, flat $19/mo pricing.",
+    date: "2026-08-04",
+    readTime: "7 min read",
+    tags: ["alternatives", "comparison", "zoho"],
+    content: `Zoho Social's free plan looks generous on paper - 6 channels for $0 - but the generosity stops at the plan boundary: AI features are metered in credits, extra brands cost add-ons, and every paid tier charges per user. For creators who just want to schedule Twitter/X and LinkedIn without a feature-metering spreadsheet, Socipub does the same core job with open source freedom.
+
+This guide compares Zoho Social vs Socipub across pricing, plan limits, data control, and everyday workflows, so you can decide which scheduler actually fits how you post.
+
+## Zoho Social vs Socipub: At a Glance
+
+| Feature | Zoho Social | Socipub |
+|---------|-------------|---------|
+| Starting Price | $0 Free (1 brand, 6 channels) | $0 Free (no time limit) |
+| Paid Plans (annual billing) | Standard $10/mo, Professional $30/mo, Premium $40/mo | Pro $19/mo, Team $49/mo |
+| Open Source | ❌ Proprietary | ✅ MIT License |
+| Self-Hosting | ❌ Not available | ✅ Deploy on your own server |
+| Free Plan | 6 channels, 1 team member, 5 AI credits | Twitter + LinkedIn, 5 posts/mo |
+| AI Features | Credit-based (5 free, 40 on Standard) | AI Scheduling + AI Rewrite |
+| Team Seats | 1 on Standard & Professional, 3 on Premium | 3 seats in Team plan |
+| Data Hosting | Zoho data centers | EU hosting available |
+| GDPR Compliance | Standard | Built-in + self-hosting option |
+
+## Why Users Are Leaving Zoho Social
+
+### 1. The Free Plan Has a Ceiling
+
+Zoho Social's free tier is genuinely usable: 1 brand covering 6 channels (X, Instagram, Facebook, LinkedIn Company Page, LinkedIn Profile, and Google Business Profile) with 1 team member. But it ships with just 5 AI credits, and the features you will want as you grow - bulk scheduling, advanced analytics, competitive reports - sit on paid tiers.
+
+### 2. Pricing Creeps Up Per Brand and Per User
+
+Paid plans start at $10/mo (Standard, billed annually) but scale fast:
+
+- **Standard ($10/mo)** - 1 brand, 12 channels, 1 team member, 40 AI credits
+- **Professional ($30/mo)** - 1 brand, 12 channels, 1 team member; extra brands sold as add-ons (max 5)
+- **Premium ($40/mo)** - 1 brand, 14 channels including WhatsApp and Telegram, 3 team members
+
+Need a second brand on Professional? That is an add-on. Need a third team member below Premium? Upgrade. Zoho even sells dedicated agency tiers (Agency/Agency Plus) because the per-brand math stops making sense for anyone managing multiple accounts.
+
+Socipub's pricing is flat: $19/mo Pro for unlimited posts, $49/mo Team with 3 seats - no per-brand or per-channel metering.
+
+### 3. No Self-Hosting and Ecosystem Lock-In
+
+Zoho Social runs only in Zoho's data centers. Your schedule, drafts, and audience data live on their infrastructure, with no migration path to your own servers. For privacy-conscious creators or teams with compliance requirements, that is a real constraint.
+
+Socipub is fully open source (MIT). You can [deploy it on your own server](/features) with Docker in under 10 minutes, or use the cloud version with EU hosting.
+
+## What You Gain by Switching
+
+- **No credit metering** - AI scheduling and AI rewrite are features, not a coin counter
+- **Unlimited posting on Pro** - no per-channel or per-brand caps
+- **Full data ownership** - self-host or choose EU hosting
+- **Flat, predictable pricing** - $19/mo Pro, $49/mo Team, no add-on ladder
+- **Open development** - audit the code, request features, contribute fixes
+
+## Migration Guide: Moving from Zoho Social to Socipub
+
+Switching takes about 30 minutes:
+
+**Step 1: Export your content** - Zoho Social lets you export post history and scheduled posts from its Reports section.
+
+**Step 2: Create your Socipub account** - [Sign up for free](/sign-up) - no credit card required.
+
+**Step 3: Connect Twitter/X and LinkedIn** - Link both accounts in the Accounts page. Each OAuth connection is secure and revocable.
+
+**Step 4: Rebuild your schedule** - Use Socipub's [calendar view](/scheduling) to recreate your posting plan, or bulk-import with the CSV importer. Power users can script the whole migration against the [REST API](/features).
+
+**Step 5: Cancel Zoho Social** - Once your first week is scheduled, cancel the subscription. The free plan covers Twitter + LinkedIn indefinitely while you evaluate.
+
+## Who Should Switch?
+
+✅ **Solo creators** posting to Twitter/X and LinkedIn who do not need 12-channel brands
+✅ **Small teams** (2-5 people) tired of per-user and per-brand pricing ladders
+✅ **Privacy-conscious users** who want self-hosting or EU data hosting
+✅ **Anyone evaluating** schedulers who wants AI features without credit counters
+
+## Get Started
+
+Ready to leave credit-metering behind? [Try Socipub free](/sign-up) - no credit card, no time limit. Or [explore the full feature set](/features) and [review the pricing](/pricing). Also weighing other tools? See our [Buffer alternative comparison](/blog/buffer-alternative-open-source) or the [SocialPilot alternative guide](/blog/socialpilot-alternative-open-source) for more side-by-side breakdowns.`.trim(),
+  },
 ]
 export const blogPosts: BlogPost[] = [...posts].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
