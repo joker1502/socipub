@@ -2728,6 +2728,87 @@ Socipub gives you all of this on the free plan - Markdown editing, scheduling, a
 </div>
     `.trim(),
   },
+  {
+    slug: "buffer-free-plan-guide",
+    title: "Buffer Free Plan: What You Get, Limits & When to Upgrade",
+    description: "Buffer's free plan: 3 channels, 10 posts per channel. See what's included, which limits hurt, and when to upgrade or switch to open source Socipub.",
+    date: "2026-08-06",
+    readTime: "6 min read",
+    tags: ["buffer", "free-plan", "guide"],
+    content: `
+Searching "Buffer free plan" usually means one thing: you want to know whether the free tier is enough before you commit. Buffer's pricing page leads with "Free forever, connect up to 3 channels" - but the details that decide whether it fits you live in the fine print: how many posts you can queue, what happens when you connect a fourth channel, and which features only unlock after you pay.
+
+Here is the full picture of Buffer's free plan in 2026 - what's included, where the limits actually hurt, and when upgrading makes sense versus switching to an open source alternative.
+
+## What the Buffer Free Plan Actually Includes
+
+Buffer's free tier is genuinely free forever - no trial clock, no credit card required. Here is the complete inventory:
+
+**Up to 3 connected channels.** Each social account (Twitter/X, Facebook, Instagram, LinkedIn, Pinterest, and more) connects as a channel, and you can have three at once on the free plan.
+
+**10 scheduled posts per channel.** You can queue 10 posts per channel at any one time - 30 total across three channels. Once a post goes live, the slot refills, so the limit is about queue depth, not daily volume.
+
+**100 content ideas.** Buffer's ideas library gives you 100 saved post ideas on the free plan - enough for a light content bank.
+
+**3 tags.** Organize your posts with up to 3 tags.
+
+**14-day paid trial.** You can try paid features for two weeks; if you don't upgrade, your account automatically returns to the free plan. Your scheduled posts still publish as long as your channels are not locked.
+
+**Broad channel coverage.** Buffer supports Twitter/X, Instagram, Facebook, LinkedIn, Pinterest, TikTok, YouTube Shorts, Bluesky, Mastodon, Threads and more - but which channels you can actually use depends on your plan tier.
+
+## Where the Free Plan's Limits Hurt
+
+The free tier is honest about being a starter plan. These are the three limits that actually bite:
+
+**The 3-channel ceiling.** Connect a fourth channel and Buffer locks it - you can't use it until you upgrade. This is the most common reason people hit the paywall: modern content operations often touch 4+ platforms.
+
+**Per-channel queue depth.** 10 queued posts per channel is fine for "schedule a week of posts" but tight for creators who batch-produce 20-30 posts in a sitting and want a month of buffer. Slots refill as posts publish, but the queue stays a bottleneck during batching sessions.
+
+**Features that require paid plans.** Advanced analytics, AI features, and team collaboration sit behind paid tiers. The free plan is single-user by design, and analytics are limited compared to paid tiers.
+
+And when you do upgrade, Buffer charges per channel - the more platforms you add, the more you pay every month. That is easy to swallow for one channel, expensive for a real portfolio.
+
+## When to Upgrade - and When to Switch Instead
+
+**Upgrade Buffer when:**
+- You need 4+ channels with automatic publishing
+- You need advanced analytics or AI features
+- You are happy inside a fully managed SaaS and fine paying per channel
+
+**Consider an alternative when:**
+- Your main platforms are Twitter/X and LinkedIn - exactly what Socipub targets
+- You want open source software, self-hosting, or full control of your data
+- You don't want pricing that scales with every channel you add
+- You want a real calendar view and queue depth without a paywall
+
+## Buffer Free vs Socipub Free at a Glance
+
+| Feature | Buffer Free | Socipub Free |
+|---------|-------------|--------------|
+| Cost | Free forever | Free forever |
+| Channels | 3 (locked if exceeded) | 2 (Twitter/X + LinkedIn) |
+| Scheduled posts | 10 per channel | 5 total |
+| Calendar view | Paid plans | Included |
+| Branding | - | None |
+| Open source | No | MIT |
+| Self-hosting | No | Yes (Docker) |
+| EU data hosting | No | Yes |
+| AI scheduling | Paid plans | Pro plan |
+| Upgrade path | ~$6/channel/month | Pro $19/mo, unlimited channels |
+
+## The Verdict
+
+Buffer Free is the right call if you need three channels with automatic publishing and you are happy inside a managed SaaS. Socipub Free is the right call if your world is Twitter and LinkedIn, you post more than a handful of times per week, and you would rather pay one flat price than a per-channel meter.
+
+The fastest way to decide: [create a free Socipub account](/sign-up), connect Twitter/X and LinkedIn, and schedule a real week of content. If it fits, you have saved $6+ per channel every month. If not, Buffer will still be there - free forever.
+
+Want the full comparison? Read [Buffer Alternative: Free & Open Source Social Media Scheduler](/blog/buffer-alternative-open-source), or explore the [calendar view](/scheduling) and [AI scheduling](/features) that come with every plan.
+
+<div class="prose-notice">
+<strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and help shape the roadmap.
+</div>
+    `.trim(),
+  },
 ]
 export const blogPosts: BlogPost[] = [...posts].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
