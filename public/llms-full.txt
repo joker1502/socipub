@@ -1,0 +1,44 @@
+# Socipub
+
+> Schedule posts to Twitter, LinkedIn and more with Socipub, the open source social media scheduler. Free, self-hostable alternative to Buffer, Hootsuite, and Postiz.
+
+## Core Features
+- [Scheduling](https://socipub.com/scheduling): Schedule posts to Twitter, LinkedIn, and more
+- [Multi-Platform](https://socipub.com/multi-platform): Manage multiple social accounts from one dashboard
+- [Markdown](https://socipub.com/markdown): Write posts in Markdown with live preview
+- [Features](https://socipub.com/features): Full feature overview
+- [Dashboard](https://socipub.com/dashboard): Your posting queue and calendar
+- [Pricing](https://socipub.com/pricing): Free and paid plans
+- [Trust](https://socipub.com/trust): Security, privacy, and self-hosting info
+
+## Blog
+- [Postiz Alternative: Free Open Source Social Media Scheduler (2026)](https://socipub.com/blog/postiz-alternative-open-source): Looking for a Postiz alternative? Socipub is a free, open source social media scheduler that gives you unlimited posts, full API access, self-hosting, and zero per-seat pricing. Compare features, pricing, and migration steps.
+- [Buffer Alternative: Free & Open Source Social Media Scheduler (2026 Review)](https://socipub.com/blog/buffer-alternative-open-source): Buffer's free plan limits you to 3 channels and 30 posts. Socipub is the open source Buffer alternative offering self-hosting, AI scheduling, cross-platform posting, and no per-seat pricing. Full comparison included.
+- [How to Schedule Posts to Twitter/X and LinkedIn Simultaneously (2026 Guide)](https://socipub.com/blog/schedule-twitter-linkedin-one-click): Step-by-step guide to scheduling cross-platform posts on Twitter/X and LinkedIn at the same time. Learn how to save hours each week with Socipub's multi-platform scheduler, including character optimization and AI-powered rewriting.
+- [Hootsuite Free Alternative: Open Source Social Media Scheduler (2026 Comparison)](https://socipub.com/blog/hootsuite-free-alternative): Hootsuite's free plan limits you to 2 users and 5 social accounts. Socipub offers a free open source alternative with self-hosting, unlimited scheduling, and no hidden limits. Compare features, pricing, and make the switch.
+- [Later.com Alternative: Open Source Social Media Scheduler with Twitter & LinkedIn Support](https://socipub.com/blog/later-com-competitor): Later.com focuses on Instagram and misses Twitter/LinkedIn. Socipub is the open source alternative that covers all platforms, offers AI scheduling, self-hosting, and costs less. Detailed feature comparison and migration guide.
+- [GDPR Compliant Social Media Scheduler: Open Source with EU Data Hosting (2026)](https://socipub.com/blog/gdpr-compliant-social-media-tool): Need a GDPR compliant social media scheduler? Socipub offers EU data hosting, open source transparency, self-hosting for complete data control, and enterprise-grade encryption. Built for privacy-conscious creators and teams.
+- [Sprout Social Alternative: Open Source Social Media Scheduler for Indie Hackers (2026)](https://socipub.com/blog/sprout-social-alternative-open-source): Sprout Social costs $249/mo and is built for enterprises. Socipub is the free open source alternative for indie hackers and small teams — self-hosted, unlimited posts, zero per-seat pricing. Compare features and make the switch.
+- [Typefully Alternative: Free Open Source Social Media Scheduler for Twitter & LinkedIn (2026)](https://socipub.com/blog/typefully-alternative-open-source): Typefully is great for Twitter threads but lacks LinkedIn support, self-hosting, and multi-platform scheduling. Socipub is the open source alternative covering both Twitter and LinkedIn with transparent pricing. Full comparison and migration guide.
+- [TweetDeck Alternative: Free Open Source Social Media Scheduler for Twitter & LinkedIn (2026)](https://socipub.com/blog/tweetdeck-alternative-open-source): TweetDeck (now X Pro) requires X Premium at $8/mo and only supports Twitter. Socipub is the free open source alternative that handles both Twitter and LinkedIn scheduling with AI features, self-hosting, and no monthly fees. Full comparison and migration guide.
+- [Hypefury Alternative: Free Open Source Social Media Scheduler for Twitter & LinkedIn (2026)](https://socipub.com/blog/hypefury-alternative-open-source): Hypefury helps grow your Twitter audience but costs $29/mo and lacks cross-platform flexibility. Socipub is the free open source alternative with Twitter + LinkedIn scheduling, AI features, self-hosting, and transparent pricing. Full comparison and migration guide.
+- [Batch Schedule Twitter & LinkedIn Content in 30 Minutes](https://socipub.com/blog/batch-schedule-weekly-content-twitter-linkedin): Schedule a week of Twitter and LinkedIn content in 30 minutes using this 4-step system. Save 4+ hours with Socipub's queue and AI rewrite.
+- [SocialBee Alternative: Free Open Source Social Scheduler for Twitter & LinkedIn (2026)](https://socipub.com/blog/socialbee-alternative-open-source): SocialBee caps you at 5 profiles. Socipub is the open source alternative with unlimited accounts, AI scheduling, and self-hosting. Compare and migrate.
+- [Loomly Alternative: Free & Open Source Social Media Scheduler for Twitter & LinkedIn (2026)](https://socipub.com/blog/loomly-alternative-open-source): Loomly starts at $32/mo. Socipub is the free open source alternative with unlimited posts, AI scheduling, self-hosting, and no per-user fees. Compare and save.
+- [CoSchedule Alternative: Free Open Source Social Scheduler for Twitter & LinkedIn (2026)](https://socipub.com/blog/coschedule-alternative-open-source): CoSchedule starts at $39/mo for teams. Socipub is the free open source alternative with AI scheduling and self-hosting. Migration guide included.
+- [Agorapulse Alternative: Free Open Source Social Scheduler for Twitter & LinkedIn (2026)](https://socipub.com/blog/agorapulse-alternative-open-source): Agorapulse starts at $49/mo with per-profile limits. Socipub is the open source alternative with AI scheduling, self-hosting, and unlimited accounts.
+- [Metricool Alternative: Free Open Source Social Scheduler (2026)](https://socipub.com/blog/metricool-alternative-open-source): Metricool's free plan caps you at 20 posts a month with no Twitter or LinkedIn. Socipub is the open source alternative with AI scheduling and unlimited posting.
+- [MeetEdgar Alternative: Free Open Source Social Scheduler for Twitter & LinkedIn (2026)](https://socipub.com/blog/meetedgar-alternative-open-source): MeetEdgar costs $29.99/mo for 5 social profiles and rigid content categories. Socipub is the free open source alternative with AI scheduling, self-hosting, and unlimited posting. Detailed comparison and migration guide included.
+- [Publer Alternative: Open Source Social Media Scheduler (2026)](https://socipub.com/blog/publer-alternative-open-source): Publer's free plan blocks Twitter/X entirely. Socipub is the open source alternative with AI scheduling, self-hosting, and unlimited posting.
+- [SocialPilot Alternative: Free Open Source Scheduler (2026)](https://socipub.com/blog/socialpilot-alternative-open-source): SocialPilot's $17/mo entry plan locks bulk scheduling and has no free tier. Socipub is the free, open source alternative with unlimited posting on Pro.
+- [Zoho Social Alternative: Free Open Source Social Media Scheduler (2026)](https://socipub.com/blog/zoho-social-alternative-open-source): Zoho Social's free plan limits you to 6 channels and 5 AI credits. Socipub is the open source alternative: unlimited posts, self-hosting, flat $19/mo pricing.
+- [How to Schedule Markdown Posts to Twitter & LinkedIn (2026)](https://socipub.com/blog/markdown-social-media-posts): Write once in Markdown, schedule to Twitter/X and LinkedIn with Socipub. See why Markdown beats rich text for social media and how to format posts that pop.
+- [Hootsuite Free Plan: What You Get, Limits & When to Upgrade](https://socipub.com/blog/hootsuite-free-plan-guide): Hootsuite's free plan: 5 accounts, 30 scheduled posts, 2 users. See what's included, which limits hurt, and when to upgrade or switch to open source Socipub.
+- [Buffer Free Plan: What You Get, Limits & When to Upgrade](https://socipub.com/blog/buffer-free-plan-guide): Buffer's free plan: 3 channels, 10 posts per channel. See what's included, which limits hurt, and when to upgrade or switch to open source Socipub.
+
+## Company
+- [Privacy Policy](https://socipub.com/privacy)
+- [Terms of Service](https://socipub.com/terms)
+
+## Contact
+- Website: https://socipub.com
