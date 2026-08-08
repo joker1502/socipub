@@ -2896,6 +2896,106 @@ Want the full comparison? Read [Buffer Alternative: Free & Open Source Social Me
 </div>
     `.trim(),
   },
+  {
+    slug: "later-free-plan-guide",
+    title: "Later Free Plan: What Happened & Free Alternatives (2026)",
+    description: "Later discontinued its free plan. See what Starter now costs, where the limits hurt, and which free alternatives - including open source Socipub - replace it.",
+    date: "2026-08-08",
+    readTime: "6 min read",
+    tags: ["later", "free-plan", "guide"],
+    content: `
+Searching "Later free plan" usually means one thing: you remember Later's free tier and want to know whether it still exists before you commit. The short answer in 2026: it does not. Later's pricing page now lists exactly three plans - Starter, Growth and Scale - and the only "free" offer left is a 14-day trial. The old free tier's headline feature, 30 scheduled posts per month, now lives on the paid Starter plan.
+
+Here is the full picture of Later's pricing in 2026 - what replaced the free plan, what you get for your first dollar, and which genuinely free alternatives cover the same ground.
+
+## What Happened to Later's Free Plan
+
+Later quietly retired its free tier. The current pricing page has no free plan, no "free forever" option, and no free tier in the feature comparison - every plan is paid, and the page leads with a 14-day free trial instead. If you try to visit the old free-plan page, it no longer exists.
+
+Here is what Later offers now (prices shown with yearly billing):
+
+| Plan | Price (yearly) | Social Sets | Users | Posts per profile |
+|------|---------------|-------------|-------|-------------------|
+| Starter | $18.75/mo | 1 (8 profiles) | 1 | 30/month |
+| Growth | $37.50/mo | 2 (16 profiles) | 2 | 180/month |
+| Scale | $82.50/mo | 6 (48 profiles) | - | Unlimited |
+
+The comparison is blunt: Later's entry plan costs $225 a year, and that only buys you one social set, a single user, and 30 posts per profile per month - the same volume the old free plan used to include. Team features, social inbox, and approval workflows start at Growth.
+
+## What the Starter Plan Actually Includes
+
+Later Starter ($18.75/mo billed yearly, $25/mo monthly) is the new entry point. Here is the complete inventory:
+
+**1 social set, 8 profiles.** A social set includes one profile from each supported platform - Instagram, Facebook, TikTok, Threads, YouTube, Pinterest, LinkedIn and Snapchat. Starter gives you one set, so one profile per platform.
+
+**30 posts per profile per month.** This is the number that used to define the free tier. On Starter, you get 30 scheduled posts per profile per month - one Instagram and one TikTok account means 60 total. Posts count when they are scheduled, not when they publish.
+
+**1 user.** Starter is strictly single-user. Additional users cost extra on paid plans, but Starter is limited to one.
+
+**5 AI credits per month.** Later's AI features (Caption Writer and Ideas) run on credits: 1 credit generates 3 ideas or 1 caption. Starter includes 5 credits per month.
+
+**Instagram analytics, up to 3 months.** You get Instagram performance data with a 3-month lookback window, plus a shareable Instagram Performance Report. Facebook, TikTok, Threads and Pinterest analytics are limited or short-window on Starter.
+
+**Auto Publish, visual planner, Link in Bio.** Auto publishing to Instagram, TikTok, Facebook, Threads, Pinterest and LinkedIn works on Starter, along with the drag-and-drop visual planner and Later's Link in Bio pages.
+
+**1 Access Group.** Team organization is capped at one Access Group, with no share calendar, no approval workflow, and no social inbox - those start at Growth.
+
+## Where Later's Limits Hurt
+
+The post-free-plan structure creates three practical problems:
+
+**The per-profile post cap is strict.** 30 posts per profile per month means 10-15 posts per platform if you post a few times a week. Cross-post the same content to two platforms and the cap applies separately to each - fine until you batch-schedule a month of content in one sitting, which instantly exposes the limit.
+
+**Everything you actually want costs Growth.** Multi-profile Best Times, unlimited Access Groups, the social inbox, content approval, and 1-year analytics lookback all sit on Growth at $37.50/mo. Upgrading from Starter doubles your bill just to unlock collaboration basics.
+
+**The free path no longer exists.** There is no free plan to start with, no free tier to grow into. The only way to evaluate Later is a 14-day trial, after which you are paying $18.75/mo minimum. For a solo creator who posts twice a day on two platforms, that is real money for what used to be free.
+
+## When to Pay Later - and When to Switch Instead
+
+**Pay for Later when:**
+- Your strategy is Instagram-first and you live in the visual planner
+- You want the Link in Bio ecosystem and Instagram product tagging
+- You are fine paying $18.75-$37.50/mo for a fully managed SaaS
+
+**Consider an alternative when:**
+- You need Twitter/X and LinkedIn - Later does not support them for scheduling
+- You want a genuinely free tier that is not a trial clock
+- You batch-produce content and want queue depth without per-profile caps
+- You prefer open source software, self-hosting, or flat pricing without plan tiers
+
+## Later Starter vs Socipub Free at a Glance
+
+| Feature | Later Starter | Socipub Free |
+|---------|---------------|--------------|
+| Cost | $18.75/mo (yearly) | Free forever |
+| Users | 1 | 1 |
+| Social profiles | 8 (1 per platform) | 2 (Twitter/X + LinkedIn) |
+| Scheduled posts | 30 per profile/month | 5 total |
+| Twitter/X support | No | Yes |
+| LinkedIn support | No | Yes |
+| Calendar view | Included | Included |
+| Branding | - | None |
+| Open source | No | MIT |
+| Self-hosting | No | Yes (Docker) |
+| EU data hosting | No | Yes |
+| AI scheduling | Paid plans | Pro plan |
+| Free path to start | 14-day trial only | Real free plan |
+
+## The Verdict
+
+Later's free plan is gone, and the cheapest way in is now $18.75/mo for what used to be the free tier's volume. Later remains a great tool for Instagram-first creators who want the visual planner and Link in Bio - if the price is worth it to you, Starter is a fair entry point.
+
+Socipub Free is the right call if your world is Twitter and LinkedIn, you want a real free plan with no trial clock, and you would rather pay one flat price for unlimited channels when you eventually outgrow it.
+
+The fastest way to decide: [create a free Socipub account](/sign-up), connect Twitter/X and LinkedIn, and schedule a real week of content. If it fits, you have escaped the $225/year entry fee. If not, Later will still be there - for $18.75/mo.
+
+Want the full comparison? Read [Later.com Alternative: Open Source Social Media Scheduler](/blog/later-com-competitor), or explore the [calendar view](/scheduling) and [AI scheduling](/features) that come with every plan.
+
+<div class="prose-notice">
+<strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and help shape the roadmap.
+</div>
+    `.trim(),
+  },
 ]
 export const blogPosts: BlogPost[] = [...posts].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
