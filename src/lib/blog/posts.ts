@@ -2996,6 +2996,91 @@ Want the full comparison? Read [Later.com Alternative: Open Source Social Media 
 </div>
     `.trim(),
   },
+  {
+    slug: "planable-free-plan-guide",
+    title: "Planable Free Plan: What 50 Free Posts Really Get You (2026)",
+    description: "Planable's free plan: 50 posts total, no time limit, but no X/Twitter publishing. See what's included, where it hurts, and better free alternatives.",
+    date: "2026-08-09",
+    readTime: "6 min read",
+    tags: ["planable", "free-plan", "guide"],
+    content: `
+Searching "Planable free plan" usually means one thing: you want to know whether the free tier is enough before you commit. Planable's pricing page leads with "The first 50 posts are free. No time limit & no credit card required" - but the details that decide whether it fits you live in the fine print: what counts as a post, whether the 50 ever reset, and which platforms you can actually publish to without paying.
+
+Here is the full picture of Planable's free tier in 2026 - what's included, where the limits actually hurt, and when paying $33/month makes sense versus switching to an open source alternative.
+
+## What Planable's "Free Plan" Actually Is
+
+Planable does not offer a classic free tier. Instead, every account starts with a free trial that gives you **50 created posts total**, with no time limit and no credit card required. Here is the complete inventory:
+
+**50 created posts, total, never resetting.** The 50 posts count every post you create across all pages in your workspace - drafts, scheduled, and published all consume the same budget. They do not reset monthly: "Once they're used, you'll need to upgrade to keep publishing."
+
+**No X (Twitter) publishing during the free trial.** This is the big one. Planable's own pricing FAQ states that during the free trial "you don't have access to X (Twitter) publishing." You can plan Twitter content, but you cannot send it live on a free account.
+
+**Full planning features, limited publishing.** Calendar, feed and grid views, post templates, custom labels, and approval flows all work on the free trial. The trial is designed to test real workflows - the wall is publishing volume, not planning features.
+
+**Analytics and Social inbox are paid add-ons.** The Analytics add-on ($12-$14/workspace/month) and Social inbox ($7.50-$9/workspace/month) can only be tested on a paid plan, though each add-on includes its own 30-day trial.
+
+**Unlimited users, per-workspace pricing.** Planable prices per workspace, not per seat - unlimited users on every plan, and a workspace holds its own pages, calendar, team, campaigns, and approval flow.
+
+## Where the 50-Post Trial Hurts
+
+The post-free-tier structure creates four practical problems:
+
+**The 50 posts never refill.** This is not a monthly allowance - it is a one-time budget. Post three times a day across two platforms and the trial is gone in eight days. Plan a month of content in one sitting and you can burn the entire trial before a single post goes live.
+
+**X/Twitter is locked until you pay.** For anyone whose primary channel is X or LinkedIn, a free trial that cannot publish to X is a non-starter. You are forced to upgrade just to test the tool on the platform you actually use.
+
+**Even Basic throttles X to 1 tweet per 24 hours.** Planable's cheapest paid plan, Basic at $33/workspace/month, still caps X publishing at one tweet per day - "Publish tweets 1 tweet published/24h." One tweet a day is not a scheduling tool for an active X account; it is a teaser.
+
+**The features that justify the price are extra.** Analytics and Social inbox are add-ons on every plan, so the headline price never covers measurement or engagement - expect $19.50-$23/workspace/month more on top of Basic for both.
+
+## Basic vs Pro: What $33 or $49 Actually Buys
+
+| Plan (yearly) | Posts/month | Social pages | X (Twitter) | Labels | Media storage | Version history |
+|---------------|-------------|--------------|-------------|--------|---------------|-----------------|
+| Basic ($33/ws/mo) | 60 | 4 | 1 tweet/24h | 5 | 10GB | 1 week |
+| Pro ($49/ws/mo) | 150 | 10 | Unlimited | 10 | 50GB | 30 days |
+| Enterprise (custom) | Unlimited | 50 | Unlimited | Unlimited | Custom | Unlimited |
+
+**Basic** adds 60 posts per workspace per month, 4 social pages, and 10GB of media - but keeps the X throttle at one tweet per day, and AI post rewrite/generate, recurring posts, and omnichannel planning stay locked to Pro. **Pro** unlocks unlimited X publishing, 150 posts/month, 10 social pages, AI generation, and 10 campaigns per workspace. **Enterprise** adds multi-level approvals, SSO, and a dedicated account manager.
+
+For a solo creator or a small team posting across three or four platforms, the jump from $33 to $49 per workspace per month is the difference between "one tweet a day" and "a real scheduling tool."
+
+## Planable vs Socipub Free at a Glance
+
+| Feature | Planable Free | Socipub Free |
+|---------|---------------|--------------|
+| Cost | Free (50 posts total) | Free forever |
+| X/Twitter publishing | No | Yes |
+| LinkedIn publishing | Yes | Yes |
+| Post budget | 50 total, never resets | 5 queued at a time (refills) |
+| Calendar view | Included | Included |
+| Analytics | Add-on ($12+/mo) | Pro plan |
+| Social inbox | Add-on ($7.50+/mo) | - |
+| Open source | No | MIT |
+| Self-hosting | No | Yes (Docker) |
+| EU data hosting | No | Yes |
+| Upgrade path | Basic $33/ws/mo | Pro $19/mo, unlimited channels |
+
+The difference in post budgets matters: Planable's 50 posts are a one-time allowance, while Socipub's 5-post limit is queue depth - posts release the slot when they go live, so a free account keeps working indefinitely.
+
+## The Verdict
+
+Planable's "free plan" is really a 50-post, no-expiration trial. It is a generous way to evaluate the tool's planning and approval features - if your platforms are Instagram, Facebook, or LinkedIn and you are comparing agency-grade collaboration tools, the trial is worth taking.
+
+It is not a free plan you can grow into. The posts never refill, X publishing is locked behind payment, and even the $33/month Basic plan throttles X to one tweet per day.
+
+Socipub Free is the right call if your world is Twitter/X and LinkedIn, you want a real free plan with no trial clock, and you would rather pay one flat price for unlimited channels when you eventually outgrow it.
+
+The fastest way to decide: [create a free Socipub account](/sign-up), connect Twitter/X and LinkedIn, and schedule a real week of content. If it fits, you have escaped the $396/year entry fee. If not, Planable will still be there - for $33/month and one tweet a day.
+
+Want more free-plan breakdowns? Read [Buffer Free Plan: What You Get, Limits & When to Upgrade](/blog/buffer-free-plan-guide), or explore the [calendar view](/scheduling) and [AI scheduling](/features) that come with every plan.
+
+<div class="prose-notice">
+<strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and help shape the roadmap.
+</div>
+    `.trim(),
+  },
 ]
 export const blogPosts: BlogPost[] = [...posts].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
