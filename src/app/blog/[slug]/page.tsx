@@ -109,7 +109,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
               <div className="mt-8 flex flex-wrap gap-2">
                 {post.tags.map((tag) => (
-                  <Link key={tag} href={`/blog/tag/${normalizeTag(tag)}`} className="inline-flex items-center gap-1 rounded-full bg-muted px-2.5 py-0.5 text-xs text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors">
+                  <Link key={tag} href={`/blog/tags/${normalizeTag(tag)}`} className="inline-flex items-center gap-1 rounded-full bg-muted px-2.5 py-0.5 text-xs text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors">
                     <Hash className="size-3" />
                     {tag}
                   </Link>

@@ -40,7 +40,7 @@ export default function BlogPage() {
                 </Link>
                 <div className="flex flex-wrap gap-1.5 mt-3">
                   {post.tags.map((tag) => (
-                    <Link key={tag} href={`/blog/tag/${normalizeTag(tag)}`} className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-xs text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors">
+                    <Link key={tag} href={`/blog/tags/${normalizeTag(tag)}`} className="inline-flex items-center gap-1 rounded-full bg-muted px-2 py-0.5 text-xs text-muted-foreground hover:bg-muted/80 hover:text-foreground transition-colors">
                       <Hash className="size-2.5" />
                       {tag}
                     </Link>

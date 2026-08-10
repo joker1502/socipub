@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
     ...blogPosts.flatMap((post) =>
       post.tags.map((tag) => ({
-        url: `${base}/blog/tag/${tag}`,
+        url: `${base}/blog/tags/${tag}`,
         changeFrequency: "monthly" as const,
         priority: 0.5,
       }))
