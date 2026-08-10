@@ -3085,6 +3085,105 @@ Want more free-plan breakdowns? Read [Buffer Free Plan: What You Get, Limits & W
 </div>
     `.trim(),
   },
+  {
+    slug: "zoho-social-free-plan-guide",
+    title: "Zoho Social Free Plan: What You Get, Limits & When to Upgrade",
+    description: "Zoho Social's free plan: 6 channels, 1 brand, 5 AI credits. See what's included, where the limits hurt, and when to upgrade or switch to open source Socipub.",
+    date: "2026-08-10",
+    readTime: "6 min read",
+    tags: ["zoho", "free-plan", "guide"],
+    content: `
+Searching "Zoho Social free plan" usually means one thing: you want to know whether the free tier is enough before you commit. Zoho's pricing page leads with a "FREE" column - but the details that decide whether it fits you live in the fine print: the free tier is a limited version of Standard that lands after a 15-day trial, the 6 channels are locked to a single brand, and the features that make scheduling scalable - bulk upload, repeat posting, RSS feeds - all sit behind the paid plans.
+
+Here is the full picture of Zoho Social's free plan in 2026 - what's included, where the limits actually hurt, and when upgrading makes sense versus switching to an open source alternative.
+
+## What the Zoho Social Free Plan Actually Includes
+
+Zoho's free plan is genuinely free forever - but it arrives after a 15-day Standard trial. Sign up with no credit card, test the full Standard features for two weeks, and when the trial ends your account moves to "a forever free plan with lifetime validity and limited features." Here is the complete inventory of that free plan:
+
+**1 Brand with 6 channels.** A Zoho "Brand" is a set of social channels, and the free plan's single brand includes exactly six: one X Profile, one Instagram Profile, one Facebook Page, one LinkedIn Company Page, one LinkedIn Profile, and one Google Business Profile. Notably absent: YouTube, Pinterest, TikTok, Mastodon, Threads and Bluesky - those channel types require a paid plan.
+
+**1 team member.** The free tier is strictly solo. Paid plans add seats (Premium includes 3, Agency 5).
+
+**Content scheduling and a publishing calendar.** You get multi-channel publishing, scheduled and published post views, a weekly/monthly calendar, drafts, image editor, alt text, media optimization, and document posting on LinkedIn. Threaded X posts and post preview are included too.
+
+**Summary reports.** The free plan includes basic summary reports - but deeper analytics (post insights, popular posts, custom reports) are paid features.
+
+**zurl link shortener.** Zoho's own shortener works inside the publishing window on free; Bit.ly integration requires a paid plan.
+
+**5 AI credits per month.** Zia, Zoho's AI composer, is metered at 5 credits monthly on the free plan (paid plans get 40-80). Five credits is roughly a handful of AI-drafted posts.
+
+**24/5 email support.** Support is email-only during business hours - no live chat on the free tier.
+
+## Where the Free Plan's Limits Hurt
+
+The free tier covers day-to-day publishing well. These are the limits that actually bite:
+
+**The features that make scheduling scalable are paid-only.** Bulk scheduling via CSV/XLS, repeat posting, CustomQ queues, pause/resume, and RSS feeds all require a paid plan (Standard and up). If your workflow is "batch-write a month of content and queue it," the free plan forces you to schedule post by post.
+
+**6 channels, but all inside one brand.** Every channel is tied to a single brand. Run a second project, a client, or a separate product line and you need add-on brands - which are paid, and capped by plan.
+
+**Analytics stop at summary reports.** No per-post insights, no popular posts, no export, no custom reports on free. You publish with a vague sense of performance, not data.
+
+**AI is metered to 5 credits.** Compose with Zia works, but 5 credits a month is a taste, not a workflow.
+
+**No engagement inbox.** Zoho's inbox for managing interactions, X messages and saved replies starts at the higher tiers ($30+/month). On free, monitoring conversations across platforms isn't available.
+
+**Channel coverage skips the modern platforms.** No TikTok, YouTube, Pinterest, Mastodon, Threads or Bluesky on free - only the six legacy-brand channels. For creators whose audience lives on TikTok or YouTube Shorts, the free tier simply can't cover it.
+
+And when you do upgrade, the price steps up in tiers: Standard from $10/month (billed annually; $15 month-to-month), with Professional and Premium climbing further for more team members, channels and the inbox.
+
+## When to Upgrade - and When to Switch Instead
+
+**Upgrade Zoho when:**
+- You need YouTube, TikTok, Pinterest or Bluesky channels and bulk/repeat scheduling
+- You need the engagement inbox and deeper analytics
+- You're comfortable inside Zoho's ecosystem and fine with per-brand, per-plan pricing
+
+**Consider an alternative when:**
+- Your main platforms are Twitter/X and LinkedIn - exactly what Socipub targets
+- You want open source software, self-hosting, or full control of your data
+- You don't want to tier up just to unlock bulk scheduling or real analytics
+- You'd rather pay one flat price than navigate per-feature gates
+
+## Zoho Social Free vs Socipub Free at a Glance
+
+| Feature | Zoho Social Free | Socipub Free |
+|---------|-----------------|--------------|
+| Cost | Free forever (after 15-day trial) | Free forever |
+| Social channels | 6 (one brand) | 2 (Twitter/X + LinkedIn) |
+| Team members | 1 | 1 |
+| Scheduled posts | No advertised post cap | 5 posts/month |
+| X/Twitter publishing | Yes | Yes |
+| LinkedIn publishing | Yes | Yes |
+| Calendar view | Included | Included |
+| Bulk scheduling | Paid plans | Basic |
+| AI credits | 5/month | Pro plan |
+| Analytics | Summary reports only | Pro plan |
+| Open source | No | MIT |
+| Self-hosting | No | Yes (Docker) |
+| EU data hosting | Yes (EU data centers) | Yes |
+| Upgrade path | Standard from $10/mo | Pro $19/mo, unlimited channels |
+
+The honest trade-off: Zoho Free wins on channel count if you need Facebook, Instagram and Google Business Profile alongside X and LinkedIn. Socipub Free wins on simplicity, open source freedom and a flat upgrade price - if your world is X and LinkedIn, you get a real free plan with no trial clock and no feature gates.
+
+## The Verdict
+
+Zoho Social's free plan is one of the more generous forever-frees in social scheduling - six channels and a real publishing calendar cost nothing after the trial, which makes it a legitimate choice for solo creators juggling Facebook, Instagram, Google Business Profile and LinkedIn.
+
+It is not a free plan that scales with you. Bulk scheduling, repeat posting, RSS, real analytics, the engagement inbox and modern platforms like TikTok and YouTube all require paid tiers, and the free tier's 5 AI credits is a teaser, not a workflow.
+
+Socipub Free is the right call if your main channels are Twitter/X and LinkedIn, you want open source software you can self-host, and you prefer one flat price over per-brand, per-feature gates.
+
+The fastest way to decide: [create a free Socipub account](/sign-up), connect Twitter/X and LinkedIn, and schedule a real week of content. If it fits, you have escaped the tier-up ladder entirely. If not, Zoho's free plan will still be there - 6 channels, one brand, forever.
+
+Want more free-plan breakdowns? Read [Buffer Free Plan: What You Get, Limits & When to Upgrade](/blog/buffer-free-plan-guide) or the [full Zoho Social vs Socipub comparison](/blog/zoho-social-alternative-open-source), and explore the [scheduling](/scheduling) and [AI features](/features) that come with every plan.
+
+<div class="prose-notice">
+<strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and help shape the roadmap.
+</div>
+    `.trim(),
+  },
 ]
 export const blogPosts: BlogPost[] = [...posts].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
