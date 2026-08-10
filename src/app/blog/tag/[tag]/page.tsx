@@ -8,11 +8,15 @@ import { Button } from "@/components/ui/button"
 import { Breadcrumb } from "@/components/breadcrumb"
 import type { Metadata } from "next"
 
+function normalizeTag(tag: string): string {
+  return tag.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+}
+
 export const dynamicParams = false
 
 export function generateStaticParams() {
   const tags = [...new Set(blogPosts.flatMap((p) => p.tags))]
-  return tags.map((tag) => ({ tag }))
+  return tags.map((tag) => ({ tag: normalizeTag(tag) }))
 }
 
 export function generateMetadata({ params }: { params: Promise<{ tag: string }> }): Promise<Metadata> {
@@ -24,7 +28,7 @@ export function generateMetadata({ params }: { params: Promise<{ tag: string }> 
 
 export default async function TagPage({ params }: { params: Promise<{ tag: string }> }) {
   const { tag } = await params
-  const filtered = blogPosts.filter((p) => p.tags.includes(tag))
+  const filtered = blogPosts.filter((p) => p.tags.some((t) => normalizeTag(t) === tag))
 
   if (filtered.length === 0) notFound()
 

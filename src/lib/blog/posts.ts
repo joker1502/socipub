@@ -8,6 +8,10 @@ export type BlogPost = {
   content: string
 }
 
+export function normalizeTag(tag: string): string {
+  return tag.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+}
+
 const posts: BlogPost[] = [
   {
     slug: "postiz-alternative-open-source",

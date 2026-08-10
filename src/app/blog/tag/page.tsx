@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { blogPosts } from "@/lib/blog/posts"
+import { blogPosts, normalizeTag } from "@/lib/blog/posts"
 import { Hash } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 }
 
 export default function TagsPage() {
-  const tags = [...new Set(blogPosts.flatMap((p) => p.tags))].sort()
+  const tags = [...new Set(blogPosts.flatMap((p) => p.tags).map(normalizeTag))].sort()
 
   return (
     <div className="flex flex-col min-h-full">
@@ -23,7 +23,7 @@ export default function TagsPage() {
 
           <div className="mt-8 flex flex-wrap gap-2">
             {tags.map((tag) => {
-              const count = blogPosts.filter((p) => p.tags.includes(tag)).length
+              const count = blogPosts.filter((p) => p.tags.some((t) => normalizeTag(t) === tag)).length
               return (
                 <Link
                   key={tag}
