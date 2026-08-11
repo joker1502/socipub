@@ -3184,6 +3184,151 @@ Want more free-plan breakdowns? Read [Buffer Free Plan: What You Get, Limits & W
 </div>
     `.trim(),
   },
+  {
+    slug: "self-host-socipub-docker",
+    title: "How to Self-Host Socipub with Docker: Complete 2026 Guide",
+    description: "Self-host Socipub with Docker on any VPS: verified env vars, Supabase migrations, a minimal Dockerfile, plus the publish-queue cron nobody mentions. 2026 guide.",
+    date: "2026-08-11",
+    readTime: "9 min read",
+    tags: ["self-hosting", "docker", "guide"],
+    content: `
+Most open source schedulers advertise self-hosting, then bury you in docs written for their own engineering team. Socipub is the opposite. The README assumes you already know how to glue Next.js, Supabase and OAuth together — so we read the entire codebase instead: the four migrations, the ten environment variables, the API route that actually delivers scheduled posts. Every claim below is checked against the repository. Nothing invented.
+
+## What Self-Hosting Socipub Requires
+
+Socipub is a Next.js 16 app (React 19) with a Supabase PostgreSQL backend. Self-hosting means reproducing three connected pieces.
+
+**A Supabase project.** The free tier fits comfortably: 500 MB database, 2 active projects. Run the four migrations in \`supabase/migrations/\` in order — 001_profiles (users plus subscription fields), 002_social_accounts (connected X and LinkedIn accounts), 003_posts (drafts, scheduled, published), 004_ai_credits. Row Level Security is already enabled in the first migration; skipping any file breaks the next one.
+
+**OAuth apps for X and LinkedIn.** Socipub publishes through official APIs, so you register an app on the X developer portal and one on LinkedIn, then copy client IDs and secrets into your environment. This is the fiddliest part of the whole setup — budget 20 minutes.
+
+**A VPS with 1-2 GB RAM and a domain.** The Docker build is the memory-hungry stage; the running container is light. OAuth redirects and the payment webhook both need a public HTTPS endpoint, so a bare IP won't cut it.
+
+One honest note before you start: the repository does not ship a Dockerfile yet. You add a small multi-stage one yourself — about 30 lines, and the version below works against the current main branch.
+
+## Docker Deployment, Step by Step
+
+### 1. Clone and install
+
+\`\`\`bash
+git clone https://github.com/joker1502/socipub.git
+cd socipub
+corepack enable
+pnpm install
+\`\`\`
+
+The project pins pnpm 11 in its package manifest, so npm install will fight the lockfile. corepack enable gives you the right pnpm version automatically.
+
+### 2. Create the Supabase project and run migrations
+
+Create a project, copy the project URL and anon key, then run each file in \`supabase/migrations/\` in the SQL editor, in order. Grab the service role key too — the publish queue uses it server-side, and it must never reach the browser.
+
+### 3. Add a Dockerfile
+
+Create this Dockerfile at the repo root:
+
+\`\`\`dockerfile
+FROM node:20-alpine AS deps
+RUN corepack enable
+WORKDIR /app
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install --frozen-lockfile
+
+FROM node:20-alpine AS builder
+RUN corepack enable
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
+ENV NEXT_TELEMETRY_DISABLED=1
+RUN pnpm build
+
+FROM node:20-alpine AS runner
+RUN corepack enable
+WORKDIR /app
+ENV NODE_ENV=production
+COPY --from=builder /app/package.json ./
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/public ./public
+EXPOSE 3000
+CMD ["pnpm", "start"]
+\`\`\`
+
+Two details matter here. First, \`NEXT_PUBLIC_SUPABASE_URL\` and \`NEXT_PUBLIC_SUPABASE_ANON_KEY\` are baked into the JavaScript bundle at build time — export them before \`pnpm build\`, or pass them as build args, or your container builds fine and then renders blank pages. Second, this image keeps node_modules for simplicity; if you want a slim image, switch the build to standalone output and copy \`.next/standalone\` instead.
+
+### 4. Set the environment variables
+
+Ten variables run the whole app:
+
+| Variable | What it does |
+|----------|--------------|
+| NEXT_PUBLIC_SUPABASE_URL | Your Supabase project URL |
+| NEXT_PUBLIC_SUPABASE_ANON_KEY | Public anon key (safe for the browser) |
+| SUPABASE_SERVICE_ROLE_KEY | Server-side key used by the publish queue |
+| CREEM_API_KEY | Payment API key (Creem) |
+| CREEM_WEBHOOK_SECRET | Verifies Creem webhook calls |
+| TWITTER_CLIENT_ID / TWITTER_CLIENT_SECRET | X OAuth app credentials |
+| LINKEDIN_CLIENT_ID / LINKEDIN_CLIENT_SECRET | LinkedIn OAuth app credentials |
+| OPENCODE_API_KEY | Powers AI Rewrite / Translate (DeepSeek) |
+
+Core scheduling works with just the first three. Creem and AI keys only matter if you want payments and AI features — leave them out and the free-tier workflow still runs.
+
+### 5. Run it
+
+\`\`\`yaml
+# docker-compose.yml
+services:
+  socipub:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file: .env
+    restart: unless-stopped
+\`\`\`
+
+Then \`docker compose up -d --build\` and point Caddy or Nginx at port 3000 with automatic HTTPS.
+
+## The Three Gotchas Nobody Tells You
+
+**Scheduled posts only publish if something pings the queue.** The codebase ships a dedicated route — \`GET /api/publish-queue\` — that collects due posts and delivers them through the social APIs. On socipub.com that endpoint is triggered on a schedule. On your own server, nothing triggers it. Add a crontab entry:
+
+\`\`\`bash
+* * * * * curl -fsS https://your-domain.com/api/publish-queue >/dev/null 2>&1
+\`\`\`
+
+Skip this and posts sit in "scheduled" forever while the calendar looks healthy. It's the number one reason a self-hosted instance "loses" posts.
+
+**OAuth redirects are locked to your domain.** X and LinkedIn validate callback URLs against what you registered. Point them at \`https://your-domain.com/api/auth/twitter\` and \`https://your-domain.com/api/auth/linkedin\` — the routes exist in the repo — or login fails with a redirect_uri mismatch that looks like a code bug but is a config one.
+
+**Payments need a public HTTPS webhook.** Creem calls \`/api/webhooks/creem\` to activate subscriptions. Behind a firewall or a self-signed certificate, upgrades never complete and nobody tells you why. Run the free plan and you never touch this path; the moment you sell Pro, the webhook must be reachable from the internet.
+
+## Self-Hosted vs Cloud at a Glance
+
+| Aspect | Self-hosted (Docker) | Cloud (socipub.com) |
+|--------|----------------------|---------------------|
+| Cost | VPS ~$5-10/mo + free Supabase | Free plan, Pro from $19/mo |
+| Setup time | 1-2 hours the first time | 5 minutes |
+| Data control | Full — your server, your backups | EU hosting option |
+| Scheduled publishing | Your own cron job | Built-in |
+| Upgrades | Rebuild the image yourself | Automatic |
+| AI features | Bring your own OpenCode key | Included on Pro |
+| Support | GitHub issues | Email support |
+
+## The Verdict
+
+Self-host Socipub when you want the data on hardware you control, when you already pay for a VPS, and when one focused afternoon beats a recurring subscription. Use the cloud when your time is worth more than the setup — the free plan covers X and LinkedIn, and Pro adds unlimited channels and AI rewriting.
+
+Same MIT-licensed codebase, same publishing pipeline, two ways to run it.
+
+The fastest path is still the hosted one: [create a free account](/sign-up) and connect X and LinkedIn in five minutes. If you'd rather run your own instance, [clone the repo on GitHub](https://github.com/joker1502/socipub), add the Dockerfile above, and your first scheduled post should go out within the hour.
+
+New to Socipub? The [Postiz vs Socipub comparison](/blog/postiz-alternative-open-source) shows how the feature set stacks up against the popular self-hosted alternative, and the [features page](/features) walks through what a self-hosted instance gives you. The [trust page](/trust) covers the GDPR story either way.
+
+<div class="prose-notice">
+<strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and help shape the roadmap.
+</div>
+    `.trim(),
+  },
 ]
 export const blogPosts: BlogPost[] = [...posts].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
