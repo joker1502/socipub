@@ -3329,6 +3329,97 @@ New to Socipub? The [Postiz vs Socipub comparison](/blog/postiz-alternative-open
 </div>
     `.trim(),
   },
+  {
+    slug: "social-media-calendar-template",
+    title: "Free Social Media Calendar Template: Notion + Google Sheets",
+    description: "Free social media calendar template for Notion and Google Sheets: 12 columns that survive real use plus a CSV bridge into the Socipub scheduler.",
+    date: "2026-08-12",
+    readTime: "8 min read",
+    tags: ["social-media-calendar", "template", "guide"],
+    content: `
+Most social media calendar templates die within three weeks. The usual culprit is the template, not your discipline. The version that survived my own X and LinkedIn pipeline has exactly 12 columns, one strict status rule, and a bridge into Socipub, a free scheduler. That bridge turns a plan into a queue instead of a document. Both templates are below, ready to copy.
+
+A quick note before the columns: I ran this structure while publishing to two platforms for this site. Notion held the plan for six weeks, then I moved the same layout into Google Sheets and kept both in sync. The schema stayed identical the whole time, which tells you the columns matter more than the tool.
+
+## The 12 Columns That Survive Real Use
+
+Most calendar templates found online start at fourteen columns and climb from there. My first attempt had 17, and I stopped filling it in after ten days — not out of laziness, but because half the fields demanded decisions I hadn't made yet. I deleted five columns, merged three, and the schema below is what remained. The test for every column: it must take under fifteen seconds to fill.
+
+| # | Column | Type | Why it stays |
+|---|--------|------|--------------|
+| 1 | Date & time | Date | The schedule itself |
+| 2 | Platform | Select: X / LinkedIn / Both | Keeps a LinkedIn draft from landing in X |
+| 3 | Hook | Text | The first line decides everything after it |
+| 4 | Content | Text or link | Full post text, or a link to a draft doc |
+| 5 | Visual | Checkbox | A post with no media reads as unfinished |
+| 6 | Link | URL | The destination the post drives traffic to |
+| 7 | Status | Select | Idea → Draft → Scheduled → Published → Skipped |
+| 8 | CTA | Text | The one action you want from the reader |
+| 9 | Metric | Text | The single number to check next week |
+| 10 | Notes | Text | Context that won't fit elsewhere |
+| 11 | Reuse | Checkbox | Marks posts worth expanding into threads or articles |
+| 12 | Owner | Person | Delete this column when you're solo |
+
+The status rule matters more than the columns. A post lives in exactly one state, and only you move it. When a draft misses its date, change the date — never leave it sitting as Scheduled with a past timestamp. A calendar full of missed dates turns into a guilt list, and guilt lists get abandoned. That's the pattern behind most dead calendars.
+
+## The Notion Version: Set It Up in Five Minutes
+
+Create a new database inside any page and add the 12 properties with these types: Date & time is a Date property with time enabled, Platform and Status are Select properties, Visual and Reuse are Checkboxes, everything else is Text or URL. Rename the default Title property to Hook — you want the first line of the post visible in every view.
+
+Two views make the database usable. A Calendar view grouped by Date & time gives you the month at a glance; a Board view grouped by Status shows the pipeline. Both read from the same rows, so you flip between them without duplicating anything.
+
+For long-form drafts, keep them out of the Content field. Link to a drafts page instead — a relation to a second database if you want it fancy, a plain URL if you don't. The calendar stays scannable and the draft stays editable.
+
+## The Google Sheets Version: Columns, Formulas, Formatting
+
+Google Sheets wins for one reason: you can compute against the plan. Put the 12 column names in row 1, then:
+
+- **Freeze the header.** View → Freeze → 1 row.
+- **Status dropdown.** Select the Status column → Data → Data validation → Add rule → Dropdown. Type the five states.
+- **Character counter.** In a spare column, \`=LEN(D2)\` and drag down. Flag cells over 280 with conditional formatting — Format → Conditional formatting → Custom formula → \`=LEN(D2)>280\` → red fill.
+- **Today highlight.** A conditional formatting rule with the formula \`=$A2=TODAY()\` makes the current row pop in a long list.
+- **Reuse flag.** A checkbox column plus a filter gathers repurposable posts in two clicks.
+
+The formulas take ten minutes to set up once. The payoff: the sheet answers questions — "which posts are still drafts?" — instead of making you answer them.
+
+## Notion vs Google Sheets: What Actually Differs
+
+| Aspect | Notion | Google Sheets |
+|--------|--------|---------------|
+| Setup time | ~5 minutes | ~15 minutes with formulas |
+| Views | Calendar, Board, Table | Filters and freeze panes |
+| Formulas | Limited | Full spreadsheet engine |
+| Offline | Desktop app | Yes, with the app |
+| Team handoff | Natural — assignees, relations | Works, but clunkier |
+| CSV export | Manual, clunky | One click, clean |
+
+My own split: the plan lives in Sheets because the CSV export is clean, and that export feeds the scheduler. If you work with other people, Notion's assignees and relations win. Either way, the 12 columns stay the same.
+
+## From Template to Published Posts
+
+This is the step most calendar guides skip, and it's where calendars die. A plan that never reaches a scheduler is a to-do list with extra steps.
+
+Socipub's [calendar view](/scheduling) accepts posts directly, and the [bulk import](/features) takes CSV for power users. The mapping is short: the template's Date & time → the scheduled time, Platform → channel, Content → post body. Export the sheet as CSV — File → Download → Comma-separated values — or copy each row into the composer when you're scheduling a handful.
+
+One rule keeps the two systems honest: after a post is imported, flip its Status to Scheduled in the template. The scheduler is the source of truth for what goes out; the template is the source of truth for what's still planned. When they disagree, you have a workflow problem, not a data problem.
+
+## The Batch Workflow That Keeps the Calendar Alive
+
+A daily grind kills calendars; batch days keep them alive. My week looks like this:
+
+- **Research block** — pull topics, write hooks, drop them into the calendar as Ideas. This is where the Hook column earns its keep.
+- **Writing block** — turn Ideas into drafts. Two hours, four posts.
+- **Scheduling block** — move drafts into Socipub, set times, flip statuses.
+
+That's three focused sessions instead of seven nagging ones. The calendar's job is to make the writing block obvious, not to become another daily obligation.
+
+## Bottom Line
+
+A template survives when every column earns its place and the plan has a path into a scheduler. Copy the 12 columns into Notion or Sheets, set the status rule, and connect the calendar to Socipub — the [free plan](/sign-up) covers X and LinkedIn with no time limit.
+
+If you'd rather run the whole stack on your own server, the [self-hosting guide](/blog/self-host-socipub-docker) walks through a Docker deployment in about an hour, and the [features page](/features) shows the scheduling and bulk import pieces either way.
+    `.trim(),
+  },
 ]
 export const blogPosts: BlogPost[] = [...posts].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
