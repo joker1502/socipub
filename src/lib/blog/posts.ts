@@ -3420,6 +3420,71 @@ A template survives when every column earns its place and the plan has a path in
 If you'd rather run the whole stack on your own server, the [self-hosting guide](/blog/self-host-socipub-docker) walks through a Docker deployment in about an hour, and the [features page](/features) shows the scheduling and bulk import pieces either way.
     `.trim(),
   },
+  {
+    slug: "best-time-to-post-linkedin-twitter",
+    title: "Best Time to Post on LinkedIn & Twitter in 2026",
+    description: "Why best-time studies disagree, how LinkedIn and X reward different posting rhythms, and a 14-day test that finds your audience's real window.",
+    date: "2026-08-14",
+    readTime: "8 min read",
+    tags: ["best-time-to-post", "linkedin", "twitter"],
+    content: `
+Most "best time to post" lists are built from somebody else's audience — and that's why they keep contradicting each other. A study says 9 AM, another says 7 PM, and both are technically right for the people they measured. This guide explains why the published times disagree, how LinkedIn and X actually reward different rhythms, and a 14-day test that finds your own window using a free scheduler and a sheet.
+
+I've read a lot of these reports. Sprout Social publishes an annual best-time study from its own scheduler's data. Buffer ran similar analyses from its users' posts. Later and Hootsuite have weighed in too. The numbers never line up, and once you see why, you stop treating them as instructions and start treating them as starting points.
+
+## Why the published best times keep contradicting each other
+
+**Different data pools.** Sprout's report samples posts scheduled through Sprout; Buffer's sampled posts scheduled through Buffer. Those aren't random slices of the internet — they're slices of each tool's user base. A scheduler that marketing teams use skews toward business hours. One that indie hackers like skews toward evenings. The tool that collected the data quietly decides the answer.
+
+**Industry averages hide your audience.** Most reports publish one number per platform, maybe split by a few industries. Your followers don't live in that average. Night-shift workers and European SaaS buyers peak at completely different hours, and both vanish inside a global mean. The report can be perfectly accurate and still wrong for you.
+
+**Timezone handling is inconsistent.** Some studies convert everything to your local time, some publish in the researcher's timezone, and some never say which one they used. A "10 AM" recommendation changes meaning entirely if the underlying clock is UTC and you live in Tokyo.
+
+None of this means the research is useless. It means the published hour is a hypothesis, not a verdict. You have to test the hypothesis against your own feed.
+
+## LinkedIn and X run on different clocks
+
+The two platforms engage on completely different schedules, and that difference decides how precise you need to be about the clock.
+
+**X is a sprint.** Posts surface fast, get judged fast, and sink fast — most of a post's engagement happens within its first half hour. That's why minute-level precision is a real thing on X: post at 9:02 versus 9:32 and you're racing a different feed. If you schedule X posts, the exact time is part of the content.
+
+**LinkedIn is a marathon.** A post keeps accumulating reactions and comments for hours, sometimes days, because the feed moves slower and the algorithm re-surfaces posts that pick up early reactions. Hour-level precision is enough — whether the post lands at 8:15 or 8:45 matters far less than whether it lands in the morning or the evening.
+
+That asymmetry is the core insight: X punishes bad timing in minutes, LinkedIn in hours. Anyone who treats both platforms with the same schedule is optimizing the wrong granularity.
+
+## The 14-day test that finds your window
+
+Stop guessing. Here's the test I'd run on any account, and it costs nothing except two weeks of consistent posting. You need a scheduler (Socipub's free plan covers X and LinkedIn) and a sheet to track results.
+
+**Step 1: Pick two candidate windows.** Take the best guesses from the published research — say, 9 AM and 6 PM in your audience's timezone. Choose times you can sustain. A window you can't keep up is a window that doesn't exist.
+
+**Step 2: Alternate, don't batch.** Week one at 9 AM, week two at 6 PM, then compare — that's the intuitive approach and it's wrong. A slow news week contaminates the whole comparison. Instead, alternate within each week: Monday 9 AM, Tuesday 6 PM, Wednesday 9 AM, Thursday 6 PM. Both windows get the same mix of days.
+
+**Step 3: Track the metric that pays.** This is where most people cheat: they count likes. Likes feel good and mean little. Track link clicks or profile visits — the actions that actually move your business. If the post carries a link, the click-through rate is the number that decides.
+
+**Step 4: Compare, lock, and re-test quarterly.** After 14 days, average the metric per window. The winner becomes your default slot. Then re-run the test every quarter, because audience habits drift — the window that wins in summer isn't guaranteed to win in December.
+
+Socipub makes the mechanics painless: the [scheduler](/scheduling) lets you set a per-post time in your audience's timezone, and the [bulk import](/features) loads a CSV of posts in one shot. Pair it with the [calendar template](/blog/social-media-calendar-template) from the previous guide and you have a plan that feeds a schedule that feeds the test.
+
+## X vs LinkedIn: what the timing comparison looks like
+
+| Aspect | X (Twitter) | LinkedIn |
+|--------|-------------|----------|
+| Engagement window | ~30 minutes | Hours to days |
+| Time precision | Minute-level matters | Hour-level is enough |
+| Timezone sensitivity | High — you race a fast feed | Lower — slow feed forgives |
+| Post format that wins | Quick takes, threads, links | Opinions, lessons, case studies |
+| Published research value | Starting point | Starting point |
+
+The table summarizes everything above: X is a race, LinkedIn is a simmer. Your scheduling setup should reflect that instead of treating both as "post at 10 AM, done."
+
+## Bottom Line
+
+Published best times are starting points; your data is the answer. Run the 14-day test with two candidate windows, track link clicks instead of likes, and lock in the winner. The whole loop runs on the [free plan](/sign-up) — X and LinkedIn scheduling with no time limit — and the [features page](/features) shows what else the scheduler can carry.
+
+If you want the full stack on your own hardware instead, the [self-hosting guide](/blog/self-host-socipub-docker) gets a Docker deployment running in about an hour.
+    `.trim(),
+  },
 ]
 export const blogPosts: BlogPost[] = [...posts].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
