@@ -3485,6 +3485,72 @@ Published best times are starting points; your data is the answer. Run the 14-da
 If you want the full stack on your own hardware instead, the [self-hosting guide](/blog/self-host-socipub-docker) gets a Docker deployment running in about an hour.
     `.trim(),
   },
+  {
+    slug: "open-source-tools-indie-hackers",
+    title: "10 Open Source Tools Every Indie Hacker Needs (2026)",
+    description: "The open-source stack behind six live SaaS sites — Next.js, Supabase, Docker, Playwright, and more — with the real pitfalls we hit running each one in production.",
+    date: "2026-08-15",
+    readTime: "8 min read",
+    tags: ["open-source", "indie-hackers", "tools"],
+    content: `
+Every open source tools roundup I read is a wishlist — stuff the author heard about, not tools that run a business. These ten are different. They're the exact stack behind six live SaaS sites I run solo: the framework, the database, and the scheduler that posts the content. Each entry carries the detail roundups skip — what it replaced, what it costs, and the one time it broke in production.
+
+I chose this stack for one reason: a solo builder can't afford ops work. Everything here either runs itself, has a free tier that survives years, or self-hosts on a small box. Any tool that needed daily maintenance got cut.
+
+## The frontend: 3 tools every site ships with
+
+All six sites share one frontend stack, so one set of skills and one set of fixes covers everything I ship.
+
+**Next.js.** App Router with static generation for content pages. Blog posts and landing pages render as HTML at build time, so reads cost nothing at runtime. The rule I learned the hard way: never build locally. My server has 956MB of RAM and a full Next.js build can peak over a gigabyte — that's a crash, and twice it took the gateway down with it. So the flow is push to GitHub, Vercel builds in the cloud. Every site in this list deploys exactly that way.
+
+**TypeScript.** The boring pick, and the one I'd defend first. Content lives in typed data files — a post is an object with a slug, a title, and tags. A missing field or a bad date fails the type check before anything reaches production. That check runs in seconds and has caught real mistakes: an unescaped backtick, a date that didn't parse, a tag list that ran too long.
+
+**Tailwind CSS + shadcn/ui.** Styling without writing CSS. shadcn gives you components you own — copy them into the repo, tweak the classes, no design-system lock-in. The tradeoff nobody mentions: you still need an eye for layout, because the components look generic until you push them around.
+
+## The data layer: 2 tools that survived production
+
+**Prisma.** The typed access layer for Postgres. A wrong column name becomes a compile error instead of a 500 at 2 AM. One honest complaint: schema migrations need care, and I test them against a copy of the database before touching production.
+
+**Supabase.** Postgres, auth, and storage in one product — the fastest path from idea to working backend I've used. Real incident: the free tier pauses a project after seven days with zero requests. I came back to one site and found its database marked INACTIVE. The dashboard restored it in one click and nothing was lost, but the scare stuck with me.
+
+## Ops: 2 tools that run the machine
+
+**Docker.** Self-hosting without the dependency swamp. When a tool needs its own server, Docker makes it a one-command job — our scheduler ships as a container, and the [self-hosting guide](/blog/self-host-socipub-docker) gets a full deployment running in about an hour, database included. The catch: containers add RAM overhead, so on a small VPS you keep them lean or you watch the OOM killer get busy.
+
+**GitHub Actions.** The cron replacement that doesn't sleep. Scheduled workflows handle nightly builds, status checks, and deployment triggers; push to main and the platform takes over. One warning: action minutes are cheap until a workflow gets stuck in a retry loop, so every job gets a hard timeout.
+
+## Automation: 2 tools that replaced busywork
+
+**Playwright.** Browser automation for the grunt work. I run it daily to submit the portfolio's tools to directory listings — the script opens each form, fills the fields, and reports what succeeded. Two submissions a day, every day, zero manual typing. It also flags the forms that can't be automated — Google Forms, Typeform, anything behind a CAPTCHA — and those get marked and skipped.
+
+**Vercel AI SDK.** AI features without the lock-in. The SDK talks to any OpenAI-compatible model, so switching providers is a one-line change — it powers the AI scheduling and rewrite features in Socipub. Lesson from shipping it: stream the response, because users forgive a lot when the first token arrives fast.
+
+## The dogfood: 1 tool I built and run on
+
+**Socipub.** The open-source scheduler behind this blog's own social presence. It started as an internal tool: schedule X and LinkedIn posts, let the AI suggest better times, stop paying per seat. The [free plan](/sign-up) covers both platforms with no time limit, and the whole thing ships as an MIT-licensed repo you can [self-host with Docker](/blog/self-host-socipub-docker). Using your own product daily surfaces the sharp edges — timezone math, preview rendering, import edge cases — long before customers do.
+
+## The stack at a glance
+
+| Tool | Why it earns its place | Cost |
+|------|------------------------|------|
+| Next.js | Static content, no runtime server bill | Free (open source) |
+| TypeScript | Compile-time safety on code and content | Free |
+| Tailwind + shadcn/ui | Components you own, no lock-in | Free |
+| Prisma | Typed queries, careful migrations | Free |
+| Supabase | Postgres + auth + storage in one | Free tier |
+| Docker | One-command self-hosting | Free |
+| GitHub Actions | CI and scheduled jobs built in | Free tier |
+| Playwright | Automates the boring form work | Free |
+| Vercel AI SDK | AI features, swap models freely | Free (open source) |
+| Socipub | Schedules posts, MIT licensed | Free plan |
+
+## Bottom Line
+
+None of these tools cost money on day one, and that's the point. A solo builder's scarce resource isn't cash — it's attention — and every tool here either runs itself or automates something that used to steal an hour a week. My stack is a starting point, not the verdict: steal the pieces that match your workflow and skip the rest.
+
+Ready to see the scheduler in action? [Try Socipub free](/sign-up) — no credit card, no time limit. Prefer your own hardware? The [Docker guide](/blog/self-host-socipub-docker) deploys in about an hour, and the [free calendar template](/blog/social-media-calendar-template) covers the planning side.
+    `.trim(),
+  },
 ]
 export const blogPosts: BlogPost[] = [...posts].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
