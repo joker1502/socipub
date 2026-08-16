@@ -3551,6 +3551,66 @@ None of these tools cost money on day one, and that's the point. A solo builder'
 Ready to see the scheduler in action? [Try Socipub free](/sign-up) — no credit card, no time limit. Prefer your own hardware? The [Docker guide](/blog/self-host-socipub-docker) deploys in about an hour, and the [free calendar template](/blog/social-media-calendar-template) covers the planning side.
     `.trim(),
   },
+  {
+    slug: "why-open-source-social-media-matters",
+    title: "Why Open Source Social Media Matters in 2026",
+    description: "X's API price hike, TweetDeck's paywall, Buffer's free-tier cuts — three data points that make open source scheduling the durable choice for daily publishers.",
+    date: "2026-08-16",
+    readTime: "8 min read",
+    tags: ["open-source", "social-media", "self-hosting"],
+    content: `
+Every social scheduling SaaS I tested in 2023 had the same two limits: a post cap that shrank every year and a price curve pointed at my seat count. Then the platform APIs moved, and the free tiers the whole industry hung on started disappearing. Open source isn't a philosophy here — it's the only publishing stack where the limits can't be edited by someone else's roadmap.
+
+I run six content sites, and I schedule every post through software. This is the story of why I stopped picking from the paid scheduler list and started running my own, with the numbers that pushed me there.
+
+## The 2023 API shakeup that killed free social tools
+
+The first domino fell in February 2023. X, still Twitter then, published its new API pricing: Basic at $100 a month, Pro at $5,000, Enterprise at $42,000, with the free tier gutted. Third-party clients that had run for a decade on cheap API access shut down within weeks. The public record is unambiguous — that single pricing change ended dozens of scheduling and analytics tools overnight.
+
+TweetDeck followed the same play in August 2023. The desktop client power users had relied on since 2011 went behind the X Premium paywall at $8 a month. Same product, same features, now subscription-gated.
+
+Couldn't the schedulers absorb those costs? Buffer's history says no. Buffer's free plan used to offer 10 scheduled posts per channel across 3 channels; when X and LinkedIn tightened API terms, it shrank to 10 posts total. The math on free tiers shifted from customer acquisition to expensive liability, and every SaaS scheduler adjusted in the same direction. Hootsuite did the same with its free plan limits.
+
+That's the pattern worth naming: when platforms raise API prices, the pain doesn't stop at the platform. It flows downstream, and the free tiers small publishers depend on are the first thing cut.
+
+## What open source actually changes
+
+Self-hosted schedulers sit on a different cost curve. The platform API fees still apply — that part is unavoidable — but the per-seat, per-post economics vanish.
+
+**Your API key, not a vendor's.** A self-hosted tool connects with credentials you provision. When I run Socipub from my own Docker container, the posting limit is whatever my API account allows, not a marketing team's idea of a reasonable free tier. If X changes its terms, I see it in my developer dashboard instead of reading a blog post from a scheduler CEO.
+
+**Data you can export with pg_dump.** Every SaaS scheduler keeps a copy of your posting history, best-time data, and audience stats; getting it out means an export button that may or may not arrive. Self-hosted, that data lives in a Postgres database I own. I've needed it exactly once — when moving servers — and it was a pg_dump, not a support ticket.
+
+**Nobody can sunset it.** The products in the 2023 deadpool didn't give users notice — they flipped a switch. Self-hosted software doesn't have a sunset date unless I write one.
+
+## When self-hosting beats free SaaS
+
+**You post daily to 2-3 platforms.** The math flips fast. Buffer's free tier holds 10 posts total; a daily publisher burns that in the first week of the month. A self-hosted scheduler costs a few dollars in server time and never counts posts.
+
+**You care where your audience data lives.** Scheduling tools see your full posting history, follower growth, and engagement patterns. Self-hosting keeps that dataset on hardware you control — relevant for anyone publishing under a brand contract or in a GDPR-sensitive workflow.
+
+**You're tired of annual plan reviews.** Free tiers shift every product cycle. The 2023-2025 pattern — X's API rewrite, TweetDeck's paywall, Buffer's cap cuts — is not a one-off; it's the standard lifecycle. Owning the stack removes the annual surprise.
+
+The honest trade-offs: you maintain it, you handle auth failures yourself, and multi-platform coverage depends on each platform's API openness. Instagram and TikTok have no real third-party posting API, so no self-hosted tool can cover them either.
+
+## SaaS scheduler vs self-hosted: the real comparison
+
+| | Free SaaS plan | Self-hosted open source |
+|---|---|---|
+| Post limit | 10 total (Buffer) | None — your API account's quota |
+| Seat cost | $15-30/user/month from tier two | $5-10/month server, one admin |
+| Data ownership | Export button | Full database access |
+| Sunset risk | Vendor decides | Nobody can pull the plug |
+| Setup time | 5 minutes | 30-60 minutes, once |
+| Platform reach | X, LinkedIn, IG, TikTok | X, LinkedIn, Mastodon, Bluesky |
+
+## Bottom Line
+
+The 2023-2025 API changes weren't a one-off — they're the new normal for platform economics. Every scheduler that depends on a free tier has a timer on it. Open source won't remove the platform fees, but it removes everything else: the per-seat pricing, the shrinking caps, and the switch that can be flipped without warning. For daily publishers, that's the difference between renting a publishing pipeline and owning one.
+
+Socipub is MIT-licensed and free to self-host. Deploy it with Docker in about an hour — the [self-hosting guide](/blog/self-host-socipub-docker) walks through the full setup — or start with the [hosted free plan](/sign-up), no credit card. Coming from Buffer? The [free plan comparison](/blog/buffer-free-plan-guide) shows exactly what carries over.
+    `.trim(),
+  },
 ]
 export const blogPosts: BlogPost[] = [...posts].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
