@@ -3132,7 +3132,7 @@ The honest trade-offs: you maintain it, you handle auth failures yourself, and m
 | Data ownership | Export button | Full database access |
 | Sunset risk | Vendor decides | Nobody can pull the plug |
 | Setup time | 5 minutes | 30-60 minutes, once |
-| Platform reach | X, LinkedIn, IG, TikTok | X, LinkedIn, Mastodon, Bluesky |
+| Platform reach | X, LinkedIn, IG, TikTok | X, LinkedIn |
 
 ## Bottom Line
 
@@ -3208,7 +3208,7 @@ So the real cost question isn't "what's the plan price?" It's "what happens the 
 | Later | 30 posts/social set | Add-on based | Varies | Sets + users |
 | Socipub | 5 posts/mo | $19/mo | $19/mo | Flat |
 
-Being honest about the trade-off: paid tools cover Instagram, TikTok, Facebook, and YouTube natively, and their analytics go deeper. Socipub posts to X, LinkedIn, Mastodon, and Bluesky - the platforms with open APIs - plus leaner analytics. If your audience lives on Instagram and TikTok, a paid tool is the right call and its price is fair. If you publish to X and LinkedIn, the cost math above stops making sense in the other direction.
+Being honest about the trade-off: paid tools cover Instagram, TikTok, Facebook, and YouTube natively, and their analytics go deeper. Socipub posts to X and LinkedIn - the two networks its OAuth integration supports - plus leaner analytics. If your audience lives on Instagram and TikTok, a paid tool is the right call and its price is fair. If you publish to X and LinkedIn, the cost math above stops making sense in the other direction.
 
 ## Bottom Line
 
@@ -3216,6 +3216,59 @@ The real price of a scheduler is three numbers: the plan price, the per-channel 
 
 Start with the [free plan](/sign-up) - 5 posts a month, no credit card, no time limit. Publishing more? [Pro at $19](/pricing) removes the cap entirely. Coming from Buffer, the [free plan comparison](/blog/buffer-free-plan-guide) shows what carries over, and the [self-hosting guide](/blog/self-host-socipub-docker) covers the zero-subscription route if you'd rather run your own instance.
     `.trim(),
+  },
+  {
+    slug: "postcron-alternative-open-source",
+    title: "Postcron Alternative: Free Open Source Social Media Scheduler (2026)",
+    description: "Postcron's free plan holds 10 pending posts and no post history - five days of posting for a daily publisher. Here's the migration path for X + LinkedIn.",
+    date: "2026-10-13",
+    readTime: "7 min read",
+    tags: ["alternatives", "postcron", "open-source"],
+    content: `Postcron's free plan hands you three social accounts and 10 pending posts. I publish twice a day to X and LinkedIn, which means that queue is empty on day five - and the free tier keeps no post history, so the posts you already sent leave nothing behind to check against. None of this is buried; the caps sit on the pricing page. The issue is what gets metered. Postcron counts queue slots, and a daily publisher runs out of slots long before running out of things to say.
+
+## Postcron vs Socipub: what each one meters
+
+Every Postcron figure below comes from its pricing page with annual billing selected, checked 13 October 2026.
+
+| | Postcron | Socipub |
+|---|---|---|
+| Free plan | 3 social accounts, 10 pending posts | 5 posts/month, 2 platforms |
+| Cheapest paid tier | $12/mo (Personal) | $19/mo (Pro) |
+| What gets metered | Pending posts + social accounts | Nothing at Pro - flat, per user |
+| Post history on free | None | Kept |
+| Bulk upload | Paid tiers, up to 1,000 posts from Excel or Google Docs | Team plan, $49 |
+| Platforms | Facebook pages and groups, Instagram, TikTok, LinkedIn, Pinterest, X | X and LinkedIn |
+| Team seats | 1 seat, from the $24 tier up | 5 seats at $49 |
+| Self-hosting | Not offered | MIT license, Docker deploy |
+
+Postcron's ladder moves both meters at once. Personal is $12/mo for 10 social accounts and 100 pending posts. Entrepreneur is $24 for 21 accounts and 500 posts. Corporate is $58 for 40 accounts and 2,000 posts. Want a deeper queue? You buy the accompanying networks with it.
+
+Socipub prices the user, not the queue. Pro at $19 gives one person unlimited posts, and the free plan connects both X and LinkedIn at 5 posts a month - thin as a publishing plan, honest as a trial.
+
+## Ten pending posts, five days, one emptied queue
+
+The arithmetic matters more than the sticker price. Two posts a day across X and LinkedIn burns 10 slots in five days, so the free tier covers a work week and then starts refusing. Personal's 100 slots stretch to 50 days at the same rate - under two months for a subscriber paying $12. Entrepreneur's 500 clears 250 days, which is the point where a daily poster finally stops thinking about capacity.
+
+Two smaller caps ride along on the free plan. Native video uploads stop at 20 MB, and the bulk uploader that takes an Excel or Google Docs file of up to 1,000 posts stays on paid tiers only. If you publish video or batch-import content, the free plan is a demo of a workflow you cannot run at scale.
+
+## Where Postcron genuinely wins
+
+Skipping this section would make the comparison dishonest. Postcron posts directly to Instagram business accounts, Facebook pages and groups, TikTok, and Pinterest boards - networks with no open publishing API, and the reason [self-hosted schedulers cannot touch them](/blog/self-host-socipub-docker). It watermarks images automatically on paid plans, imports up to 1,000 posts from a spreadsheet, and its own site reports 1,022,280,083 posts delivered to 6,700,784 social accounts. That is a company with real throughput.
+
+So: audience on Instagram or TikTok, or a spreadsheet-first workflow, or client work needing watermarking - stay. Switching to an X and LinkedIn scheduler would cost you four platforms to save a queue cap.
+
+## Migrating the X and LinkedIn half
+
+1. Connect X and LinkedIn to Socipub. The free plan accepts both, so the test costs nothing while Postcron keeps running in parallel.
+2. Rebuild your planned posts manually - Postcron has no export, so budget a typing session rather than a data migration. Two weeks of posts is one sitting with the [batch scheduling method](/blog/batch-schedule-weekly-content-twitter-linkedin).
+3. Publish one post end-to-end and watch it land on both networks before you move the rest.
+4. Downgrade at the end of the term, not the middle of it. Postcron's advertised rates assume annual billing - it dangles two extra months for paying yearly - so a mid-cycle exit pays for time you will not use.
+
+## When the switch is not worth it
+
+Keep Postcron if Instagram, TikTok, Pinterest, or Facebook pages carry your audience, if you live in the bulk uploader, or if an agency-style setup needs seats across client accounts - Team seats start at $24 there and $49 here, but the platform list is what decides. Switch when X and LinkedIn are your entire calendar and queue capacity is the only number you check. Our [Postiz comparison](/blog/postiz-alternative-open-source) runs the same test on a per-profile pricing model.
+
+Run the free plan alongside your current Postcron account for a week before cancelling anything - 5 posts a month is enough to see whether the [flat $19 Pro tier](/pricing) covers the platforms you actually publish to.`.trim(),
   },
 ]
 export const blogPosts: BlogPost[] = [...posts].sort(
