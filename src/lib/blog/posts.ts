@@ -3270,6 +3270,69 @@ Keep Postcron if Instagram, TikTok, Pinterest, or Facebook pages carry your audi
 
 Run the free plan alongside your current Postcron account for a week before cancelling anything - 5 posts a month is enough to see whether the [flat $19 Pro tier](/pricing) covers the platforms you actually publish to.`.trim(),
   },
+  {
+    slug: "post-bridge-alternative-open-source",
+    title: "Post Bridge Alternative: Self-Hosted X + LinkedIn Scheduler",
+    description: "Post Bridge charges $39/mo for 15 accounts across ten networks. If your calendar is X + LinkedIn, here is the open source route and the real cost math.",
+    date: "2026-11-01",
+    readTime: "7 min read",
+    tags: ["alternatives", "post-bridge", "open-source"],
+    content: `Post Bridge sells one thing well: connect fifteen accounts, publish everywhere in about thirty seconds, pay $39 a month. That is a fair deal for someone running a brand across ten networks. I opened their pricing page, did the division, and got a number that decides the purchase better than the sticker price does — what you pay per account you actually use. Publish to X and LinkedIn only, and you are buying thirteen seats you will never sit in.
+
+## What Post Bridge Charges Right Now
+
+Two plans sit on post-bridge.com. Marketer runs $39/month for 15 connected accounts with unlimited posts, API access, MCP agent connect, carousels, and bulk video scheduling. Operator runs $99/month for 99 accounts minimum, then $1 per account after that, and adds team invites. Yearly billing throws in two months free.
+
+Ten platforms work for both scheduled and instant posting: X, Instagram, LinkedIn, Facebook, TikTok, YouTube, Bluesky, Threads, Pinterest, and Google Business. Entry is a 7-day trial.
+
+Do the per-account math and the shape of the product shows up:
+
+- $39 for 15 accounts = $2.60 per account per month
+- $99 for 99 accounts = $1.00 per account per month
+- $39 for the 2 accounts I actually post to = $19.50 per account
+
+That last line is the argument. Post Bridge is not overpriced. It is priced for breadth, and breadth is the exact thing an X + LinkedIn publisher does not need.
+
+## The Cost Line, Side by Side
+
+| | Post Bridge Marketer | Socipub Pro |
+|---|---|---|
+| Price | $39/mo | $19/mo |
+| Billing model | Per account, bundled 15 | Flat, X + LinkedIn |
+| Accounts included | 15 | 2 |
+| Posts | Unlimited | Unlimited |
+| Platforms | 10 networks | X + LinkedIn |
+| Free entry | 7-day trial | Free plan, 5 posts/mo |
+| Source license | Closed | MIT |
+| Self-hosting | Not offered | Documented Docker path |
+| Data residency | Their cloud | EU region, or your server |
+| API | Included | Included |
+
+Read it as a boundary map, not a scoreboard. Socipub takes the two rows that matter to me and loses the one row that matters most if your audience lives on Instagram.
+
+## The Platforms You Give Up
+
+Moving to Socipub costs you Instagram, Facebook, TikTok, YouTube, Bluesky, Threads, Pinterest, and Google Business. Eight networks leave the dashboard.
+
+I will not pretend that is a small trade. When short video drives your growth, Post Bridge is the better product and this post is not written for you. The switch pays off when X and LinkedIn carry the calendar — developer audiences, B2B audiences, founders posting build logs. That is a real segment, and it is the only one where paying per account for nine unused networks stops being defensible.
+
+## What Open Source Buys You Beyond the Price
+
+Twenty dollars a month is not the reason to care about a license. Two other things are.
+
+The first is the audit trail. Social tokens are the most sensitive credentials most of us hand to a third party. With Socipub the code that touches them is readable, and the [self-host path](/blog/self-host-socipub-docker) runs the same feature set rather than a crippled fork. You can verify what happens to an OAuth token instead of trusting a marketing page.
+
+The second is exit cost. Every scheduler you cannot host can raise prices, retire a tier, or close. Third-party comparisons still list a $29 Creator tier that no longer appears on Post Bridge's own pricing page; the page now shows $39 Marketer. Prices move. Open source is the one subscription whose terms you can read before you need them. Our [GDPR guide](/blog/gdpr-compliant-social-media-tool) covers the compliance half of this.
+
+## Migrating Without Losing a Week
+
+1. Sign up free at Socipub and connect X plus LinkedIn. Five posts a month is the free ceiling — enough to run both tools in parallel without paying twice.
+2. Rebuild two weeks of planned posts by hand. Keep the queue in a spreadsheet as the source of truth so the next migration is a copy-paste instead of a typing session; the [calendar template](/blog/social-media-calendar-template) I use has twelve columns and stops there.
+3. Publish one post end-to-end, check both networks, then move the rest.
+4. Cancel Post Bridge at the end of the billing period, not the middle of it.
+
+Run the free plan for a week while Post Bridge keeps publishing. If you miss Instagram by day three, that answers the question better than any table here — and the [Postiz comparison](/blog/postiz-alternative-open-source) covers the case where you need more networks but still want open source.`.trim(),
+  },
 ]
 export const blogPosts: BlogPost[] = [...posts].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
