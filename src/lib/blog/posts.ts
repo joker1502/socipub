@@ -63,7 +63,7 @@ With Socipub, the code is MIT, the [self-host path](/blog/self-host-socipub-dock
 
 ## When to Stay With Postiz
 
-Stay if Instagram/TikTok scheduling is core to your workflow, or if you need the deeper analytics Postiz bundles into higher tiers. Switch when your posting is X + LinkedIn, when the per-seat math feels like a tax, or when data residency is a requirement. The decision is about the platform mix, not about who has the shinier dashboard — our [Buffer comparison](/blog/buffer-alternative-open-source) and [Hootsuite comparison](/blog/hootsuite-free-alternative) apply the same test to their targets.
+Stay if Instagram/TikTok scheduling is core to your workflow, or if you need the deeper analytics Postiz bundles into higher tiers. Switch when your posting is X + LinkedIn, when the per-seat math feels like a tax, or when data residency is a requirement. The decision is about the platform mix, not about who has the shinier dashboard — our [Buffer comparison](/blog/buffer-alternative-open-source), [Hootsuite comparison](/blog/hootsuite-free-alternative) and [Typefully comparison](/blog/typefully-alternative-open-source) apply the same test to their targets.
 
 Try the [free Socipub plan](/pricing) with your two accounts for a week — the posts you schedule will tell you whether the downgrade in platforms is a real cost or just a smaller bill.`.trim(),
   },
@@ -121,7 +121,7 @@ Because the content is just a list of dated posts, migration is low-stakes:
 3. Rebuild the queue in one [batch scheduling](/blog/batch-schedule-weekly-content-twitter-linkedin) session.
 4. Let the Buffer subscription lapse after one overlapping week — the overlap is optional insurance, not a lock-in.
 
-Compare against the same criteria in our [Postiz](/blog/postiz-alternative-open-source), [Hootsuite](/blog/hootsuite-free-alternative), and [Later.com](/blog/later-com-competitor) guides — the conclusion keeps coming back to the platform mix and the pricing model. For X + LinkedIn with a flat price, the [free Socipub plan](/pricing) settles it in a week of real use.`.trim(),
+Compare against the same criteria in our [Postiz](/blog/postiz-alternative-open-source), [Hootsuite](/blog/hootsuite-free-alternative), [Later.com](/blog/later-com-competitor), [Metricool](/blog/metricool-alternative-open-source), and [Post Bridge](/blog/post-bridge-alternative-open-source) guides — the conclusion keeps coming back to the platform mix and the pricing model. For X + LinkedIn with a flat price, the [free Socipub plan](/pricing) settles it in a week of real use.`.trim(),
   },
   {
     slug: "schedule-twitter-linkedin-one-click",
@@ -1038,6 +1038,7 @@ Three ways this system collapses, all fixable:
 - **No themes.** If you start from zero topics each week, the 30-minute block becomes 90 minutes of staring. Pre-decide themes a month out.
 - **Over-scheduling.** More than 1-2 posts per platform per day becomes noise. The system optimizes consistency, not volume.
 - **Ignoring the data.** Check which of last week's posts got engagement while you're writing this week's batch. One adjustment — platform, day, hook style — compounds across 52 weeks.
+- **A queue that meters posts, not time.** Postcron's free tier holds 10 pending posts, so a two-a-day week empties it before Friday and the habit dies quietly. The [Postcron breakdown](/blog/postcron-alternative-open-source) has that arithmetic, and the [cost comparison](/blog/socipub-vs-paid-tools-cost-comparison) covers what each meter actually costs.
 
 ## Start This Week
 
@@ -2471,7 +2472,7 @@ Hootsuite Free is the right call if you need five accounts with automatic publis
 
 The fastest way to decide: [create a free Socipub account](/sign-up), connect Twitter/X and LinkedIn, and schedule a real week of content. If it fits, you have escaped the $99/month step-up. If not, Hootsuite will still be there - free forever.
 
-Want the full comparison? Read [Hootsuite Alternative: Free & Open Source Social Media Scheduler](/blog/hootsuite-free-alternative), or explore the [calendar view](/scheduling) and [AI scheduling](/features) that come with every plan.
+Want the full comparison? Read [Hootsuite Alternative: Free & Open Source Social Media Scheduler](/blog/hootsuite-free-alternative). The [Later](/blog/later-free-plan-guide) and [Planable](/blog/planable-free-plan-guide) free tiers cap out the same way, or explore the [calendar view](/scheduling) and [AI scheduling](/features) that come with every plan.
 
 <div class="prose-notice">
 <strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and help shape the roadmap.
@@ -2652,7 +2653,7 @@ Socipub Free is the right call if your world is Twitter and LinkedIn, you want a
 
 The fastest way to decide: [create a free Socipub account](/sign-up), connect Twitter/X and LinkedIn, and schedule a real week of content. If it fits, you have escaped the $225/year entry fee. If not, Later will still be there - for $18.75/mo.
 
-Want the full comparison? Read [Later.com Alternative: Open Source Social Media Scheduler](/blog/later-com-competitor), or explore the [calendar view](/scheduling) and [AI scheduling](/features) that come with every plan.
+Want the full comparison? Read [Later.com Alternative: Open Source Social Media Scheduler](/blog/later-com-competitor). [Hootsuite](/blog/hootsuite-free-plan-guide) and [Planable](/blog/planable-free-plan-guide) hit similar ceilings, or explore the [calendar view](/scheduling) and [AI scheduling](/features) that come with every plan.
 
 <div class="prose-notice">
 <strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and help shape the roadmap.
@@ -2737,7 +2738,7 @@ Socipub Free is the right call if your world is Twitter/X and LinkedIn, you want
 
 The fastest way to decide: [create a free Socipub account](/sign-up), connect Twitter/X and LinkedIn, and schedule a real week of content. If it fits, you have escaped the $396/year entry fee. If not, Planable will still be there - for $33/month and one tweet a day.
 
-Want more free-plan breakdowns? Read [Buffer Free Plan: What You Get, Limits & When to Upgrade](/blog/buffer-free-plan-guide), or explore the [calendar view](/scheduling) and [AI scheduling](/features) that come with every plan.
+Want more free-plan breakdowns? Read [Buffer Free Plan: What You Get, Limits & When to Upgrade](/blog/buffer-free-plan-guide), then [Hootsuite](/blog/hootsuite-free-plan-guide) and [Zoho Social](/blog/zoho-social-free-plan-guide), or explore the [calendar view](/scheduling) and [AI scheduling](/features) that come with every plan.
 
 <div class="prose-notice">
 <strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and help shape the roadmap.
@@ -2836,7 +2837,7 @@ Socipub Free is the right call if your main channels are Twitter/X and LinkedIn,
 
 The fastest way to decide: [create a free Socipub account](/sign-up), connect Twitter/X and LinkedIn, and schedule a real week of content. If it fits, you have escaped the tier-up ladder entirely. If not, Zoho's free plan will still be there - 6 channels, one brand, forever.
 
-Want more free-plan breakdowns? Read [Buffer Free Plan: What You Get, Limits & When to Upgrade](/blog/buffer-free-plan-guide) or the [full Zoho Social vs Socipub comparison](/blog/zoho-social-alternative-open-source), and explore the [scheduling](/scheduling) and [AI features](/features) that come with every plan.
+Want more free-plan breakdowns? Read [Buffer Free Plan: What You Get, Limits & When to Upgrade](/blog/buffer-free-plan-guide), [Later](/blog/later-free-plan-guide) and [Hootsuite](/blog/hootsuite-free-plan-guide), or the [full Zoho Social vs Socipub comparison](/blog/zoho-social-alternative-open-source), and explore the [scheduling](/scheduling) and [AI features](/features) that come with every plan.
 
 <div class="prose-notice">
 <strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and help shape the roadmap.
@@ -3172,6 +3173,8 @@ Hootsuite's next tier after Professional jumps to $199, and Sprout's Professiona
 
 Postiz raised its entry price while I was watching. Our own comparison from July 1, 2026 listed the Starter plan at $24/month; the pricing page on August 17 shows Standard at $29. Same product, $5 more, six weeks apart. That's the strongest argument for checking pricing the day you commit - published reviews go stale that fast.
 
+Postcron meters a fourth thing: pending posts sitting in the queue. Ten on the free tier, which a twice-daily poster drains in five days - the [Postcron breakdown](/blog/postcron-alternative-open-source) runs that math. [Metricool](/blog/metricool-alternative-open-source) is the same argument for anyone who needs the analytics layer more than the queue.
+
 ## What one scheduled post really costs
 
 Baseline: one post per day on two networks = 60 posts a month. Here's the per-post math on that baseline.
@@ -3266,7 +3269,7 @@ So: audience on Instagram or TikTok, or a spreadsheet-first workflow, or client 
 
 ## When the switch is not worth it
 
-Keep Postcron if Instagram, TikTok, Pinterest, or Facebook pages carry your audience, if you live in the bulk uploader, or if an agency-style setup needs seats across client accounts - Team seats start at $24 there and $49 here, but the platform list is what decides. Switch when X and LinkedIn are your entire calendar and queue capacity is the only number you check. Our [Postiz comparison](/blog/postiz-alternative-open-source) runs the same test on a per-profile pricing model.
+Keep Postcron if Instagram, TikTok, Pinterest, or Facebook pages carry your audience, if you live in the bulk uploader, or if an agency-style setup needs seats across client accounts - Team seats start at $24 there and $49 here, but the platform list is what decides. Switch when X and LinkedIn are your entire calendar and queue capacity is the only number you check. Our [Postiz comparison](/blog/postiz-alternative-open-source) runs the same test on a per-profile pricing model, and the [Post Bridge breakdown](/blog/post-bridge-alternative-open-source) does it for a tool that charges per connected account.
 
 Run the free plan alongside your current Postcron account for a week before cancelling anything - 5 posts a month is enough to see whether the [flat $19 Pro tier](/pricing) covers the platforms you actually publish to.`.trim(),
   },
