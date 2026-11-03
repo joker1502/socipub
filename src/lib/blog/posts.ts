@@ -121,7 +121,7 @@ Because the content is just a list of dated posts, migration is low-stakes:
 3. Rebuild the queue in one [batch scheduling](/blog/batch-schedule-weekly-content-twitter-linkedin) session.
 4. Let the Buffer subscription lapse after one overlapping week — the overlap is optional insurance, not a lock-in.
 
-Compare against the same criteria in our [Postiz](/blog/postiz-alternative-open-source), [Hootsuite](/blog/hootsuite-free-alternative), [Later.com](/blog/later-com-competitor), [Metricool](/blog/metricool-alternative-open-source), and [Post Bridge](/blog/post-bridge-alternative-open-source) guides — the conclusion keeps coming back to the platform mix and the pricing model. For X + LinkedIn with a flat price, the [free Socipub plan](/pricing) settles it in a week of real use.`.trim(),
+Compare against the same criteria in our [Postiz](/blog/postiz-alternative-open-source), [Hootsuite](/blog/hootsuite-free-alternative), [Later.com](/blog/later-com-competitor), [Metricool](/blog/metricool-alternative-open-source), [SocialBee](/blog/socialbee-alternative-open-source), [Loomly](/blog/loomly-alternative-open-source), and [Post Bridge](/blog/post-bridge-alternative-open-source) guides — the conclusion keeps coming back to the platform mix and the pricing model. For X + LinkedIn with a flat price, the [free Socipub plan](/pricing) settles it in a week of real use.`.trim(),
   },
   {
     slug: "schedule-twitter-linkedin-one-click",
@@ -314,7 +314,7 @@ Switching from Hootsuite to Socipub takes about ten minutes:
 3. Recreate the upcoming week's posts — the batch system from our [scheduling guide](/blog/batch-schedule-weekly-content-twitter-linkedin) makes this a single 30-minute session.
 4. Cancel the Hootsuite subscription at your next billing cycle. There's no data migration lock; the schedule is just a list of posts.
 
-For more scheduler comparisons, see our [Buffer alternative guide](/blog/buffer-alternative-open-source) or the [Later.com parallel](/blog/later-com-competitor). If your need is straightforward — schedule to X and LinkedIn, know exactly what you pay — start with the [free Socipub plan](/pricing) and skip the enterprise detour.`.trim(),
+For more scheduler comparisons, see our [Buffer alternative guide](/blog/buffer-alternative-open-source) or the [Later.com parallel](/blog/later-com-competitor). The [Agorapulse](/blog/agorapulse-alternative-open-source) and [CoSchedule](/blog/coschedule-alternative-open-source) write-ups cover the agency-team end of the same decision. If your need is straightforward — schedule to X and LinkedIn, know exactly what you pay — start with the [free Socipub plan](/pricing) and skip the enterprise detour.`.trim(),
   },
   {
     slug: "later-com-competitor",
@@ -703,6 +703,8 @@ Typefully is an excellent Twitter thread tool — arguably the best available. B
 
 For indie hackers, creators, and small teams who post to both Twitter and LinkedIn, Socipub eliminates the need for two separate tools, reduces monthly costs, and gives you full control over your data — all while delivering the scheduling features you actually use.
 
+Coming off the old multi-column client? The [TweetDeck alternative guide](/blog/tweetdeck-alternative-open-source) covers the X Pro paywall shift and what replaced it.
+
 [Try Socipub free](/sign-up) — connect Twitter and LinkedIn, schedule your first post in under 2 minutes. No credit card, no time limit, no feature gates.
 
 <div class="prose-notice">
@@ -1025,7 +1027,7 @@ Write five hooks — the first line of each post — before touching any body te
 
 ### Step 3: Draft bodies from the hooks (10 minutes)
 
-Each body is a short argument: hook, one point, one example or number, and a soft CTA (reply, visit link, follow). Keep each post self-contained — a reader seeing only that post should still get the point.
+Each body is a short argument: hook, one point, one example or number, and a soft CTA (reply, visit link, follow). Keep each post self-contained — a reader seeing only that post should still get the point. Draft in plain text if that is faster: the [Markdown posting guide](/blog/markdown-social-media-posts) covers which syntax survives the paste into X and LinkedIn.
 
 ### Step 4: Queue everything at once (5 minutes)
 
@@ -1039,6 +1041,7 @@ Three ways this system collapses, all fixable:
 - **Over-scheduling.** More than 1-2 posts per platform per day becomes noise. The system optimizes consistency, not volume.
 - **Ignoring the data.** Check which of last week's posts got engagement while you're writing this week's batch. One adjustment — platform, day, hook style — compounds across 52 weeks.
 - **A queue that meters posts, not time.** Postcron's free tier holds 10 pending posts, so a two-a-day week empties it before Friday and the habit dies quietly. The [Postcron breakdown](/blog/postcron-alternative-open-source) has that arithmetic, and the [cost comparison](/blog/socipub-vs-paid-tools-cost-comparison) covers what each meter actually costs.
+- **A queue that recycles instead of retiring.** Category-and-percentage systems sound clever until you plan a themed week around one. The [MeetEdgar comparison](/blog/meetedgar-alternative-open-source) and the [Hypefury write-up](/blog/hypefury-alternative-open-source) show where each queue model breaks for a two-platform publisher.
 
 ## Start This Week
 
@@ -2303,7 +2306,7 @@ Switching takes about 30 minutes:
 
 ## Get Started
 
-Ready to leave credit-metering behind? [Try Socipub free](/sign-up) - no credit card, no time limit. Or [explore the full feature set](/features) and [review the pricing](/pricing). Also weighing other tools? See our [Buffer alternative comparison](/blog/buffer-alternative-open-source) or the [SocialPilot alternative guide](/blog/socialpilot-alternative-open-source) for more side-by-side breakdowns.`.trim(),
+Ready to leave credit-metering behind? [Try Socipub free](/sign-up) - no credit card, no time limit. Or [explore the full feature set](/features) and [review the pricing](/pricing). Also weighing other tools? See our [Buffer alternative comparison](/blog/buffer-alternative-open-source) the [SocialPilot alternative guide](/blog/socialpilot-alternative-open-source) or the [Publer comparison](/blog/publer-alternative-open-source) for more side-by-side breakdowns.`.trim(),
   },
   {
     slug: "markdown-social-media-posts",
@@ -2898,7 +2901,7 @@ The honest trade-off: self-hosting buys you data locality and zero per-seat pric
 3. Deploy the Next.js app to Vercel and set all 26 environment variables.
 4. Connect an account in the UI and schedule a test post.
 
-For the privacy and compliance side of running your own instance, see our [GDPR guide](/blog/gdpr-compliant-social-media-tool). And if you'd rather skip the setup entirely, the [cloud version](/pricing) reaches the same scheduling features in five minutes.`.trim(),
+For the privacy and compliance side of running your own instance, see our [GDPR guide](/blog/gdpr-compliant-social-media-tool). The argument for owning the stack instead of renting it runs through [Why Open Source Social Media Matters](/blog/why-open-source-social-media-matters), and the [ten open source tools we run](/blog/open-source-tools-indie-hackers) covers the rest of the stack. And if you'd rather skip the setup entirely, the [cloud version](/pricing) reaches the same scheduling features in five minutes.`.trim(),
   },
   {
     slug: "social-media-calendar-template",
@@ -2949,7 +2952,7 @@ Two ways to start:
 - **Notion or Google Sheets:** replicate the 12 columns above exactly — don't add columns until you've filled the base set for two weeks.
 - **Skip the document entirely:** if your queue is the calendar (schedule directly into Socipub each week), use the [free plan](/pricing) and let the scheduler's calendar view play the template role.
 
-Either way, the principle is the same: fewer columns than you think you need, one status rule, and a bridge to the tool that actually posts.`.trim(),
+Either way, the principle is the same: fewer columns than you think you need, one status rule, and a bridge to the tool that actually posts. Once the slots are filled, check the [posting-time research](/blog/best-time-to-post-linkedin-twitter) before you lock the times in.`.trim(),
   },
   {
     slug: "best-time-to-post-linkedin-twitter",
@@ -3169,7 +3172,7 @@ Every figure below comes from the tool's own pricing page on the day I checked. 
 
 A few things the table doesn't show.
 
-Hootsuite's next tier after Professional jumps to $199, and Sprout's Professional sits at $249 - the middle of these price ladders is aggressive for anyone managing a handful of accounts. Buffer bills per channel, so a brand with five channels pays five times the entry figure before touching a second user.
+Hootsuite's next tier after Professional jumps to $199, and Sprout's Professional sits at $249 - the middle of these price ladders is aggressive for anyone managing a handful of accounts. Buffer bills per channel, so a brand with five channels pays five times the entry figure before touching a second user. Sprout's seat-first model is its own case — the [Sprout Social alternative breakdown](/blog/sprout-social-alternative-open-source) runs that math at three people.
 
 Postiz raised its entry price while I was watching. Our own comparison from July 1, 2026 listed the Starter plan at $24/month; the pricing page on August 17 shows Standard at $29. Same product, $5 more, six weeks apart. That's the strongest argument for checking pricing the day you commit - published reviews go stale that fast.
 
