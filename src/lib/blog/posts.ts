@@ -14,6 +14,78 @@ export function normalizeTag(tag: string): string {
 
 const posts: BlogPost[] = [
   {
+    slug: "free-social-media-scheduler-plans-compared",
+    title: "Free Social Media Scheduler Plans Compared (2026)",
+    description: "Eight scheduler pricing pages checked on Nov 13, 2026. Three free plans no longer exist, and the five that do cap you by queue, month, or lifetime posts.",
+    date: "2026-11-13",
+    readTime: "8 min read",
+    tags: ["free-plan", "comparison", "social-media"],
+    content: `
+Social media schedulers split into two camps right now. Five still run a real free plan. Three of the most-searched names do not, and their "free plan" pages are now trial pages with the old headline still attached.
+
+I opened eight official pricing pages on November 13, 2026 and copied the limits instead of the marketing lines. Then I converted everything into the single number that decides whether a free tier is usable: how many posts you can actually publish in month one while running X and LinkedIn, one post a day each. That is 60 posts. Most free plans here cannot do it.
+
+## Three of the free plans you are searching for are gone
+
+**Hootsuite.** The pricing page sells Standard, Professional, Advanced and Enterprise. No free tier. Visit hootsuite.com/plans/free and you get a page titled "Hootsuite Free: Try Any Hootsuite Plan for Free"; its FAQ answers "Is Hootsuite free?" with "You can try any Hootsuite plan free for 14 days." The free-forever tier with five accounts and a 30-post queue is not on the site anymore. I detailed what the trial does and does not include in the [Hootsuite free plan breakdown](/blog/hootsuite-free-plan-guide).
+
+**Later.** Three paid plans, Starter at $18.75/mo on yearly billing. The 30-posts-per-profile ceiling that used to be free now sits inside Starter, next to a 14-day trial. Our [Later free plan post](/blog/later-free-plan-guide) has the full history.
+
+**SocialPilot.** Two tiers, a 14-day trial banner across the top, no free entry point. One quirk worth knowing if you check it yourself: loading the pricing page from our server returned rupee pricing, so the numbers you see depend on where your IP resolves.
+
+All three still rank for "[tool] free plan" and a lot of 2026 comparison articles still describe tiers that no longer exist. Check the vendor's own page before you trust a list, including this one. I re-verify monthly.
+
+## The five survivors, and how each one meters "free"
+
+Here is the part almost nobody compares. "Free plan" hides four different meters: queue depth, monthly volume, lifetime records, and channel locks.
+
+| Tool | Free channels | How free is capped | Posts in month one at 60/month | Blocks |
+|------|---------------|--------------------|-------------------------------|--------|
+| Buffer | 3 channels, any network | Queue depth: 10 scheduled posts per channel, refills as each publishes | 60, no monthly ceiling | Only how far ahead you can plan |
+| Zoho Social | 6 fixed slots in 1 brand: X profile, LinkedIn profile, LinkedIn company page, Facebook page, Instagram profile, Google Business Profile | Unlimited scheduling, 1 user | 60 | Bulk scheduling and repeat posting are paid |
+| Publer | 3 accounts, X excluded | Queue depth: 10 per account, 25 drafts, 24-hour post history | 60 on the non-X accounts, 0 on X | X cannot be connected at all |
+| Metricool | 1 brand, every network except X and LinkedIn | Monthly volume: 20 posts | 20, then blocked | Both platforms most indie builders need |
+| Planable | 4 social pages per workspace, unlimited workspaces and users | Lifetime records: 50 posts total, never resets | 50 total, then frozen permanently | The meter does not refill |
+| Socipub | 2 platforms: X and LinkedIn | Monthly volume: 5 posts | 5 | Any real publishing rhythm |
+
+Buffer's row is the one people misread. Ten posts per channel sounds like a ten-post allowance; it is a queue. Publish, and the slot reopens the same hour. Publer copied that model but walled off X, which is the platform most of this audience opens first.
+
+Zoho's free plan is the opposite surprise. Nobody markets it as generous, yet it schedules without a volume cap and includes both a LinkedIn company page and a LinkedIn profile, two things Buffer counts as separate channels. The catch lives one row down in the feature table: bulk scheduling and repeat posting start at Professional.
+
+## What the pricing pages bury in the footnotes
+
+**The Hootsuite trial throttles you while you evaluate it.** A footnote under the plan cards reads: "Trial accounts have daily posting limits (10-20 posts per organization, depending on plan). Bulk scheduling is not available during trial." Two weeks, and you cannot batch a month of content to test the workflow you actually care about.
+
+**Buffer's free tier ships a working API.** One key, 1,000 requests per channel per month capped at 3,000 total, plus 30-day insights history, one threaded post, five AI reply suggestions a week and one saved reply. If you plan to push posts from a script, that changes the calculus completely.
+
+**Publer keeps your published history for 24 hours on free.** You get a scheduler that forgets what it published. Pull your analytics before the day ends or lose the record.
+
+**Planable's 50 posts never come back.** Their help center is explicit: the cap is record-based and does not reset over time. A daily poster on two platforms burns through it in under a month and then stares at a paywall for a tool whose real strength is approval workflows, not publishing volume.
+
+**Metricool gives away competitor data.** Five competitor profiles and 30 days of analytics on the free tier, which is more competitive intelligence than most paid plans in this list.
+
+## Picking one by what you actually do
+
+- **Daily posting on X and LinkedIn, zero budget.** Buffer free, 3 channels, refill queue. It is the only free tier here that both includes X and has no monthly ceiling.
+- **Need a LinkedIn company page and a personal profile from one inbox.** Zoho Social free, then accept hand-composed posts.
+- **Tracking competitors more than posting.** Metricool free.
+- **Client approvals with a team.** Planable free, with the 50-post ceiling in mind, since unlimited users and workspaces are genuinely free.
+- **Longevity over features.** Self-host. No vendor can retire a plan you run yourself.
+
+## Where Socipub lands
+
+Our free plan is the tightest row in that table: 5 posts a month, 2 platforms, X and LinkedIn. I am not going to dress that up as generous. It exists so you can test the composer and the calendar without a card, not so you can run a posting operation on it.
+
+What changes the math is the license. Socipub is MIT-licensed, so [self-hosting with Docker](/blog/self-host-socipub-docker) removes the monthly meter entirely and keeps your data on your own server. If you would rather not run infrastructure, [Pro is a flat 19 dollars a month](/pricing) for unlimited posts on both platforms, roughly what four Buffer channels cost at 5 dollars each.
+
+For the per-tool deep dives: [Buffer](/blog/buffer-free-plan-guide), [Hootsuite](/blog/hootsuite-free-plan-guide), [Later](/blog/later-free-plan-guide), [Planable](/blog/planable-free-plan-guide) and [Zoho Social](/blog/zoho-social-free-plan-guide). Open source replacements for [Metricool](/blog/metricool-alternative-open-source) and [Publer](/blog/publer-alternative-open-source) are covered separately.
+
+<div class="prose-notice">
+<strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and help shape the roadmap.
+</div>
+    `.trim(),
+  },
+  {
     slug: "postiz-alternative-open-source",
     title: "Postiz Alternative: Free Open Source Social Media Scheduler (2026)",
     description: "Postiz went AGPL and dropped its free plan: $29/mo for 5 channels. Socipub is MIT with flat pricing for X and LinkedIn. Checked Nov 2026.",
@@ -263,40 +335,41 @@ Socipub's **[Publishing Queue](/scheduling)** takes batch scheduling further:
   {
     slug: "hootsuite-free-alternative",
     title: "Hootsuite Free Alternative: Open Source Social Media Scheduler (2026 Comparison)",
-    description: "Hootsuite's free plan caps at 30 posts and paid plans start at $99/mo. Socipub covers X + LinkedIn for free, open source, flat pricing.",
+    description: "Hootsuite has no free plan in 2026, only a 14-day trial with daily posting caps. Socipub covers X + LinkedIn free, open source, flat pricing.",
     date: "2026-07-08",
     readTime: "6 min read",
     tags: ["alternatives","hootsuite","open-source"],
-    content: `Hootsuite is the most recognizable name in social media management — and one of the most expensive at the moment you want to grow. Its free plan is a lead magnet, not a workflow, and paid plans start at $99/month for a solo creator. For indie developers and small teams whose actual need is scheduling Twitter/X and LinkedIn without marketing overhead, open source is the alternative that removes both the price and the lock-in.
+    content: `Hootsuite is the most recognizable name in social media management — and since it retired its free tier it is also one of the least accessible at the moment you want to start. What is left is a 14-day trial over four paid tiers billed per user seat. Checked against Hootsuite's own plans page on 13 November 2026. For indie developers and small teams whose actual need is scheduling Twitter/X and LinkedIn without marketing overhead, open source is the alternative that removes both the price and the lock-in.
 
 ## Hootsuite vs Socipub: Full Comparison
 
-| Feature | Hootsuite Free | Hootsuite Pro ($99/mo) | Socipub Free | Socipub Pro ($19/mo) |
-|---------|:-------------:|:----------------------:|:------------:|:--------------------:|
-| Users | 1 | 1 | 1 | 1 |
-| Social accounts | 5 | 10 | 2 | Unlimited |
-| Scheduled posts | 30 | Unlimited | 5 | Unlimited |
-| Analytics | No | Basic | No | Basic |
-| AI features | No | No | No | AI Schedule + AI Rewrite |
+| Feature | Hootsuite (14-day trial) | Hootsuite paid tiers | Socipub Free | Socipub Pro ($19/mo) |
+|---------|:------------------------:|:--------------------:|:------------:|:--------------------:|
+| Free plan after the trial | None | None | Yes, no expiry | Yes, no expiry |
+| Seats | 1 per seat | billed per user seat | 1 | 1 |
+| Social accounts | 10 on Standard | unlimited from Professional | 2 (X + LinkedIn) | Unlimited |
+| Scheduled posts | unlimited, capped at 10-20 per day per org | unlimited | 5 per month | Unlimited |
+| Bulk scheduling | disabled during the trial | from Professional | calendar + batch composer | calendar + batch composer |
+| Analytics | included in trial | included | No | Basic |
+| API access | No | No | Yes | Yes |
 | Open source | No | No | MIT | MIT |
 | Self-hosting | No | No | Yes | Yes |
 | EU data hosting | No | No | Yes | Yes |
-| API access | No | No | Yes | Yes |
-| Monthly cost | $0 | $99 | $0 | $19 |
+| Monthly cost | $0 for 14 days | per seat, quote varies by tier | $0 | $19 |
 
-The comparison that matters: Hootsuite's free tier exists to demo the platform, while Socipub's free tier is the actual product with a post limit. Both cap you — but the caps point in different directions.
+The comparison that matters: Hootsuite now gives you two weeks and then a bill, while Socipub's free tier has no clock on it at all. Both cap you — one caps your calendar, the other caps your volume.
 
-## Why Hootsuite's Free Plan Isn't a Workflow
+## Why the Trial Isn't a Workflow
 
-Five limitations make the free tier a trap for anyone posting daily:
+Five things happen to you inside those 14 days:
 
-- **30 scheduled posts, period.** A 7-posts-a-week rhythm eats the quota in a month; the slot refreshes by plan, not by exhaustion, and waiting on a quota reset stops the habit.
-- **No analytics.** You can't see what worked, so you can't iterate — the core loop of any real presence.
-- **No visual calendar.** No way to look at the week and rearrange; scheduling becomes a form, not a view.
-- **Hootsuite branding** on every published post ("Published with Hootsuite"), which is a marketing cost on your own feed.
-- **No bulk scheduling.** Posts queue one at a time, which is exactly the daily grind batch scheduling is meant to kill.
+- **The clock is 14 days, not forever.** Whatever rhythm you build has a deadline attached to it, and day 15 asks for a payment method.
+- **Daily posting caps apply.** Hootsuite's own footnote reads "Trial accounts have daily posting limits (10-20 posts per organization, depending on plan)." A solo user on two platforms rarely notices. An agency onboarding clients does.
+- **Bulk scheduling is switched off during the trial.** This is the killer for anyone evaluating Hootsuite because of its batch workflow — the exact feature you want to test is the one disabled while you test.
+- **Nothing free to fall back to.** Trial ends, workspace locks, you pick a tier. There is no degraded free mode.
+- **Seats multiply the bill.** Every plan is priced per user, so a three-person team pays three times the card price, not once.
 
-For 30 posts a month and a single user, the free plan is fine. For an active creator, it's where the upgrade pitch starts — at $99/month.
+The trial is a legitimate way to evaluate the product if your team is small and your posting volume is modest. It is not a place to run a publishing habit for free, and after November 2026 nobody should expect it to be.
 
 ## What Changes With Open Source
 
@@ -2398,85 +2471,47 @@ Socipub gives you all of this on the free plan - Markdown editing, scheduling, a
   },
   {
     slug: "hootsuite-free-plan-guide",
-    title: "Hootsuite Free Plan: What You Get, Limits & When to Upgrade",
-    description: "Hootsuite's free plan: 5 accounts, 30 scheduled posts, 2 users. See what's included, which limits hurt, and when to upgrade or switch to open source Socipub.",
-    date: "2026-08-07",
+    title: "Hootsuite Free Plan Is Gone: What Replaced It (2026)",
+    description: "Hootsuite has no free plan in 2026. Verified Nov 13: four paid tiers plus a 14-day trial that caps daily posts and disables bulk scheduling. Full detail.",
+    date: "2026-11-13",
     readTime: "6 min read",
     tags: ["hootsuite", "free-plan", "guide"],
     content: `
-Searching "Hootsuite free plan" usually means one thing: you want to know whether the free tier is enough before you commit. Hootsuite markets it as "free forever" - 2 users and 5 social accounts sound generous on paper. But the details that decide whether it fits you live in the fine print: 30 total scheduled posts, no analytics, and features like the visual planner and bulk scheduling that only unlock after you pay.
+Hootsuite does not have a free plan anymore. What exists is a 14-day trial on the paid tiers, and the trial comes with posting limits that most comparison articles never mention. This page is rewritten from Hootsuite's own plans page on November 13, 2026, because earlier versions of it, including our own, described a free tier that the company has since retired.
 
-Here is the full picture of Hootsuite's free plan in 2026 - what's included, where the limits actually hurt, and when upgrading makes sense versus switching to an open source alternative.
+## What the pricing page sells today
 
-## What the Hootsuite Free Plan Actually Includes
+Four tiers, no free entry: Standard, Professional, Advanced and Enterprise. Standard covers up to 10 social accounts per user seat. Unlimited accounts start at Professional. Enterprise is quote-only.
 
-Hootsuite's free tier is genuinely free forever - no trial clock, no credit card required. Here is the complete inventory:
+The URL hootsuite.com/plans/free still resolves, which is why people keep landing on it expecting a free tier. The page it now serves is titled "Hootsuite Free: Try Any Hootsuite Plan for Free," and its own FAQ gives the whole answer: "You can try any Hootsuite plan free for 14 days. To continue using Hootsuite after your trial, simply choose a paid plan and enter your payment information."
 
-**2 users.** The free plan supports a small team: one primary owner plus one additional member. That is a real step up from most free tiers, which are strictly single-user.
+No credit card is needed to start the trial, and nothing charges automatically when it lapses. When day 14 ends, you either pick a plan or lose access to the workspace.
 
-**5 social accounts.** You can connect up to five social profiles across Twitter/X, Facebook, Instagram, LinkedIn, YouTube, TikTok and Pinterest. For most solo creators, five accounts cover the standard platform set.
+## The trial's fine print is the real story
 
-**30 scheduled posts.** This is the total queue - 30 posts across all accounts at any one time, not per channel. Once a post publishes, the slot refills, so the limit is about queue depth, not monthly volume.
+Under the plan cards there is a footnote worth reading twice: "Trial accounts have daily posting limits (10-20 posts per organization, depending on plan). Bulk scheduling is not available during trial."
 
-**Content library and basic composer.** You get Hootsuite's content library and a standard composer. But the visual drag-and-drop planner - the feature Hootsuite is famous for - sits behind the paid plans.
+Parse that. You get two weeks to evaluate a tool that is built for batch scheduling, and during those two weeks batch scheduling is switched off. If your reason for trying Hootsuite is "can I load a month of X and LinkedIn posts in one sitting," the trial cannot answer that question. Ten to twenty posts a day per organization is the ceiling, which for a solo user on two platforms is usually fine, and for an agency onboarding five clients is not.
 
-**30-day free trial of Professional.** You can try the paid tier for a month; when it ends, your account drops back to the free plan and your scheduled posts still publish.
+What the trial does include, according to the plans page: unlimited scheduled posts within those daily caps, AI post and image generation, a unified inbox, and brand and competitor monitoring. That is the product. It is just rented by the fortnight.
 
-**Branded publishing.** Posts published from the free plan carry Hootsuite branding.
+## What happened to the old free tier
 
-## Where the Free Plan's Limits Hurt
+The free-forever plan used to hand out a small team seat count, a handful of social accounts and a shared queue of scheduled posts, with posting analytics and the visual planner kept behind paid plans. It is gone from the site entirely: no plan card, no row in the feature comparison, no mention in the FAQ beyond the trial.
 
-The free tier is honest about being a starter plan. These are the limits that actually bite:
+This was not a Hootsuite-only move. Later retired its free tier the same way, replacing it with a 14-day trial over three paid plans. Free tiers in this category have been shrinking for years as publishing APIs and inbox infrastructure turned into real per-seat costs. Our [free scheduler comparison](/blog/free-social-media-scheduler-plans-compared) tracks which vendors still have a free plan and how each one meters it, checked monthly.
 
-**The 30-post total queue.** Unlike per-channel limits, Hootsuite's 30 posts are shared across all five accounts. If you post three times a day on three platforms, you exhaust the queue in three days. Batch producers who want a month of content scheduled in one sitting hit this wall immediately.
+## What to use instead, depending on the job
 
-**No analytics.** The free plan shows no performance data. You publish blind - no idea which posts perform, what time slots work, or what your audience engages with. For anyone treating social media as a growth channel, this is the biggest gap.
+**You want what Hootsuite free used to be.** Buffer's free plan is the closest like-for-like: 3 channels, 10 scheduled posts per channel that refill as they publish, 100 ideas, 30-day insights, and an API key with 1,000 requests per channel a month. No monthly ceiling and no daily drip cap. [Full Buffer free plan breakdown](/blog/buffer-free-plan-guide).
 
-**No bulk scheduling.** Every post must be composed one at a time in the composer. There is no CSV import, no bulk upload, no calendar drag-and-drop - the workflow that makes batch scheduling practical is paid-only.
+**You need LinkedIn company page, LinkedIn profile and X in one calendar.** Zoho Social free covers exactly those slots inside one brand, with unlimited scheduling but no bulk upload or repeat posting until Professional. [Zoho Social free plan](/blog/zoho-social-free-plan-guide).
 
-**Hootsuite branding.** "Published with Hootsuite" appears on free-plan posts, which looks unprofessional for creators building a personal brand.
+**You want to stop re-evaluating every quarter.** Socipub is MIT-licensed, so [self-hosting](/blog/self-host-socipub-docker) means no vendor can retire your plan. The hosted free tier is deliberately small, 5 posts a month on X and LinkedIn, and [Pro is a flat 19 dollars a month](/pricing).
 
-**No integrations.** Canva integration, advanced analytics, and team workflows require paid plans - the free tier is deliberately bare.
+**You are staying with Hootsuite.** Then budget for Professional, not Standard, if you manage more than 10 accounts or need bulk scheduling after the trial ends.
 
-And when you do upgrade, the price jumps hard: Hootsuite Professional runs around $99/month and Team around $249/month. That is a steep step from $0 for a solo creator who just wanted a few more posts in the queue.
-
-## When to Upgrade - and When to Switch Instead
-
-**Upgrade Hootsuite when:**
-- You need 6+ accounts and 100+ scheduled posts with automatic publishing
-- You need advanced analytics and team collaboration
-- You are happy inside a fully managed SaaS and fine paying $99+/month
-
-**Consider an alternative when:**
-- Your main platforms are Twitter/X and LinkedIn - exactly what Socipub targets
-- You batch-produce content and need a real calendar view with queue depth
-- You want open source software, self-hosting, or full control of your data
-- You don't want branded posts or a $99/month step-up to escape free-tier limits
-
-## Hootsuite Free vs Socipub Free at a Glance
-
-| Feature | Hootsuite Free | Socipub Free |
-|---------|-------------|--------------|
-| Cost | Free forever | Free forever |
-| Users | 2 | 1 |
-| Social accounts | 5 | 2 (Twitter/X + LinkedIn) |
-| Scheduled posts | 30 total | 5 total |
-| Calendar view | Paid plans | Included |
-| Bulk scheduling | Paid plans | Included |
-| Branding | "Published with Hootsuite" | None |
-| Open source | No | MIT |
-| Self-hosting | No | Yes (Docker) |
-| EU data hosting | No | Yes |
-| AI scheduling | Paid plans | Pro plan |
-| Upgrade path | $99/mo Professional | Pro $19/mo, unlimited channels |
-
-## The Verdict
-
-Hootsuite Free is the right call if you need five accounts with automatic publishing and you are happy inside a managed SaaS. Socipub Free is the right call if your world is Twitter and LinkedIn, you batch-schedule more than a handful of posts per week, and you would rather pay one flat price than leap to $99/month.
-
-The fastest way to decide: [create a free Socipub account](/sign-up), connect Twitter/X and LinkedIn, and schedule a real week of content. If it fits, you have escaped the $99/month step-up. If not, Hootsuite will still be there - free forever.
-
-Want the full comparison? Read [Hootsuite Alternative: Free & Open Source Social Media Scheduler](/blog/hootsuite-free-alternative). The [Later](/blog/later-free-plan-guide) and [Planable](/blog/planable-free-plan-guide) free tiers cap out the same way, or explore the [calendar view](/scheduling) and [AI scheduling](/features) that come with every plan.
+If you specifically want the open source angle on this decision, [Hootsuite Alternative: Free and Open Source](/blog/hootsuite-free-alternative) covers self-hosting, data ownership and what publishing to X and LinkedIn looks like without a per-seat meter.
 
 <div class="prose-notice">
 <strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and help shape the roadmap.
@@ -2557,7 +2592,7 @@ Buffer Free is the right call if you need three channels with automatic publishi
 
 The fastest way to decide: [create a free Socipub account](/sign-up), connect Twitter/X and LinkedIn, and schedule a real week of content. If it fits, you have saved $6+ per channel every month. If not, Buffer will still be there - free forever.
 
-Want the full comparison? Read [Buffer Alternative: Free & Open Source Social Media Scheduler](/blog/buffer-alternative-open-source) or the [Buffer vs Postiz head-to-head](/blog/buffer-vs-postiz), or explore the [calendar view](/scheduling) and [AI scheduling](/features) that come with every plan.
+Want the full comparison? Read [Buffer Alternative: Free & Open Source Social Media Scheduler](/blog/buffer-alternative-open-source), or see how Buffer's free tier stacks up against [every other scheduler's free plan](/blog/free-social-media-scheduler-plans-compared) or the [Buffer vs Postiz head-to-head](/blog/buffer-vs-postiz), or explore the [calendar view](/scheduling) and [AI scheduling](/features) that come with every plan.
 
 <div class="prose-notice">
 <strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and help shape the roadmap.
@@ -2742,7 +2777,7 @@ Socipub Free is the right call if your world is Twitter/X and LinkedIn, you want
 
 The fastest way to decide: [create a free Socipub account](/sign-up), connect Twitter/X and LinkedIn, and schedule a real week of content. If it fits, you have escaped the $396/year entry fee. If not, Planable will still be there - for $33/month and one tweet a day.
 
-Want more free-plan breakdowns? Read [Buffer Free Plan: What You Get, Limits & When to Upgrade](/blog/buffer-free-plan-guide), then [Hootsuite](/blog/hootsuite-free-plan-guide) and [Zoho Social](/blog/zoho-social-free-plan-guide), or explore the [calendar view](/scheduling) and [AI scheduling](/features) that come with every plan.
+Want more free-plan breakdowns? Read [Buffer Free Plan: What You Get, Limits & When to Upgrade](/blog/buffer-free-plan-guide), then [Hootsuite](/blog/hootsuite-free-plan-guide) and [Zoho Social](/blog/zoho-social-free-plan-guide), or the [side-by-side free plan table](/blog/free-social-media-scheduler-plans-compared), or explore the [calendar view](/scheduling) and [AI scheduling](/features) that come with every plan.
 
 <div class="prose-notice">
 <strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and help shape the roadmap.
@@ -2841,7 +2876,7 @@ Socipub Free is the right call if your main channels are Twitter/X and LinkedIn,
 
 The fastest way to decide: [create a free Socipub account](/sign-up), connect Twitter/X and LinkedIn, and schedule a real week of content. If it fits, you have escaped the tier-up ladder entirely. If not, Zoho's free plan will still be there - 6 channels, one brand, forever.
 
-Want more free-plan breakdowns? Read [Buffer Free Plan: What You Get, Limits & When to Upgrade](/blog/buffer-free-plan-guide), [Later](/blog/later-free-plan-guide) and [Hootsuite](/blog/hootsuite-free-plan-guide), or the [full Zoho Social vs Socipub comparison](/blog/zoho-social-alternative-open-source), and explore the [scheduling](/scheduling) and [AI features](/features) that come with every plan.
+Want more free-plan breakdowns? Read [Buffer Free Plan: What You Get, Limits & When to Upgrade](/blog/buffer-free-plan-guide), [Later](/blog/later-free-plan-guide) and [Hootsuite](/blog/hootsuite-free-plan-guide), or the [free plan comparison table](/blog/free-social-media-scheduler-plans-compared), or the [full Zoho Social vs Socipub comparison](/blog/zoho-social-alternative-open-source), and explore the [scheduling](/scheduling) and [AI features](/features) that come with every plan.
 
 <div class="prose-notice">
 <strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and help shape the roadmap.
@@ -3160,6 +3195,10 @@ I run six content sites and schedule every post through software, so price chang
 
 ## What the paid tools charge right now (checked August 17, 2026)
 
+<div class="prose-notice">
+<strong>Update, 13 November 2026:</strong> three free tiers in the table below no longer exist. Hootsuite, Later and Postiz have all retired theirs and now sell trials only, so read the "Free tier" column as historic. The current state of every free plan is in the <a href="/blog/free-social-media-scheduler-plans-compared">November free plan comparison</a>, verified against each vendor's pricing page on the day of publication.
+</div>
+
 Every figure below comes from the tool's own pricing page on the day I checked. No roundabout numbers, no "contact us" guesses.
 
 | Tool | Free tier | Entry paid plan | What you're billed on |
@@ -3219,7 +3258,7 @@ Being honest about the trade-off: paid tools cover Instagram, TikTok, Facebook, 
 
 ## Bottom Line
 
-The real price of a scheduler is three numbers: the plan price, the per-channel or per-seat multiplier, and the upgrade cliff. Buffer's cheap until you add channels. Hootsuite's free until post six. Sprout's expensive from zero. Socipub's flat - $0 free, $19 unlimited, $49 for a team, with no cliff anywhere in the ladder.
+The real price of a scheduler is three numbers: the plan price, the per-channel or per-seat multiplier, and the upgrade cliff. Buffer's cheap until you add channels. Hootsuite's a trial now, then a seat-based bill. Sprout's expensive from zero. Socipub's flat - $0 free, $19 unlimited, $49 for a team, with no cliff anywhere in the ladder.
 
 Start with the [free plan](/sign-up) - 5 posts a month, no credit card, no time limit. Publishing more? [Pro at $19](/pricing) removes the cap entirely. Coming from Buffer, the [free plan comparison](/blog/buffer-free-plan-guide) shows what carries over, and the [self-hosting guide](/blog/self-host-socipub-docker) covers the zero-subscription route if you'd rather run your own instance.
     `.trim(),
