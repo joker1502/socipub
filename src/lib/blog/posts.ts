@@ -14,6 +14,92 @@ export function normalizeTag(tag: string): string {
 
 const posts: BlogPost[] = [
   {
+    slug: "zoho-social-pricing-explained",
+    title: "Zoho Social Pricing Explained (2026): Every Tier and Add-On",
+    description: "All seven Zoho Social tiers, the add-on caps, and the crossover points where stacking brands or seats beats a bigger plan. Prices checked Nov 14, 2026.",
+    date: "2026-11-14",
+    readTime: "8 min read",
+    tags: ["zoho", "pricing", "comparison"],
+    content: `
+Zoho Social's pricing page lists seven plans, and the line that decides your bill is missing from all of them: the feature you actually need usually doesn't unlock on the plan that looks like the obvious upgrade.
+
+I opened zoho.com/social/pricing.html on November 14, 2026, copied the tier prices, the add-on rates and the add-on caps, then did the arithmetic Zoho leaves to the buyer. Two results were surprising enough that I went back and corrected an older post on this site. Bulk scheduling does not start on Standard. And the second teammate is the exact point where Professional stops being the cheap option.
+
+## All seven plans, transcribed
+
+| Plan | Yearly billing | Brands | Channels per brand | Seats | AI credits | First thing it unlocks |
+|------|----------------|--------|--------------------|-------|------------|------------------------|
+| Free | $0 | 1 | 6 | 1 | 5 | Calendar, summary reports, zShare extension |
+| Standard | $10 | 1 | 13 | 1 | 40 | YouTube, Pinterest, TikTok, Threads, Bluesky, Snapchat, Mastodon |
+| Professional | $30 | 1 | 13 | 1 | 40 | Bulk scheduling, repeat posting, RSS, post insights, Messages |
+| Premium | $40 | 1 | 15 | 3 | 80 | Inbox, approvals, custom reports, UTM, CRM and Desk integrations |
+| Agency | $230 | 10 clients | 150 | 5 | 80 | Client portal, branded reports, scheduled report emails |
+| Agency Plus | $330 | 20 clients | 300 | 5 | 80 | The same, with twice the client roster |
+
+These are the yearly-billing rates, which is what the page shows by default. Flip the toggle to Monthly and no number appears until the page re-renders; the banner above it reads "Yearly - Save 33%". A 33% saving means monthly billing runs about 1.5x these figures, so Standard lands near $15, Professional near $45, Premium near $60. That last sentence is my arithmetic off the banner, not a number Zoho prints.
+
+A transcription note, because it confused me too: the paid tiers print two channel counts side by side. Standard shows 13 and 14, Premium 15 and 16, the agency plans 150/160 and 300/320. The pair tracks the billing toggle. Free is a flat 6.
+
+Add-ons matter more than the base prices here. Extra brands cost $14.50/month each on Professional with a hard cap of five, $19.50 each on Premium with no stated cap. Seats cost $10/month on every paid tier. Agency clients cost $76 per five.
+
+## The free plan stops at four gates
+
+**Bulk scheduling and repeat posting sit on Professional, not Standard.** This is the gate most articles get wrong, including ours: the [Zoho Social free plan guide](/blog/zoho-social-free-plan-guide) said "Standard and up," which I have now fixed. On the page, Standard's feature list ends at media optimization, drafts and the publishing calendar; CustomQ, repeat posting, bulk scheduling, RSS feeds and post insights all first appear one tier down at $30. A solo creator who only wants to import a CSV of 40 posts pays triple the Standard price to get it.
+
+**A second brand isn't purchasable on free or Standard.** Brand add-ons exist on Professional and Premium only. Free's six channels are six fixed slots in one brand: one X profile, one Instagram profile, one Facebook page, one LinkedIn company page, one LinkedIn profile, one Google Business Profile. Run a second product, a client, or a personal account and you are buying a tier first, then a brand.
+
+**Analytics upgrades in two separate steps.** Summary reports on free, per-post insights and popular posts at Professional, custom reports and exports only at Premium. If you report to someone else, the number is $40, not $30.
+
+**Channel types are walled by tier.** Free covers the six legacy channels. TikTok, YouTube, Pinterest, Threads, Bluesky and Snapchat require Standard, and WhatsApp Business plus Telegram require Premium. If your audience is on TikTok, the free plan is unusable no matter how generous the post volume is.
+
+One structural oddity worth knowing when you check the page yourself: the Free column lists six items and no scheduling row at all. Calendar, drafts, image editor and alt text first show up inside Standard's block, which is headed "Free Features +". Read that literally and free keeps scheduling and gives up the extra channels, which matches what the account does in practice.
+
+## Where add-ons beat the next tier
+
+Zoho sells two escape hatches, extra brands and extra seats, at different prices per tier. That creates crossover points nobody publishes.
+
+| What you need | Cheapest path | Cost per month |
+|---------------|---------------|----------------|
+| 1 brand, 1 seat, CSV import | Professional | $30 |
+| 2 brands, 1 seat | Professional + 1 brand | $44.50 |
+| 3 brands, 1 seat | Professional + 2 brands | $59 |
+| 6 brands (Professional's cap) | Professional + 5 brands | $102.50 |
+| 7 brands | Premium only | $157 |
+| 1 brand, 2 seats | Premium | $40 |
+| 3 brands, 3 seats | Either one | $79 both |
+
+The brand column always favors Professional, because the same brand costs $14.50 there and $19.50 on Premium. Three brands: $59 versus $79. Six brands: $102.50 versus $137.50. Stay low and wide and Professional wins the whole ladder until the five-brand cap, where a seventh brand forces you up to $157.
+
+Seats invert it immediately. Professional plus one extra seat is $40, which is exactly Premium's price with three seats already included. Two people is a tie; three people on Professional is $50 against Premium's $40. Add brands and seats together and the two plans collide at three brands with three seats, $79 either way. Past that, Premium.
+
+Agency math runs the same direction. Ten clients at $230 is $23 per client. Buy the five-client add-on instead and fifteen clients cost $306, or $20.40 each. Jump to Agency Plus and twenty clients cost $330, or $16.50 each, which is the cheapest per-client rate on the page but the largest cheque.
+
+## Two lines that read like page bugs
+
+Agency is labeled "Ideal for startups" while Premium, at $40, is labeled "Ideal for medium and large Enterprise". A $230 plan covering ten client workspaces is not a startup tier, and the mismatch suggests those two cards were written in different years and never reconciled.
+
+Then there is the Inbox. The new Inbox row appears only on Premium. An older "Messages" row sits on Professional. If all you need is X direct messages, Professional covers it. If you want one surface for comments across networks, that is the $40 plan, and no add-on gets you there from $30.
+
+## Who should pay which number
+
+- **Solo on X and LinkedIn, no CSV import:** free. The six slots include a LinkedIn company page and a LinkedIn profile, which [Buffer counts as two of your three](/blog/buffer-free-plan-guide).
+- **Solo who batch-schedules:** Professional at $30. Standard's $10 mostly buys channel types and 35 more AI credits; it will not unlock the import.
+- **TikTok or YouTube in the mix, no bulk need:** Standard at $10, the cheapest real TikTok access on this page.
+- **Replying to comments and DMs from one dashboard:** Premium at $40, because Inbox does not exist below it.
+- **Two people, two brands:** Professional plus a brand at $44.50, which undercuts Premium plus a brand at $59.50 by $15 every month.
+
+None of these prices is outrageous in isolation. What adds up is the shape of the ladder: you rarely buy a plan, you buy a plan plus two add-ons, and the add-on rates change when you climb.
+
+Our own numbers belong in the same table, so here they are without polish. [Socipub's free plan](/sign-up) caps at 5 posts a month, the tightest ceiling in the [eight free plans I compared](/blog/free-social-media-scheduler-plans-compared). Pro is $19 flat with no brand or seat ladders, and the whole thing is MIT licensed, so self-hosting with Docker costs $0 in software. If your channels are X and LinkedIn and you publish daily, a tier ladder built around brand count and seat count is an expensive way to schedule two feeds.
+
+If Zoho's free tier already covers your six channels, keep it. If you are weighing the paid tiers against a flat price, the [Zoho Social vs Socipub breakdown](/blog/zoho-social-alternative-open-source) walks the same feature list side by side. Either way, verify the prices yourself before you subscribe: the numbers above were copied on November 14, 2026, and pricing pages have a short shelf life.
+
+<div class="prose-notice">
+<strong>Open source:</strong> Socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and help shape the roadmap.
+</div>
+    `.trim(),
+  },
+  {
     slug: "free-social-media-scheduler-plans-compared",
     title: "Free Social Media Scheduler Plans Compared (2026)",
     description: "Eight scheduler pricing pages checked on Nov 13, 2026. Three free plans no longer exist, and the five that do cap you by queue, month, or lifetime posts.",
@@ -50,7 +136,7 @@ Here is the part almost nobody compares. "Free plan" hides four different meters
 
 Buffer's row is the one people misread. Ten posts per channel sounds like a ten-post allowance; it is a queue. Publish, and the slot reopens the same hour. Publer copied that model but walled off X, which is the platform most of this audience opens first.
 
-Zoho's free plan is the opposite surprise. Nobody markets it as generous, yet it schedules without a volume cap and includes both a LinkedIn company page and a LinkedIn profile, two things Buffer counts as separate channels. The catch lives one row down in the feature table: bulk scheduling and repeat posting start at Professional.
+Zoho's free plan is the opposite surprise. Nobody markets it as generous, yet it schedules without a volume cap and includes both a LinkedIn company page and a LinkedIn profile, two things Buffer counts as separate channels. The catch lives one row down in the feature table: bulk scheduling and repeat posting start at Professional, and a second brand is only purchasable as a $14.50 add-on from there. [The full tier and add-on math](/blog/zoho-social-pricing-explained) shows where stacking add-ons beats jumping plan.
 
 ## What the pricing pages bury in the footnotes
 
@@ -2307,7 +2393,7 @@ Ready to compare for yourself? [Try Socipub free](/sign-up) - no credit card, no
     date: "2026-08-04",
     readTime: "7 min read",
     tags: ["alternatives", "comparison", "zoho"],
-    content: `Zoho Social's free plan looks generous on paper - 6 channels for $0 - but the generosity stops at the plan boundary: AI features are metered in credits, extra brands cost add-ons, and every paid tier charges per user. For creators who just want to schedule Twitter/X and LinkedIn without a feature-metering spreadsheet, Socipub does the same core job with open source freedom.
+    content: `Zoho Social's free plan looks generous on paper - 6 channels for $0 - but the generosity stops at the plan boundary: AI features are metered in credits, extra brands cost add-ons ($14.50 each on Professional, $19.50 on Premium), and every paid tier charges per user. For creators who just want to schedule Twitter/X and LinkedIn without a feature-metering spreadsheet, Socipub does the same core job with open source freedom.
 
 This guide compares Zoho Social vs Socipub across pricing, plan limits, data control, and everyday workflows, so you can decide which scheduler actually fits how you post.
 
@@ -2818,7 +2904,7 @@ Zoho's free plan is genuinely free forever - but it arrives after a 15-day Stand
 
 The free tier covers day-to-day publishing well. These are the limits that actually bite:
 
-**The features that make scheduling scalable are paid-only.** Bulk scheduling via CSV/XLS, repeat posting, CustomQ queues, pause/resume, and RSS feeds all require a paid plan (Standard and up). If your workflow is "batch-write a month of content and queue it," the free plan forces you to schedule post by post.
+**The features that make scheduling scalable are paid-only.** Bulk scheduling via CSV/XLS, repeat posting, CustomQ queues, pause/resume, and RSS feeds all sit on Professional ($30/month), not Standard. Standard buys channel types and more AI credits, which is why a solo creator who only wants a CSV import pays triple. The [tier-by-tier pricing breakdown](/blog/zoho-social-pricing-explained) has the full feature table with the add-on caps. If your workflow is "batch-write a month of content and queue it," the free plan forces you to schedule post by post.
 
 **6 channels, but all inside one brand.** Every channel is tied to a single brand. Run a second project, a client, or a separate product line and you need add-on brands - which are paid, and capped by plan.
 
