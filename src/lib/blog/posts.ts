@@ -1499,169 +1499,81 @@ But for indie hackers, solo creators, and small teams focused on Twitter and Lin
   },
   {
     slug: "coschedule-alternative-open-source",
-    title: "CoSchedule Alternative: Free Open Source Social Scheduler for Twitter & LinkedIn (2026)",
-    description: "CoSchedule starts at $39/mo for teams. Socipub is the free open source alternative with AI scheduling and self-hosting. Migration guide included.",
-    date: "2026-07-29",
-    readTime: "6 min read",
-    tags: ["alternatives", "comparison", "coschedule", "open-source"],
+    title: "CoSchedule Alternative for a Team Content Calendar (2026)",
+    description: "CoSchedule self-serve now stops at 3 users, charges $29/mo for one extra seat and $5/mo per extra profile. The team calendar math, checked Nov 17.",
+    date: "2026-11-17",
+    readTime: "8 min read",
+    tags: ["coschedule", "pricing", "alternatives"],
     content: `
-CoSchedule has become the go-to marketing calendar for content teams who want a unified view of their blog posts, social media, and email campaigns. Its drag-and-drop calendar and workflow management are genuinely powerful — if you're running a multi-person marketing department.
+CoSchedule rebuilt its pricing, and the version most comparison posts still describe no longer exists. Two self-serve tiers are left. A third teammate costs $29 a month on top of the plan. A fourth teammate cannot be added at all.
 
-But if you're an indie hacker, solo creator, or small team focused primarily on social media scheduling — especially Twitter/X and LinkedIn — CoSchedule's enterprise feature set and per-user pricing are overkill. Socipub offers a simpler, more affordable approach: open source, self-hostable, and free to start.
+I pulled coschedule.com/pricing on November 17, 2026, transcribed the tiers and the add-on rates, then did the arithmetic for the thing people actually search: running a shared content calendar for a small team without agency pricing. Three numbers came out different from what I had published in July, so this is a rewrite, not a patch.
 
-## CoSchedule vs Socipub: Feature Comparison
+## What CoSchedule sells now
 
-| Feature | CoSchedule Free | CoSchedule Calendar ($39/mo) | CoSchedule Suite ($149/mo) | Socipub Free | Socipub Pro ($19/mo) |
-|---------|:--------------:|:--------------------------:|:------------------------:|:----------:|:------------------:|
-| Social Accounts | 5 | 5 | Unlimited | 2 | Unlimited |
-| Users | 1 | 1 | 5 | 1 | 1 |
-| Scheduled Posts | 10/mo | Unlimited | Unlimited | 5/mo | Unlimited |
-| Calendar View | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Content Planning (Blog+Social) | ❌ | ✅ | ✅ | ❌ | ❌ |
-| AI Scheduling | ❌ | ❌ | ❌ | ❌ | ✅ |
-| AI Rewrite | ❌ | ❌ | ❌ | ❌ | ✅ |
-| Open Source | ❌ Proprietary | ❌ Proprietary | ❌ Proprietary | ✅ MIT | ✅ MIT |
-| Self-Hosting | ❌ Not available | ❌ Not available | ❌ Not available | ✅ Docker | ✅ Docker |
-| EU Data Hosting | ❌ | ❌ | ❌ | ✅ | ✅ |
-| API Access | ❌ | ❌ | ✅ | ✅ Full | ✅ Full |
-| LinkedIn Support | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Twitter/X Support | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Plan | Annual billing | Monthly billing | Users included | User ceiling | Extra user | Profiles | Extra profile |
+|------|:--------------:|:---------------:|:--------------:|:------------:|:----------:|:--------:|:-------------:|
+| Free | $0 | $0 | 1 | 1 | not offered | 1 | not offered |
+| Starter | $29/mo | $39/mo | 1 | 1 | not offered | 3 | $5/mo |
+| Professional | $49/mo | $59/mo | 2 | 3 | $29/mo | 5 | $5/mo |
+| Suite | from $69/mo, custom | quote | custom | custom | custom | custom | custom |
 
-> **Bottom line:** CoSchedule is a powerful integrated marketing calendar for teams managing blog + social + email. Socipub is the focused alternative for creators who need Twitter and LinkedIn scheduling with AI features, open source transparency, and transparent pricing.
+Read the user ceiling column twice. Starter prints "Limit 1 Users" and puts N/A in the additional-user row, so a two-person team cannot buy Starter and invite a colleague. It has to jump to Professional, which includes two seats, allows a maximum of three, and charges the third seat at $29 a month on top of the $49 base. That add-on is 59% of the plan price for one login.
 
-## What CoSchedule Does Well
+Free works as a queue rather than a monthly quota. The page itself says "Schedule up to 15 posts at a time on 1 profile": fifteen slots deep, refilling as posts publish, one profile only. That is a different metering model from the monthly caps most 2026 free plans use, and it is worth knowing before you read fifteen as fifteen posts per month. I compared the four metering models in [the free plan roundup](/blog/free-social-media-scheduler-plans-compared) if you want the wider picture.
 
-CoSchedule's core strength is integrating **content marketing and social media** in one view:
+Profiles are the second cost axis. Both paid tiers include three or five profiles and charge $5 a month for each extra one, which quietly punishes anyone scheduling for several brands from one account.
 
-- **Unified marketing calendar** — See blog posts, social media content, and email campaigns on the same drag-and-drop calendar. This is genuinely valuable for teams planning integrated campaigns.
-- **Workflow management** — Assign tasks, set approval flows, and track progress across your content pipeline. CoSchedule's workflow engine is purpose-built for marketing teams.
-- **Content planning** — The calendar view shows your entire content mix — blog posts, social updates, email newsletters — in one place, making it easy to spot gaps and overlaps.
-- **Social scheduling** — Schedule posts across Twitter/X, LinkedIn, Facebook, Instagram, Pinterest, and TikTok from the same calendar.
-- **Best time scheduling** — AI-powered optimal posting time suggestions (on higher-tier plans).
+## What a team calendar actually costs
 
-These features shine for marketing teams running integrated campaigns across blog, social, and email. The unified calendar is CoSchedule's killer feature — no other tool combines content and social planning as seamlessly.
+Annual billing on both sides, 5 profiles unless noted:
 
-## Where CoSchedule Falls Short
+| Shape | Cheapest CoSchedule self-serve | Per year | Socipub | Per year | Gap |
+|-------|-------------------------------|---------:|---------|---------:|----:|
+| Solo, 3 profiles | Starter $29/mo | $348 | Pro $19/mo | $228 | $120 |
+| Solo, 6 profiles | Starter + 3 profiles = $44/mo | $528 | Pro $19/mo | $228 | $300 |
+| 2 people, 5 profiles | Professional $49/mo | $588 | Team $49/mo | $588 | even |
+| 3 people, 5 profiles | Professional + 1 seat = $78/mo | $936 | Team $49/mo | $588 | $348 |
+| 4 people | no self-serve tier; Suite quote from $69/mo | $828+ | Team $49/mo | $588 | $240+ |
 
-### 1. Per-User Pricing Gets Expensive Fast
+Two honest notes before the pitch. At two people and five profiles the two tools cost exactly the same, $588 a year, so if that is your shape then switch for self-hosting and data control rather than for savings. Flip both to monthly billing and the same team pays $708 at CoSchedule against $588 here, which is a real gap created purely by the annual discount.
 
-CoSchedule charges **per user**, and the price jumps significantly across tiers:
+Socipub's own numbers, from the live pricing page today: Free at $0 with 5 posts a month across 2 platforms, Pro at $19 with unlimited posts and every platform, Team at $49 with 5 seats included plus bulk import and API access. Yearly billing takes 17% off, not the 25% that CoSchedule's annual discount works out to on Starter ($39 down to $29).
 
-| Plan | Price | Users | Social Accounts | Best For |
-|------|:----:|:-----:|:--------------:|:--------:|
-| Free | $0 | 1 | 5 | Evaluation only (10 posts/mo) |
-| Calendar | $39/mo | 1 | 5 | Solo content marketers |
-| Suite | $149/mo | 5 | Unlimited | Small marketing teams |
-| Pro | $399/mo | 10 | Unlimited | Growing marketing departments |
+## Where CoSchedule still wins
 
-For a solo creator who just needs Twitter and LinkedIn scheduling, CoSchedule's Calendar plan at $39/mo is expensive. Socipub Pro covers the same social scheduling needs at **$19/mo** with unlimited accounts.
+The calendar itself. Nothing on this site plans blog posts, social messages and email in one drag-and-drop view, and if your social output is downstream of a content pipeline, that unified board is worth money.
 
-For a 2-person team, CoSchedule Suite at $149/mo is nearly **3x** Socipub's Team plan at $49/mo.
+Approval flows sit one tier up and stay useful: Social Message Approvals and read-only calendar sharing both arrive on Professional, and role customisation, SSO and access logs belong to Suite. A marketing department with a compliance requirement should price those before anything else.
 
-### 2. Feature Overload for Simple Needs
+Best Time Scheduling now ships on every tier, Starter included. That kills the "AI is behind the expensive wall" argument I used in July, and I would rather say so than leave a convenient claim standing.
 
-CoSchedule was designed for marketing teams managing multiple content channels. If you primarily schedule Twitter and LinkedIn posts, you're paying for features you don't use:
+## The correction I owe readers
 
-- Blog post planning and calendar
-- Email campaign integration
-- Multi-step content approval workflows
-- Cross-channel campaign tagging
-- Team workload management
+Two statements in my earlier version were wrong, and both had been live since July.
 
-These are valuable for their intended audience — content marketing managers — but unnecessary overhead for a creator focused on social media scheduling.
+Best Time Scheduling was described as Suite-only at $149. The current feature table ticks it on Starter, Professional and Suite alike, alongside Social Sync and Social Campaigns. The free plan was described as 10 posts a month; the page now reads 15 posts at a time on one profile. The $149 Suite price and the $399 Pro tier are both gone, replaced by a custom Suite starting at $69.
 
-### 3. No Self-Hosting or Open Source
+The lesson is boring and I keep relearning it. Competitor plan structures have a shelf life measured in months, so every claim gets re-scraped against the vendor's page on the day of writing, never copied from an older post of mine.
 
-CoSchedule is fully proprietary SaaS. Your content calendar, scheduled posts, and social tokens live on CoSchedule's US-based servers with no option to:
+## Moving a team calendar across
 
-- Self-host on your own infrastructure for complete data control
-- Audit the source code for security or compliance
-- Customize features to your exact workflow
-- Guarantee data sovereignty for GDPR compliance
+1. Export from CoSchedule: Settings, then Export Data. You get CSV of scheduled messages and calendar entries. Social posts are the only part worth importing; leave blog and email planning behind unless you still need them.
+2. Create the Socipub workspace and invite the team. Team includes 5 seats, so a three-person team has room to grow without a seat surcharge.
+3. Reconnect the profiles through OAuth. Twitter/X and LinkedIn take under a minute each; nothing about the flow differs from CoSchedule's.
+4. Rebuild the queue in the calendar view, then set a weekly batch routine. Thirty minutes every Monday beats five minutes of daily panic.
+5. Run both for two weeks if the old account is billed monthly, then cancel. Annual CoSchedule plans are sunk cost until renewal, so note the renewal date before switching.
 
-Socipub is fully **open source (MIT)** and [self-hostable via Docker](/features). Your data stays on your infrastructure — not a third-party's servers.
+## Verdict
 
-### 4. AI Features Locked Behind Expensive Tiers
+For a one-person operation, Starter at $29 annual or $39 monthly against Pro at $19 is a straight $120 to $240 a year saved, and the profile add-on widens it once you pass three accounts.
 
-CoSchedule's Best Time Scheduling (AI-powered optimal posting times) is only available on the Suite plan ($149/mo) and above. The Calendar plan ($39/mo) has no AI features at all.
+For a three-person team the decision is not close: $936 a year against $588, driven entirely by one seat add-on. For a fourth person, CoSchedule stops selling to you and hands you to a sales call.
 
-Socipub Pro ($19/mo) includes both **AI Scheduling** (optimal posting times based on your engagement data) and **AI Rewrite** (automatically adapt content for Twitter vs LinkedIn tone).
-
-## When to Keep CoSchedule
-
-✅ **Content marketing teams** — If you manage blog posts, social media, and email campaigns in an integrated calendar, CoSchedule's unified view is best-in-class
-
-✅ **Multi-person marketing departments** — CoSchedule's workflow management and approval processes are purpose-built for team collaboration
-
-✅ **Broad platform coverage** — CoSchedule supports Facebook, Instagram, TikTok, Pinterest, and YouTube alongside Twitter and LinkedIn
-
-✅ **Integrated campaign planning** — If your social media is tightly coupled with blog launches and email sequences, CoSchedule's cross-channel calendar is invaluable
-
-## When to Switch to Socipub
-
-✅ **Solo creators and indie hackers** — Paying $39/mo for social scheduling features when Socipub Pro covers your needs at $19/mo
-
-✅ **Small teams (1-3 people)** — Socipub Team at $49/mo vs CoSchedule Suite at $149/mo — save $100/mo
-
-✅ **Twitter + LinkedIn focused creators** — Socipub was purpose-built for cross-platform Twitter and LinkedIn scheduling
-
-✅ **Self-hosters and privacy-conscious users** — Full data control, open source transparency, and EU hosting options
-
-✅ **Budget-minded founders** — The Free plan has no time limit, and Pro saves you $20/mo vs CoSchedule Calendar
-
-## Migration Guide: Moving from CoSchedule to Socipub
-
-### Step 1: Export Your CoSchedule Data
-
-CoSchedule → Account Settings → Export Data. Download your scheduled social posts, calendar entries, and analytics as CSV. Note that CoSchedule exports include your full content calendar, so you can selectively import social posts.
-
-### Step 2: Create Your Socipub Account
-
-[Sign up for free](/sign-up) — no credit card needed. The Free plan gives you 5 posts/month with no time limit, enough to evaluate the workflow. Upgrade to Pro ($19/mo) when you need unlimited posting.
-
-### Step 3: Connect Your Social Accounts
-
-Link Twitter/X and LinkedIn via OAuth. Each connection is secure, revocable, and takes under a minute. CoSchedule uses the same OAuth flow, so this will feel familiar.
-
-### Step 4: Rebuild Your Social Queue
-
-Use the [Calendar View](/scheduling) to schedule your posts. The drag-and-drop calendar is similar to CoSchedule's, making the transition intuitive. Socipub's AI Scheduling highlights optimal posting times — a feature CoSchedule locks behind its $149/mo Suite plan.
-
-### Step 5: Set Up a Batch Scheduling Routine
-
-One advantage of switching to a focused tool: adopt the 30-minute weekly batch scheduling workflow. Plan themes for the week, write posts in one sitting, and schedule everything in the [Calendar View](/scheduling).
-
-### Step 6: Run Both in Parallel (Optional)
-
-Keep CoSchedule active for 1-2 weeks while you get comfortable with Socipub. If you still need CoSchedule for blog and email planning, you can use both tools:
-- **CoSchedule** → Blog content calendar and email planning
-- **Socipub** → Twitter and LinkedIn social scheduling
-
-### Step 7: Cancel CoSchedule
-
-Cancel through your CoSchedule dashboard. At Socipub Pro's $19/mo, you'll save **$240/year** compared to CoSchedule Calendar. For a 2-person team switching from CoSchedule Suite ($149/mo) to Socipub Team ($49/mo), that's **$1,200/year saved**.
-
-## Cost Comparison: CoSchedule vs Socipub
-
-| Scenario | CoSchedule | Socipub | Annual Savings |
-|----------|:---------:|:------:|:-------------:|
-| Solo creator, 2 platforms | $39/mo (Calendar) | $19/mo (Pro) | **$240/year** |
-| Solo creator, starting out | $39/mo (Calendar) | $0/mo (Free) | **$468/year** |
-| 2-person team, social only | $149/mo (Suite) | $49/mo (Team) | **$1,200/year** |
-| 2-person team, unlimited posts | $149/mo (5 users) | $49/mo (3 users) | **$1,200/year + flexibility** |
-
-## The Verdict
-
-CoSchedule is an excellent integrated marketing calendar for teams that manage blog posts, social media, and email campaigns together. Its unified calendar view and workflow management are genuinely best-in-class — for content marketing teams.
-
-But if your primary need is **social media scheduling to Twitter and LinkedIn** — which is the daily reality for most indie hackers, solo creators, and small teams — CoSchedule's enterprise feature set and per-user pricing are hard to justify. You're paying for blog and email planning features you don't use.
-
-Socipub delivers the social scheduling features that matter: cross-platform posting, calendar management, AI-powered optimization, and full data control — at a fraction of the cost, with the freedom of open source and self-hosting.
-
-[Try Socipub free](/sign-up) — connect Twitter and LinkedIn, schedule your first cross-platform post in under 2 minutes. No credit card, no content marketing calendar required.
+Try the [free plan](/sign-up) first, or read how the [open source model compares with per-seat SaaS](/blog/zoho-social-pricing-explained) before you commit a team to anything.
 
 <div class="prose-notice">
-<strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and contribute to the roadmap.
+<strong>Prices checked:</strong> coschedule.com/pricing and socipub.com/pricing, both retrieved on November 17, 2026. Socipub is MIT licensed and <a href="https://github.com/joker1502/socipub">self-hostable from GitHub</a>.
 </div>
     `.trim(),
   },
