@@ -3181,86 +3181,67 @@ Socipub is MIT-licensed and free to self-host. Deploy it with Docker in about an
   },
   {
     slug: "socipub-vs-paid-tools-cost-comparison",
-    title: "Socipub vs Paid Tools: The Real Cost Comparison (2026)",
-    description: "August 2026 pricing from Buffer, Hootsuite, Sprout, and Postiz, crunched into cost per scheduled post - and compared with Socipub's $0 free and $19 Pro plans.",
-    date: "2026-08-17",
-    readTime: "7 min read",
+    title: "Social Scheduler Pricing in 2026: The Free Tiers Are Gone",
+    description: "Six scheduler pricing pages re-checked on 18 November 2026: three free tiers deleted, two entry prices doubled, per-post cost now spans 58x.",
+    date: "2026-11-18",
+    readTime: "8 min read",
     tags: ["pricing", "comparison", "open-source"],
-    content: `
-Post once a day to two networks and you're paying somewhere between $0 and $250 a month for the software that moves those posts. That spread exists because schedulers charge for three different things - channels, seats, and post counts - and most pricing pages never tell you which one you're buying.
+    content: `Publishing once a day to X and LinkedIn is a two-feed operation, and the software that moves those posts now bills anywhere from $0 to $200 a month. I re-pulled six competitor pricing pages on 18 November 2026 to write this, and the numbers moved further in three months than in the whole year before.
 
-I run six content sites and schedule every post through software, so price changes hit me in the wallet. On August 17, 2026 I pulled the pricing pages for Buffer, Hootsuite, Sprout Social, Postiz, and Later and worked out what a normal daily poster actually pays per published post. This is that math, with Socipub's $0, $19, and $49 plans sitting in the same table.
-
-## What the paid tools charge right now (checked August 17, 2026)
+The last version of this comparison went up in August. Since then Hootsuite, Later and Postiz deleted their free plans outright, Hootsuite's Professional seat climbed from $99 to $199, and Sprout Social's Standard seat went from $99 to $199. Prices are a moving target now, so every figure below was read off the vendor's own page on the day of writing instead of carried over from an older post.
 
 <div class="prose-notice">
-<strong>Update, 13 November 2026:</strong> three free tiers in the table below no longer exist. Hootsuite, Later and Postiz have all retired theirs and now sell trials only, so read the "Free tier" column as historic. The current state of every free plan is in the <a href="/blog/free-social-media-scheduler-plans-compared">November free plan comparison</a>, verified against each vendor's pricing page on the day of publication.
+<strong>Re-checked 18 November 2026:</strong> Buffer, Hootsuite, Sprout Social, Later, Postiz, Postcron and Socipub pricing pages pulled by hand. If you read a comparison that still lists a Hootsuite free plan or a Postiz free plan, it is out of date.
 </div>
 
-Every figure below comes from the tool's own pricing page on the day I checked. No roundabout numbers, no "contact us" guesses.
+## Three free tiers were deleted, not shrunk
 
-| Tool | Free tier | Entry paid plan | What you're billed on |
+If you shortlisted a scheduler in the spring, the free plan you trial-tested is probably gone. Hootsuite's plans page lists Standard, Professional, Advanced and Enterprise with a 14-day trial on each, and no free line anywhere. Later opens at Starter $18.75 per month billed yearly. Postiz sells a 7-day trial on every tier and starts at $29.
+
+Postcron still runs a real free plan: three social accounts and ten pending posts, no post history, no team members. Ten pending slots is a five-day buffer for someone posting twice a day, and the queue refills as posts publish, so it stays workable on a light schedule. It is the last queue-metered free tier left in this set, and the [free plan comparison](/blog/free-social-media-scheduler-plans-compared) covers the rest at the plan level.
+
+## What each tool charges on 18 November 2026
+
+| Tool | Free tier | Cheapest paid | What you are billed on |
 |---|---|---|---|
-| Buffer | 10 posts per channel | ~$5-6 per channel/month | Connected channels |
-| Hootsuite | 5 posts total | Professional $99/mo | Social accounts + seats |
-| Sprout Social | None (30-day trial) | Standard $99/user/mo | Seats |
-| Postiz | 10 posts/month | Standard $29/mo | Posts + seats |
-| Later | 30 posts per social set | Add-on priced | Social sets + users |
-| Socipub | 5 posts/month | Pro $19/mo ($190/yr) | Nothing - flat price |
+| Buffer | Free forever, 3 channels, 10 scheduled posts per channel | Essentials $5 per channel per month ($60 a year per channel) | Channels, with a volume discount above 10 |
+| Hootsuite | None, 14-day trial | Standard $99 per user per month | Seats, billed annually |
+| Sprout Social | None, 30-day trial | Standard $199 per seat per month | Seats, billed annually |
+| Postiz | None, 7-day trial | Standard $29 per month | Channels (five) and unlimited posts |
+| Later | None | Starter $18.75 per month billed yearly | Social sets plus 30 posts per profile |
+| Postcron | 3 accounts, 10 pending posts | Personal tier, 10 accounts | Pending posts sitting in the queue |
+| Socipub | 5 posts a month, 2 platforms | Pro $19 per month | Flat price, no multipliers |
 
-A few things the table doesn't show.
+Two rows deserve a closer look. Buffer's free plan is the most generous thing left standing: three channels, ten queued posts per channel with refill, and API access at 1,000 requests per channel each month even without paying. Socipub's free plan is the tightest on the list at five posts a month, which is why daily publishers belong on Pro and not on Free, however flattering the $0 looks in a comparison table.
 
-Hootsuite's next tier after Professional jumps to $199, and Sprout's Professional sits at $249 - the middle of these price ladders is aggressive for anyone managing a handful of accounts. Buffer bills per channel, so a brand with five channels pays five times the entry figure before touching a second user. Sprout's seat-first model is its own case — the [Sprout Social alternative breakdown](/blog/sprout-social-alternative-open-source) runs that math at three people.
+## The per-post math on sixty posts a month
 
-Postiz raised its entry price while I was watching. Our own comparison from July 1, 2026 listed the Starter plan at $24/month; the pricing page on August 17 shows Standard at $29. Same product, $5 more, six weeks apart. That's the strongest argument for checking pricing the day you commit - published reviews go stale that fast.
+Sixty posts is one a day on two networks, which is roughly what a solo publisher ships. Divide each bill by sixty:
 
-Postcron meters a fourth thing: pending posts sitting in the queue. Ten on the free tier, which a twice-daily poster drains in five days - the [Postcron breakdown](/blog/postcron-alternative-open-source) runs that math. [Metricool](/blog/metricool-alternative-open-source) is the same argument for anyone who needs the analytics layer more than the queue.
+- **Buffer:** two channels at $5 is $10 a month, so $0.17 a post. Annual billing puts the same two channels at $120 for the year.
+- **Later Starter:** $18.75 a month billed yearly comes to $0.31 a post, and the 30-posts-per-profile cap lands exactly on two profiles posting daily.
+- **Socipub Pro:** $19 flat, $0.32 a post, nothing added for a second channel.
+- **Postiz Standard:** $29, $0.48 a post, with API access, an MCP server and a CLI included on every tier.
 
-## What one scheduled post really costs
+Then the seat-priced pair. Hootsuite Standard costs $99 per user a month, which is $1.65 per post for one person and $4.95 across three seats. Sprout Social Standard charges $199 per seat, so $3.32 solo and $9.95 for a team of three, and the [Sprout Social alternative breakdown](/blog/sprout-social-alternative-open-source) pushes that seat math to a five-person team. That is a spread of about 58x between Buffer's $0.17 and Sprout's three-seat arrangement, for six products that all put a post in a queue.
 
-Baseline: one post per day on two networks = 60 posts a month. Here's the per-post math on that baseline.
+## The upgrade cliff moved from the sixth post to the fifteenth day
 
-- **Buffer:** two channels at $5-6 each = $10-12/mo, about $0.17-0.20 per post. At the low end, Buffer is honestly cheap.
-- **Hootsuite Professional:** $99/mo comes to $1.65 per post at 60 posts/mo. Push the platform's real capacity - hundreds of posts - and it drops to roughly $0.33. You're paying for headroom most publishers never use.
-- **Sprout Standard:** $99 per user means $1.65 per post solo. A three-person team at $297/mo works out to nearly $5 per post if each person schedules 20. Sprout prices seats, so the bill grows with team size, not output.
-- **Postiz Standard:** $29/mo works out to $0.48 per post at 60 posts/mo.
-- **Socipub Pro:** $19/mo lands at $0.32 per post at 60 posts/mo. The free tier covers 5 posts - $0 for anyone publishing once a week or less.
+The old advice was about volume: free tiers hold a handful of posts, so the bill lands the week you post more. Three vendors swapped that cliff for a calendar. Hootsuite gives you 14 days, Sprout 30, Postiz 7, then you hold a paid seat whether you published twice or two hundred times.
 
-The pattern worth naming: per-post costs at the entry level run $0.17 to $1.65. Cheap plans are genuinely cheap. The budget killer isn't the per-post rate - it's the cliff you hit the month you outgrow a free tier.
+Trial terms hide two traps that pricing tables never show. Hootsuite caps trial accounts at 10 to 20 posts per organization per day and disables bulk scheduling during the trial, so the capacity you want to test is the one you cannot test. Sprout quotes annual billing right beside its 30-day trial line, and a solo seat on that basis is a 12-month commitment of $2,388 rather than a $199 month you can cancel.
 
-## The upgrade cliff nobody prices into the decision
+Buffer stays volume-gated in the useful way: ten queued posts per channel that refill as they publish, and a fair-use ceiling of 5,000 posts per channel on paid plans, a number Buffer says no customer has reached. For a two-post-a-day schedule those ten slots never bind.
 
-Free tiers exist to be outgrown. The question is what the next step costs:
+## Where the flat price actually makes sense
 
-- **Buffer:** free gives 10 posts per channel. Exceeding that moves you to ~$5-6 per channel - a modest step.
-- **Hootsuite:** free holds 5 posts, total. Six posts in a month triggers a $99/mo bill. That marginal post, number six, costs $19.80. It's the most expensive post in social scheduling.
-- **Sprout:** no free plan at all. The floor is $99/user/month from day one.
-- **Postiz:** free caps at 10 posts. A publisher posting daily burns that by the 10th, and the month's bill is $29.
-- **Later:** free holds 30 posts per social set. Two brands on one account means two sets. The add-ons ($5 per user, $11.25 per extra set) compound quietly.
-- **Socipub:** free holds 5 posts. Post number six costs $19/mo - and that's the full price, unlimited posts, no per-channel or per-seat math on top.
+Socipub posts to X and LinkedIn, the two networks its OAuth integration supports, so if your audience lives on Instagram or TikTok none of the flat-price argument applies and Later's $18.75 is the better buy. For a two-feed publishing operation, $19 with no channel or seat math is simply the shortest invoice in the table, and the [Buffer versus Postiz breakdown](/blog/buffer-vs-postiz) runs the same arithmetic when you are choosing between per-channel billing and a channel bundle.
 
-So the real cost question isn't "what's the plan price?" It's "what happens the month I post more?" Every cap-based tool forces one of two choices: throttle your publishing or triple your spend overnight. That's the upgrade cliff, and it's the number most pricing comparisons miss.
+I have moved scheduling tools twice over price changes, and the lesson keeps landing the same way: the plan price is the smallest part of the decision. Channel multipliers, seat multipliers and trial conditions decide the real bill, and vendors change those without announcing anything. Two of the six pages I opened today had quietly raised an entry tier since August.
 
-## The full comparison
-
-| | Free tier | Entry paid | 60 posts/mo at entry | Priced on |
-|---|---|---|---|---|
-| Buffer | 10 posts/channel | ~$5-6/channel/mo | $10-12/mo | Channels |
-| Hootsuite | 5 posts total | $99/mo | $99/mo | Accounts + seats |
-| Sprout Social | None | $99/user/mo | $99+/mo | Seats |
-| Postiz | 10 posts/mo | $29/mo | $29/mo | Posts + seats |
-| Later | 30 posts/social set | Add-on based | Varies | Sets + users |
-| Socipub | 5 posts/mo | $19/mo | $19/mo | Flat |
-
-Being honest about the trade-off: paid tools cover Instagram, TikTok, Facebook, and YouTube natively, and their analytics go deeper. Socipub posts to X and LinkedIn - the two networks its OAuth integration supports - plus leaner analytics. If your audience lives on Instagram and TikTok, a paid tool is the right call and its price is fair. If you publish to X and LinkedIn, the cost math above stops making sense in the other direction.
-
-## Bottom Line
-
-The real price of a scheduler is three numbers: the plan price, the per-channel or per-seat multiplier, and the upgrade cliff. Buffer's cheap until you add channels. Hootsuite's a trial now, then a seat-based bill. Sprout's expensive from zero. Socipub's flat - $0 free, $19 unlimited, $49 for a team, with no cliff anywhere in the ladder.
-
-Start with the [free plan](/sign-up) - 5 posts a month, no credit card, no time limit. Publishing more? [Pro at $19](/pricing) removes the cap entirely. Coming from Buffer, the [free plan comparison](/blog/buffer-free-plan-guide) shows what carries over, and the [self-hosting guide](/blog/self-host-socipub-docker) covers the zero-subscription route if you'd rather run your own instance.
-    `.trim(),
+Start on the [free plan](/sign-up) if you publish weekly, at 5 posts a month with no credit card and no time limit. Posting daily means [Pro at $19](/pricing). Coming from Buffer, the [free plan comparison](/blog/buffer-free-plan-guide) shows what carries over, and if you would rather run the software yourself the [self-host guide](/blog/self-host-socipub-docker) covers the MIT route at zero subscription.`.trim(),
   },
+
   {
     slug: "postcron-alternative-open-source",
     title: "Postcron Alternative: Free Open Source Social Media Scheduler (2026)",
