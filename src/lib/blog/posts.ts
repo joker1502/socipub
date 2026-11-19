@@ -228,59 +228,82 @@ Try the [free Socipub plan](/pricing) with your two accounts for a week — the 
   },
   {
     slug: "buffer-alternative-open-source",
-    title: "Buffer Alternative: Free & Open Source Social Media Scheduler (2026 Review)",
-    description: "Buffer charges per channel; Socipub charges per user. Compare features, pricing math, and migration steps for moving to open source.",
-    date: "2026-07-03",
-    readTime: "7 min read",
-    tags: ["alternatives","buffer","open-source"],
-    content: `Buffer has been scheduling social posts for over a decade, and it's still a solid product — reliable, well-designed, and easy to recommend for simple use. The problem is pricing. Buffer charges per channel, the free plan caps at 30 scheduled posts, and anything multi-platform or team-shaped moves you up fast. For creators who want X + LinkedIn without the per-channel meter, open source with flat pricing is the structural alternative.
+    title: "Buffer Alternative: Free & Open Source Scheduler (2026)",
+    description: "Buffer's free plan really includes a working API and Insights. We re-checked every tier on Nov 19, 2026 and priced out the crossover at channel four.",
+    date: "2026-11-19",
+    readTime: "8 min read",
+    tags: ["buffer", "alternatives", "open-source"],
+    content: `Most "Buffer alternative" posts open with the same three sentences: the free plan is too small, per-channel pricing is a trap, move on. Two of those are arguable. One was flat wrong, and it was wrong on this page. The version we published in July said Buffer's free tier gave you 30 posts with no analytics and no API. We pulled buffer.com/pricing again on 19 November 2026 and worked through every tier line by line. Free includes Insights, the AI Assistant, and a working API with five keys and 1,000 requests per channel each month.
 
-## Buffer vs Socipub: Feature Comparison
+We corrected the table rather than bolting a footnote onto it, and the correction does not hand us a clean win. Buffer wins for one person on three channels. Socipub Pro wins from channel four upward, and anywhere a buyer refuses to park drafts on US servers we do not control. The arithmetic below is the whole argument.
 
-| Feature | Buffer Free | Buffer Essentials ($6/mo/channel) | Socipub Free | Socipub Pro ($19/mo) |
-|---------|:-----------:|:--------------------------------:|:------------:|:--------------------:|
-| Channels | 3 | 5 | 2 | Unlimited |
-| Scheduled posts | 30 | 100 | 5 | Unlimited |
-| AI assistant | No | Yes | No | Yes |
-| Calendar view | No | Yes | Yes | Yes |
-| Team collaboration | No | No | No | 3 seats |
-| Open source | No | No | MIT | MIT |
-| Self-hosting | No | No | Yes | Yes |
-| EU data hosting | No | No | Yes | Yes |
-| API access | No | No | Yes | Yes |
+## What Buffer's Free Plan Actually Gives You
 
-Both tools will happily schedule your posts. The difference is what happens when you add the fourth platform, the second user, or the requirement that your drafts stay in your own region.
+Three channels, ten scheduled posts per channel, queue refills the moment a post publishes. That last clause changes what the limit means. Ten per channel is queue depth, not a monthly quota — publish an update, and the tenth slot is free again the same afternoon. Our own free tier is metered the other way round: five posts per calendar month, hard stop, no refill until the month rolls over.
 
-## Per-Channel vs Per-User: The Pricing Math
+Free also carries 100 ideas, one user account, the AI Assistant, Insights, a community inbox, and API access with five keys at 1,000 requests per channel per month, capped at 3,000 total. Missing until Essentials: unlimited scheduled posts, advanced analytics, the hashtag manager, and first-comment scheduling. Missing until Team: access levels and content approval workflows.
 
-Buffer's model taxes breadth. Essentials is $6 per channel per month, so the cost is a function of how many networks you touch:
+Three channels, two of which can be X and LinkedIn, for zero dollars. If you schedule fewer than thirty posts a month, Buffer wins on price outright and no amount of clever positioning changes that.
 
-- **X + LinkedIn + Instagram** = $18/mo (three channels)
-- **Add TikTok** = $24/mo
-- **Add a teammate** = Team plan at $60/mo, minimum
+## The Per-Channel Meter, Priced Out
 
-Each addition is a new line item, and the free plan under it all is 30 scheduled posts with no calendar and no analytics.
+Buffer bills per channel. Essentials runs $5 per channel per month with yearly billing ($60 a channel a year). Month-to-month is $6, because "save 2 months" is a 20% premium the other way. Team doubles the rate to $10 per channel, $12 if you pay monthly.
 
-Socipub charges per user instead: Pro is $19/mo total, covering one user with unlimited channels; Team is $49/mo with three users. Doubling your platforms doesn't change the bill — your bill changes only when you add people, which is a much rarer event.
+| Channels | Buffer Essentials (yearly) | Buffer Essentials (monthly) | Buffer Team (yearly) | Socipub Pro |
+|:--------:|:--------------------------:|:---------------------------:|:--------------------:|:-----------:|
+| 3 | $15/mo | $18/mo | $30/mo | $19/mo |
+| 4 | $20/mo | $24/mo | $40/mo | $19/mo |
+| 6 | $30/mo | $36/mo | $60/mo | $19/mo |
+| 10 | $50/mo | $60/mo | $100/mo | $19/mo |
+| 12 | $60/mo | $72/mo | $120/mo | $19/mo |
 
-## Where Buffer Still Wins
+Socipub Pro charges $19 a month, or $190 a year once the 17% annual discount lands, and it never counts platforms at all.
 
-Honesty costs nothing: Buffer's calendar is more polished, its analytics are better productized, and its multi-channel free plan (3 channels vs Socipub's 2) is genuinely friendlier for a beginner posting Instagram + Facebook + X. If your stack is Instagram-first and your ambition is "set it and forget it", Buffer remains a fine choice. The case for switching is specific: your platforms are X + LinkedIn, or you want open source, or you want the bill to stop growing as you add networks.
+The crossover sits at channel four. Three channels on Essentials costs $180 a year; Pro costs $190. Buffer is still ahead by a coffee. Add Instagram as a fourth and Essentials jumps to $240 a year while Pro stays at $190 — from there the gap widens linearly, because one bill scales and the other does not. Ten channels: $600 against $190. All twelve of Buffer's platforms: $720 against $190. That is the entire case for flat pricing, and it only starts at channel four.
 
-## The Data-Privacy Angle
+## The API Angle Nobody Prices In
 
-A scheduler holds your content drafts and your platform tokens. With Buffer those live on Buffer's US infrastructure, under their DPA. With Socipub the hosted version runs in the EU and the open source version can run entirely on a Supabase project you control ([self-hosting guide](/blog/self-host-socipub-docker)); our [GDPR guide](/blog/gdpr-compliant-social-media-tool) details the checklist. If data residency is on your radar at all, open source is the only option that lets you verify where the data path goes instead of trusting a promise.
+Search Console keeps showing us a question phrased exactly like this: alternatives to Buffer for social media API integration. The uncomfortable answer is that Buffer's free tier already ships an API, and ours does not — our API access starts on Team at $49 a month.
 
-## Migrating From Buffer
+What that means in practice. Five API keys on every Buffer tier including free, 1,000 requests per channel per month capped at 3,000 on free, 3,000 on Essentials, 10,000 on Team. Enough to push a scheduled update from a script, a cron job, or an n8n workflow without touching the dashboard. If your publishing pipeline is code, Buffer free outranks a paid Socipub plan on that one dimension, and pretending otherwise wastes your time and ours.
 
-Because the content is just a list of dated posts, migration is low-stakes:
+Fix it by self-hosting the open source build: you own the rate limit, and the limit collapses into your infrastructure bill instead of a plan tier.
 
-1. Connect X and LinkedIn in Socipub.
-2. Export your Buffer queue (or copy the next two weeks of drafts).
-3. Rebuild the queue in one [batch scheduling](/blog/batch-schedule-weekly-content-twitter-linkedin) session.
-4. Let the Buffer subscription lapse after one overlapping week — the overlap is optional insurance, not a lock-in.
+## Team Math: Where the Two Bills Collide
 
-Compare against the same criteria in our [Postiz](/blog/postiz-alternative-open-source), the [Buffer vs Postiz head-to-head](/blog/buffer-vs-postiz), [Hootsuite](/blog/hootsuite-free-alternative), [Later.com](/blog/later-com-competitor), [Metricool](/blog/metricool-alternative-open-source), [SocialBee](/blog/socialbee-alternative-open-source), [Loomly](/blog/loomly-alternative-open-source), and [Post Bridge](/blog/post-bridge-alternative-open-source) guides — the conclusion keeps coming back to the platform mix and the pricing model. For X + LinkedIn with a flat price, the [free Socipub plan](/pricing) settles it in a week of real use.`.trim(),
+Buffer Team charges $10 per channel per month and never counts team members. That detail kills the "$60 minimum for a team" line that used to sit in this post — wrong when we wrote it, wrong for the months since.
+
+| Shape | Buffer Team (yearly) | Socipub Team (yearly) |
+|:------|:--------------------:|:---------------------:|
+| 5 people, 5 channels | $600 | $490 (5 seats) |
+| 5 people, 10 channels | $1,200 | $490 |
+| 10 people, 5 channels | $600 | $490 + extra seats |
+
+Five people across five channels is a near tie — $110 a year apart, which is not a reason to migrate anything. The real reason at that shape is ownership, not price. Push to ten channels and the gap opens to $710 a year. Push past five seats and you are back on the phone with us about seats while Buffer keeps saying unlimited.
+
+## Where Buffer Genuinely Wins
+
+Twelve platforms: LinkedIn, X, Instagram, Facebook, TikTok, YouTube, Pinterest, Threads, Bluesky, Mastodon, Google Business Profile, Substack. We support two: X and LinkedIn. No amount of pricing math gets a Threads post out of Socipub. If your audience lives on Threads or Bluesky, that row ends the evaluation before price enters the room.
+
+Buffer also ships proper mobile apps, digs deeper into analytics once you pay, and has banked a decade of queue reliability. None of that is marketing fluff — it explains why Buffer still runs while most of its 2020-era competitors folded.
+
+## Where the Open Source Case Actually Holds
+
+A scheduler holds two things worth caring about: your unpublished copy and the OAuth tokens to your accounts. On Buffer both live on US infrastructure under Buffer's DPA. On Socipub the hosted build runs in the EU, and the MIT-licensed build can run on a Supabase project you control — the [Docker walkthrough](/blog/self-host-socipub-docker) takes about twenty minutes, and the [GDPR checklist](/blog/gdpr-compliant-social-media-tool) lists what to verify afterwards.
+
+If your buyer asks where drafts live and you cannot name a region you picked yourself, open source stops being ideology and becomes procurement. Buffer cannot sell you that, at any tier, on any pricing page.
+
+## Migrating Off Buffer Without Losing a Week
+
+The content is a list of dated posts, which keeps the move small:
+
+1. Connect X and LinkedIn in Socipub and confirm both tokens authorize.
+2. Export the queue from the Buffer dashboard, or copy out the next two weeks of drafts.
+3. Rebuild the queue in one [batch scheduling](/blog/batch-schedule-weekly-content-twitter-linkedin) sitting.
+4. Let the Buffer subscription lapse after one overlapping week. The overlap is insurance, not lock-in.
+
+Do the same reading on the [Postiz head-to-head](/blog/buffer-vs-postiz), plus the [Postiz](/blog/postiz-alternative-open-source), [Hootsuite](/blog/hootsuite-free-alternative), [Later.com](/blog/later-com-competitor), [Metricool](/blog/metricool-alternative-open-source), [SocialBee](/blog/socialbee-alternative-open-source), [Loomly](/blog/loomly-alternative-open-source) and [Post Bridge](/blog/post-bridge-alternative-open-source) breakdowns before you commit to a stack — the answer keeps tracking your platform mix and your channel count, not a brand preference. Three channels, one person, paying nothing? Stay where you are. Past channel four, [the free Socipub plan](/pricing) will settle it in a week of real use.
+`.trim(),
   },
   {
     slug: "schedule-twitter-linkedin-one-click",
