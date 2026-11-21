@@ -2030,132 +2030,91 @@ Socipub delivers the social scheduling features that matter: cross-platform post
   },
   {
     slug: "publer-alternative-open-source",
-    title: "Publer Alternative: Open Source Social Media Scheduler (2026)",
-    description: "Publer's free plan blocks Twitter/X entirely. Socipub is the open source alternative with AI scheduling, self-hosting, and unlimited posting.",
-    date: "2026-08-02",
-    readTime: "6 min read",
+    title: "Publer Alternative (2026): Per-Account Pricing, Real Cost",
+    description: "Publer now charges per social account, not $5 flat. Live pricing, the free-plan queue rule, and the exact account count where Socipub Pro gets cheaper.",
+    date: "2026-11-21",
+    readTime: "8 min read",
     tags: ["alternatives", "comparison", "publer"],
     content: `
-Publer built its reputation on an affordable price and a genuinely generous free tier: 3 social accounts and 10 scheduled posts per account, no credit card required. Look closer, though, and the catch appears fast - **Twitter/X is completely locked out of Publer's free plan**, and even paid plans carry per-platform posting quotas. For creators whose entire workflow runs on Twitter and LinkedIn, that single limitation changes everything.
+Publer used to be the easy recommendation: five dollars a month, a dozen platforms, no asterisks. That pitch is gone. Publer now bills per social account, so the $5 headline buys exactly one account — and X plus LinkedIn means two of them. At yearly rates that is $8 a month, still cheap. Add two more profiles and the bill reaches $16, past Socipub Pro at $15.77 a month on yearly billing.
 
-Socipub takes the opposite approach: open source, self-hostable, and free to start, with Twitter/X and LinkedIn scheduling included on the free plan from day one. This guide compares Publer vs Socipub across pricing, features, and data control, so you can decide which tool actually fits your workflow.
+The fair comparison is narrower than it was a few months ago. Publer stays cheaper for small multi-platform fleets, and it is the only one of the two with a usable API on a small plan. Socipub wins when your stack is X plus LinkedIn and the account count starts climbing, because one flat price covers every profile you connect. Everything below comes from Publer's own pricing page and help centre, checked on 21 November 2026, plus four caps the pricing table never spells out.
 
-## Publer vs Socipub: At a Glance
+## What changed: Publer sells slots now, not plans
 
-| Feature | Publer Free | Publer Professional | Socipub Free | Socipub Pro |
-|---------|:-----------:|:-------------------:|:------------:|:-----------:|
-| Price | $0 | $5/mo ($4 yearly) | $0 | $19/mo ($190/yr) |
-| Twitter/X support | ❌ Not available | ✅ | ✅ | ✅ |
-| Social accounts | 3 | Configurable (10th free) | 2 | Unlimited |
-| Scheduled posts | 10/account/mo | Unlimited* | 5/mo | Unlimited |
-| Users | 1 | 1+ | 1 | 1 |
-| Open source | ❌ Proprietary | ❌ Proprietary | ✅ MIT | ✅ MIT |
-| Self-hosting | ❌ | ❌ | ✅ Docker | ✅ Docker |
-| EU data hosting | ❌ | ❌ | ✅ | ✅ |
-| API access | ❌ | Paid feature | ✅ Full | ✅ Full |
-| AI features | OpenAI integration | AI prompts, best times, hashtag analysis | - | AI scheduling + AI rewrite |
-| Calendar view | ✅ | ✅ | ✅ | ✅ |
-| Bulk scheduling | ❌ | ✅ | ✅ CSV import | ✅ CSV import |
-| Analytics | ❌ | ✅ | ✅ | ✅ |
+The pricing page is a calculator, not a table. Two sliders set your bill: social accounts, and additional members. One account is one social profile, page, group, or channel — five Facebook pages, two LinkedIn pages and three Instagram accounts count as ten slots, which is how Publer's help centre defines it.
 
-> **Bottom line:** Publer wins on platform breadth and entry price. Socipub wins for Twitter + LinkedIn creators who want open source freedom, unlimited posting, and AI-assisted scheduling.
+The pricing table still shows $5 and $10 because those are single-account entry rates: $5/account monthly for Professional, $4/account billed yearly; $10 and $8 for Business. Every tenth account is free, and the same rule applies to members, so ten accounts cost nine slots.
 
-## What Publer Does Well
+| Plan | Monthly | Yearly | What one slot buys |
+|------|:-------:|:------:|--------------------|
+| Free | $0 | $0 | 1 user, 1 workspace, 3 accounts (X excluded), 10 queued posts per account, 25 drafts, 24-hour history |
+| Professional | $5/account | $4/account | Unlimited scheduling and drafts, X support, bulk scheduling, kept post history, threads and first comments, extra members, 7-day trial |
+| Business | $10/account | $8/account | Professional plus unlimited AI prompts, analytics and reports, best-times suggestions, competitor analysis, hashtag analytics, spintax recycling, API and MCP access, 14-day trial |
+| Enterprise | Quote | Custom | Business plus volume discounts, onboarding, and unlimited daily posting |
 
-Before diving into the gaps, credit where it's due - Publer is a genuinely capable tool:
+Prices exclude VAT. Billing runs through PayPro Global and Paddle, and Publer offers 14 days of money back on top of the trials.
 
-- **12+ platform integrations** - Facebook, Instagram, TikTok, X, LinkedIn, Pinterest, YouTube, Telegram, Google Business, Mastodon, Bluesky, and WordPress. If you need to schedule Instagram and Facebook alongside everything else, Publer is one of the most complete options in this category.
-- **Very accessible pricing** - Professional at $5/mo (or $4/mo billed yearly) is among the cheapest paid tiers of any social media scheduler.
-- **Useful free tools** - photo and video downloader, character counter, AI bio generator, screenshot tools, and a holiday calendar, all free to use even without a paid plan.
-- **Strong content utilities** - Canva integration, built-in photo editor, link shortening, shortcodes, recurring posts, and spintax support.
-- **Queue-based auto-scheduling** - the "add to queue" feature and post curation make hands-off scheduling easy.
+## The free plan is generous, right up to the three walls
 
-None of this is in dispute. Publer is a good product - for the right audience.
+Publer's free tier is one of the better ones in this category: three accounts, 25 drafts, Canva integration, auto-scheduling from a predefined calendar, link shortening with UTM tracking, and a Linkie bio page. No credit card, no expiry.
 
-## Where Publer Falls Short
+Then you hit the walls.
 
-### 1. Twitter/X Is Locked Behind Paid Plans
+**X is flatly unavailable.** The help centre says up to three supported social accounts, excluding X/Twitter. The integrations list explains why: X's Enterprise API cost means the platform is paid-subscription-only. For anyone whose audience lives on X, the free plan cannot even be evaluated.
 
-This is the big one. Publer's free plan cannot connect Twitter/X at all. The pricing page states it directly: due to the Twitter/X Enterprise API cost, Twitter/X accounts are only supported on a paid subscription.
+**Ten scheduled posts is a queue, not a monthly quota.** I get this wrong in plenty of comparison articles, including ours until today. The help centre wording is "up to 10 scheduled posts at a time per social account" — publish or delete one and a new slot opens on that same account. So a free user can queue 10 per account, drip them out forever, and publish immediately without any cap at all. That is materially more generous than a 10-posts-a-month allowance.
 
-For a Twitter-first creator - someone whose primary audience lives on X - Publer's "free" plan is a non-starter. You are forced to pay before you can even evaluate the tool with your main account. Socipub includes Twitter/X and LinkedIn scheduling on the free plan, no payment required, no time limit.
+**History disappears after 24 hours.** Published posts stay on Publer's servers for one day on the free plan. If you ever need to prove what you shipped, or lift a post that performed well, it is gone. Paying fixes it — Professional and up keep history permanently.
 
-### 2. "Unlimited" Comes With an Asterisk
+One more restriction hides in the platform list rather than the plan table: Pinterest accounts need at least 100 followers or a claimed website to connect on the free plan, a condition Publer enforces to comply with Pinterest's automation policies. A fresh brand account cannot be scheduled to Pinterest for free, at any price below Professional.
 
-Publer's Professional and Business plans advertise unlimited scheduled posts, but the asterisk on the pricing table points to per-platform monthly quotas on the lower paid tiers. The more platforms you connect and the more you post, the sooner you hit those limits and start weighing a more expensive tier.
+## Where "unlimited" quietly stops
 
-Socipub Pro has genuinely unlimited posting - no per-platform caps, no quota math. You pay one flat price and post as much as you need.
+Paid plans advertise unlimited scheduling, and that part is real. The footnote underneath is where it gets interesting: daily posting limits are enforced on paid plans to keep spam down. Only the Enterprise card lists "unlimited daily posting" as a feature. So the ceiling exists, Publer just does not publish the number, and the tier that removes it is the one you cannot buy without a sales call.
 
-### 3. Proprietary SaaS With No Self-Hosting or EU Hosting
+Same pattern as Metricool's fair-use clause, and worth knowing before you move an agency's whole calendar over: [we wrote up how that plays out here](/blog/metricool-alternative-open-source).
 
-Publer is closed-source SaaS. Your content library, scheduled posts, and connected accounts live on their infrastructure, with no option to:
+## The crossover point is account four
 
-- Self-host the software on your own server
-- Audit the source code for security or compliance
-- Choose EU data residency
-- Customize the product to your exact workflow
+Two people, two profiles each, X and LinkedIn for both, publishing one post a day per profile. That is the shape most of this site's readers actually run. Cost per month, yearly billing:
 
-Socipub is fully open source under the MIT license and [self-hostable with Docker](/features). Your data stays on your infrastructure - not a third party's servers - and EU hosting is available on every plan.
+| Accounts | Publer Professional | Publer Business | Socipub Pro |
+|:--------:|:-------------------:|:---------------:|:-----------:|
+| 1 | $4 | $8 | $15.77 |
+| 2 | $8 | $16 | $15.77 |
+| 3 | $12 | $24 | $15.77 |
+| 4 | $16 | $32 | $15.77 |
+| 5 | $20 | $40 | $15.77 |
+| 10 | $36 | $72 | $15.77 |
 
-### 4. API Access Is a Paid Feature
+Professional undercuts Socipub Pro up to three accounts. At four, $16 crosses $15.77 and stays above it forever. Business crosses at two accounts, which makes any API-dependent workflow an expensive habit — Business at five accounts is $40 a month against $15.77 flat.
 
-Publer gates its API behind paid plans. If you want to automate your workflow, pull data programmatically, or build custom integrations, you are paying extra for the privilege.
+Per post at two accounts and 60 posts a month, Publer costs $0.13 against $0.26 on Socipub Pro.
 
-Socipub exposes its full REST API on every plan, including free. Bulk-import content, schedule programmatically, and integrate with your own stack without upgrading.
+## The one place Publer wins outright
 
-## When to Keep Publer
+API and MCP access sits in Business, so two accounts plus API is $16 a month at yearly rates. Socipub gates its REST API behind the Team plan at $49 a month. If you are scripting content pipelines and nothing else matters, Publer is $33 a month cheaper, and there is no honest way to spin that.
 
-✅ **You schedule across many platforms** - if Instagram, Facebook, TikTok, Pinterest, and YouTube are core to your strategy, Publer's 12+ integrations are a genuine strength
+Platform breadth lands in the same column. Publer connects Facebook profiles, pages, groups and locations, Instagram, TikTok, X, Threads, LinkedIn profiles and pages, Pinterest, Mastodon, Google Business Profiles, YouTube, Telegram, Bluesky and WordPress. Socipub connects X and LinkedIn, which is the whole product. If your week includes Reels, Shorts and a Google Business post, Publer is the only one of these two that can do it, and [Postiz is the open source option that gets closer](/blog/postiz-alternative-open-source).
 
-✅ **You are on a very tight budget** - $5/mo for a full-featured scheduler is hard to beat
+## Where Socipub actually earns the switch
 
-✅ **You want a link-in-bio page** - Publer's unbranded Link in Bio on paid plans is a nice bonus
+Open source under MIT, self-hostable with Docker at no licence cost, EU data residency, and one flat monthly price no matter how many profiles you connect. Team at $49 covers five seats plus bulk import and API — [the cost comparison breaks down what that looks like against six paid tools](/blog/socipub-vs-paid-tools-cost-comparison).
 
-✅ **You love the free utilities** - downloaders, bio generators, and screenshot tools are handy extras
+Free is 5 posts a month across 2 platforms, which is tighter than Publer's free queue and sits at the bottom of the market — [we compared every free tier we could find](/blog/free-social-media-scheduler-plans-compared) rather than pretend otherwise. What Socipub's free plan does include is X and LinkedIn together, the two accounts Publer makes you pay for.
 
-## When to Switch to Socipub
+Judgement call: stay on Publer if you run Instagram, TikTok or Pinterest for a brand, or if you need an API on a two-account budget. Move when the account count passes three and every profile you add inflates the bill, or when you want the code and the data on your own box.
 
-✅ **Your workflow is Twitter/X + LinkedIn** - the two platforms Socipub was built for, both included on the free plan with no paywall
+## Migrating without losing your queue
 
-✅ **You post a lot** - unlimited posts on Pro, no per-platform quotas
+Export first. Publer's calendar and analytics export CSVs are the only portable copy of your history, and free-plan history expires after 24 hours, so pull it before you downgrade anything.
 
-✅ **You want open source and self-hosting** - full data ownership under the MIT license
+Map accounts to the two platforms Socipub supports, then rebuild the schedule from the CSV import or by hand in the calendar view. If you would rather run it yourself, the [Docker self-hosting walkthrough](/blog/self-host-socipub-docker) takes about twenty minutes end to end, and Pro carries a 14-day trial with no card if you want to compare side by side.
 
-✅ **You want AI-native scheduling** - AI time suggestions based on engagement data and AI rewrite built into the Pro workflow
+Cancel last, after a week of posts has gone out from the new tool.
 
-✅ **You care about data residency** - EU hosting and GDPR-friendly defaults on every plan
-
-✅ **You build with APIs** - full REST API access on the free plan
-
-## Migration Guide: Moving from Publer to Socipub
-
-### Step 1: Inventory Your Publer Queue
-
-Open Publer's calendar view and note your scheduled posts, recurring posts, and preferred posting times. This becomes your blueprint.
-
-### Step 2: Export Your Content
-
-Publer doesn't offer a one-click migration export, so use its calendar and analytics CSV exports to save your evergreen posts and top-performing content.
-
-### Step 3: Create Your Socipub Account
-
-[Sign up for free](/sign-up) - no credit card needed. Connect your Twitter/X and LinkedIn accounts via OAuth; each connection is secure and revocable.
-
-### Step 4: Rebuild Your Schedule
-
-Use Socipub's [calendar view](/scheduling) to recreate your posting plan, or bulk-import your saved posts with the CSV importer. Power users can script the whole migration against the [REST API](/features).
-
-### Step 5: Cancel Publer
-
-Once your first week of posts is scheduled in Socipub, cancel your Publer subscription. At Socipub Pro's $19/mo you get unlimited posting, AI scheduling, and full data control - and the free plan covers Twitter + LinkedIn indefinitely while you evaluate.
-
-## The Verdict
-
-Publer is a solid, affordable scheduler with exceptional platform coverage - as long as you are willing to pay for Twitter/X access and work within per-platform quotas. If your content lives primarily on Twitter and LinkedIn, you are paying for platforms you barely use.
-
-Socipub is the cleaner fit for that audience: Twitter/X and LinkedIn on the free plan, genuinely unlimited posting on Pro, open source freedom, AI-assisted scheduling, and EU data hosting - all without the asterisks.
-
-Ready to compare for yourself? [Try Socipub free](/sign-up) - no credit card, no time limit. Or [explore the full feature set](/features) and [review the pricing](/pricing). If you are also weighing Hootsuite's free plan, see our [Hootsuite alternative comparison](/blog/hootsuite-free-alternative) too.
+[Start free on Socipub](/sign-up) and connect X plus LinkedIn in two clicks — no card, no trial clock. Compare against [Hootsuite's current pricing](/blog/hootsuite-free-alternative) or the [full feature list](/features) if you are still weighing options.
     `.trim(),
   },
   {
