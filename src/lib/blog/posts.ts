@@ -2100,7 +2100,7 @@ Platform breadth lands in the same column. Publer connects Facebook profiles, pa
 
 ## Where Socipub actually earns the switch
 
-Open source under MIT, self-hostable with Docker at no licence cost, EU data residency, and one flat monthly price no matter how many profiles you connect. Team at $49 covers five seats plus bulk import and API — [the cost comparison breaks down what that looks like against six paid tools](/blog/socipub-vs-paid-tools-cost-comparison).
+Open source under MIT, self-hostable with Docker at no licence cost, and one flat monthly price no matter how many profiles you connect. Data residency is a consequence of self-hosting rather than a plan feature — the hosted option still puts your queue on someone else's servers, just smaller ones. Team at $49 covers five seats plus bulk import and API — [the cost comparison breaks down what that looks like against six paid tools](/blog/socipub-vs-paid-tools-cost-comparison).
 
 Free is 5 posts a month across 2 platforms, which is tighter than Publer's free queue and sits at the bottom of the market — [we compared every free tier we could find](/blog/free-social-media-scheduler-plans-compared) rather than pretend otherwise. What Socipub's free plan does include is X and LinkedIn together, the two accounts Publer makes you pay for.
 
