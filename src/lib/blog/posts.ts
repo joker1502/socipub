@@ -443,61 +443,81 @@ Socipub's **[Publishing Queue](/scheduling)** takes batch scheduling further:
   },
   {
     slug: "hootsuite-free-alternative",
-    title: "Hootsuite Free Alternative: Open Source Social Media Scheduler (2026 Comparison)",
-    description: "Hootsuite has no free plan in 2026, only a 14-day trial with daily posting caps. Socipub covers X + LinkedIn free, open source, flat pricing.",
-    date: "2026-07-08",
-    readTime: "6 min read",
+    title: "Hootsuite Free Alternative: 5 Free Tiers Checked (2026)",
+    description: "Hootsuite has no free plan, and two rival free tiers cannot post to X at all. Six pricing pages checked on 22 November 2026.",
+    date: "2026-11-22",
+    readTime: "7 min read",
     tags: ["alternatives","hootsuite","open-source"],
-    content: `Hootsuite is the most recognizable name in social media management — and since it retired its free tier it is also one of the least accessible at the moment you want to start. What is left is a 14-day trial over four paid tiers billed per user seat. Checked against Hootsuite's own plans page on 13 November 2026. For indie developers and small teams whose actual need is scheduling Twitter/X and LinkedIn without marketing overhead, open source is the alternative that removes both the price and the lock-in.
+    content: `Hootsuite killed its free plan, and the trial that replaced it is not something you can run a publishing habit on. Worse, two of the loudest free alternatives cannot post to X on the free tier at any price. I opened Hootsuite's plans page and five competitor pricing pages on 22 November 2026 and wrote down what each one actually gives away.
 
-## Hootsuite vs Socipub: Full Comparison
+## Hootsuite gives away 14 days, not a plan
 
-| Feature | Hootsuite (14-day trial) | Hootsuite paid tiers | Socipub Free | Socipub Pro ($19/mo) |
-|---------|:------------------------:|:--------------------:|:------------:|:--------------------:|
-| Free plan after the trial | None | None | Yes, no expiry | Yes, no expiry |
-| Seats | 1 per seat | billed per user seat | 1 | 1 |
-| Social accounts | 10 on Standard | unlimited from Professional | 2 (X + LinkedIn) | Unlimited |
-| Scheduled posts | unlimited, capped at 10-20 per day per org | unlimited | 5 per month | Unlimited |
-| Bulk scheduling | disabled during the trial | from Professional | calendar + batch composer | calendar + batch composer |
-| Analytics | included in trial | included | No | Basic |
-| API access | No | No | Yes | Yes |
-| Open source | No | No | MIT | MIT |
-| Self-hosting | No | No | Yes | Yes |
-| EU data hosting | No | No | Yes | Yes |
-| Monthly cost | $0 for 14 days | per seat, quote varies by tier | $0 | $19 |
+Four paid tiers, no free tier, and a trial that expires on day 15. The trial itself changed in a useful way: Hootsuite's own FAQ now says you do not need a credit card to start, and you will not be charged automatically when it ends. That removes the accidental-subscription fear people used to have.
 
-The comparison that matters: Hootsuite now gives you two weeks and then a bill, while Socipub's free tier has no clock on it at all. Both cap you — one caps your calendar, the other caps your volume.
+The trial still comes with catches written in the footnote under the plan cards: trial accounts are capped at 10 to 20 posts per organization per day, and bulk scheduling is switched off while you evaluate. So the one workflow that makes Hootsuite worth its price is disabled during the only period you get to test it for free.
 
-## Why the Trial Isn't a Workflow
+Pricing is per user seat and the headline number is the annual one.
 
-Five things happen to you inside those 14 days:
+| Tier | Annual | Monthly | Accounts |
+|:-----|:------:|:-------:|:--------:|
+| Standard | $99 per user/mo | $149 | 10 |
+| Professional | $199 per user/mo | $299 | unlimited |
+| Advanced | $399 per user/mo | $499 | unlimited |
+| Enterprise | custom | custom | custom |
 
-- **The clock is 14 days, not forever.** Whatever rhythm you build has a deadline attached to it, and day 15 asks for a payment method.
-- **Daily posting caps apply.** Hootsuite's own footnote reads "Trial accounts have daily posting limits (10-20 posts per organization, depending on plan)." A solo user on two platforms rarely notices. An agency onboarding clients does.
-- **Bulk scheduling is switched off during the trial.** This is the killer for anyone evaluating Hootsuite because of its batch workflow — the exact feature you want to test is the one disabled while you test.
-- **Nothing free to fall back to.** Trial ends, workspace locks, you pick a tier. There is no degraded free mode.
-- **Seats multiply the bill.** Every plan is priced per user, so a three-person team pays three times the card price, not once.
+Real talk: the $99 Standard price in most comparison screenshots is a 12-month commitment of $1,188 per seat. Pay month to month and the same seat costs $149 - a 50% premium nobody puts in the blog post. Unlimited accounts start at Professional, so the tier jump from 10 to unlimited accounts doubles the bill.
 
-The trial is a legitimate way to evaluate the product if your team is small and your posting volume is modest. It is not a place to run a publishing habit for free, and after November 2026 nobody should expect it to be.
+## Which free tiers can actually reach X and LinkedIn
 
-## What Changes With Open Source
+This is the part comparison tables skip. Every tool below calls its entry tier free, and two of them exclude X so completely that no amount of usage gets you there.
 
-The open source difference is structural, not a badge. With Socipub you can:
+| Free tier | X | LinkedIn | How the cap works | What else is included |
+|:----------|:-:|:--------:|:------------------|:----------------------|
+| Buffer | yes | yes | 10 queued per channel, refills as you publish | 3 channels, 1 user, AI assistant, Insights, API (5 keys, 1,000 req/channel-month) |
+| Zoho Social | yes, 1 X profile | yes, 1 profile + 1 company page | no monthly quota on scheduling | 1 brand, 6 fixed channel slots, 1 user, 5 AI credits |
+| Socipub | yes | yes | 5 posts per month | 2 platforms, MIT source code |
+| Metricool | no | no | 20 posts per month | 1 brand, 5 competitors tracked, 30 days of analytics, AI assistant |
+| Publer | no, cannot connect at all | yes | 10 queued per account | 3 accounts, 25 drafts, 24-hour post history |
+| Hootsuite | trial only | trial only | 14 days, 10-20 posts/day | bulk scheduling disabled during trial |
 
-- **Read the code.** Token handling, scheduling logic, API calls — all visible and auditable, which matters for GDPR-oriented workflows (see our [compliance guide](/blog/gdpr-compliant-social-media-tool)).
-- **Self-host or stay cloud.** Deploy your own instance ([Docker guide](/blog/self-host-socipub-docker)) or use the hosted EU version; the data path is yours either way.
-- **See the whole pricing.** Free, Pro $19/mo, Team $49/mo — three numbers, no quote-based tiers, no per-channel add-ons.
+Buffer's free tier is the one that survived the years best: three channels, but the API is included, which is rare - the same API on Socipub needs Team at $49.
 
-## The Migration Path
+Zoho's free brand is six fixed slots, and two of them are LinkedIn (a profile plus a company page). If your job is posting as yourself and as a company page, that shape fits better than a channel count suggests. Bulk scheduling is a Professional feature at $30, so free means scheduling post by post.
 
-Switching from Hootsuite to Socipub takes about ten minutes:
+## Three different gates hide behind the word free
 
-1. Create a Socipub account and connect Twitter/X and LinkedIn (the two platforms the setup targets).
-2. Export your content calendar from Hootsuite (or export your recent posts from Twitter/LinkedIn analytics if you don't keep one).
-3. Recreate the upcoming week's posts — the batch system from our [scheduling guide](/blog/batch-schedule-weekly-content-twitter-linkedin) makes this a single 30-minute session.
-4. Cancel the Hootsuite subscription at your next billing cycle. There's no data migration lock; the schedule is just a list of posts.
+A queue depth is not a monthly quota, and mixing them up produces bad decisions.
 
-For more scheduler comparisons, see our [Buffer alternative guide](/blog/buffer-alternative-open-source) or the [Later.com parallel](/blog/later-com-competitor). The [Agorapulse](/blog/agorapulse-alternative-open-source) and [CoSchedule](/blog/coschedule-alternative-open-source) write-ups cover the agency-team end of the same decision. If your need is straightforward — schedule to X and LinkedIn, know exactly what you pay — start with the [free Socipub plan](/pricing) and skip the enterprise detour.`.trim(),
+Queue depth - Buffer's 10 per channel and Publer's 10 per account - means 10 posts sitting in the buffer at once. Publish one, and you can add another. Post twice a day to a channel and you never hit it. Month after month of publishing is fine on these tiers.
+
+A monthly quota is a hard ceiling that resets on the first of the month. Metricool allows 20 posts, Socipub 5. Add up a two-platform, one-post-a-day habit and you need 60 slots, which is three times Metricool's ceiling and twelve times Socipub's.
+
+A platform gate is the worst of the three, because usage does not matter. Metricool's own FAQ states plainly that X requires an add-on and LinkedIn starts at the Starter tier, so a free Metricool account can schedule neither for a Hootsuite refugee. Publer is blunter still: its free plan card says you cannot connect Twitter or X accounts in the free version, and the X integration only appears on the Professional list at $5 per account per month.
+
+## What 60 posts a month costs on each tier
+
+I priced a simple shape: X and LinkedIn, one post a day on each, 60 posts per month.
+
+Buffer free handles it at $0, because the queue refills. Zoho free handles it if you schedule per post. Publer covers half of it - LinkedIn only. Metricool covers none of it, since neither platform connects. Socipub free covers 8% of it and then stops.
+
+Push to paid plans and the per-post math gets ugly fast. Buffer Essentials at $5 per channel per month (annual) costs $10 for two channels, which is $0.17 per post. Socipub Pro at $19 flat is $0.32. Hootsuite Standard at $99 annual is $1.65 per post, and Professional at $199 is $3.32. Publishing the same 60 posts on Hootsuite's cheapest seat costs about ten times what Buffer charges for two channels.
+
+## When free is not enough, self-hosting beats a bigger plan
+
+Socipub's own free tier is the tightest on this page - five posts a month is a demo, not a workflow. I am not going to pretend otherwise. The reason it stays on the list is what sits underneath: the code is MIT licensed, so you can run the scheduler on your own server and remove the ceiling without paying anyone.
+
+The Pro plan at $19 keeps unlimited posting on all platforms, and Team at $49 adds five seats, bulk import and API access. Annual billing takes 17% off on top, and the code being MIT means the audit trail is not a support ticket away - if your team answers to a compliance review, the [GDPR guide](/blog/gdpr-compliant-social-media-tool) covers what a scheduler actually has to prove.
+
+## Moving off Hootsuite without losing your calendar
+
+The switch takes one sitting, not a migration project.
+
+1. Export your Hootsuite calendar, or pull the last 30 days of posts from X and LinkedIn analytics if you never kept one.
+2. Connect X and LinkedIn to the new tool and confirm both publish, including one image post. Image handling is where most schedulers break quietly.
+3. Rebuild the upcoming week in a single batch session - the [batch scheduling walkthrough](/blog/batch-schedule-weekly-content-twitter-linkedin) covers the rhythm in about 30 minutes.
+4. Cancel at the next billing cycle. Nothing locks you in; a calendar is a list of posts, not a database.
+
+If your decision is broader than Hootsuite, the [Buffer comparison](/blog/buffer-alternative-open-source) covers channel-based pricing in detail and the [Later](/blog/later-com-competitor) piece handles the visual-planning end. Larger teams should read the [Agorapulse](/blog/agorapulse-alternative-open-source) and [CoSchedule](/blog/coschedule-alternative-open-source) write-ups before they commit to a per-seat contract. Ready to test it on your own two platforms? Start on the [free Socipub plan](/pricing) and [self-host](/blog/self-host-socipub-docker) later if you outgrow it.`,
   },
   {
     slug: "later-com-competitor",
