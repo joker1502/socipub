@@ -1012,140 +1012,86 @@ Pay Premium+ if column monitoring is the job — X Lists pinned in a browser can
   },
   {
     slug: "hypefury-alternative-open-source",
-    title: "Hypefury Alternative: Free Open Source Social Media Scheduler for Twitter & LinkedIn (2026)",
-    description: "Hypefury helps grow your Twitter audience but costs $29/mo and lacks cross-platform flexibility. Socipub is the free open source alternative with Twitter + LinkedIn scheduling, AI features, self-hosting, and transparent pricing. Full comparison and migration guide.",
-    date: "2026-07-20",
-    readTime: "6 min read",
-    tags: ["alternatives", "comparison", "hypefury", "open-source"],
+    title: "Hypefury Alternative in 2026: X Publishing Is Gone, Price $6",
+    description: "Hypefury stopped publishing to X and rebuilt around six other networks at $6 each. Live pricing, AI quotas, workspace limits, and what to use for X instead.",
+    date: "2026-11-26",
+    readTime: "8 min read",
+    tags: ["alternatives", "hypefury", "comparison"],
     content: `
-Hypefury has built a loyal following among Twitter power users who want auto-engagement, thread scheduling, and analytics in one platform. But its focus on growth automation — and the recurring monthly cost — leaves some users wanting a simpler, more affordable solution for everyday scheduling.
+If you are hunting a Hypefury alternative because you want X scheduling, the decision is already made for you: Hypefury stopped publishing to X. Their own help copy answers the question in four words, and the plan table on hypefury.com/features-pricing now lists six networks that do not include X. So this page is not a "which is cheaper" comparison anymore. It is a what-replaced-what, with the receipts.
 
-Socipub offers a fundamentally different approach: open source, self-hostable, and free to start. Here's a detailed comparison to help you decide which tool fits your actual workflow.
+## Hypefury in November 2026: six platforms, no X
 
-## What Hypefury Does Well
+Three plans, all billed in USD before VAT, and every one of them starts with a 7-day trial of Creator. No card at signup, and nothing charges when the trial lapses unless you pick a plan.
 
-Hypefury's core strengths revolve around Twitter growth automation:
+| Plan | Price | What the card actually includes |
+|:-----|:------|:--------------------------------|
+| Flexible | $6/mo per platform ($60/yr per platform) | 1 platform, each extra +$6; 20 AI posts/mo; 10 short links; scheduling, Autoplug, Instagram auto-DMs, MCP |
+| Creator | $19/mo ($190/yr) | All 6 platforms; 2 workspaces; 300 AI posts/mo; 20 short links |
+| Pro | $39/mo ($390/yr) | 5 workspaces; 2 ghostwriter or manager seats; 1,000 AI posts/mo; Sonar listening on 5 keywords; 50 short links |
 
-- **Auto-engagement** — Automatically like, retweet, and reply to tweets based on keywords and hashtags. This "set and forget" growth mechanic is Hypefury's signature feature.
-- **Thread scheduling** — Compose and schedule multi-tweet threads with previews and optimal timing suggestions.
-- **Evergreen queue** — Set up a rotating queue of tweets that repost automatically on a schedule, keeping your content alive indefinitely.
-- **Analytics dashboard** — Track engagement, follower growth, and tweet performance with detailed breakdowns.
-- **LinkedIn support** — Recently added basic LinkedIn scheduling as an expansion feature.
+The six publishing platforms are Instagram, Facebook, Threads, LinkedIn, TikTok and Bluesky. X appears exactly once on the page, inside the Sonar listener, which reads Reddit, YouTube, LinkedIn and X and drafts replies you post yourself. Listening, not publishing.
 
-These tools are genuinely useful for anyone focused on organic Twitter growth and automation. The evergreen queue alone can save hours of manual resharing per week.
+One pricing shape is worth internalizing because it is not on the card: Flexible undercuts Creator until your fourth platform. Three platforms at $6 run $18, which is cheaper than $19. Add the fourth and you are at $24, so Creator wins permanently. Hypefury says this out loud in a footnote, which is more honest than most competitors bother to be.
 
-## Where Hypefury Falls Short
+## The old numbers you may still find in search results
 
-### 1. Pricing Scales Quickly
+A pile of comparison posts, including the July version of this page, describe Hypefury as a Twitter growth tool with three tiers priced $29, $49 and $99. None of that exists now, and the archived pages show the cutover happened in two stages.
 
-| Plan | Price | Key Limitations |
-|------|:----:|:--------------|
-| Basic | $29/mo | 1 account, basic analytics |
-| Pro | $49/mo | Advanced analytics, unlimited scheduling |
-| Business | $99/mo | Team features, priority support |
+On January 2, 2026 the pricing page was a four-tier X machine: Starter $29/mo or $250/yr with 1 X account, Creator $65/$590 with 5, Business $97/$890 with 10, Agency $199/$1,800 with 15. Auto-DM quotas, thread previews, retweet scheduling and X-only Autoplugs filled the feature table. By August 19 the same URL had collapsed to two plans, Flexible at $6 per channel and Full at $19 for all channels, on five channels — Bluesky, Threads, LinkedIn, Instagram, TikTok. A new FAQ line had appeared: Hypefury no longer supports X. October 9 still showed the same pair. Today's page has renamed Full to Creator, added a $39 Pro tier and added Facebook as a sixth channel.
 
-For a solo creator who just wants to schedule Twitter and LinkedIn posts without growth automation features, Hypefury's $29/mo basic plan is steep. Socipub's Pro plan covers both platforms at **$19/mo** with no per-account limits.
+We wrote the July version of this article during that window and got it wrong in a specific, checkable way: the $29/$49/$99 ladder we published matched neither the old page nor the new one. Two archive pulls fixed that. The same trap caught our [TweetDeck write-up](/blog/tweetdeck-alternative-open-source) when X Pro moved tiers, and the lesson repeats: pull the vendor's pricing page in a browser and check tier names against the archive. Product repositioning changes the whole premise faster than prices move.
 
-### 2. LinkedIn Support Is an Afterthought
+## The costs hiding below the plan card
 
-Hypefury added LinkedIn support as a secondary feature, but the experience lacks:
+Quotas look generous until you count the way the vendor counts. Four details decide the real bill.
 
-- **Dedicated LinkedIn content optimization** — No character count adaptation or tone adjustment
-- **Platform-specific analytics** — LinkedIn engagement data is basic at best
-- **Cross-platform multi-posting** — You can't write once and publish to both Twitter and LinkedIn simultaneously
-- **AI adaptation** — No feature to rewrite content for LinkedIn's professional tone vs Twitter's casual style
+**AI posts are metered per output, and a carousel costs three.** Flexible gets 20 AI posts a month, Creator 300, Pro 1,000. An Instagram carousel counts as 3, so a Creator account that leans on carousels is really a 100-carousel month. The AI drafts for Threads, Bluesky and LinkedIn, and paid plans can auto-refill empty queue slots every six hours — useful, and a fast way to burn 300 credits if the voice is off.
 
-Socipub was **built with LinkedIn as a first-class citizen**, alongside Twitter. Cross-platform posting, AI Rewrite, and unified analytics are core features.
+**One account per platform per workspace.** A second Instagram account does not connect to the same workspace; it needs a second workspace. Creator ships two, Pro five, Flexible one. Anyone juggling a brand account and a personal account hits that wall on day one.
 
-### 3. No Self-Hosting or Open Source
+**Analytics cover Instagram, Threads and LinkedIn only.** If you publish to TikTok, Facebook and Bluesky, you are scheduling blind there. Engagement Builder, the reply feed Hypefury built its reputation on, is now a Threads and Bluesky product.
 
-Hypefury is proprietary SaaS. Your tweets, drafts, and growth data live on Hypefury's servers. There is no option to:
+**Sonar is Pro-only, and it is the only X in the room.** Five keywords across Reddit, YouTube, LinkedIn and X, with drafted replies and email alerts. At $39/mo it is the cheapest way to get mention monitoring with the same billing, and it is useless if what you wanted was to publish a tweet.
 
-- Self-host for complete data control
-- Audit the codebase for security or compliance
-- Customize features to your exact workflow
-- Export and migrate data freely
+Black Friday pricing is live as we check this, and it changes the arithmetic for the next four days: BLACKFRIDAY40 takes 40% off Creator or Pro for two months, CREATOR25 takes 25% off Creator Yearly, PROYEAR35 takes 35% off Pro Yearly, all expiring November 30 at 11:59 pm ET.
 
-Socipub is fully **open source (MIT)** and [self-hostable via Docker](/features). Your data stays on your infrastructure, not a third party's servers.
+## What to use if X is your channel
 
-## Hypefury vs Socipub: Feature Comparison
+Socipub is the honest answer, with an equally honest list of what it does not do. It publishes to X and LinkedIn, in code, with no other networks wired up. The composer takes 280 characters for X and 3,000 for LinkedIn, one post per platform per publish — there is no thread chaining, so a ten-tweet thread becomes ten scheduled posts.
 
-| Feature | Hypefury Basic ($29/mo) | Hypefury Pro ($49/mo) | Socipub Free | Socipub Pro ($19/mo) |
-|---------|:---------------------:|:--------------------:|:----------:|:------------------:|
-| Twitter/X Scheduling | ✅ | ✅ | ✅ | ✅ |
-| LinkedIn Scheduling | ✅ Basic | ✅ Basic | ✅ | ✅ |
-| Thread Composer | ✅ | ✅ | ❌ | ❌ |
-| Auto-Engagement | ✅ | ✅ | ❌ | ❌ |
-| Evergreen Queue | ✅ | ✅ | ❌ | ❌ |
-| Cross-Platform Posting | ❌ | ❌ | ✅ | ✅ |
-| AI Scheduling | ❌ | ❌ | ❌ | ✅ |
-| AI Rewrite | ❌ | ❌ | ❌ | ✅ |
-| Open Source | ❌ | ❌ | ✅ MIT | ✅ MIT |
-| Self-Hosting | ❌ | ❌ | ✅ Docker | ✅ Docker |
-| EU Data Hosting | ❌ | ❌ | ✅ | ✅ |
-| API Access | ❌ | ❌ | ✅ Full | ✅ Full |
-| Calendar View | ❌ | ❌ | ✅ Drag & drop | ✅ Drag & drop |
-| Monthly Cost | **$29/mo** | **$49/mo** | **$0** | **$19/mo** |
+| | Hypefury | Socipub |
+|:--|:---------|:--------|
+| Publishes to X | No | Yes |
+| Publishes to LinkedIn | Yes | Yes |
+| Instagram, Threads, TikTok, Bluesky, Facebook | Yes | No |
+| AI | Drafts posts, 20 to 1,000 per month | Rewrite and translate, 1 credit per call |
+| Autoplug / recycling | Yes, every plan | No |
+| Instagram auto-DMs | Yes, no per-message fee | No |
+| MCP (Claude, ChatGPT) | Yes, every plan | No |
+| API access | Not on any plan | Team tier |
+| Free tier | None, 7-day trial no card | 5 posts/month, 2 platforms |
+| Entry price | $6/mo single platform | $0, then $19/mo unlimited |
+| Self-hosting | No | MIT licensed, run your own |
 
-> **Bottom line:** Hypefury wins for Twitter growth automation (auto-engage, evergreen queues). Socipub wins for multi-platform scheduling, open source flexibility, and cost.
+Anyone weighing this against the wider field can see the same split in our [Postiz comparison](/blog/postiz-alternative-open-source), where the open source option is X-and-LinkedIn shaped too. Socipub's price ladder is short. Free is 5 posts a month across both networks. Pro is $19 for unlimited posting plus AI credits, with a 14-day trial that does not ask for a card. Team is $49 and bundles five seats, bulk import and API access — the API is a paid feature, so ignore older reviews promising it on the free plan. Yearly billing knocks 17% off.
 
-## When to Keep Hypefury
+Self-hosting is real but plainer than the word suggests. The repo is MIT licensed Next.js against your own Supabase project with your own X and LinkedIn OAuth apps, and there is no Dockerfile in it as of today. Guides promising a one-command container are describing something the code does not ship.
 
-✅ **Twitter growth automation** — If auto-engage, evergreen queues, and thread automation are essential to your strategy, Hypefury's growth tools are purpose-built
-✅ **Twitter-first strategy** — If LinkedIn isn't part of your workflow, Hypefury's Twitter tools are comprehensive
-✅ **Advanced Twitter analytics** — Hypefury's follower growth and engagement analytics are deeper than Socipub's
+## The switch checklist, in the order that costs money
 
-## When to Switch to Socipub
+Copy every draft out of Hypefury before the trial ends. Their FAQ is explicit: pick a plan before the trial closes to keep your account active, which means let it close and you are locked out of your own queue. Nothing in the docs promises a scheduled-post export, so treat copying as the only move you can count on.
 
-✅ **You post to both Twitter and LinkedIn** — Unified scheduling in one tool
-✅ **You want open source transparency** — Audit, contribute, customize the code
-✅ **You need self-hosting** — Full data control and GDPR compliance
-✅ **You want lower costs** — Socipub Pro at $19/mo vs Hypefury Basic at $29/mo
-✅ **You want AI scheduling** — Optimal posting times based on your engagement patterns
+Then sort your accounts by network, not by tool. Anything you write for X cannot go through Hypefury at all, and anything you write for Instagram, Threads, TikTok, Bluesky or Facebook cannot go through Socipub. Two platforms means you now need two tools or a decision about which audience you are actually serving — and that decision is worth more than any per-month saving on this page.
 
-## Migration Guide: Moving from Hypefury to Socipub
+## Verdict
 
-### Step 1: Export Your Hypefury Data
-Hypefury → Settings → Export Data. Download your scheduled posts and analytics as CSV.
+If you publish to X, skip Hypefury entirely; no plan, no discount and no Black Friday code will make it publish a tweet, and Socipub's free tier will schedule five of them this month without a card. If your audience lives on Instagram, Threads, LinkedIn, Bluesky or TikTok and you want AI drafts plus auto-DMs in one bill, Flexible at $6 or Creator at $19 is a fair price for what is now a genuinely different product than the Twitter tool in the old reviews.
 
-### Step 2: Create Your Socipub Account
-[Sign up for free](/sign-up) — no credit card needed. Upgrade to Pro later if you need unlimited posts.
-
-### Step 3: Connect Your Social Accounts
-Link Twitter/X and LinkedIn via OAuth. Each connection is secure, revocable, and takes under a minute.
-
-### Step 4: Rebuild Your Content Queue
-Use the [Calendar View](/scheduling) to schedule your posts. Socipub's drag-and-drop calendar makes it easy to plan a month of content in under an hour.
-
-### Step 5: Add LinkedIn to Your Workflow
-If you've only been scheduling on Twitter, this is your opportunity to expand to LinkedIn with minimal extra effort. Socipub's **AI Rewrite** adapts your Twitter content for LinkedIn's professional tone automatically.
-
-### Step 6: Run Both in Parallel (Optional)
-Keep Hypefury for growth automation while using Socipub for scheduling:
-
-| Tool | Purpose | Monthly Cost |
-|------|---------|:-----------:|
-| Hypefury (Basic) | Auto-engage, evergreen queue | $29/mo |
-| Socipub (Free) | Schedule tweets + LinkedIn | $0/mo |
-| **Total** | | **$29/mo** |
-
-This hybrid approach gives you the best of both worlds. Drop Hypefury once you're confident in Socipub's workflow.
-
-### Step 7: Cancel Hypefury
-Once you're settled, cancel your Hypefury subscription. At $19/mo for Socipub Pro, you'll save **$120/year** compared to Hypefury Basic.
-
-## The Verdict
-
-Hypefury is a powerful Twitter growth tool — if you need auto-engagement, evergreen threads, and deep engagement analytics, it's a solid choice, especially for a Twitter-first strategy.
-
-But if your primary need is **scheduling content to Twitter and LinkedIn** — which is what most creators spend their time on — Socipub delivers everything you need at a lower price, plus the freedom of open source and self-hosting.
-
-For indie hackers, creators, and small teams who post to both platforms, Socipub eliminates the need for multiple tools, reduces monthly costs to **$19/mo** (vs Hypefury's $29/mo starting price), and gives you full control over your data — all while delivering the scheduling features you actually use daily.
-
-[Try Socipub free](/sign-up) — connect Twitter and LinkedIn, schedule your first post in under 2 minutes. No credit card, no time limit, no growth automation complexity.
+[Start free with Socipub](/sign-up) — connect X and LinkedIn, schedule the first post in about a minute. Five a month, no card, and no growth automation you did not ask for.
 
 <div class="prose-notice">
-<strong>Open source:</strong> socipub is MIT-licensed. <a href="https://github.com/joker1502/socipub">Star us on GitHub</a> and contribute to the roadmap.
+<strong>Sources checked November 26, 2026:</strong> hypefury.com/features-pricing (live), Hypefury pricing archive snapshots from January 2, August 19 and October 9, 2026, socipub.com/pricing, and the Socipub repository.
 </div>
     `.trim(),
   },
