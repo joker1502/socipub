@@ -1018,7 +1018,7 @@ Pay Premium+ if column monitoring is the job — X Lists pinned in a browser can
     readTime: "8 min read",
     tags: ["alternatives", "hypefury", "comparison"],
     content: `
-If you are hunting a Hypefury alternative because you want X scheduling, the decision is already made for you: Hypefury stopped publishing to X. Their own help copy answers the question in four words, and the plan table on hypefury.com/features-pricing now lists six networks that do not include X. So this page is not a "which is cheaper" comparison anymore. It is a what-replaced-what, with the receipts.
+If you are hunting a Hypefury alternative because you want X scheduling, the decision is already made for you: Hypefury stopped publishing to X. Their own FAQ said it bluntly last August — "Nope! Hypefury no longer supports X" — and the plan table on hypefury.com/features-pricing now names six networks, none of them X. So this page is not a "which is cheaper" comparison anymore. It is a what-replaced-what, with the receipts.
 
 ## Hypefury in November 2026: six platforms, no X
 
