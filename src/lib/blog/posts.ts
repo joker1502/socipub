@@ -173,59 +173,70 @@ For the per-tool deep dives: [Buffer](/blog/buffer-free-plan-guide), [Hootsuite]
   },
   {
     slug: "postiz-alternative-open-source",
-    title: "Postiz Alternative: Free Open Source Social Media Scheduler (2026)",
-    description: "Postiz went AGPL and dropped its free plan: $29/mo for 5 channels. Socipub is MIT with flat pricing for X and LinkedIn. Checked Nov 2026.",
-    date: "2026-07-01",
-    readTime: "6 min read",
+    title: "Postiz Alternative (2026): Why the Sixth Account Costs $10",
+    description: "Postiz has no free plan: $29 for 5 accounts, $23 annual, no per-channel add-on. We priced every rung and measured what self-hosting really takes.",
+    date: "2026-11-27",
+    readTime: "7 min read",
     tags: ["alternatives","postiz","open-source"],
-    content: `Postiz positioned itself as the all-in-one social media management platform, and in 2026 it did two things at once: relicensed the repo under AGPL-3.0 and removed the free plan from the hosted product. What replaced it is a channel-tier ladder — $29 a month for five channels, up to $99 for a hundred, no free tier, just a 7-day trial. For a solo creator scheduling Twitter/X and LinkedIn, five channel slots is more surface than you will ever fill. Socipub takes the flatter route: MIT license, one price, and a free plan that is the same software rather than a demo.
+    content: `Postiz has no free plan in November 2026. The cheapest card reads $29 a month for five connected accounts, or $23 if you pay for a year up front, and that second number is missing from most comparison posts still ranking on page one. We walked the whole ladder and the self-host path this week. The interesting finding is not the entry price — it is what the sixth account costs you.
 
-## Postiz vs Socipub: At a Glance
+## Each Rung Is Priced per Connected Account
 
-| Feature | Postiz | Socipub |
-|---------|--------|---------|
-| Starting price | $29/mo (Standard, 5 channels) | $0 (free, no time limit) |
-| Top tier | $99/mo (Ultimate, 100 channels) | $49/mo (Team) |
-| Open source | Yes, AGPL-3.0 | Yes, MIT license |
-| Self-hosting | Yes, Docker, but you register your own app per platform | Yes, X and LinkedIn apps covered |
-| Free plan | None, 7-day trial only | 5 posts/month, no expiry |
-| Posts per month | Unlimited on every plan | 5/month free, unlimited paid |
-| AI features | AI copilot on all plans, quota-limited | AI Schedule + AI Rewrite |
-| API access | Included on every plan, plus MCP server and CLI | Full API (cloud or self-hosted) |
-| Team seats | Unlimited members from Team ($39/mo) | Included in Team plan ($49/mo) |
-| Data region | Postiz-controlled | EU region, or your own server |
+Postiz meters channels, not seats. Its own comparison table defines the unit as "Number of social media accounts you can connect (X, LinkedIn, Instagram, Facebook, etc.)", so five accounts means five connections: your X profile, a LinkedIn company page and an Instagram account already use three of them.
 
-The table now splits on economics rather than on philosophy, because both tools ship source. Postiz wins where Socipub deliberately does not: Instagram, TikTok, YouTube and the rest of the visual networks, pre-approved and publishing on day one. If your calendar is Instagram-first, buy Postiz and stop shopping. The comparison flips toward Socipub when your platforms are X + LinkedIn and you would rather not rent eleven channel slots you never connect.
+| Plan | Monthly | Annual, per month | Accounts | Cost per account (annual) |
+|------|---------|-------------------|----------|---------------------------|
+| Standard | $29 | $23 | 5 | $4.60 |
+| Team | $39 | $31 | 10 | $3.10 |
+| Pro | $49 | $39 | 30 | $1.30 |
+| Ultimate | $99 | $79 | 100 | $0.79 |
 
-## What Postiz Charges in Practice
+The slope between rungs is wildly uneven, and nobody publishes the deltas. Team to Pro is the best step on the board: $10 more per month buys 20 more accounts, which lands at $0.50 for each additional one. Standard to Team is the worst — the same $10 buys five. Going from 30 to 100 adds $50 for 70 slots, $0.71 apiece, so the last rung is priced worse than the one before it.
 
-The ladder is simpler than the old per-seat model, and the gaps between rungs are wide:
+Here is the part that catches people mid-week. Nothing on the page sells a single extra channel. You connect a sixth account, the dashboard asks you to move up, and the next card is $39 — a 34% jump for one connection you were told was available. Budget for the rung above the one you think you need.
 
-- **Standard ($29/mo):** 5 channels, unlimited posts, one user
-- **Team ($39/mo):** 10 channels, unlimited team members
-- **Pro ($49/mo):** 30 channels, bigger AI image and video quota
-- **Ultimate ($99/mo):** 100 channels, the agency rung
+Annual billing cuts roughly a fifth. Postiz puts the same four plans at $23, $31, $39 and $79 and describes the saving as "about 20%". Feature floors move with the card as well: Standard is labelled "No team support" in the table, AI image quotas only start at Team (100/300/500 a month), and AI video clipping runs 60/120/300/600 minutes. For a two-network text workflow none of that matters. For anyone shipping video, the 60 minutes on the $29 card is the cheapest transcription-and-clip allowance I have priced this month.
 
-Every tier bundles the public API, the MCP server and the CLI — more generous than most competitors, and worth knowing before you write off the $29 entry. Where it bites is the floor: no free plan, no $9 starter. A solo creator with two accounts pays $29 for five channel slots and uses two. Socipub's Pro is $19/mo for that same single user, and its free tier still exists at 5 posts a month. Honest framing: Postiz is the better buy from roughly ten channels upward, and poor value underneath that.
+## Self-Hosting Still Works, Postiz Just Calls It Second
 
-## Both Ship Source Now — Read the License, Not the Label
+The repo is AGPL-3.0 and the compose file is public, so self-hosting costs a server and your evening — no licence fee. What changed is how the company frames it. Their pricing FAQ now answers "Can I self-host Postiz myself?" with: "Self-hosting is a secondary option; the hosted platform is where the agent features ship first."
 
-The old knock on Postiz, that it was closed and unhostable, no longer holds. The repo is AGPL-3.0, the Docker Compose stack is published with docs, and it runs on your own box. What is left is a licensing distinction rather than an openness one: AGPL means modifications you serve over a network must be published, MIT means you can fork and keep the changes to yourself. Planning to white-label a scheduler for clients? That difference decides it. Just want to audit what touches your platform tokens ([GDPR checklist here](/blog/gdpr-compliant-social-media-tool))? Either license satisfies you.
+Two other FAQ entries are worth quoting, because they kill a rumour that keeps solo builders off the self-host path in the first place. Asked why self-hosters would pay for app approval, the answer is "You do not have to pay for app approval." Approval help is an optional service for teams who would rather not file the paperwork. And the price differences do get explained, honestly: Facebook, Instagram, Threads and YouTube "usually take more than a month, with several rounds of changes to the submission, privacy policy and terms of service".
 
-Setup time is the axis that still separates them. Self-hosted Postiz expects you to register your own developer app on every network, and its own README warns that Meta, YouTube and TikTok approvals can take weeks. Socipub's [self-host path](/blog/self-host-socipub-docker) is one Docker command with the X and LinkedIn apps already wired, and the hosted version runs in the EU. Same freedom, much shorter runway.
+So what do you actually run? We pulled the compose file from gitroomhq/postiz-docker-compose this morning and counted. Nine containers: the app, Postgres, Redis, a Spotlight sidecar, plus five Temporal services (Elasticsearch, Postgres, the server, admin tools, a UI). Six volumes, two networks, and 35 credential fields left blank — 30 of those across 14 social networks, the remaining five for OpenAI and Stripe.
 
-## The Migration, Step by Step
+Elasticsearch is pinned to a 256 MB heap in that file, which tells you the target box is small; the app's own API_LIMIT default is 30. Runs fine on a modest VPS, in other words, but it is a weekend, not an afternoon. Our equivalent for comparison: no Dockerfile, a Next.js repo, your own Supabase project, ten environment variables, and OAuth apps for X and LinkedIn. Ten values against 35 is a fair measure of the difference — and it cuts both ways, because those two OAuth apps buy you two networks, while Postiz's thirty buy thirty.
 
-1. Connect your Twitter/X and LinkedIn accounts to Socipub — no profile count to budget, those two are the plan.
-2. Pull your next two weeks of planned posts from Postiz and rebuild them in the queue; the [batch scheduling system](/blog/batch-schedule-weekly-content-twitter-linkedin) makes this a single 30-minute session.
-3. Test one post end-to-end, confirm it publishes on schedule, then let the Postiz subscription lapse at renewal.
+## Where the Two Actually Cross
 
-## When to Stay With Postiz
+For two accounts on X and LinkedIn, Socipub Pro undercuts every rung of Postiz's ladder. Widen the platform mix, or add a team, and that flips fast.
 
-Stay if Instagram or TikTok scheduling is core to your workflow, or if you are running ten-plus channels where $39 flat beats any per-channel meter. Switch when your posting is X + LinkedIn, when the channel-slot math feels like a tax, or when data residency is a requirement. The decision is about platform mix, not about who has the shinier dashboard — our [Buffer alternative guide](/blog/buffer-alternative-open-source), the [Buffer vs Postiz head-to-head](/blog/buffer-vs-postiz), the [Hootsuite comparison](/blog/hootsuite-free-alternative) and the [Typefully comparison](/blog/typefully-alternative-open-source) run the same test on their targets.
+| Scenario (annual billing) | Postiz | Socipub |
+|---------------------------|--------|---------|
+| 2 accounts, 1 person | $276/yr (Standard) | $189/yr (Pro) |
+| 5 people, 10 accounts | $372/yr (Team, unlimited members) | $488/yr (Team, 5 seats) |
+| 10 accounts including Instagram and TikTok | $372/yr | not possible |
+| 30 accounts, agency | $468/yr | not possible |
 
-Try the [free Socipub plan](/pricing) with your two accounts for a week — the posts you schedule will tell you whether the downgrade in platforms is a real cost or just a smaller bill.`.trim(),
+Socipub Pro carries no account limit at all — the meter is networks, not channels. Unlimited posts across X and LinkedIn for $19 a month, or $189 a year after the 17% annual discount. Against Standard's $276 annual that settles $87 in Socipub's favour, with no five-account ceiling to trip over.
+
+Then a third network walks in. Instagram Reels, TikTok, Threads, Google Business — Socipub cannot connect any of them, and no amount of price advantage fixes a missing integration. Postiz lists thirty networks in its channel menu. If your calendar is visual-first, the price question is over before it starts.
+
+Teams flip the result in the other direction, and this is worth stating plainly. Postiz Team hands you ten accounts and unlimited members for $372 a year. Socipub Team gives five seats, bulk import and API access for $488. Postiz is $116 cheaper at identical headcount. Choose it on the numbers if team pricing is your deciding factor, and leave the licence argument for a scenario where it actually applies.
+
+One line item that rarely makes the comparison tables: Postiz bundles its REST API, webhooks, MCP server and CLI into all four cards, including the $23 annual one. Socipub's API begins at Team ($49). Piping posts in from n8n, Claude or a custom agent is a $23 problem on Postiz and a $49 problem here.
+
+## Moving Over, or Deciding Not To
+
+Count the accounts you post from, not the ones you own. Two is the common answer, five already means a brand portfolio. If the count is two and the networks are X and LinkedIn, self-hosted or hosted Socipub will run the whole queue for less than half of Standard's annual price.
+
+Before you cancel anything, rebuild your next fortnight elsewhere and publish one post end to end. Migrations fail on the boring step — a token that expires, a page ID the new tool cannot find — and the [batch scheduling workflow](/blog/batch-schedule-weekly-content-twitter-linkedin) gets two weeks queued in about half an hour. Keep the Postiz subscription until that first scheduled send lands.
+
+Stay if you post to Instagram, TikTok or Threads; stay if an agent schedules for you through MCP; stay if your team needs more than a handful of seats on a budget. Postiz earns its $23 annual card in each of those cases. The [Buffer vs Postiz head-to-head](/blog/buffer-vs-postiz) runs the same maths on a different rival, and the [Buffer alternative guide](/blog/buffer-alternative-open-source) covers the channel-meter model in more depth.
+
+Otherwise, the [free Socipub plan](/pricing) takes five posts a month on two platforms without a card, and Pro is unlimited for one flat price. Start there for a week and let the queue tell you whether the missing networks are a real cost or just a smaller bill.`.trim(),
   },
+
   {
     slug: "buffer-alternative-open-source",
     title: "Buffer Alternative: Free & Open Source Scheduler (2026)",
